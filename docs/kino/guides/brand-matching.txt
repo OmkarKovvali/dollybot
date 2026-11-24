@@ -1,0 +1,28 @@
+Source: https://kino.ai/docs/brand-matching
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Brand matching
+
+Give the agent a company’s website and it builds a brand kit from it: the logos, fonts, colors and product photos. The agent does this through the Kino desktop app, so keep it open while it works.
+
+Clone the brand from https://yourcompany.com and make a 15-second intro in it, in a new project.
+
+The agent clones kino.ai, saves the brand and cuts a 15-second intro in it.
+
+What the agent builds
+
+The agent reads the site’s pages and styles and downloads its logos, fonts, images and videos. From those it builds a brand kit: the logos recolored for light and dark backgrounds, the color palette, the fonts, textures, and a few rules for using them. If the site uses a licensed font, the agent picks the closest Google Font instead.
+
+Everything goes into a bin named after the brand, and the brand is saved for your team under Your brands in Templates.
+
+The kit the agent builds from kino.ai, and the bin it fills.
+
+More about agents
+
+Prompting
+
+Point the agent at projects you like, and use skills.
+
+MCP server
+
+Set up Claude Code, Codex, ChatGPT or another MCP agent.

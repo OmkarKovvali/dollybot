@@ -1,0 +1,130 @@
+[
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/sony-zv-e1-help-guide.pdf",
+    "source_url": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "resolved_url": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "size_bytes": 6695996,
+    "sha256": "ae3a704113908132c52d58bb803f41dd3ca2440a17a54a0582c686147a3a5788",
+    "content_type": "application/pdf",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/bambu-h2d-official-spec-sheet.pdf",
+    "source_url": "https://hub.bblcdn.com/default/02f0b00a4c7e45168c9e40da04077ca1.pdf",
+    "resolved_url": "https://hub.bblcdn.com/default/02f0b00a4c7e45168c9e40da04077ca1.pdf",
+    "size_bytes": 15432767,
+    "sha256": "3f2e4ef61138eb7005ba0cfb43e78534f2e1614849480b5322dc92cae42c549f",
+    "content_type": "application/pdf",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/sony-zv-e1-bottom.html",
+    "source_url": "https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_names_of_parts_ilc2310_bottom.html",
+    "resolved_url": "https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_names_of_parts_ilc2310_bottom.html",
+    "size_bytes": 56843,
+    "sha256": "e4fb3d70d9a74ac7aa70f6b1834ef0d1021775a5ad87a374b190a850f0826823",
+    "content_type": "text/html",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/sony-zv-e1-specifications.html",
+    "source_url": "https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_specifications_ilc2310.html",
+    "resolved_url": "https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_specifications_ilc2310.html",
+    "size_bytes": 68233,
+    "sha256": "21793922afc62d5e976ca25156b7f64a583dcd29b587831f4f43a48aadba7a9b",
+    "content_type": "text/html",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/insta360-x-series-hardware.html",
+    "source_url": "https://onlinemanual.insta360.com/x5/en-us/specs/hardware",
+    "resolved_url": "https://onlinemanual.insta360.com/x5/en-us/specs/hardware",
+    "size_bytes": 96611,
+    "sha256": "de6631ace378e7cab84f59d17f73175ad0f84fc1066eb14f2c763a2b428f262f",
+    "content_type": "text/html",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "source_url": "https://www.insta360.com/blog/tips/insta360-which-invisible-selfie-stick.html",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/bambu-h2c-user-manual.pdf",
+    "source_url": "https://csm.bblcdn.com/hub/eff78da43720461787dc8bbe5fa0372d.pdf",
+    "resolved_url": "https://csm.bblcdn.com/hub/eff78da43720461787dc8bbe5fa0372d.pdf",
+    "size_bytes": 9832976,
+    "sha256": "7f2034156a14c4fc08cfeb8d431a23f6c2dcef03ebd56276add6858665daec30",
+    "content_type": "application/pdf",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/bambu-h2s-official-introduction.html",
+    "source_url": "https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/",
+    "resolved_url": "https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/",
+    "size_bytes": 35767,
+    "sha256": "4fd9befa685db63f7234d31b61bf5322a489a284cf2b7ca7ac5a83ac61d3ac00",
+    "content_type": "text/html; charset=utf-8",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/bambu-h2c-official-introduction.html",
+    "source_url": "https://blog.bambulab.com/bambu-lab-h2c-where-multi-material-vortek-system-meets-engineering-precision/",
+    "resolved_url": "https://blog.bambulab.com/bambu-lab-h2c-where-multi-material-vortek-system-meets-engineering-precision/",
+    "size_bytes": 48492,
+    "sha256": "307327e978a6f5ff8b381405214fcee790be3fe78a2a06a7f122c0fe276e86ac",
+    "content_type": "text/html; charset=utf-8",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/sony-zv-e1-bottom-illustration.png",
+    "source_url": "https://helpguide.sony.net/ilc/2310/v1/en/contents/image/c_ilc2310_partname_07.png",
+    "size_bytes": 25275,
+    "sha256": "54a1412745814ae5e1a35f0ad4b5df723d6f71b3404bdbefe1d323efc7bed49a",
+    "content_type": "image/png",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/smallrig-zv-e1-cage-4257-manual.pdf",
+    "source_url": "https://static.smallrig.com/mall/img/public/1719804343584_.pdf",
+    "size_bytes": 4702617,
+    "sha256": "c2f810e825ee98110603fa886f5f1c4240e1bfe83c185b16e78b9fd3f6405d95",
+    "content_type": "application/pdf",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/insta360-stick-comparison-support.html",
+    "source_url": "https://intercom.help/insta360support/en/articles/10398152-which-selfie-stick-suits-my-style",
+    "size_bytes": 156581,
+    "sha256": "5b3bf043ea850781f4f2a9312dfece744140528c43b97c1c0bd1712d33668017",
+    "content_type": "text/html; charset=utf-8",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/bambu-h2s-official-spec-sheet.pdf",
+    "source_url": "https://store.bblcdn.com/s7/default/3f91ec86de1a4ce28fe8fb660b95cd3e/h2s.pdf",
+    "size_bytes": 2326830,
+    "sha256": "7c0aeef677273024bc407024ffdc10c1b439e0864fb66d41504a65db69fe746e",
+    "content_type": "application/pdf",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "source_url": "https://www.insta360.com/specs/x6",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/insta360-x6-essentials-bundle.html",
+    "source_url": "https://store.insta360.com/product/x6?c=6922",
+    "size_bytes": 846019,
+    "sha256": "62deeacae42d82cc351a563dc37acfb9062bf83cea0a416d327cb05a59ab6c23",
+    "content_type": "text/html; charset=utf-8",
+    "retrieval_date": "2026-11-23"
+  },
+  {
+    "file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/printer-cameras/assets/insta360-selfie-stick-invisibility.html",
+    "source_url": "https://onlinemanual.insta360.com/selfie-stick/en-us/operation-instructions/make-different-uypes-of-selfie-sticks-invisible",
+    "size_bytes": 21052,
+    "sha256": "d5be5c15ac9c45593f22421512ac2cfea44bb7a1ba88538b2efa80484410263f",
+    "content_type": "text/html",
+    "retrieval_date": "2026-11-23"
+  }
+]

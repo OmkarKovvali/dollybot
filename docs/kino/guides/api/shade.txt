@@ -1,0 +1,16 @@
+Source: https://kino.ai/docs/api/shade
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Mirror a Shade folder
+
+The managed preview copies new uploads from one Shade folder into one Kino media bin. Ask your Kino contact to configure the connection with your Shade workspace and drive, the source folder, and the destination media bin.
+
+What gets copied
+
+Kino verifies the Shade webhook and checks the file’s current path before fetching the original. Once a file is copied, it stays in Kino until you remove it there. Moving or deleting the source in Shade does not move or delete the Kino copy.
+
+Use a new file for each revision you want to bring over. Kino skips files over 2 GiB. If the destination exceeds its usage quota when Kino accepts a file, make room and upload a new copy.
+
+Premiere projects
+
+Kino stores a .prproj as a file. Open it with Import from DaVinci, Premiere and more to bring in a sequence and relink the footage.

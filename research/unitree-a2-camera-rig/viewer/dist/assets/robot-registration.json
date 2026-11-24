@@ -1,0 +1,33 @@
+{
+  "assembly_dock_volume_tag": 9,
+  "assembly_volume_count": 48,
+  "robot_volume_count": 47,
+  "assembly_to_standalone_translation_mm": [
+    -78.7561082,
+    525.9531522999999,
+    -215.8551754
+  ],
+  "assembly_to_viewer_translation_mm": [
+    -5.183483525088818,
+    -0.05611781616164535,
+    -428.1513637544999
+  ],
+  "rotation_degrees": [
+    0,
+    0,
+    0
+  ],
+  "scale": 1,
+  "four_ear_center_registration_max_residual_mm": 1.4210854715202004e-14,
+  "asymmetric_housing_xy_bbox_residual_mm": 0.0002809446893934364,
+  "top_plane_z_residual_mm": 2.6643026984629614e-05,
+  "top_face_vertex_counts": [
+    2,
+    23
+  ],
+  "assembly_top_z_mm": 462.151372052527,
+  "standalone_top_z_mm": 246.2961700095,
+  "assembly_dock_volume_mm3": 1245339.1622654255,
+  "standalone_dock_volume_mm3": 1300719.82905397,
+  "note": "Registration uses four actual ear-hole circles, checked against asymmetric XY housing extents and top-plane height. Dock revisions have different volume and edge segmentation; internal geometry is not claimed identical."
+}

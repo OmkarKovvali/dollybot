@@ -1,0 +1,412 @@
+Source: https://kino.ai/docs/keyboard-shortcuts
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Keyboard shortcuts
+
+Start with these
+
+JReverse
+
+KStop
+
+LForward
+
+Play and shuttle
+
+Space plays and pauses. J and L shuttle backward and forward, and K stops.
+
+IIn
+
+OOut
+
+,Insert
+
+Mark and insert
+
+Set in and out in the viewer, then press comma to insert the range at the playhead.
+
+⌘Command
+
+KK
+
+Find anything
+
+Open the command palette to find filenames, transcripts and actions.
+
+All shortcuts
+
+App
+
+Close tab⌘W
+
+Back⌘[
+
+Forward⌘]
+
+New tab⌘T
+
+Next tabCtrl⇥
+
+Previous tabCtrl⇧⇥
+
+Reload⌘R
+
+Reset app zoom⌘0
+
+Toggle editor⌘\
+
+Zoom app in⌘=or⌘⇧=
+
+Zoom app out⌘-
+
+Application
+
+Ask the Kino team⌘⇧F
+
+Invite members⌘⇧U
+
+Keyboard shortcuts⌘/
+
+Settings⌘,
+
+Canvas
+
+Crop in Canvas⇧C
+
+Resize to fillG
+
+Take screenshot⌘5
+
+Zoom in=or⇧=
+
+Zoom out-
+
+Fit0
+
+Chat
+
+Close current chat⌘W
+
+Focus chat with drafted comments↵
+
+New chat⌥Nor⌘N
+
+Next chat tab⌘⇧]
+
+Agent⌘/
+
+Previous chat tab⌘⇧[
+
+Send queued comments to agent⌘⇧↵
+
+Toggle chat sidebar⌘⌥S
+
+Cursor chat/
+
+Send comment to agent⌘↵
+
+Editing
+
+Add markerM
+
+Clear in / outX
+
+Copy⌘C
+
+Save a checkpoint⌘S
+
+Cut⌘X
+
+Delete⌫
+
+Ripple delete selected clips⇧⌫
+
+Duplicate⌘D
+
+Insert selected media at playhead,
+
+Mark inI
+
+Mark outO
+
+Nudge selection earlier one frame⌥←
+
+Nudge selection later one frame⌥→
+
+Add selected media at playhead.
+
+Redo⌘⇧Z
+
+Select all⌘A
+
+Select everything forwardY
+
+Select nearest editU
+
+Select next sibling⇥
+
+Select previous sibling⇧⇥
+
+Split⌘Bor⇧B
+
+Trim selected edge earlier[
+
+Trim selected edge later]
+
+Undo⌘Z
+
+General
+
+Delete selection⌘⌫or⌘⌦or⇧⌫or⇧⌦
+
+Keyframes
+
+Add volume keyframe⌥K
+
+Copy keyframes⌘C
+
+Delete keyframes⌫or⌦
+
+Go to next keyframe]
+
+Go to previous keyframe[
+
+Lower volume keyframes⌥↓
+
+Nudge keyframe earlier⌥←
+
+Nudge keyframe later⌥→
+
+Paste keyframes⌘V
+
+Raise volume keyframes⌥↑
+
+Media selection
+
+Clear in / outX
+
+Copy⌘C
+
+Copy paths⌘⌥C
+
+Extend media selection left⇧←
+
+Extend media selection right⇧→
+
+Extend media selection up⇧↑
+
+Extend media selection down⇧↓
+
+Extend media selection to the first⇧Home
+
+Extend media selection to the last⇧End
+
+Open selected media in the viewer↵
+
+Select media to the left←
+
+Select media to the right→
+
+Select media above↑
+
+Select media below↓
+
+Select first mediaHome
+
+Select last mediaEnd
+
+Select all media⌘A
+
+Media viewer
+
+Jog backward←
+
+Jog backward one second⇧←
+
+Jog forward→
+
+Jog forward one second⇧→
+
+Go to clip in⇧I
+
+Go to clip out⇧O
+
+Play forward at half speedKL
+
+Play backward at half speedKJ
+
+Shuttle forwardL
+
+Shuttle reverseJ
+
+Stop playbackK
+
+Panels
+
+Open task list⌘⇧J
+
+Show filed media⌘⇧D
+
+Toggle chatSuperL
+
+Toggle code panel⌥C
+
+Toggle editor inspector⌥I
+
+Toggle inspectorSuperI
+
+Toggle sidebar⌘⇧B
+
+Toggle timeline height⌥T
+
+Playback
+
+Go to endEndorCtrlE
+
+Go to startHomeorCtrlA
+
+Jump to playhead⌘J
+
+Match frameF
+
+Mute⇧M
+
+Play / Pause␣
+
+Search and navigation
+
+Focus the search bar⌘P
+
+EscapeEsc
+
+Show all actions⌘⇧P
+
+Open command palette⌘K
+
+Select children↵
+
+Select parent⇧↵
+
+Settings
+
+Back to appEsc
+
+Sharing
+
+Copy link⌘⇧C
+
+Copy review link⌘⇧L
+
+Timeline
+
+Close tab⌘W
+
+Focus children⇧T
+
+Jog backward←or⇧←
+
+Jog forward→or⇧→
+
+New sequence⌘⇧N
+
+Next timeline tabCtrl⇥
+
+Play forward at half speedKL
+
+Play backward at half speedKJ
+
+Previous timeline tabCtrl⇧⇥
+
+Shuttle forwardL
+
+Shuttle reverseJ
+
+Stop playbackK
+
+Zoom in=or⇧=
+
+Zoom out-
+
+Tools
+
+Select ToolV
+
+3D Rotate Tool⇧K
+
+Comment ToolC
+
+Text toolT
+
+Blade ToolB
+
+Ripple Edit ToolR
+
+Slip Tool⌥Y
+
+Track Select Forward⇧A
+
+Snapping⇧M
+
+Viewer
+
+Copy transcript⌘⇧X
+
+Add markerM
+
+Clear all clip marks⌥X
+
+Clear clip in⌥I
+
+Clear clip in and outX
+
+Clear clip out⌥O
+
+Set clip inI
+
+Set clip outO
+
+Fullscreen⇧F
+
+MuteM
+
+Play / Pause␣
+
+151 shortcuts, updated November 22, 2026.
+
+Presets and custom keys
+
+Open Settings > Keyboard shortcuts, then choose Kino or Premiere Pro. Your edits are saved separately for each preset on this device.
+
+Premiere Pro preset
+
+Keyboard shortcuts⌘⌥K
+
+Split all tracks at playhead⌘⇧K
+
+Add edit to selected tracks⌘K
+
+Ripple delete across tracks⌥⌫or⇧⌦
+
+Zoom in=
+
+Zoom out-
+
+SnappingS
+
+Add Edit uses tracks containing selected clips while the timeline has focus. ⌘⌥K opens keyboard shortcuts; ⌘⇧P opens Kino’s actions. Ripple delete keeps existing gaps.
+
+Changing keys
+
+ChangeClick an action’s keys and press new ones. Plus adds another; remove clears one.
+
+ModifiedShows the selected preset’s edits, including cleared keys.
+
+ResetReset at the top restores only the selected preset. Each row resets one action. A named preset returns to its original keys.
+
+LimitsTool and range keys still use Kino defaults. Space and timeline copy and paste stay fixed.
+
+Ask Kino Agent
+
+Kino Agent can switch presets and keep your custom keys, or turn a screenshot of another editor’s keyboard map into a named preset. It maps only commands Kino has, shows you the changes and waits for your confirmation.
+
+Make a preset called My keys from this screenshot. Show me what you can’t map before applying it.

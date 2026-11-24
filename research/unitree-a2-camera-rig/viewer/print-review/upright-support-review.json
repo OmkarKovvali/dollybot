@@ -1,0 +1,70 @@
+{
+  "review_date": "2026-11-23",
+  "purpose": "Independent support-reduction review for upright Z+ printing; no cover geometry edited.",
+  "reviewed_brep": "research/unitree-a2-camera-rig/viewer/dist/assets/flat-cover-concept.brep",
+  "brep_sha256": "509bf7ece2f222cc5741a2ebdc4f8236054dabc69e0ab6bbbf1599d02cfd281b",
+  "reviewed_stl": "research/unitree-a2-camera-rig/viewer/dist/assets/flat-cover-concept.stl",
+  "stl_sha256": "5653516857562d0a0caeaf0e1c2de68554dab1254ca52ba1cd9754c2a7ac51c6",
+  "brep_valid": true,
+  "orientation": "Preserve current native cover orientation: upper camera seating face at Z34, lowest OEM mounting surfaces Z0.",
+  "method": [
+    "Read current cover metadata and exact registered robot collision report.",
+    "Loaded BREP in OpenCASCADE, validated solid, accumulated exact downward planar face areas using oriented plane normals.",
+    "Independently inspected binary STL downward triangles and user screenshot of perimeter seam."
+  ],
+  "downward_planar_face_area_mm2_by_z_mm": {
+    "0": 143.06123859659579,
+    "2": 30278.739691621166,
+    "4.8": 2.0496533922972393,
+    "17": 646.0,
+    "27": 149.2256510455154,
+    "27.999982": 444.63495408493543,
+    "31.000008": 369.6349540849366
+  },
+  "main_finding": "The broad OEM floor at Z2 and preserved curved underside dominate likely support demand when the rail contact surfaces sit at Z0. Exact surface area is not a slicer support-volume estimate.",
+  "screw_seats": {
+    "underside_well_diameter_mm": 12,
+    "clearance_bore_diameter_mm": 7,
+    "seat_z_mm": 27,
+    "annular_radial_width_mm": 2.5,
+    "keep": "Retain flat screw-head bearing annuli, well access and seven-millimeter clearance bores."
+  },
+  "collision_evidence": {
+    "file": "dist/assets/flat-cover-body-intersection.json",
+    "source_brep_sha256": "509bf7ece2f222cc5741a2ebdc4f8236054dabc69e0ab6bbbf1599d02cfd281b",
+    "robot_parts_screened": 47,
+    "positive_static_overlap_mm3": 0,
+    "scope": "Static simplified OEM model only. No certified clearance margin, dynamic validation or physical measurement."
+  },
+  "recommendation": "Preserve all underside geometry for this revision. No practical low-risk geometry change found that meaningfully reduces supports without changing robot fit or fastener bearing geometry. Review and limit support placement in the slicer after the seam-clean export.",
+  "rejected_changes": [
+    {
+      "change": "Lower or fill the raised floor toward Z0",
+      "reason": "Consumes the retained OEM clearance above the robot; existing no-overlap result does not establish sufficient margin for added material."
+    },
+    {
+      "change": "Chamfer or taper the screw counterbore roofs",
+      "reason": "Changes the flat screw-head bearing surfaces and available head/tool envelope; reduction affects only149 mm2 total while floor support demand is much larger."
+    },
+    {
+      "change": "Remove small side-fill underside ledges",
+      "reason": "Only about2 mm2 total; no meaningful support reduction and could reopen closed port details."
+    },
+    {
+      "change": "Trim native rail feet or mounting-ear undersides",
+      "reason": "Changes the robot mounting datum/interface."
+    }
+  ],
+  "unchanged": [
+    "All BREP and STL geometry",
+    "Payload hole positions",
+    "Rail fit surfaces",
+    "Counterbore seats"
+  ],
+  "not_performed": [
+    "No slicer run or support-volume estimate",
+    "No physical fit or tolerance check",
+    "No new collision calculation on the forthcoming seam-clean revision"
+  ],
+  "follow_up": "The new seam-clean export must carry its own hash; transfer the existing collision result only after proving the underside and relevant geometry unchanged, otherwise rerun the checker."
+}

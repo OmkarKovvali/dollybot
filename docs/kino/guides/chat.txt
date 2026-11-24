@@ -1,0 +1,18 @@
+Source: https://kino.ai/docs/chat
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Chat
+
+You can pay for model tokens through Kino or use your existing ChatGPT or Claude subscription. If you already subscribe, we recommend using Codex or Claude Code in Kino desktop.
+
+Kino Chat
+
+Use Kino credits for model tokens.
+
+Codex
+
+Sign in with ChatGPT to use your Codex allowance.
+
+Claude Code
+
+Sign in with Claude to use your Claude Code allowance.

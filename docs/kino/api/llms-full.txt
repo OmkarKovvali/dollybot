@@ -1,0 +1,209 @@
+# Media Import API
+
+Copy this prompt into Kino chat to set up your first API key.
+
+```text
+Open Generate API key in Kino Settings using settings::GenerateApiKey. I’ll choose the destination media bin and generate the key in Settings.
+```
+
+Copy originals into Kino for clipping while you keep editing in Premiere or another editor. The API is in preview for organizations with cloud transfer enabled.
+
+## Create a key
+
+In **Settings → API**, name the key and choose the destination media bin. Kino lets you copy the secret once, immediately after creation. Save it in your integration’s secret store and send it as a bearer token in the `Authorization` header.
+
+## Send your first file
+
+The examples use curl and jq. Set `KINO_API_KEY`, `KINO_BIN_ID`, and `SOURCE_URL` in your shell. Use a direct HTTPS download URL accessible over the public internet. A worker can start the transfer up to an hour after submission, so allow time for queuing and download when signing the URL.
+
+```bash
+curl --fail-with-body -sS -i "https://kino.ai/api/v1/bins/${KINO_BIN_ID}/assets/import" \
+  -H "Authorization: Bearer ${KINO_API_KEY}" \
+  -H "Idempotency-Key: shoot-042-camera-a-001" \
+  -H 'Content-Type: application/json' \
+  --data "$(jq -n --arg url "$SOURCE_URL" '{name:"A001.mov",source_url:$url}')"
+```
+
+## Wait for the original
+
+Set `KINO_STATUS_URL` to the relative `status_url` in the response. Wait the number of seconds in `Retry-After` before your first status check.
+
+```bash
+curl --fail-with-body -sS "https://kino.ai${KINO_STATUS_URL}" \
+  -H "Authorization: Bearer ${KINO_API_KEY}"
+```
+
+Increase the interval on repeated checks. When `transfer` is `copied`, Kino has stored the original. If your integration also needs Kino’s processing to finish, follow the [status values](https://kino.ai/docs/api/get-import#processing-in-kino).
+
+## Reference files
+
+Use the [OpenAPI specification](https://kino.ai/docs/api/openapi.json) to generate a client or inspect the request and response schemas. For agents, use the [docs index](https://kino.ai/docs/api/llms.txt) or [full Markdown reference](https://kino.ai/docs/api/llms-full.txt).
+
+Source: https://kino.ai/docs/api
+
+---
+
+# Start an import
+
+```text
+POST /api/v1/bins/{bin_id}/assets/import
+```
+
+Queue a copy of one file from an HTTPS URL into the bin assigned to your organization API key. The key needs the `imports:write` scope.
+
+## Request
+
+All four fields are required.
+
+- `bin_id` in the path. UUID of the media bin assigned to your key.
+- `Idempotency-Key` in the header. A unique key for this submission. Use 1–128 letters, digits, periods, underscores, colons or hyphens.
+- `name` in the JSON body. File name with extension, up to 255 characters.
+- `source_url` in the JSON body. Direct HTTPS download URL accessible over the public internet, up to 8,192 characters. URLs must use the default HTTPS port and cannot contain embedded credentials.
+
+```bash
+curl --fail-with-body -sS -i "https://kino.ai/api/v1/bins/${KINO_BIN_ID}/assets/import" \
+  -H "Authorization: Bearer ${KINO_API_KEY}" \
+  -H "Idempotency-Key: shoot-042-camera-a-001" \
+  -H 'Content-Type: application/json' \
+  --data "$(jq -n --arg url "$SOURCE_URL" '{name:"A001.mov",source_url:$url}')"
+```
+
+## Response
+
+`202 Accepted` means Kino queued the import. Follow the relative path in the `Location` header or `status_url` to check whether the original is ready. The response sets `Retry-After: 5` for the first poll.
+
+```json
+{
+  "import_id": "4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "status_url": "/api/v1/imports/4d96ea4a-4ce0-4690-b706-82fa09de34e2"
+}
+```
+
+## Retry a submission
+
+Use a new `Idempotency-Key` for each file submission. If a request times out or returns `503`, retry with the same idempotency key, organization API key, bin, file name and URL. A replay returns the original import ID. Reusing the idempotency key for a different request in the same organization returns `409`. For an expired source URL, submit a fresh URL with a new idempotency key.
+
+## Preview limits
+
+The preview accepts four new imports per organization per rolling hour and up to 2 GiB per file. Imports can start within one hour of submission. Follow `Retry-After` after a `429`.
+
+## Errors
+
+Use `error.code` to handle a rejected request. For example, a `409` response has this body.
+
+```json
+{
+  "error": {
+    "code": "idempotency_conflict",
+    "message": "This key has already been used for a different request."
+  }
+}
+```
+
+- `400` · `invalid_request`, `invalid_idempotency_key`, or `source_not_allowed`. Check the JSON body, idempotency key or source URL.
+- `401` · `invalid_api_key`. Supply a valid organization API key.
+- `403` · `scope_denied`, `preview_unavailable`, `cloud_transfer_required`, or `quota_exceeded`. Check access to the bin and preview, and the organization's plan and usage limits.
+- `404` · `bin_not_found`. The destination media bin is unavailable.
+- `409` · `idempotency_conflict`. Reuse the original request or submit with a new idempotency key.
+- `413` · `body_too_large`. The JSON request exceeds 64 KiB.
+- `429` · `import_limit`. Wait for the time in `Retry-After` before retrying.
+- `503` · `temporarily_unavailable`. Retry with the same idempotency key.
+
+Source: https://kino.ai/docs/api/create-import
+
+---
+
+# Check an import
+
+```text
+GET /api/v1/imports/{import_id}
+```
+
+Set `KINO_IMPORT_ID` to the `import_id` from [Start an import](https://kino.ai/docs/api/create-import). The key needs the `imports:read` scope for the destination bin. A successful read returns `200` even if the import itself failed.
+
+```bash
+curl --fail-with-body -sS "https://kino.ai/api/v1/imports/${KINO_IMPORT_ID}" \
+  -H "Authorization: Bearer ${KINO_API_KEY}"
+```
+
+## Copy of the original
+
+| Value | Meaning |
+| --- | --- |
+| `queued` | Kino accepted the import and is waiting for a worker. |
+| `copying` | A worker is transferring the original. |
+| `copied` | The original is stored. The response includes `asset_id` and the current `bin_id`. |
+| `failed` | The original could not be copied. Read `error.code` for the reason. |
+
+## Processing in Kino
+
+After the copy, `processing` tracks Kino’s indexing workflow for the original. Playback preparation can finish separately.
+
+- `pending`. Kino is still indexing the file.
+- `complete`. Indexing finished.
+- `failed`. Indexing failed. The original is still stored.
+- `not_applicable`. The file needs no indexing or has been removed.
+
+Stop polling when the copy fails or processing reaches `complete`, `failed`, or `not_applicable`.
+
+The response includes `asset_id` once the original is stored. The current `bin_id` can be null if the asset is no longer in a bin or has been removed. When present, `library_url` is a relative link to the organization's media library.
+
+```json
+{
+  "import_id": "4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "transfer": "copied",
+  "asset_id": "web-import-4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "bin_id": "b536b403-b165-4659-9982-8acfb2440083",
+  "library_url": "/org/studio?sidebar=media",
+  "processing": "pending"
+}
+```
+
+## Errors
+
+- `401` · `invalid_api_key`. Supply a valid organization API key.
+- `403` · `scope_denied`. Check preview access, bin assignment and the `imports:read` scope.
+- `404` · `import_not_found`. Check the import ID and use a key assigned to the original destination bin.
+- `503` · `temporarily_unavailable`. Retry the status read with backoff.
+
+When a read returns `200` with `transfer: "failed"`, inspect `error.code`. For example, `source_unavailable` means the download could not be opened. Check the source and submit a new import if you can supply a working URL.
+
+`source_timeout` means the original did not finish copying within 30 minutes. Use a faster download source before submitting a new import.
+
+Source: https://kino.ai/docs/api/get-import
+
+---
+
+# Move footage from Frame.io
+
+Bring the footage you need for a cut into Kino and keep your review history in Frame.io.
+
+## Download the originals
+
+In Frame.io, open a file or folder's menu and choose **Download**. Pick the original files when Frame.io offers a choice of formats. In Kino, open the destination media bin and drop in the downloaded files. [Frame.io download guide](https://help.frame.io/en/articles/9101084-how-can-i-download-files)
+
+If you have a Premiere project, bring over its linked footage and use [Import from another editor](https://kino.ai/docs/import-from-other-editors) to open the sequence in Kino.
+
+## Import from a script
+
+For recurring transfers, get the original download URL from Frame.io V4 and submit it to the [Kino import endpoint](https://kino.ai/docs/api/create-import). Use a direct HTTPS download URL accessible over the public internet. Submit one request per original, then [check import status](https://kino.ai/docs/api/get-import). [Frame.io V4 download URL fields](https://developer.adobe.com/frameio/guides/Zapier/Frame.io%20Resources%20in%20Zapier%20V4/)
+
+Source: https://kino.ai/docs/api/frame-io
+
+---
+
+# Mirror a Shade folder
+
+The managed preview copies new uploads from one Shade folder into one Kino media bin. Ask your Kino contact to configure the connection with your Shade workspace and drive, the source folder, and the destination media bin.
+
+## What gets copied
+
+Kino verifies the Shade webhook and checks the file’s current path before fetching the original. Once a file is copied, it stays in Kino until you remove it there. Moving or deleting the source in Shade does not move or delete the Kino copy.
+
+Use a new file for each revision you want to bring over. Kino skips files over 2 GiB. If the destination exceeds its usage quota when Kino accepts a file, make room and upload a new copy.
+
+## Premiere projects
+
+Kino stores a `.prproj` as a file. Open it with [Import from DaVinci, Premiere and more](https://kino.ai/docs/import-from-other-editors) to bring in a sequence and relink the footage.
+
+Source: https://kino.ai/docs/api/shade

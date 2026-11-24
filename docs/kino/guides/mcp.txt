@@ -1,0 +1,92 @@
+Source: https://kino.ai/docs/mcp
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+MCP server
+
+Connect Claude Code, Codex, ChatGPT or Cursor to Kino’s MCP server, and they can search your footage and edit your projects.
+
+Download Kino
+
+Download Kino for Mac (Apple Silicon), Mac (Intel, macOS 13+), Windows, or Ubuntu, then open it and sign in or create an account. Your agent connects through the Kino desktop app, so keep it open while it works.
+
+Connect your agent
+
+- 
+
+Claude Desktop
+
+Installs from Settings > MCP in Kino, on a Mac.
+
+Set up in Kino
+- 
+
+ChatGPT
+
+Installs from Settings > MCP in Kino, on a Mac.
+
+Set up in Kino
+- 
+
+Cursor
+
+Cursor asks you to confirm.
+
+Install in Cursor
+- 
+
+VS Code
+
+VS Code asks you to confirm.
+
+Install in VS Code
+- 
+
+Claude Code
+
+claude mcp add kino --transport http http://127.0.0.1:45680/mcp --scope user
+
+- 
+
+Codex CLI
+
+codex mcp add kino --url http://127.0.0.1:45680/mcp
+
+Try a first prompt
+
+Make a sick hype reel from the media on my Desktop. Keep the effects restrained but potent.
+
+MCP limits
+
+Free includes 100 metered MCP tool calls a week, shared across your organization. When you reach the limit, wait for the weekly reset or upgrade to Editor or Editor Plus for unlimited MCP calls per editor. Unlimited MCP removes Kino’s tool-call cap; model usage still draws from your Kino agent credit or your own provider’s allowance, depending on the mode you selected. Generating media is billed separately.
+
+See Plans for prices and agent credit.
+
+Set up by hand
+
+ChatGPT, Cursor, VS Code and other agents that connect to MCP servers over HTTP can use this URL.
+
+http://127.0.0.1:45680/mcp
+
+Remote MCP
+
+Kino also runs an MCP server at mcp.kino.ai that needs no desktop app. Use it when your agent runs somewhere other than your computer, such as Devin or Claude Code on the web, or when Kino is closed. Send your agent this message:
+
+Add https://mcp.kino.ai as an MCP server. Name it kino-cloud if you can. Then tell me how to load it: in Claude Code I run /reload-plugins, and in other apps such as ChatGPT desktop I start a new chat.
+
+The agent asks you to sign in to Kino and choose a workspace. It can then search your footage, read transcripts and organize bins. Editing projects through the remote server is in early access and isn’t on for every workspace yet.
+
+Remote calls count toward the same MCP limits. When you’re at your computer, the desktop server is faster and works on the project you have open.
+
+See Cloud agents for Devin, Grok Bot, Muse and Dot.
+
+If your agent can’t see Kino
+
+- Check that the Kino desktop app is open.
+
+- Restart your agent’s session, then the agent app.
+
+- Remove any duplicate Kino entry from the agent’s MCP settings.
+
+Linux servers without a display
+
+See Hermes and headless agents.

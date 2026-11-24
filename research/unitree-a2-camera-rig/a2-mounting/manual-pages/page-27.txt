@@ -1,0 +1,50 @@
+This device complies with Part 15 of the FCC rules. Operation is subject to the following two
+conditions:(1)this device may not cause harmful interference, and (2) this device must accept any interference
+received, including interference that may cause undesired operation. Privacy of communications may not be
+ensured when using this device.
+
+General Information
+
+RF Radiation Exposure Statement Caution: This Transmitter must be installed to provide a separation
+
+distance of at least 20 cm from all persons.
+
+Radio Frequency Specifications
+
+Specifications
+
+2.4GHz Wi-Fi (2412-2472MHz): 20dBm (EIRP)
+
+Bluetooth(2402-2480MHz): 20dBm (EIRP)
+
+2.4GHz SRD (2400.8-2480MHz) : 14dBm (EIRP)
+
+Sub 1GHz Bands (865-868, 868-868.6, 869.4-869.65, 869.7- 870MHz): 14dBm (ERP)
+
+5GHz Wi-Fi: 5150-5250MHz: 23dBm (EIRP) 5250-5350MHz, 5470-5725MHz: 20dBm (EIRP) 5725-
+5850MHz: 14dBm (EIRP)
+
+Wi-Fi 5150-5350MHz frequency range is limited to indoor use in all EU/EFTA member states and Turkey.
+
+RF exposure:
+
+The equipment complies with radiation exposure limits set for an uncontrolled environment. To avoid the
+possibility of exceeding radio frequency exposure limits, human proximity to the antenna shall not be less than
+20 cm during normal operation. This transmitter must not be co-located or operated in conjunction with any
+
+other antenna or transmitter.
+
+BE BG CZ DK DE EE
+IE EL ES FR HR IT
+CY LV hid LU HU MT
+NL AT i PT RO Sl
+SK Fl SE UK (NI) TR NO
+CH IS Ll
+
+Children shall not play with the appliance. Cleaning and user maintenance shall not be made by children
+
+without supervision.
+
+The appliance is only to be used with the power supply unit provided with the appliance.
+
+©2025. All rights reserved, Unitree Robotics 26

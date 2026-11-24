@@ -1,0 +1,205 @@
+{
+  "revision": "05 flat cover with closed side apertures, two through holes and underside recesses",
+  "cover_file": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/viewer/dist/assets/flat-cover-concept.brep",
+  "cover_brep_sha256": "3648ec10e923d711bbbfb451c8233478818345aaffeba4ab30ac98d1fe1e6008",
+  "cover_hash_unchanged_during_check": true,
+  "source_assembly": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/v1-cover-update/cover-research/unitree-a2-with-v1-docking-station.stp",
+  "source_assembly_sha256": "8d9c18644b78aff1f15c9c7639c02a253a2e952e29d464386808d3f2920b91be",
+  "registration": {
+    "assembly_dock_volume_tag": 9,
+    "assembly_volume_count": 48,
+    "robot_volume_count": 47,
+    "assembly_to_standalone_translation_mm": [
+      -78.7561082,
+      525.9531522999999,
+      -215.8551754
+    ],
+    "assembly_to_viewer_translation_mm": [
+      -5.183483525088818,
+      -0.05611781616164535,
+      -428.1513637544999
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "four_ear_center_registration_max_residual_mm": 1.4210854715202004e-14,
+    "asymmetric_housing_xy_bbox_residual_mm": 0.0002809446893934364,
+    "top_plane_z_residual_mm": 2.6643026984629614e-05,
+    "top_face_vertex_counts": [
+      2,
+      23
+    ],
+    "assembly_top_z_mm": 462.151372052527,
+    "standalone_top_z_mm": 246.2961700095,
+    "assembly_dock_volume_mm3": 1245339.1622654255,
+    "standalone_dock_volume_mm3": 1300719.82905397,
+    "note": "Registration uses four actual ear-hole circles, checked against asymmetric XY housing extents and top-plane height. Dock revisions have different volume and edge segmentation; internal geometry is not claimed identical."
+  },
+  "cache_validation": {
+    "volumes_checked": 48,
+    "maximum_volume_difference_mm3": 7.450580596923828e-08,
+    "maximum_bbox_difference_mm": 5.684341886080802e-14
+  },
+  "cover_solid_count": 1,
+  "cover_conservative_bbox_mm": [
+    -150.5304065281081,
+    -116.31029271278086,
+    -0.5387845339192232,
+    150.59962264592048,
+    116.31020146335769,
+    34.58479675761932
+  ],
+  "whole_assembly_broad_phase": {
+    "robot_volumes_checked": 47,
+    "excluded_dock_volume_tag": 9,
+    "padded_cover_bbox_mm": [
+      -150.5404065281081,
+      -116.32029271278087,
+      -0.5487845339192232,
+      150.60962264592047,
+      116.32020146335769,
+      34.59479675761932
+    ],
+    "overlapping_candidates": [
+      {
+        "volume_tag": 10,
+        "conservative_bbox_mm": [
+          -394.02562489793706,
+          -143.25995836170787,
+          -170.95903216776816,
+          324.2462872442764,
+          143.2482502696367,
+          41.14553732153531
+        ]
+      }
+    ],
+    "excluded_robot_volume_tags": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ]
+  },
+  "exact_solid_intersections": [
+    {
+      "robot_volume_tag": 10,
+      "positive_intersection_volume_mm3": 0,
+      "intersection_solid_count": 0,
+      "returned_contact_entity_dimensions": [],
+      "intersection_conservative_bboxes_mm": []
+    }
+  ],
+  "total_positive_intersection_volume_mm3": 0,
+  "status": "no_positive_static_model_overlap",
+  "mount_axis_checks": [
+    {
+      "mount": "camera",
+      "xy_mm": [
+        -48,
+        0
+      ],
+      "method": "OpenCASCADE vertical line / robot solid intersection",
+      "robot_volume_candidates": [
+        10
+      ],
+      "occupied_line_segments_mm": [
+        [
+          [
+            -48.0,
+            0.0,
+            -155.43907139196278
+          ],
+          [
+            -48.0,
+            0.0,
+            -0.8752235390770693
+          ]
+        ]
+      ],
+      "robot_roof_z_mm": -0.8752235390770693,
+      "provisional_screw_head_bottom_z_mm": 20.5,
+      "provisional_head_axis_gap_mm": 21.37522353907707,
+      "head_note": "The 20.5-mm bottom assumes the previously illustrated 6.5-mm-high head below a z27 seat; actual screw dimensions still require confirmation."
+    },
+    {
+      "mount": "stick",
+      "xy_mm": [
+        78,
+        0
+      ],
+      "method": "OpenCASCADE vertical line / robot solid intersection",
+      "robot_volume_candidates": [
+        10
+      ],
+      "occupied_line_segments_mm": [
+        [
+          [
+            78.0,
+            0.0,
+            -158.09779972051217
+          ],
+          [
+            78.0,
+            0.0,
+            -0.3810785260860712
+          ]
+        ]
+      ],
+      "robot_roof_z_mm": -0.3810785260860712,
+      "provisional_screw_head_bottom_z_mm": 20.5,
+      "provisional_head_axis_gap_mm": 20.88107852608607,
+      "head_note": "The 20.5-mm bottom assumes the previously illustrated 6.5-mm-high head below a z27 seat; actual screw dimensions still require confirmation."
+    }
+  ],
+  "limitations": [
+    "Checks exact Boolean common volume of the supplied simplified CAD in its saved static pose, not the physical robot or movement envelope.",
+    "Zero positive volume does not certify a tolerance margin, structural capacity, fastener head envelope, or assembly/tool access.",
+    "Robot geometry below each mount axis can obstruct a straight driver from beneath while installed; mount the screw before fitting the carrier unless access is physically verified.",
+    "Robot front direction remains unverified; source orientation is preserved."
+  ]
+}

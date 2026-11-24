@@ -1,0 +1,311 @@
+{
+  "retrieved_date": "2026-11-23",
+  "about_a2_page_last_updated": "2026-11-05 11:57:14 (as displayed, timezone unspecified)",
+  "manual_version": "V1.7",
+  "assets": [
+    {
+      "file": "about-a2-assets/d49def73e6f99d6b.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/25/df48b6f4729f49528be6abc9863426ae_468x390.png",
+      "original_asset_name": "df48b6f4729f49528be6abc9863426ae_468x390.png",
+      "bytes": 66843,
+      "sha256": "4e653bfb0088f2f1c77a1d7e9b5639d11b44503866903ddf30a7ad45cebf7c7e",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "a2-component-overview.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2025/12/25/ed15dcac633647c9ad91a9e2634ecec3_2467x1456.png",
+      "original_asset_name": "ed15dcac633647c9ad91a9e2634ecec3_2467x1456.png",
+      "bytes": 235927,
+      "sha256": "d6783b7890e0a19394424da0876e1a95403011b61140e66b54c26e12ba0256a2",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "body-left-electrical-ports.jpg",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/7/20/74452f58d1ec4f039f54194c433f026b_1365x447.jpg",
+      "original_asset_name": "74452f58d1ec4f039f54194c433f026b_1365x447.jpg",
+      "bytes": 141669,
+      "sha256": "3681feab28643389bdd2dc737d7215263d0239dc4b63347f2e219fd62906aeda",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "connector-2plus2-pin-numbering.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2024/3/4/0953a73aeca14d93a69bc34ff3885ec4_1167x1084.png",
+      "original_asset_name": "0953a73aeca14d93a69bc34ff3885ec4_1167x1084.png",
+      "bytes": 81021,
+      "sha256": "50e6d766ea08007904c6f01fc4c46078cb892ec7bc7241f9a365e913ab51566d",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "guide-rail-drawing.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/1/26/f655b605d5b94006af34a9b46256cbbf_2609x1209.png",
+      "original_asset_name": "f655b605d5b94006af34a9b46256cbbf_2609x1209.png",
+      "bytes": 211445,
+      "sha256": "a4e4aed24f309b2bed4eea7cbd6699f878b33af3c461847ef2d61991b65467d5",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "emergency-stop-pin-numbering.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/25/efb5519891ed4e3194301e009c493838_1268x468.png",
+      "original_asset_name": "efb5519891ed4e3194301e009c493838_1268x468.png",
+      "bytes": 86819,
+      "sha256": "d3807bfa9666a447080821938fb5340516cfd772885e2c8212733d94bfba8ea9",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "connector-8plus2-pin-numbering.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2024/3/4/cf6393326af44931b544e444fcc5365e_1167x1084.png",
+      "original_asset_name": "cf6393326af44931b544e444fcc5365e_1167x1084.png",
+      "bytes": 99813,
+      "sha256": "9bd9ae276f77ba9422c4038a016ecfe3cf07867f8e8c3d0ed2be7a88e42463c8",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "body-right-electrical-ports.jpg",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/7/20/0d18c6bd5428436f9b1d434778d1445c_3177x1152.jpg",
+      "original_asset_name": "0d18c6bd5428436f9b1d434778d1445c_3177x1152.jpg",
+      "bytes": 263295,
+      "sha256": "a56ca35a8ce1788594b4194c001bec2e22cc498161730052b33e6a44f6c96d2e",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "about-a2-assets/783eee3820f76af0.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/1/4/9713508820bb43679d53daca579842ba_1144x911.png",
+      "original_asset_name": "9713508820bb43679d53daca579842ba_1144x911.png",
+      "bytes": 223913,
+      "sha256": "922c4d0cef96c63a5eaaeae42676903da047756f5894dd025ca7b277317dc871",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-v2-render.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/11/5/63e84580cf8448118c68af4247120826_1439x720.png",
+      "original_asset_name": "63e84580cf8448118c68af4247120826_1439x720.png",
+      "bytes": 190450,
+      "sha256": "0501834347b1c2f5a122df6854abcf0e8d426b4922418a63bccd670cef73e940",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "a2-sensors-and-side-batteries.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/15/3b5038934b954b6bb760d154f2633968_2424x1673.png",
+      "original_asset_name": "3b5038934b954b6bb760d154f2633968_2424x1673.png",
+      "bytes": 409433,
+      "sha256": "d0b174d014ae9373ababbc6fefd3ce0017c64f2fc3ee11e64adc87cda8e2cae5",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-v1-render.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/46446a892dee47b1a1c7084b0891600a_4000x2001.png",
+      "original_asset_name": "46446a892dee47b1a1c7084b0891600a_4000x2001.png",
+      "bytes": 1357238,
+      "sha256": "6bccba7cb2e25cc26263d36de6f11aa80d02e7c0b4029c373070f0e8ba6e1023",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "about-a2-assets/46efaf402a926404.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/4/13/bf7caef4e4984a9488dc112f5c8310d2_2744x1790.png",
+      "original_asset_name": "bf7caef4e4984a9488dc112f5c8310d2_2744x1790.png",
+      "bytes": 1872082,
+      "sha256": "54d3420fbc67384675e9842b3c834c7101098ccf4e54598da0fe03a8b583c883",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "about-a2-assets/7bde4a88cfedb82d.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/15/bd2abc135fd8440296b6572852cd67f1_1920x1160.png",
+      "original_asset_name": "bd2abc135fd8440296b6572852cd67f1_1920x1160.png",
+      "bytes": 1627705,
+      "sha256": "7b5af8f2da9d3cf180eba85af3224a3ef219135163a99e8bfd3f43c8d0b8c406",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "about-a2-assets/31910ff34db394c7.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/4/13/8b41537fde8b46fab8514c8a27e2cd9e_2723x1781.png",
+      "original_asset_name": "8b41537fde8b46fab8514c8a27e2cd9e_2723x1781.png",
+      "bytes": 2188843,
+      "sha256": "1e8f1de30c9d6b9d66eebd16a030863f77f7ec5428f8d5d4e3245b48cc49a26a",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-v1-dimensions.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/37f7483d7b9e446997fe5d8d77cf4e53_1250x864.png",
+      "original_asset_name": "37f7483d7b9e446997fe5d8d77cf4e53_1250x864.png",
+      "bytes": 97092,
+      "sha256": "13ea2a1b3f01039e5e22f61e9021491cf3eb908cd998897a8be865fd4edf5185",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "a2-with-dock-v2.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/11/5/8ac8c85706f94dad8ed7df4ebc15c40f_1439x720.png",
+      "original_asset_name": "8ac8c85706f94dad8ed7df4ebc15c40f_1439x720.png",
+      "bytes": 298296,
+      "sha256": "1dd186c6ae057b435c6f0fa9874d37c6e3a6e081f70333fd0417c1d4c7d36eac",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-v2-rear-dimensions.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/11/5/aa8c661f2ab84103b90d34c9bad690f2_1024x314.png",
+      "original_asset_name": "aa8c661f2ab84103b90d34c9bad690f2_1024x314.png",
+      "bytes": 122296,
+      "sha256": "881eae3d331f58d655e8f2dd16bccc6441b43c35b82f5cd1d5f99ce2e1a58034",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-left-electrical-ports.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/dce9173d16dd4411b32ec5e8c339f78b_1520x280.png",
+      "original_asset_name": "dce9173d16dd4411b32ec5e8c339f78b_1520x280.png",
+      "bytes": 71516,
+      "sha256": "2cbc876f0d15b02f973869ec83fce5ddc65711f515b1d604982e643898b08ce5",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "a2-with-dock-v1.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/fd27f1d6dcae42779321d4c409ff38ce_4000x2001.png",
+      "original_asset_name": "fd27f1d6dcae42779321d4c409ff38ce_4000x2001.png",
+      "bytes": 2292255,
+      "sha256": "269390846cf7f0414abfafaee4e9d04ddb00a06c72cc3444fe5f57127af870d7",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-right-electrical-ports.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/05d4f7d7e8024352b0030d7ef21169ea_1610x280.png",
+      "original_asset_name": "05d4f7d7e8024352b0030d7ef21169ea_1610x280.png",
+      "bytes": 117128,
+      "sha256": "e4d9852c2ec5b96a0cac5a899362a42a417380e87228bcd875dcd6d9dd33a9d6",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "internal-hardware-block-diagram.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/1/5/73f8c10638104bc3a13bba7cd98caaaf_8192x4306.png",
+      "original_asset_name": "73f8c10638104bc3a13bba7cd98caaaf_8192x4306.png",
+      "bytes": 1408556,
+      "sha256": "e5621f8aad35de8bc806d6dc2ec0d3ab514316bc904f674cd79d412f0a562dde",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-v2-dimensions.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/11/5/d55b8293718c4bacbeeb434ee7c846d0_2352x1792.png",
+      "original_asset_name": "d55b8293718c4bacbeeb434ee7c846d0_2352x1792.png",
+      "bytes": 2752189,
+      "sha256": "700f129963c6126d5ab1c6a7121b4417b6eb3bac6fb138a429fac98cc5360420",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2"
+    },
+    {
+      "file": "dock-install-m6-nut-rail-interface.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/72f34a93906140ae9ad2afbc1538a351_1489x1217.png",
+      "original_asset_name": "72f34a93906140ae9ad2afbc1538a351_1489x1217.png",
+      "bytes": 551445,
+      "sha256": "99c0c14ef478abcfcc0dfcf68749a528f5aa023d2ecc730cfc4ec4b00e713275",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/d5f88e81dc02eace.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/0bec0d899ecf4bdeac1d9cc76c483043_1389x554.png",
+      "original_asset_name": "0bec0d899ecf4bdeac1d9cc76c483043_1389x554.png",
+      "bytes": 163301,
+      "sha256": "b6eb347761f5f9a1611cc5c8e5e87ea08cd553161eb7282b4918a7c61aeddfd7",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/0d3ab879575771e3.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/33e2bd9478d147119ef6ac6990d44f71_1433x1184.png",
+      "original_asset_name": "33e2bd9478d147119ef6ac6990d44f71_1433x1184.png",
+      "bytes": 652408,
+      "sha256": "9e74c02d3baaa3264c79afd64f4c97713fa6945701024810f965751aa266c700",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/5991a86a0979e364.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/127ca3bbebf34731b6efe89d76e9fc33_1484x1197.png",
+      "original_asset_name": "127ca3bbebf34731b6efe89d76e9fc33_1484x1197.png",
+      "bytes": 566853,
+      "sha256": "97cf47529d02e09479c0abcefc6ed3fe9080f2cef2cf92f4294e507c5ef9ce96",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/42fa5287b4cc1b38.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/b004de512fce4f7fb1e26de942ee01df_1364x1194.png",
+      "original_asset_name": "b004de512fce4f7fb1e26de942ee01df_1364x1194.png",
+      "bytes": 533285,
+      "sha256": "81ecad1934644370e0c941df3dcdb075145bfcd1428b4cd67a8f39b8ef39b581",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/3cecd78149131a34.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/b553722c229d47c6b6ad0e014d5b8502_888x775.png",
+      "original_asset_name": "b553722c229d47c6b6ad0e014d5b8502_888x775.png",
+      "bytes": 256871,
+      "sha256": "7e58742411e2df1036153c2bd62700b551fb8622c6c1bbbd1ce08594f086c479",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/78df3414c7bbecad.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/5b16795cadf0454580baaa408825daed_1520x1181.png",
+      "original_asset_name": "5b16795cadf0454580baaa408825daed_1520x1181.png",
+      "bytes": 658942,
+      "sha256": "d6a0ef4c454178b44f47291d2059669f5933121023270bd1adf3658933d32770",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/fa8a9595151fa1e2.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/60e4e469d5a54ac68348eed70dbaa945_1165x809.png",
+      "original_asset_name": "60e4e469d5a54ac68348eed70dbaa945_1165x809.png",
+      "bytes": 301515,
+      "sha256": "1d6f50256682bb7bb8a5da56bb6f209b1ba7d2e8628cf012e154fb6c243234f0",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/2d6782cbb62c876b.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/37ce5a54342d4cb88c4ffac1acb6838c_977x776.png",
+      "original_asset_name": "37ce5a54342d4cb88c4ffac1acb6838c_977x776.png",
+      "bytes": 260982,
+      "sha256": "c6fae6e97f28f5d8860a71d3c291e68de7f04b73723837a90e60868a2d23f240",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/8cbb0fb78b72ffd1.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/ec6faf84c4f947d7bba5a7345478eafe_1000x938.png",
+      "original_asset_name": "ec6faf84c4f947d7bba5a7345478eafe_1000x938.png",
+      "bytes": 182727,
+      "sha256": "0e844c5a9f23fd6931610dea675f2c5576b818fe063047dd94df7a4d97b2d517",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/83494d8b0ead49da.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/df89db5c596a4bbc980f321ad0c493c3_980x918.png",
+      "original_asset_name": "df89db5c596a4bbc980f321ad0c493c3_980x918.png",
+      "bytes": 305914,
+      "sha256": "46085def24bf53bfda4afe3aef3b70f621a6d1fb64041c143e1459acb81322fb",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "dock-installation-assets/f36fc04df6b758b3.png",
+      "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/40b54d1c9bf54b9c8578c9abe64d9b8e_680x1145.png",
+      "original_asset_name": "40b54d1c9bf54b9c8578c9abe64d9b8e_680x1145.png",
+      "bytes": 283532,
+      "sha256": "dff6340755c0b81c02c257f28260f8c4cd93d4825166b107ff6bb47c00b03595",
+      "origin_page": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+    },
+    {
+      "file": "about-a2-source.txt",
+      "source_url": "https://doc-cdn.unitree.com/26/1071/en/26_1071_en",
+      "bytes": 30166,
+      "sha256": "4965017bf1a8872d3ed3393c89cf7028108cd3cf094e1cb98da833e38ec15309"
+    },
+    {
+      "file": "dock-installation-source.txt",
+      "source_url": "https://doc-cdn.unitree.com/26/1424/en/26_1424_en",
+      "bytes": 3876,
+      "sha256": "6ac469515032ebd3d242928a38c89d21d3fc8eb8e5539973acf4874d29fbfd41"
+    },
+    {
+      "file": "a2-manual.html",
+      "source_url": "https://marketing.unitree.com/article/en/A2/User_Manual.html",
+      "bytes": 6633,
+      "sha256": "2f1bd672b5282f1c6eb1d24402f49eb365da9ac78cad20b7eceaf4296ad27c63"
+    },
+    {
+      "file": "a2-product.html",
+      "source_url": "https://www.unitree.com/A2/",
+      "bytes": 66960,
+      "sha256": "9800a0f179889f93932c58aae91607447f269581a2af097b7f116d8869dffa3b"
+    }
+  ]
+}

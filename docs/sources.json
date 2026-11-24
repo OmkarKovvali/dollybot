@@ -1,0 +1,240 @@
+{
+  "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+  "sources": [
+    {
+      "url": "https://kino.ai/docs",
+      "path": "kino/guides/overview.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 77672,
+      "sha256": "fa9598680bda2755f9d8d826ed5f9c3d6cb90055655be291c5bf7691d90dc415",
+      "readable_path": "kino/guides/overview.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api",
+      "path": "kino/guides/api.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 59601,
+      "sha256": "cafebcf26e1b0bb26e49b1fe0258e549447ecfafec82856e15029179f3fd0981",
+      "readable_path": "kino/guides/api.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api/create-import",
+      "path": "kino/guides/api/create-import.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 65021,
+      "sha256": "ad4fa80f3bc7c3df1edbdfed58b102bd5fc95784f937ef8c739cacf8bb38145b",
+      "readable_path": "kino/guides/api/create-import.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api/frame-io",
+      "path": "kino/guides/api/frame-io.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 53468,
+      "sha256": "804809240eef7a3116924282803b6258c0ed9d0c42c8afb5aa063b3c473900a7",
+      "readable_path": "kino/guides/api/frame-io.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api/get-import",
+      "path": "kino/guides/api/get-import.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 62872,
+      "sha256": "1e3357c575d591665d0eeeaaf0acfcb2d29e372b638313642dea5a094a185220",
+      "readable_path": "kino/guides/api/get-import.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api/shade",
+      "path": "kino/guides/api/shade.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 52587,
+      "sha256": "5e41aebecb0adba12a06e82fa0d3e2c82ace79ebf3034a932675b0c9b301866f",
+      "readable_path": "kino/guides/api/shade.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/brand-matching",
+      "path": "kino/guides/brand-matching.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 58914,
+      "sha256": "faa4354171a07a8c6ca81a8b6855258c61910e453bcf9e6f5a199d3d6c260517",
+      "readable_path": "kino/guides/brand-matching.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/chat",
+      "path": "kino/guides/chat.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 63111,
+      "sha256": "39372ad376e1cd7b870d939c0b8fb1709361d4f7d933be19cb1c86c464db5958",
+      "readable_path": "kino/guides/chat.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/chat/claude-code",
+      "path": "kino/guides/chat/claude-code.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 50882,
+      "sha256": "0b31da6a2dd0fea33d5f09b095f06e63ef9a06d2ca33ff2408912b1730f5d88c",
+      "readable_path": "kino/guides/chat/claude-code.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/chat/codex",
+      "path": "kino/guides/chat/codex.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 50632,
+      "sha256": "42d1856a3d48302f72276925456cefce2134f57829b233d3d11f2df5c407a604",
+      "readable_path": "kino/guides/chat/codex.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/chat/kino-chat",
+      "path": "kino/guides/chat/kino-chat.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 55626,
+      "sha256": "04ff1829b02b0e039598efb2148365112f009378ce9b15d9341760678285d23e",
+      "readable_path": "kino/guides/chat/kino-chat.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/cloud-agents",
+      "path": "kino/guides/cloud-agents.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 61521,
+      "sha256": "78fd3130e1b07da250968c2c7ceb911c6d141249ea9ae623fa36feb3a2ec9486",
+      "readable_path": "kino/guides/cloud-agents.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/custom-panels",
+      "path": "kino/guides/custom-panels.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 74400,
+      "sha256": "18e6cb8c23bb103ea34dbd58f773fbaee75f02edcccbe9ab9c1396ae7d4c178e",
+      "readable_path": "kino/guides/custom-panels.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/edit-with-agents",
+      "path": "kino/guides/edit-with-agents.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 57845,
+      "sha256": "748ae1f6e2dab1e0e528ed0a6d7bdcededa279efca9b42e3b253556df2431d4c",
+      "readable_path": "kino/guides/edit-with-agents.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/grade-iphone-footage",
+      "path": "kino/guides/grade-iphone-footage.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 90605,
+      "sha256": "b6b65521c8e43b47b7677439a5218ef4602a3c234709efa47b6a5db624913340",
+      "readable_path": "kino/guides/grade-iphone-footage.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/headless",
+      "path": "kino/guides/headless.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 55979,
+      "sha256": "19a18dd649b4e0befa69346f8aac77707c73f0194cba7ae1ab05950f69474e3e",
+      "readable_path": "kino/guides/headless.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/import-from-other-editors",
+      "path": "kino/guides/import-from-other-editors.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 65197,
+      "sha256": "931f7c68d8bcfaf08f2c5f94a7151d4df7e17e83be6222901f45079c833b9b27",
+      "readable_path": "kino/guides/import-from-other-editors.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/keyboard-shortcuts",
+      "path": "kino/guides/keyboard-shortcuts.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 235572,
+      "sha256": "795b6f4069ff6ead4741124f52c807f14367ef93ecb30d75bb4306ad39397bcd",
+      "readable_path": "kino/guides/keyboard-shortcuts.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/kino-for-editors",
+      "path": "kino/guides/kino-for-editors.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 79556,
+      "sha256": "fa0350c32dbe58c7045d7c883d083017cf134b99db1d127d12c5e7747077489f",
+      "readable_path": "kino/guides/kino-for-editors.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/mcp",
+      "path": "kino/guides/mcp.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 69082,
+      "sha256": "1cffa53c13e8b559acbb7e76b75a6685415afd9d4fb27116f03ed88cd25cd39c",
+      "readable_path": "kino/guides/mcp.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/prompting",
+      "path": "kino/guides/prompting.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 60438,
+      "sha256": "f492dff4acfc3e3e1fdae3fd681047f6dc6cf3389d502f3ab5bdc6fd35a7f805",
+      "readable_path": "kino/guides/prompting.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/storage",
+      "path": "kino/guides/storage.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 90574,
+      "sha256": "27ae7d64d9d210f75092dbaa0a8de8246f6f3d48d0f0e0d1fa9228946e4e01ab",
+      "readable_path": "kino/guides/storage.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/team",
+      "path": "kino/guides/team.html",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 114324,
+      "sha256": "e6732f49fbc4e20d86afbc4e871726b1553e61581c18c904067abb729e9d46b8",
+      "readable_path": "kino/guides/team.txt"
+    },
+    {
+      "url": "https://kino.ai/docs/api/llms.txt",
+      "path": "kino/api/llms.txt",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 1015,
+      "sha256": "2d263a80496deee99fad78b91dee4a95f3c0f5885948ab8f9f75051f1b1f35cf"
+    },
+    {
+      "url": "https://kino.ai/docs/api/llms-full.txt",
+      "path": "kino/api/llms-full.txt",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 9921,
+      "sha256": "078935e9cd356982b0a867e2609a7d98deb5d0733fe45d1b7851321134145f69"
+    },
+    {
+      "url": "https://kino.ai/docs/api/openapi.json",
+      "path": "kino/api/openapi.json",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 6158,
+      "sha256": "e4c67773bf4ce7a69912e0c690b0cec4c77aae7475ec029ba1eccdd47e86ebb0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/main/i2rt/flow_base/README.md",
+      "path": "i2rt/flow-base-README.md",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 39567,
+      "sha256": "c0ef68f746aab1b13d0b297c2c775a54c0681c63f5f89b84b040f820bfa665e6"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/main/i2rt/flow_base/flow_base_client.py",
+      "path": "i2rt/flow_base_client.py",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 9241,
+      "sha256": "f5d565ce68e044c980ea60df0bb47ab87679f8f9d5fe6dc5545b79a2c1a4ea42"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/main/LICENSE",
+      "path": "i2rt/LICENSE",
+      "fetched_at_utc": "2026-11-23T02:14:45.282747+00:00",
+      "bytes": 1073,
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891"
+    },
+    {
+      "url": "https://kino.ai/changelog",
+      "path": "kino/changelog.html",
+      "readable_path": "kino/changelog.txt",
+      "fetched_at_utc": "2026-11-23T02:46:20.159965+00:00",
+      "bytes": 234166,
+      "sha256": "860f41de936b78549b82bc77da3d4710bc39970dad8501b1126c477200a9b33f"
+    }
+  ],
+  "errors": []
+}

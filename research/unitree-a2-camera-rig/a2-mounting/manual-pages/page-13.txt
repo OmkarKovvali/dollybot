@@ -1,0 +1,57 @@
+AC power |
+100-240V. USB Charger Ct
+
+o sc | Eeeap et
+
+Oo
+USB-Type C Cable
+
+2
+
+‘SELECT Fi
+
+1) We recommend you to use a 5V/2A USB charger which meets FCC/CE standard.
+
+2) Ensure that handheld remote control is switched off before charging it.
+
+3) The power indicator light will flash at 1Hz (1 second/time) in charging status and indicate the current
+power level.
+
+4) When the power indicator light is all on it means the battery pack is full, please remove the charger to
+
+finish charging.
+Charging Indicator Light
+LED1 LED2 LED3 LED4 Current Battery
+
+O: O O O 0%-25%
+25%-50%
+50%-75%
+
+75%-100%
+
+Oo: oO oO 2
+oO: OO: 2
+O: O: 0: O
+0:0; O O
+
+Full Charged
+
+Instructions for use
+
+Operation Environment Requirement
+
+1) This product is intended to be used in industrial, commercial and other similar scenarios.
+
+2) Run the robot in -20°C -55 °C with good weather condition. Do not operate in bad weather, such as
+lightning and tornado weather. When operating in water, the users need to be sure to comply with the
+requirements described in the IP67 Protection level instructions.
+
+3) Please keep it under control in the users’ view when using the robot and keep the robot maintain a safe
+distance of at least 2 meters from obstacles, complex ground, crowds, water, and other objects.
+
+4) Please do not run the robot in an electromagnetic interference environment. Sources of electromagnetic
+interference include but are not limited to: high-voltage power lines, high-voltage transmission stations, mobile
+
+phone base stations, and television broadcast towers.
+
+©2025. All rights reserved, Unitree Robotics 12

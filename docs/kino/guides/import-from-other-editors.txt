@@ -1,0 +1,46 @@
+Source: https://kino.ai/docs/import-from-other-editors
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Import from DaVinci, Premiere and more
+
+Beta. Importing from other editors isn’t yet up to our standards to call ready for production. Kino rebuilds the timeline and relinks your media, but the first import leaves gaps, so expect to ask your agent in chat to fill in many of them before the project matches the original. Tell us what you import, and what breaks, in our Slack community.
+
+Kino opens projects from these apps. It reads the project, relinks your media and rebuilds the timeline.
+
+DaVinci Resolve
+
+.drp project
+
+Premiere Pro
+
+.prproj project
+
+Final Cut Pro
+
+.fcpbundle library
+
+CapCut
+
+Draft folder
+
+After Effects
+
+.aep or .aepx project
+
+Start an import
+
+In the desktop app, open Settings → Migrate, or click Import from another editor in the Home sidebar.
+
+Kino scans your computer and attached drives and lists every project it finds. Select the projects you want and click Import.
+
+If a project isn’t listed, drop its file or folder onto the dialog, or click Open project or library. After Effects projects are never listed, so open them this way. In the browser, drop or choose a project file instead.
+
+To put new media in a bin, turn on Add new media to bin and name it.
+
+Handle the long tail of issues
+
+Kino’s chat will triage and resolve issues once the initial import lands.
+
+Export to another editor
+
+Open Settings → Migrate → Export from Kino, choose a project and click Export… to pick Resolve, Premiere Pro or After Effects. You can also ask chat to export it. Extract the downloaded ZIP, open the project in your editor and relink the original media.

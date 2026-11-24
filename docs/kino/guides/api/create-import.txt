@@ -1,0 +1,78 @@
+Source: https://kino.ai/docs/api/create-import
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+POSTStart an import
+
+POST /api/v1/bins/{bin_id}/assets/import
+
+Copy
+
+Queue a copy of one file from an HTTPS URL into the bin assigned to your organization API key. The key needs the imports:write scope.
+
+Request
+
+All four fields are required.
+
+- bin_id in the path. UUID of the media bin assigned to your key.
+
+- Idempotency-Key in the header. A unique key for this submission. Use 1–128 letters, digits, periods, underscores, colons or hyphens.
+
+- name in the JSON body. File name with extension, up to 255 characters.
+
+- source_url in the JSON body. Direct HTTPS download URL accessible over the public internet, up to 8,192 characters. URLs must use the default HTTPS port and cannot contain embedded credentials.
+
+curl --fail-with-body -sS -i "https://kino.ai/api/v1/bins/${KINO_BIN_ID}/assets/import" \
+  -H "Authorization: Bearer ${KINO_API_KEY}" \
+  -H "Idempotency-Key: shoot-042-camera-a-001" \
+  -H 'Content-Type: application/json' \
+  --data "$(jq -n --arg url "$SOURCE_URL" '{name:"A001.mov",source_url:$url}')"
+
+Copy
+
+Response
+
+202 Accepted means Kino queued the import. Follow the relative path in the Location header or status_url to check whether the original is ready. The response sets Retry-After: 5 for the first poll.
+
+{
+  "import_id": "4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "status_url": "/api/v1/imports/4d96ea4a-4ce0-4690-b706-82fa09de34e2"
+}
+
+Copy
+
+Retry a submission
+
+Use a new Idempotency-Key for each file submission. If a request times out or returns 503, retry with the same idempotency key, organization API key, bin, file name and URL. A replay returns the original import ID. Reusing the idempotency key for a different request in the same organization returns 409. For an expired source URL, submit a fresh URL with a new idempotency key.
+
+Preview limits
+
+The preview accepts four new imports per organization per rolling hour and up to 2 GiB per file. Imports can start within one hour of submission. Follow Retry-After after a 429.
+
+Errors
+
+Use error.code to handle a rejected request. For example, a 409 response has this body.
+
+{
+  "error": {
+    "code": "idempotency_conflict",
+    "message": "This key has already been used for a different request."
+  }
+}
+
+Copy
+
+- 400 · invalid_request, invalid_idempotency_key, or source_not_allowed. Check the JSON body, idempotency key or source URL.
+
+- 401 · invalid_api_key. Supply a valid organization API key.
+
+- 403 · scope_denied, preview_unavailable, cloud_transfer_required, or quota_exceeded. Check access to the bin and preview, and the organization's plan and usage limits.
+
+- 404 · bin_not_found. The destination media bin is unavailable.
+
+- 409 · idempotency_conflict. Reuse the original request or submit with a new idempotency key.
+
+- 413 · body_too_large. The JSON request exceeds 64 KiB.
+
+- 429 · import_limit. Wait for the time in Retry-After before retrying.
+
+- 503 · temporarily_unavailable. Retry with the same idempotency key.

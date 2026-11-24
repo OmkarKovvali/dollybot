@@ -1,0 +1,58 @@
+Additional Operating Instructions
+
+a) Joystick Control: After the companion remote controller enters Joystick Mode, you can control the
+
+robotic dog's movements via the joystick. While in joystick control mode, you may remove the remote
+
+controller from the waist belt for operation. To resume Companion Mode, reattach the remote controller to the
+
+waist belt before activating companion mode again.
+
+b) In Companion Mode, the device achieves following functionality based on the relative position
+
+between the remote controller and the robotic dog. Therefore, ensure the companion remote controller moves
+
+along with the wearer's torso. Do not hold it and wave it around arbitrarily.
+
+Companion Mode Precautions:
+
+@ Do not use in narrow indoor spaces or areas with dense metal reflective surfaces.
+
+@ Ensure that before entering or exiting Companion Mode, the button side faces to the right and the
+antenna points vertically upward.
+
+@ The maximum operating distance in Joystick Mode for the companion remote controller is
+approximately 15 meters.
+
+@ When Companion Mode is active, ensure the distance between the robotic dog and the remote
+controller does not exceed 2.4 meters. Excessive distance may cause signal interruption, loss of
+control, or other malfunctions.
+
+@ When Companion Mode is active, do not run quickly. Maintain a steady walking speed of no more
+than 2 m/s. Rapid movement can easily result in loss of remote control signals and loss of control
+over the robotic dog, leading to potential safety hazards.
+
+@ The optimal height difference between the companion remote controller and the robotic dog's head
+should be maintained between 0.2m and 0.5m, as shown in Figure 2.
+
+@ In Companion Mode, the optimal straight-line distance between the remote controller and the
+robotic dog's head is approximately 0.8 meters.
+
+@ In Companion Mode, the following function is achieved through the relative position of the remote
+controller and the robotic dog. Therefore, ensure the companion remote controller moves along with
+the wearer's torso. Do not hold it and wave it around arbitrarily.
+
+@ When walking, try to proceed on flat, open ground without obstacles to prevent the robotic dog
+from colliding with environmental obstacles during companion mode.
+
+@ Do not use the Companion function on special terrains such as stairs or steep slopes. Such
+
+environments are prone to rollovers, falls, and other issues that could damage the robotic dog.
+
+2) Use remote control to control
+
+First, briefly press the remote control power switch once, then press and hold the power switch for more
+
+than 2 seconds. When you hear a "beep" sound, the remote control is turned on. The remote control will
+
+©2025 All rights reserved, Unitree Robotics 17

@@ -1,0 +1,68 @@
+Source: https://kino.ai/docs/api/get-import
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+GETCheck an import
+
+GET /api/v1/imports/{import_id}
+
+Copy
+
+Set KINO_IMPORT_ID to the import_id from Start an import. The key needs the imports:read scope for the destination bin. A successful read returns 200 even if the import itself failed.
+
+curl --fail-with-body -sS "https://kino.ai/api/v1/imports/${KINO_IMPORT_ID}" \
+  -H "Authorization: Bearer ${KINO_API_KEY}"
+
+Copy
+
+Copy of the original
+
+ | Value | Meaning
+
+ | queued | Kino accepted the import and is waiting for a worker.
+
+ | copying | A worker is transferring the original.
+
+ | copied | The original is stored. The response includes asset_id and the current bin_id.
+
+ | failed | The original could not be copied. Read error.code for the reason.
+
+Processing in Kino
+
+After the copy, processing tracks Kino’s indexing workflow for the original. Playback preparation can finish separately.
+
+- pending. Kino is still indexing the file.
+
+- complete. Indexing finished.
+
+- failed. Indexing failed. The original is still stored.
+
+- not_applicable. The file needs no indexing or has been removed.
+
+Stop polling when the copy fails or processing reaches complete, failed, or not_applicable.
+
+The response includes asset_id once the original is stored. The current bin_id can be null if the asset is no longer in a bin or has been removed. When present, library_url is a relative link to the organization's media library.
+
+{
+  "import_id": "4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "transfer": "copied",
+  "asset_id": "web-import-4d96ea4a-4ce0-4690-b706-82fa09de34e2",
+  "bin_id": "b536b403-b165-4659-9982-8acfb2440083",
+  "library_url": "/org/studio?sidebar=media",
+  "processing": "pending"
+}
+
+Copy
+
+Errors
+
+- 401 · invalid_api_key. Supply a valid organization API key.
+
+- 403 · scope_denied. Check preview access, bin assignment and the imports:read scope.
+
+- 404 · import_not_found. Check the import ID and use a key assigned to the original destination bin.
+
+- 503 · temporarily_unavailable. Retry the status read with backoff.
+
+When a read returns 200 with transfer: "failed", inspect error.code. For example, source_unavailable means the download could not be opened. Check the source and submit a new import if you can supply a working URL.
+
+source_timeout means the original did not finish copying within 30 minutes. Use a faster download source before submitting a new import.

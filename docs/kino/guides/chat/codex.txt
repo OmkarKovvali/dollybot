@@ -1,0 +1,8 @@
+Source: https://kino.ai/docs/chat/codex
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Codex
+
+Use your ChatGPT plan’s included Codex usage in Kino. We recommend it if you already subscribe. See Codex plans and limits.
+
+In Kino desktop, open the chat’s agent picker and choose Use ChatGPT plan → Sign in with ChatGPT.

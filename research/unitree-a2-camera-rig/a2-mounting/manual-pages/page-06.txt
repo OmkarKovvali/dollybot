@@ -1,0 +1,33 @@
+Parts Name
+
+The main body of the A2 quadruped robot is as shown in the following diagram. Please refer to the actual
+
+product for accuracy.
+
+[ Snap Buckle ] [ Voice Intercom Microphone ]
+
+Can be used to install the
+companion module
+
+a), 0)
+ole e| 0° z e|o @ To GN] ~o
+9 °
+8
+=) Tu 6
+° °
+° ° 10.1
+: ; 18.1
+La]
+ae
+23.35 23. 35 Unit: mm
+
+39.31 67.25 54,.5038.94
+
+Note: The radar used here is based on lidar technology, which uses infrared emission, not radio wave
+
+emission.
+Q: @ A2 Standard Edition comes with 1 LiDAR as standard, while the A2 PRO version comes with 2 LiDARs as
+
+standard.
+
+©2025 All rights reserved, Unitree Robotics 5

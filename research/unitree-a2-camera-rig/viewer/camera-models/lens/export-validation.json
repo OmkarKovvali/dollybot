@@ -1,0 +1,18 @@
+{
+  "format": "GLB2.0",
+  "size_bytes": 2269408,
+  "meshes": 110,
+  "triangles": 120372,
+  "self_contained": true,
+  "decoder_required": false,
+  "bounds_and_radius_match_nominal": true,
+  "sha256": "71455e41de697a77b3197b1d0d89343e9893a8356e8c32bf696c5c9535153daf",
+  "sony_body_hash_unchanged": "491c60a2bb0ecb9597dc0f2247cb3623e21ea7bac1c312c48db843fc6c4cdcfd",
+  "stl_independent_clipped_max_x_mm": -20.77665821387246,
+  "conservative_front_clearance_mm": 7.161782317733753,
+  "visual_qa": [
+    "front-three-quarter",
+    "controls-side",
+    "front"
+  ]
+}

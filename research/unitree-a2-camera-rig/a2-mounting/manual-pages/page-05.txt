@@ -1,0 +1,48 @@
+9) Safety instructions for recovering to a standing position: Recovering to a standing position requires
+space for flipping. Ensure that there are no people or objects within a 2-meter-diameter circle around the robot
+dog. This is to prevent unnecessary personal injury, death, or property damage. Otherwise, Unitree Technology
+assumes no responsibility for any resulting losses or consequences
+
+10) When the battery level is low, promptly stop and shut down the robot. Remove the battery for charging
+to prevent the robot from losing power and falling, which could cause damage.
+
+11) When replacing the battery, the robot dog should remain stationary and not be subjected to external
+disturbances (such as kicking the robot or adding loads to it, etc.). After the battery replacement is complete
+(i.e., 3 seconds after the battery is fully inserted into the battery compartment), the robot can be used normally.
+
+12) When the robot is operating in single-battery mode or in dual-battery blue-light standby mode,
+exercise caution when performing vigorous movements (such as flips, rapid climbing, rapid descending, etc.),
+as such operations can significantly shorten the battery's lifespan.
+
+13) This device complies with Part 15 of the FCC Rules. Operation is subject to the following two
+conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference
+
+received, including interference that may cause undesired operation.
+
+This product is a consumer laser product.
+
+CLASS 1 LASER PRODUCT | AS ER
+CONSUMER LASER PRODUCT x 1
+
+EN 50689:2021
+
+IEC 1067/14
+
+Product Overview
+
+Introduction
+
+Unitree A2 Stellar Explorer is an agile, lightweight, and long-endurance industrial-grade quadruped robot.
+Its main body structure is constructed from aviation-grade aluminum alloy and high-strength engineering
+plastics, with a self-weight of only 42kg, yet it delivers robust load-bearing and mobility capabilities, reaching
+a maximum running speed of approximately 5m/s (extreme speed). All connection structures are made of
+6061-T6 aluminum alloy, with key components utilizing 7075-T6, enabling it to withstand impact from falls.
+Equipped with front and rear dual LIDAR, a high-definition camera, and fill lights, it achieves seamless,
+precise perception. Combined with intelligent algorithms, it easily handles complex scenarios such as logistics,
+inspection, and rescue operations. The standard configuration includes an 8-core high-performance CPU (for
+platform functions) and an Intel Core i7 processor (for user development), with an optional high-computing
+module available. With its medium-sized stature delivering powerful industrial-grade performance, it is an
+
+ideal choice for operations in extreme environments.
+
+©2025 Allrights reserved, Unitree Robotics 4

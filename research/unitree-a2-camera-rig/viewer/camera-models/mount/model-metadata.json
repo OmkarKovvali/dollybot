@@ -1,0 +1,102 @@
+{
+  "title": "INNOREL C19 low-profile mini ball head",
+  "amazon_asin": "B0CHB63882",
+  "model_role": "Detailed commercial mount visual reference; not manufacturer CAD, measured model or printable replacement.",
+  "camera_seating_plane_z_mm": 42.5,
+  "camera_seating_plane_height_status": "Provisional image-derived estimate; no independent OEM dimension found. Includes rubber pad, excludes stud.",
+  "total_height_including_stud_mm": 47.5,
+  "published_dimensions_mm": {
+    "overall_height_including_stud": 47.5,
+    "base_diameter": 30,
+    "ball_diameter": 19
+  },
+  "published_mass_g": 59,
+  "interfaces": {
+    "camera_top": "1/4-inch male screw (modeled as conventional1/4-20)",
+    "native_bottom": "3/8-inch female hole",
+    "installed_adapter": "Supplied 3/8 to1/4-inch reducer, modeled installed flush",
+    "bottom_axis_origin_mm": [
+      0,
+      0,
+      0
+    ],
+    "camera_axis_xy_mm": [
+      0,
+      0
+    ],
+    "estimated_exposed_stud_mm": 5,
+    "thread_engagement_depth_mm": null,
+    "adapter_flange_depth_status": "Unverified; depicted flush for visual assembly"
+  },
+  "coordinates": {
+    "units": "millimeters",
+    "up_axis": "Z",
+    "origin": "Bottom center on ball axis, nominal flat base Z0",
+    "knob_direction": "-Y",
+    "pose": "Ball upright, top platform level, no pan/tilt articulation animation",
+    "viewer_loading": {
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "bounds_mm": {
+    "min": [
+      -15.0,
+      -30.969999313354492,
+      0.0
+    ],
+    "max": [
+      15.0,
+      15.029999732971191,
+      47.5
+    ]
+  },
+  "mesh": {
+    "objects": 219,
+    "vertices": 35765,
+    "triangles": 70048,
+    "glb_position_vertices": 58778
+  },
+  "limits": [
+    "Only \u00d830 base, \u00d819 ball, total47.5 mm stud-tip height and59g are manufacturer-published dimensional/mass anchors.",
+    "Camera seating42.5 mm and5 mm exposed stud, platform/knob diameter, housing profiles, thread details, adapter seating and slot locations are inferred from photos.",
+    "Bottom thread and camera screw lengths must be physically checked; do not derive engagement depths from this visual mesh.",
+    "Rated3kg static marketing payload is not a robot dynamic-load qualification.",
+    "The lower base cannot be treated as a certified47.5 mm camera spacer:47.5 reaches the stud tip."
+  ],
+  "sources": [
+    {
+      "url": "https://innoreltech.com/products/cnc-metal-low-profile-mini-ballhead-innorel-c19",
+      "use": "Primary manufacturer product identity, mass, material, double U slots and threaded interfaces",
+      "local": "references/official-product.html"
+    },
+    {
+      "url": "https://innoreltech.com/cdn/shop/files/INNOREL-tripod-head-C19-specifications.jpg?v=1773826806&width=3840",
+      "use": "Primary graphic shows height arrow from bottom to stud tip; \u00d819 ball and \u00d830 base",
+      "local": "references/official-dimensions.jpg"
+    },
+    {
+      "url": "https://innoreltech.com/cdn/shop/files/INNOREL_C19_product_details.jpg?v=1773827645&width=3840",
+      "use": "Rubber pad, double U slots, main knob, bottom3/8 hole and3/8\u21921/4 reducer",
+      "local": "references/official-details.jpg"
+    },
+    {
+      "url": "https://www.amazon.com/dp/B0CHB63882",
+      "use": "User-selected purchase reference, no purchase performed"
+    }
+  ],
+  "files": {
+    "innorel-c19.glb": {
+      "bytes": 2048252,
+      "sha256": "3747b744d6962b20477f1953ba95635e78d59a16bebaf492a54737be178337a6"
+    }
+  }
+}

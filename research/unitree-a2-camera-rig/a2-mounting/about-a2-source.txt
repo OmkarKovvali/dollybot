@@ -1,0 +1,984 @@
+<style>
+table th:first-of-type {
+width: 10pt;
+}
+table th:nth-of-type(2) {
+width: 40pt;
+}
+table th:nth-of-type(3) {
+width: 75pt;
+}
+table th:nth-of-type(4) {
+width: 75pt;
+}
+table th:nth-of-type(5) {
+width: 75pt;
+}
+table th:nth-of-type(6) {
+width: 75pt;
+}
+table th:nth-of-type(7) {
+width: 65pt;
+}
+
+</style>
+
+<style>
+img[alt="1"]{
+width:800px;
+}
+</style>
+
+<style>
+img[alt="0"]{
+height:150px;
+}
+</style>
+
+<style>
+img[alt="6"]{
+height:60px;
+}
+</style>
+
+## Product List
+
+<div style="text-align:center;">
+<table borter="1">
+<tr>
+<th bgcolor="#D3D3D3" colspan="2"> Model</th>
+<th bgcolor="#D3D3D3" style="width: 40%;"> A2 </th>
+<th bgcolor="#D3D3D3" style="width: 40%;"> A2-Pro (Optional Industry Solutions)</th>
+</tr>
+<tr>
+<td colspan="2"> Rendering</th>
+  <td> <img src="https://www.unitree.com/images/7a002c56e39a47f49e154165f578df75_468x390.png"></td>
+  <td> <img src="https://doc-cdn.unitree.com/static/2026/6/25/df48b6f4729f49528be6abc9863426ae_468x390.png"></td>
+</tr>
+<tr>
+<td rowspan="10" style="width: 3%;">Mechanical Parameters</td>
+<td>Standing Size</td>
+<td>820mm x 440mm x 570mm</td>
+<td>820mm x 440mm x 570mm</td>
+</tr>
+<tr>
+<td>Folded Size</td>
+<td>720mm x 550mm x 220mm</td>
+<td>720mm x 550mm x 220mm</td>
+</tr>
+<tr>
+<td>Material</td>
+<td>Aluminum Alloy + High-strength Engineering Plastics</td>
+<td>Aluminum Alloy + High-strength Engineering Plastics</td>
+</tr>
+<tr>
+<td>Weight (without battery)</td>
+<td>Approx. 35kg</td>
+<td>Approx. 35kg</td>
+</tr>
+<tr>
+<td>Weight (with battery)</td>
+<td>Approx. 42kg</td>
+<td>Approx. 42kg</td>
+</tr>
+<tr>
+<td>Total DOF</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<tr>
+<td>Joint Output Bearing</td>
+<td>Industrial-grade Crossed Roller Bearing (High precision, High load capacity)</td>
+<td>Industrial-grade Crossed Roller Bearing (High precision, High load capacity)</td>
+</td>
+<tr>
+<td>Joint Motor</td>
+<td>Low-inertia High-speed Inner Rotor PMSM (Better response speed and heat dissipation)</td>
+<td>Low-inertia High-speed Inner Rotor PMSM (Better response speed and heat dissipation)</td>
+</tr>
+<tr>
+<td>Max Joint Torque</td>
+<td>Approx. 180 N.m</td>
+<td>Approx. 180 N.m</td>
+</tr>
+<tr>
+<td>Large Joint Motion Range</td>
+<td>Body: -58~58°
+
+
+
+Thigh: -134°~180°/-89°~225°
+
+
+
+Calf: -158°~-30°</td>
+<td>Body: -58~58°
+
+
+
+Thigh: -134°~180°/-89°~225°
+
+
+
+Calf: -158°~-30°</td>
+</tr>
+</tr>
+<tr>
+<td rowspan="15">Electrical Characteristics</td>
+<td>Supply Voltage</td>
+<td>50.4V</td>
+<td>50.4V</td>
+</tr>
+<tr>
+<td>Joint Encoder</td>
+<td>Dual Encoder</td>
+<td>Dual Encoder</td>
+</tr>
+<tr>
+<td>Cooling System</td>
+<td>Local Air Cooling</td>
+<td>Local Air Cooling</td>
+</tr>
+<tr>
+<td>Power Supply Mode</td>
+<td>Dual compartments, Dual batteries</td>
+<td>Dual compartments, Dual batteries</td>
+</tr>
+<tr>
+<td>Battery Capacity</td>
+<td>Single battery: 9000mAh (453.6Wh)
+
+
+
+Dual batteries: 18000mAh (907.2Wh)</td>
+<td>Single battery: 9000mAh (453.6Wh)
+
+
+
+Dual batteries: 18000mAh (907.2Wh)</td>
+</tr>
+<tr>
+<td>WiFi6, Bluetooth 5.2</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Speaker</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Microphone</td>
+<td>Array Microphone</td>
+<td>Array Microphone</td>
+</tr>
+<tr>
+<td>Lighting</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Wireless Vector Positioning Follow Module</td>
+<td>None (Optional)</td>
+<td>Extension (Optional)</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td>None (Optional)</td>
+<td>Extension (Optional)</td>
+</tr>
+<tr>
+<td>4G</td>
+<td>None (Optional)</td>
+<td>Extension (Optional)</td>
+</tr>
+<tr>
+<td>Perception Sensors</td>
+<td>LiDAR × 1 + HD Camera × 1</td>
+<td>LiDAR × 2 + HD Camera × 1</td>
+</tr>
+<tr>
+<td>Control and Computing Power</td>
+<td>Standard: 8-core High-performance CPU (Platform functions) + Intel Core i7 (User development)</td>
+<td>Standard: 8-core High-performance CPU (Platform functions) + Intel Core i7 (User development)
+
+
+
+Optional: High Computing Power Docking Station</td>
+</tr>
+<tr>
+<td>External Interfaces</td>
+<td>RS485x2
+
+
+
+CANx2
+
+
+
+Gigabit Ethernet x2
+
+
+
+USB3.0-TypeC (8-core CPU)x2
+
+
+
+USB3.0-TypeC x1+DPx1(Intel Core i7)
+
+
+
+Power Output: 12V; 24V; BAT;</td>
+<td>RS485x2
+
+
+
+CANx2
+
+
+
+Gigabit Ethernet x2
+
+
+
+USB3.0-TypeC (8-core CPU)x2
+
+
+
+USB3.0-TypeC x1+DPx1(Intel Core i7)
+
+
+
+Power Output: 12V; 24V; BAT;</td>
+</tr>
+<tr>
+<td rowspan="9">Performance Parameters</td>
+<td>Operating Temperature</td>
+<td>-20℃～55℃</td>
+<td>-20℃～55℃</td>
+</tr>
+<tr>
+<td>Endurance</td>
+<td>No load:
+
+
+
+Walking for 5+ hours, approx. 20km
+
+
+
+25kg load:
+
+
+
+Walking for 3+ hours, approx. 12.5km</td>
+<td>No load:
+
+
+
+Walking for 5+ hours, approx. 20km
+
+
+
+25kg load:
+
+
+
+Walking for 3+ hours, approx. 12.5km</td>
+</tr>
+<tr>
+<td>Limit Standing Load</td>
+<td>Approx. 100kg</td>
+<td>Approx. 100kg</td>
+</tr>
+<tr>
+<td>Continuous Walking Load</td>
+<td>Approx. 25kg</td>
+<td>Approx. 25kg</td>
+</tr>
+<tr>
+<td>Slope Climbing Ability</td>
+<td>Approx. 45°</td>
+<td>Approx. 45°</td>
+</tr>
+<tr>
+<td>Stair Climbing Ability</td>
+<td>Max step height: 30cm</td>
+<td>Max step height: 30cm</td>
+</tr>
+<tr>
+<td>Max Climbing Height</td>
+<td>Approx. 0.5m~1m</td>
+<td>Approx. 0.5m~1m</td>
+</tr>
+<tr>
+<td>Movement Speed</td>
+<td>0~3.7m/s (Limit approx. 5m/s)</td>
+<td>0~3.7m/s (Limit approx. 5m/s)</td>
+</tr>
+<tr>
+<td>Protection Level</td>
+<td>IP56</td>
+<td>IP56~IP67 (Core components IP67)</td>
+</tr>
+<tr>
+<td rowspan=3">Others</td>
+<td>Intelligent OTA Upgrade</td>
+<td>Continuous upgrades</td>
+<td>Continuous upgrades</td>
+</tr>
+<tr>
+<td>Secondary Development</td>
+<td>Supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Warranty Period</td>
+<td>1 Year</td>
+<td>1 Year</td>
+</tr>
+</table>
+</div>
+
+[1] For detailed functions, please refer to the Secondary Development Manual.
+
+[2] For more detailed warranty terms, please refer to the Product Warranty Manual.
+
+[3] The above configurations vary among different models/solutions. Please consult sales before purchasing.
+
+[4] The quadruped robot has a complex structure and extremely strong power. To ensure personal safety, please maintain a safe distance and operate with caution.
+
+[5] Product appearance may be upgraded or adjusted in the future. Please refer to the actual product at the time of delivery.
+
+[6] Some example functions on this page are still under development and testing, and will be opened to users gradually.
+
+[7] This product is a civilian robot product. Users are requested not to perform dangerous modifications or usage.
+
+[8] Please visit the Unitree official website for more product-related terms and policies, and comply with local laws and regulations.
+
+!!! note Diffrent between A2 and A2W
+
+A2 and A2 Wheel are diffrent product and cannot be transormed between. A2 cannot install wheeled leg, and A2W cannot install leg.
+
+!!!
+
+## Component Names
+
+![](https://doc-cdn.unitree.com/static/2025/12/25/ed15dcac633647c9ad91a9e2634ecec3_2467x1456.png)
+
+
+![](https://doc-cdn.unitree.com/static/2026/6/15/3b5038934b954b6bb760d154f2633968_2424x1673.png)
+
+
+
+!!! note Note:
+
+The A2 Standard Edition comes with 1 LiDAR as standard, while the A2 PRO version comes with 2 LiDARs as standard.
+
+!!!
+
+Back Load Mounting Hole Diagram (Unit: mm):
+
+
+![](https://doc-cdn.unitree.com/static/2026/1/26/f655b605d5b94006af34a9b46256cbbf_2609x1209.png)
+
+
+### Electrical Interfaces
+
+!!! warning Usage Instructions
+Please ensure you fully understand and are familiar with the characteristics of external aviation plug interfaces, and strictly adhere to the usage guidelines.
+
+Important Note:
+**Hot swapping is strictly prohibited** when using any aviation plug interface on this device!!
+Hot swapping may cause equipment failure, and such failures are not covered under warranty. Thank you for your cooperation and understanding!  
+!!!
+
+![](https://doc-cdn.unitree.com/static/2026/7/20/74452f58d1ec4f039f54194c433f026b_1365x447.jpg)
+
+| **No.** | <div style="width:80px">**Interface Type** </div> | **Interface Name** | **Interface Specification** |
+| --- | --- | --- | --- |
+| [1] | RS485 2+2 PIN Aviation Plug | Front-Left Leg Power Cable | 58V |
+| [2] | USB 2.0 Type-C | PC2 USB 2.0 Interface + DP | Max 20V 1A |
+| [3] | USB 3.0 Type-C | PC2 Standard USB Interface | Current limit 1A |
+| [4] | USB 3.0 Type-C | PC1 USB 3.0 Interface | Single current limit 2A |
+| [5] | USB 3.0 Type-C | PC1 USB 3.0 Interface | Single current limit 2A |
+| [6] | T568 8+2 PIN Aviation Plug | Switch 2 Network Port <br>192.168.124.0/24 | 1000 BASE-T +12V |
+| [7] | T568 8+2 PIN Aviation Plug | Switch 1 Network Port <br>192.168.123.0/24 | 1000 BASE-T +12V |
+| [8] | RS485 2+2 PIN Aviation Plug | Rear-Left Leg Power Cable | 58V |
+
+![](https://doc-cdn.unitree.com/static/2026/7/20/0d18c6bd5428436f9b1d434778d1445c_3177x1152.jpg)
+
+
+| **No.** | <div style="width:80px">**Interface Type**</div> | **Interface Name** | **Interface Specification** |
+| --- | --- | --- | --- |
+| [9] | RS485 2+2 PIN Aviation Plug | Rear-Right Leg Power Cable | 58V |
+| [10] | CAN 2+2 PIN Aviation Plug | Regulated Power Output | 24V 5A |
+| [11] | CAN 2+2 PIN Aviation Plug | Battery Power Output | Battery Voltage (58V) 10A |
+| [12] | 485 2+2 PIN Aviation Plug | Regulated Power Output | 12V 6A |
+| [13] | 485 2+2 PIN Aviation Plug | Regulated Power Output | 24V 6A |
+| [14] | RS485 2+2 PIN Aviation Plug | Front-Right Leg Power Cable | 58V 10A Max |
+
+!!! note Power Supply Current
+
+The ports labeled 24V share one output module, with a maximum total current of 6A.
+
+The ports labeled 12V share another output module, with a maximum total current of 6A.
+
+!!!
+
+#### Note on CAN and 485 Interfaces
+```
+sudo ls /dev/ttyACM*
+```
+You can use this command to check the CAN or 485 interfaces connected to your device via passthrough chips (USB-CAN/485). These two interfaces are connected to PC2. For specific connection methods, please refer to [internal devices](https://support.unitree.com/home/zh/A2_SDK_Development_Guide/about_a2#heading-16)
+
+The correspondence between device names and interfaces is as follows:  
+| Interface | Device |  
+| :--: | :--: |  
+| ttyACM0 | [12]485 |  
+| ttyACM1 | [10]CAN |  
+| ttyACM2 | [13]485 |  
+| ttyACM3 | [11]CAN |  
+
+You can also use this script to fully map the devices to native CAN/485 interfaces. Save it as a .sh file and run it with sudo privileges.  
+
+```bash
+#!/bin/bash  
+# Check for root privileges (required for writing to /etc and restarting services)  
+if [ "$EUID" -ne 0 ]; then  
+    echo "Please run this script with sudo."  
+    exit 1  
+fi  
+
+RULES_FILE="/etc/udev/rules.d/99-unitree-sc-port.rules"  
+echo "Checking for proper CAN/485 device handle configuration..."  
+
+# Check if the rules file exists  
+if [ -f "$RULES_FILE" ]; then  
+    echo "Rules file already exists. No reconfiguration needed."  
+    exit 0  
+else  
+    echo "No rules file detected. Creating one..."  
+    # Write the file using cat  
+    cat <<EOF > "$RULES_FILE"  
+# unitree USB port device - self bind  
+# ttyACM0 → /dev/ttyUN0  
+SUBSYSTEM=="tty", KERNELS=="1-3:1.0", MODE="0666", SYMLINK+="ttyUN0"  
+# ttyACM1 → /dev/can0  
+SUBSYSTEM=="tty", KERNELS=="1-3:1.2", MODE="0666", SYMLINK+="can0"  
+# ttyACM2 → /dev/ttyUN1  
+SUBSYSTEM=="tty", KERNELS=="1-5:1.0", MODE="0666", SYMLINK+="ttyUN1"  
+# ttyACM3 → /dev/can1  
+SUBSYSTEM=="tty", KERNELS=="1-5:1.2", MODE="0666", SYMLINK+="can1"  
+EOF  
+
+    echo "Reloading udev rules..."  
+    udevadm control --reload-rules  
+    udevadm trigger  
+    echo "Configuration complete."  
+fi  
+```
+
+### (2+2) Power Interface Definition
+
+<center>
+
+![](https://doc-cdn.unitree.com/static/2024/3/4/0953a73aeca14d93a69bc34ff3885ec4_1167x1084.png)
+
+</center>
+
+| <div style="width:100px">Pin No.</div> | <div style="width:100px">Cable Color</div> | <div style="width:200px">Electrical Definition</div> |
+| --- | --- | --- |
+| 1 | Black (14AWG) | Power- |
+| 2 | Red (24AWG) | 485A |
+| 3 | Black (24AWG) | 485B |
+| 4 | White (14AWG) | Power+ |
+
+### (8+2) Signal Interface Definition
+
+<center>
+
+![](https://doc-cdn.unitree.com/static/2024/3/4/cf6393326af44931b544e444fcc5365e_1167x1084.png)
+
+</center>
+
+| <div style="width:80px">Pin No.</div> | <div style="width:80px">Cable Color</div> | <div style="width:150px">Electrical Definition</div> | <div style="width:150px">T568 Standard Cable</div> |
+| --- | --- | --- | --- |
+| 1 | Black | Power- |  |
+| 2 | Orange | 4N | Brown |
+| 3 | Purple | 4P | White-Brown |
+| 4 | Brown | 1P | White-Orange |
+| 5 | Blue | 1N | Orange |
+| 6 | White | 3N | Blue |
+| 7 | Green | 3P | White-Blue |
+| 8 | Pink | 2N | Green |
+| 9 | Grey | 2P | White-Green |
+| 10 | Red | Power+(12V) |  |
+| / | Dark Blue | N/A |  |
+| / | Yellow | N/A |  |
+
+!!! note Note
+
+There are 12 wires in the 8+2 configuration; Dark Blue and Yellow have no assigned definition!
+
+!!!
+
+### Emergency Stop Pinout
+
+![](https://doc-cdn.unitree.com/static/2026/6/25/efb5519891ed4e3194301e009c493838_1268x468.png)
+
+As shown in the figure, the male connector is on the left and the female connector is on the right.
+
+| Pin | Color | Electrical Definition |
+| :--- | :--- | :--- |
+| 1 | Brown | / |
+| 2 | White | E-Stop |
+| 3 | Blue | . |
+| 4 | Black | E-Stop |
+
+> **Note: How to use the Emergency Stop**
+> The emergency stop is triggered when the two pins marked "E-Stop" are connected.
+
+### LiDAR
+
+The A2 is equipped with [Hesai JT128](https://www.hesaitech.com/en/product/jt128/) LiDAR at the head and tail, providing the robot with comprehensive environmental perception capabilities. Its point cloud frequency reaches up to 1,152,000 pts/s, with a detection range of up to 40m (max 60m) at 10% reflectivity. The field of view (FOV) is 360° x 189°, with a resolution of 0.4° (H) x 0.74° (V).
+In terms of reliability, the Hesai JT128 can adapt to high-temperature operation, mechanical and gravel impacts, salt spray, and other harsh environments, making it the ideal partner for A2 in industrial applications. 
+
+The coordinate system pose matrix of the front radar under the robot's baselink:  
+lidar2baselink_T: [0.33767, 0.0, 0.08134]  
+lidar2baselink_R: [0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]  
+
+The coordinate system pose matrix of the rear radar under the front radar (hesai_lidar):  
+behind2front_T: [0.0, 0.005997, -0.617643765]  
+behind2front_R: [-1, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, -1.0]
+
+[Lidar Firmware Upgrade Instructions](https://serviceconsole.unitree.com/#/help/032301)
+
+### Lighting
+
+The A2 head is equipped with a lighting lamp, which can be used for illumination and fill light.
+
+### Camera
+
+The A2 head is equipped with an optical camera providing HD image transmission and video, supporting a maximum resolution of 2568*1448 @ 15fps. The FOV is D153° H132° V77°.
+
+### Audio
+
+The A2 is equipped with a 5W speaker and a microphone array, allowing for effective broadcasting and communication.
+
+### Joint Index and Joint Limits
+
+| Leg and Joint Index: |
+| --- |
+| Leg 0: FR, Front Right Leg |
+| Leg 1: FL, Front Left Leg |
+| Leg 2: RR, Rear Right Leg |
+| Leg 3: RL, Rear Left Leg |
+| Joint 0: Hip, Hip Joint |
+| Joint 1: Thigh, Thigh Joint |
+| Joint 2: Calf, Calf Joint |
+| e.g., FR_thigh: Front Right Leg Thigh Joint |
+
+| Joint Limits: |
+| --- |
+| Hip Joint: -48°~48° |
+| Thigh Joint: Vertical is 0°, forward is positive. Rear leg: -260°~30°, Front leg: -200°~90° |
+| Calf Joint: -156°~-48° |
+
+
+### Coordinate system, joint rotation axis and joint zero point
+
+![](https://doc-cdn.unitree.com/static/2026/1/4/9713508820bb43679d53daca579842ba_1144x911.png)
+
+The rotation axis of the body joint is the x-axis, while the rotation axes of the thigh joint and calf joint are the y-axis, with the positive rotation direction following the right-hand rule.  
+
+When all joints are at zero degrees, the coordinate systems are as shown in the figure above. Red represents the x-axis, green the y-axis, and blue the z-axis. Due to mechanical limits, the calf joint cannot actually reach this position—this is only to indicate the zero position. It can be observed that the initial orientations of all joint coordinate systems are consistent, differing only in position and rotation axis.
+
+### Charging Pad Basic Information
+<center>
+<img src=https://doc-cdn.unitree.com/static/2026/4/13/bf7caef4e4984a9488dc112f5c8310d2_2744x1790.png width=50%>
+<img src=https://doc-cdn.unitree.com/static/2026/4/13/8b41537fde8b46fab8514c8a27e2cd9e_2723x1781.png width=50%>
+</center>
+
+Dimensions: 457mm*330mm*19.5mm  
+
+Output Voltage: 58.8V  
+
+Output Current: 7A  
+
+Output Power: 411.6W
+
+[Simplfied Model]()
+
+More Information: [here](https://support.unitree.com/home/en/A2_SDK_Development_Guide/a2_charge_pad)
+
+## Battery and Charger
+
+Battery Specifications
+
+| Specification | Parameter |
+| --- | --- |
+| Battery Model | BT3-02 |
+| Battery Weight | 3.3KG |
+| Battery Capacity | 9000mAh (453.6Wh) |
+| Standard Voltage | 50.4V |
+| Charging Limit Voltage | 58.8V |
+| Standard Discharge Current | 20A |
+| Maximum Discharge Current (Not Recommended) | 90A |
+| Maximum Continuous Discharge Current | 50A |
+| Waterproof Rating | IP67 |
+| Dimensions | 99.1 × 82.6 × 266.2 (mm) |
+| Standard Battery Operating Temp | Charging: 0℃~65℃ <br> Discharging: -20℃~70℃ |
+| Features | Dual compartments, hot-swappable |
+
+Charger Specifications
+
+| Specification | Parameter |
+| --- | --- |
+| Input Voltage Range | AC 100V~240V |
+| Input Current | Max AC 5A |
+| No-load Power Consumption | <2.0W |
+| Operating Environment Temp | -29℃~35℃ |
+| Storage Temperature | -40℃~75℃ |
+| Waterproof Rating | IP67 |
+| Output Voltage | DC 58.8V±0.3V |
+| Output Current | DC 7.0A ± 0.7A |
+
+## Companion Remote Controller
+
+![](https://doc-cdn.unitree.com/static/2026/6/15/bd2abc135fd8440296b6572852cd67f1_1920x1160.png)
+
+After installed the companion shows above, you can use the companion function of A2.
+
+Guide of companion functiuon of A2:
+
+[A2-Companion Remote ControlV1.0](https://marketing.unitree.com/article/en/A2/Companion_Remote_Control.html)
+
+## Docking Station
+
+The docking station is a default accessory for the A2 Pro, internally equipped with the Jetson Orin NX module. The specific parameters are as follows:
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Function</th>
+      <th>Specification</th>
+      <th>Parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">AI Performance</td>
+      <td>Sparse INT8 TOPS</td>
+      <td>100 TOPS</td>
+    </tr>
+    <tr>
+      <td>Dense INT8 TOPS</td>
+      <td>50 TOPS</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Ampere GPU</td>
+      <td>CUDA Cores</td>
+      <td>1024</td>
+    </tr>
+    <tr>
+      <td>Tensor Cores</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Max Operating Frequency</td>
+      <td>918 MHz</td>
+    </tr>
+    <tr>
+      <td>FP32 TFLOPS</td>
+      <td>1.88 TFLOPS</td>
+    </tr>
+    <tr>
+      <td>FP16 TFLOPS</td>
+      <td>3.76 TFLOPS</td>
+    </tr>
+    <tr>
+      <td>Supported Features</td>
+      <td>End-to-end lossless compression, Tile Caching, OpenGL 4.6, OpenGL ES</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Deep Learning Accelerator (DLA)</td>
+      <td>Number of DLAs</td>
+      <td>2x NVDLA</td>
+    </tr>
+    <tr>
+      <td>Max Operating Frequency</td>
+      <td>614 MHz</td>
+    </tr>
+    <tr>
+      <td>Sparse INT8 TOPS</td>
+      <td>40 TOPS</td>
+    </tr>
+    <tr>
+      <td rowspan="4">CPU</td>
+      <td>Core Count</td>
+      <td>8x Arm Cortex-A78AE v8.2</td>
+    </tr>
+    <tr>
+      <td>Max Operating Frequency</td>
+      <td>2.0 GHz</td>
+    </tr>
+    <tr>
+      <td>Cache</td>
+      <td>2x Clusters: (4x256KB L2 + 2MB L3) + 4MB LLC</td>
+    </tr>
+    <tr>
+      <td>Shared Cache</td>
+      <td>4 MB</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Memory</td>
+      <td>Capacity</td>
+      <td>16GB (2x8GB) LPDDR5</td>
+    </tr>
+    <tr>
+      <td>Bit Width</td>
+      <td>128-bit</td>
+    </tr>
+    <tr>
+      <td>Max Operating Frequency</td>
+      <td>3200 MHz</td>
+    </tr>
+    <tr>
+      <td>Peak Bandwidth</td>
+      <td>102 GB/s</td>
+    </tr>
+    <tr>
+      <td>Security Features</td>
+      <td>128-bit AES encryption, System MMU, TrustZone, OS protection regions</td>
+  </tr>
+    <tr>
+      <td rowspan="2">HD Video</td>
+      <td>Decode Support</td>
+      <td>H.265 (HEVC), H.264, VP9, AV1</td>
+    </tr>
+    <tr>
+      <td>Encode Support</td>
+      <td>H.265 (HEVC), H.264, AV1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Display Controller</td>
+      <td>Max Resolution</td>
+      <td>7680x4320 @ 30 Hz</td>
+    </tr>
+    <tr>
+      <td>PCLK</td>
+      <td>1080 MHz</td>
+    </tr>
+    <tr>
+      <td>Always-on Sensor Processing Engine</td>
+      <td>Core</td>
+      <td>Cortex-R5 subsystem, includes I-cache, D-cache, TCM interface</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td>Processor</td>
+      <td>Dedicated programmable audio processor (Arm Cortex-A9 with NEON)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Storage</td>
+      <td>Speed</td>
+      <td>PCIE3 x4</td>
+    </tr>
+    <tr>
+      <td>Max Capacity</td>
+      <td>2TB</td>
+    </tr>
+  </tbody>
+</table>
+
+### Docking Station Illustrations
+
+!!! tip "Notes on Docking Station Versions"
+
+There are currently two docking station versions: V1.0 and V2.0.
+    - The internal compute unit and interfaces are identical.
+    - The only difference lies in the antenna [installation method](https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation). V1.0 requires manual antenna installation, while V2.0 houses all antennas internally.
+    - Because internal storage space is required, the top cover dimensions differ. See the illustrations below.
+
+!!!
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/46446a892dee47b1a1c7084b0891600a_4000x2001.png)
+
+**V1.0 Docking Station Render**
+
+Antennas require separate installation
+
+</td>
+<td width="50%" align="center">
+
+![](https://doc-cdn.unitree.com/static/2026/11/5/63e84580cf8448118c68af4247120826_1439x720.png)
+
+
+**V2.0 Docking Station Render**
+
+Antennas are housed inside the docking station, within the raised section of the top cover
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/fd27f1d6dcae42779321d4c409ff38ce_4000x2001.png)
+
+**A2 Pro with Companion Base Station and V1.0 Docking Station**
+
+Flat top cover
+
+</td>
+<td width="50%" align="center">
+
+![](https://doc-cdn.unitree.com/static/2026/11/5/8ac8c85706f94dad8ed7df4ebc15c40f_1439x720.png)
+
+
+**A2 Pro with Companion Base Station and V2.0 Docking Station**
+
+Top cover is not flat; may be incompatible with payloads from previous versions
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" align="center">
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/37f7483d7b9e446997fe5d8d77cf4e53_1250x864.png)
+
+**V1.0 Docking Station Dimensions**
+
+Flat top cover
+
+</td>
+<td width="50%" align="center">
+
+
+![](https://doc-cdn.unitree.com/static/2026/11/5/d55b8293718c4bacbeeb434ee7c846d0_2352x1792.png)
+
+
+**V2.0 Docking Station Dimensions**
+
+Top cover is not flat; may be incompatible with payloads from previous versions.
+
+</td>
+</tr>
+</table>
+
+![](https://doc-cdn.unitree.com/static/2026/11/5/aa8c661f2ab84103b90d34c9bad690f2_1024x314.png)
+
+<center>V2.0 Dimensions (Rear View)</center>
+
+### Docking Station Module Parameters
+
+4G Module Parameters
+
+| Specification Item | China Version |
+| :--- | :--- |
+| **Communication Speed** | LTE-FDD: 150Mbps (DL) / 50Mbps (UL)<br>LTE-TDD: 130Mbps (DL) / 35Mbps (UL) |
+| **Main Frequency Bands** | LTE-FDD: B1, B3, B8<br>LTE-TDD: B38, B39, B40, B41<br>WCDMA: B1, B8<br>GSM: 900/1800MHz |
+| **Operating Temperature** | Operating Temperature: -35°C ~ +75°C<br>Extended Temperature: -40°C ~ +85°C |
+
+GNSS Module Parameters
+
+| Specification Item | Features and Description |
+| :--- | :--- |
+| **Receiving Frequency Bands** | GPS: L1 C/A<br>GLONASS: L1<br>BDS: B1I<br>QZSS: L1 C/A |
+| **Default Constellation** | GPS + BDS + QZSS |
+| **Concurrent Receiving Constellations** | 2 + QZSS |
+| **Channel Count** | 32 tracking channels |
+| **Horizontal Positioning Accuracy** | 2.0 m |
+| **Velocity Accuracy** | 0.1 m/s (without assistance) |
+| **Acceleration Accuracy** | 0.1 m/s² (without assistance) |
+| **Sensitivity (Default Constellation)** | Capture: -148 dBm<br>Tracking: -162 dBm<br>Recapture: -160 dBm |
+| **Dynamic Performance** | Max Altitude: 18000 m<br>Max Velocity: 515 m/s<br>Max Acceleration: 4g |
+
+Wi-Fi and Bluetooth Module Parameters
+
+| Specification Item | Features and Description |
+| :--- | :--- |
+| **Wi-Fi Standard** | IEEE 802.11a/b/g/n/ac/ax (Wi-Fi 6) |
+| **Bluetooth Version** | Bluetooth 5.2 |
+| **Operating Frequency Bands** | 2.4 GHz and 5 GHz Dual-band |
+
+### Docking Station Hardware Interfaces
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/05d4f7d7e8024352b0030d7ef21169ea_1610x280.png)
+
+| Interface Type | Meaning and Usage Instructions |
+| :--- | :--- |
+| 2+2 Waterproof Port (Port 1 in image) | Power: 36-60V external input<br>Signal: CAN<br>Usage: Input from A2 main unit VBAT port |
+| 2+2 Waterproof Port (Port 2 in image) | Power: Output from Port 1 voltage, current limit 2A<br>Signal: CAN<br>Usage: For external user usage. Output voltage depends on input voltage. When overcurrent protection is triggered, the port power locks itself; only supports restart to recover. |
+| 2+2 Waterproof Port (Port 3 in image) | Power: 24V/3A<br>Signal: 485<br>Usage: For external user usage. Single port triggers hiccup protection on overcurrent; when total current of Port 3 and Port 4 exceeds 5A, it triggers power self-locking protection; only supports restart to recover. |
+| 2+2 Waterproof Port (Port 4 in image) | Power: 24V/3A<br>Signal: 485<br>Usage: For external user usage. Single port triggers hiccup protection on overcurrent; when total current of Port 3 and Port 4 exceeds 5A, it triggers power self-locking protection; only supports restart to recover. |
+| TYPE-C Interface (Port 5 in image) | Power: 5V/1.5A<br>Signal: USB3.2 Gen1 |
+| TYPE-C Interface (Port 6 in image) | Power: 5V/1.5A<br>Signal: USB3.2 Gen1 |
+| TYPE-C Interface (Port 7 in image) | Power: Supports PD3.0 (current limit 3A)<br>Signal: USB3.2 Gen2, DP1.4 |
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/dce9173d16dd4411b32ec5e8c339f78b_1520x280.png)
+
+| Interface Type | Meaning and Usage Instructions |
+| :--- | :--- |
+| SIM Card Slot | Usage: NanoSIM card slot for internal 4G module use |
+| TYPE-C Interface (Port 1 in image) | Usage: This interface is not open to customers (SBUS port) |
+| TYPE-C Interface (Port 2 in image) | Power: 5V/1.5A<br>Signal: USB3.2 Gen1 |
+| 2+8 Waterproof Port (Port 3 in image) | Power: 12V/4.5A<br>Signal: Ethernet 2.5G<br>Usage: For external user usage. This network port supports PTP function. Single port triggers hiccup protection on overcurrent; when total current of Port 3 and Port 4 exceeds 5A, it triggers power self-locking protection; only supports restart to recover. IP segment: 192.168.124.0/24 |
+| 2+8 Waterproof Port (Port 4 in image) | Power: 12V/4.5A<br>Signal: Ethernet 2.5G<br>Usage: For external user usage. Port 4 and Port 5 share the same IP; this network port supports PTP function. Single port triggers hiccup protection on overcurrent; when total current of Port 3 and Port 4 exceeds 5A, it triggers power self-locking protection; only supports restart to recover. IP segment: 192.168.123.0/24 |
+| 2+8 Waterproof Port (Port 5 in image) | Power: /<br>Signal: Ethernet 1G<br>Usage: Port 4 and Port 5 share the same IP; Port 5 connects to A2 main unit. This port does not provide or input power. |
+
+### Antenna Box, GNSS, Companion, and Emergency Stop Module Installation
+
+For the installation method of the following modules, please refer to: [Installation Method of Docking Station and Its Modules](https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation)
+- Antenna Box
+- GNSS Module
+- Companion Station Module
+- Emergency Stop Module
+
+!!! note Using the Docking Station
+
+After the installation, you can refer to the [Docking Station User Manual](https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2_nx) for instructions on how to use and develop with the docking station.
+
+!!!
+
+## Internal Devices
+
+![](https://doc-cdn.unitree.com/static/2026/1/5/73f8c10638104bc3a13bba7cd98caaaf_8192x4306.png)
+
+<center>
+  Internal Hardware Diagram
+</center>
+
+!!! note Important Notes About Network Segments  
+Please note that the PC1 network interface (Ethernet 1) of A2 is connected to Switch 1 in the diagram, with the subnet `192.168.123.0/24`. In this subnet, you must also configure your device to the 123 subnet, and SDK development can only be performed within this subnet. Within this subnet, you can ping 192.168.123.161.  
+The PC2 network interface (Ethernet 2) is connected to Switch 2 in the diagram, with the subnet `192.168.124.0/24`. You must set your device to the 124 subnet to use it. In this subnet, you can only connect to the user development unit (192.168.124.162) and radar devices, but SDK development is NOT allowed here！
+
+!!!
+
+| **Device Name** | **Configuration** | **IP Address** | **Remarks** |
+| --- | --- | --- | --- |
+| Motion Control Computing Unit | 8 core high performance CPU [*] | 192.168.123.161 | Communication via PC1 port; SSH login not allowed |
+| User Development Unit | Intel Core i7 [*] | 192.168.123.162<br>192.168.124.162 | Communication via PC2 port; login allowed<br> Username: unitree <br> Password: Unitree#24226 or Unitree0408 |
+| Switch 1 | / | 192.168.123.0/24 | Accessed via PC1 port; DDS control signals communicate on this LAN |
+| Switch 2 | / | 192.168.124.0/24 | Accessed via PC2 port; LiDAR point cloud data communicates on this LAN |
+| Front LiDAR | Hesai JT128 | 192.168.124.20 | / |
+| Rear LiDAR | Hesai JT128 | 192.168.124.21 | / |
+
+> [*] Due to the changes in pruduction plan of some modules, the modules may be subtituted upon shipment. The version shipped shall prevail.
+
+
+## Motion Control & Load
+The A2 robot features a built-in Unitree motion control system that supports adaptive load adjustment. If the load is too heavy and causes the body to overheat easily, you can increase the body height.
+
+For using the built-in motion control system, please refer to: [A2 Operation Guide](https://support.unitree.com/home/en/A2_SDK_Development_Guide/a2_remote_control)
+

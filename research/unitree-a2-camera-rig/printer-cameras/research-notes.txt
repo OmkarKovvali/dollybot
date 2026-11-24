@@ -1,0 +1,56 @@
+CURRENT DESIGN UPDATE — 2026-11-23
+The current concept uses the V1 cover reference with a bottom-up stick bolt, replacing the earlier two-clamp bridge suggestion. New quick-release research is in ../v1-cover-update/quick-release/quick-release-recommendation.txt. Hardware specifications below remain source notes; concept recommendations below are superseded where they differ.
+
+PRINTER AND CAMERA ASSET RESEARCH
+Checked 2026-11-23. This is reference gathering, not a print-ready or load-rated design.
+
+USER-CONFIRMED EQUIPMENT
+Bambu Lab H2S (user clarified original H2X wording).
+Sony ZV-E1 with Sony FE PZ 16-35mm F4 G, SELP1635G (exact model confirmed; supersedes the earlier 18–50 mm description). Cage remains unconfirmed.
+Insta360 X6 8K Action Camera Essentials Bundle, black.
+
+BAMBU LAB H2S
+Official build volume: 340 W x 320 D x 340 H mm. Official spec-sheet PDF downloaded and page 1 visually inspected. Max nozzle 350 C; heated chamber max 65 C; shipped nozzle listed as 0.4 mm hardened steel. Nominal build volume is not a promise that a part filling it will slice with a brim/support/prime tower. For concept planning each concept module is targeted at no more than 280 x 280 mm, comfortably below the nominal XY envelope. This is a provisional print-envelope target, not a fixed part dimension. Do not use H2D/H2C limits for this user's H2S.
+Source: https://store.bblcdn.com/s7/default/3f91ec86de1a4ce28fe8fb660b95cd3e/h2s.pdf
+Secondary official corroboration: https://blog.bambulab.com/h2s-the-ultimate-single-nozzle-3d-printer-now-bigger-than-ever/
+Downloaded H2D/H2C files are retained only as discarded identification-branch references; not applicable to confirmed printer.
+
+SONY ZV-E1
+Official envelope (body): 121.0 W x 71.9 H x 54.3 D mm. Approximate mass 483 g with battery and SD card, before lens/cage/accessories. Official help guide identifies bottom 1/4-20 UNC tripod socket and requires screw shorter than 5.5 mm entering the camera. For an adapter, control screw projection beyond its camera-contact surface rather than confusing total bolt length with engagement. Do not turn 5.5 mm into a target: it is a strict upper limit, with engagement and fit to be checked physically. The bottom illustration is a part-identification drawing, not dimensioned manufacturing CAD. Preserve access to the battery door, side connectors and folding monitor, and room for the lens zoom envelope. No authoritative public STEP/CAD model or dimensioned tripod-socket XY datum drawing was located in this search.
+Sources:
+https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_specifications_ilc2310.html
+https://helpguide.sony.net/ilc/2310/v1/en/contents/221h_names_of_parts_ilc2310_bottom.html
+Full guide: https://helpguide.sony.net/ilc/2310/v1/en/print.pdf
+Relevant source PDF page: 43 (bottom socket/battery door). Saved PNG preview is visually checked.
+
+OPTIONAL CAMERA CAGE REFERENCE (NOT USER-OWNED/SELECTED)
+Official SmallRig 4257 cage-kit manual downloaded. It has useful multi-view line art and assembly illustrations: 1/4-20 threaded holes, ARRI 3/8-16 locating holes, Arca-Swiss base, bottom camera screw and side lock adapters. Published kit envelope 159.5 x 89.8 x 65.5 mm, mass 174 +/-5 g. This is a reference to a commercially made metal cage/quick-release strategy, not an OEM camera CAD substitute; exact clamp/dovetail dimensions still require measurement or a selected purchased interface. Do not assume the user owns 4257 or use its dimensions for bare ZV-E1 fit.
+Source: https://static.smallrig.com/mall/img/public/1719804343584_.pdf
+
+INSTA360 X6 AND THE BUNDLE STICK
+Official X6 size 50 W x 100 H x 40 D mm including lenses; body depth excluding lenses 26.4 mm. Approximate mass 196 g. Interfaces: 1/4-inch threaded mounting point plus magnetic/quick-release mounting point. Official public page does not supply thread engagement depth or a fully dimensioned base drawing. Use factory stick/camera interface; do not print the camera attachment thread.
+Sources:
+https://www.insta360.com/specs/x6
+https://onlinemanual.insta360.com/x5/en-us/specs/hardware (current manufacturer comparison includes X6; saved HTML)
+The official X6 Essentials Bundle (SKU 6922, Midnight Black, No microSD Card) includes a 114 cm Invisible Selfie Stick. Its embedded product data explicitly says two styles of stick can be supplied, so actual handle OD and usable clamp length remain measurement-required. Saved bundle HTML contains the complete manufacturer JSON-LD; only parsed product facts are saved separately below.
+Source: https://store.insta360.com/product/x6?c=6922
+An older manufacturer help-center comparison lists a 114 cm stick as aluminum, 233 mm retracted, 118 g. Those are useful provisional reference values but NOT verified dimensions/mass for this user's potentially revised bundle stick. No numerical handle diameter is approved for modeling. Confirm stick base female thread/engagement, grip OD at both clamp stations, removal of any soft sleeve, and straight rigid grip length before design. Keep camera aligned with stick axis to support stitching/invisibility.
+Sources:
+https://intercom.help/insta360support/en/articles/10398152-which-selfie-stick-suits-my-style
+https://onlinemanual.insta360.com/selfie-stick/en-us/operation-instructions/make-different-uypes-of-selfie-sticks-invisible
+
+DESIGN INPUTS TO CARRY FORWARD (ENGINEERING JUDGMENT, NOT MANUFACTURER CERTIFICATION)
+Use a low Sony mount on a common load-spreading robot deck; use a separately braced pole socket/paired clamp that transfers bending over two support heights. A long stick held only by one small axial screw is not the intended load path. Existing metal quick-release and camera screws are preferable interfaces for a printed adapter. Add a mechanical anti-rotation feature and captive hardware; use broad grip contact without crushing a telescoping section. Keep the pole near robot centerline as space allows. A bracket must not interfere with battery removal, lidar/camera sight lines, cooling, body handles or moving limbs; A2 source research owns those exact keep-outs.
+Use the Sony and X6 on their own batteries for initial concept. External power requires a separate verified A2 power-interface design; camera USB cannot be connected to an unspecified robot supply.
+No combined payload mass is final: 483 g body + 353 g confirmed lens + 196 g X6 + provisional 118 g stick = 1,150 g before cage, deck, mounting hardware and any battery changes. Re-weigh the actual rig; the old 118 g stick value may not apply. A 200 g camera at 1.14 m contributes approximately 2.24 N m under a transverse 1 g load, before stick weight and dynamic amplification; vertical self-weight alone is not this transverse case. Height/acceleration and pole base stiffness therefore matter even if overall payload is far below A2's headline payload.
+
+REQUIRED BEFORE CAD/PRINT RELEASE
+1. Lens is now confirmed: Sony SELP1635G, 353 g, maximum diameter80.5 mm and nominal length88.1 mm; length stays constant during zoom/focus. Confirm whether hood/filter will be installed. Official sources: https://www.sony.com/electronics/support/lenses-e-mount-lenses/selp1635g/specifications and https://www.sony-asia.com/lenses/products/selp1635g/feature1 .
+2. Existing cage/quick-release interface if any; otherwise choose the mount strategy.
+3. Bundle-stick style/model, grip OD(s), usable clamp zone, base thread/depth and actual mass.
+4. Intended stick height and angle, walking/running/stationary use, and vibration expectations.
+5. Physical rail/nut verification against OEM 213.00 mm crossrail spacing and supplied M6 thin hex nuts (bare rails confirmed). Source drawing: ../a2-mounting/guide-rail-drawing.png.
+6. H2S nozzle/material selection and final slice footprint including all brim/support clearance.
+
+ASSET STATUS / RIGHTS
+Original manufacturer PDFs/HTML are retained as research assets with source URLs and SHA-256 in download-manifest.json. No redistribution/modeling license is inferred from public accessibility. No adapter STL, STEP, mesh or print file has been created. HTML snapshots may require internet for linked images; PDF and PNG assets are self-contained.
