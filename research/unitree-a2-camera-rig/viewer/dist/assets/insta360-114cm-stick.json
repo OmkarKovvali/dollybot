@@ -1,0 +1,47 @@
+{
+  "name": "Insta360 114cm Invisible Selfie Stick, newer gold-band style",
+  "model": "../telescoping-stick.js",
+  "units": "mm",
+  "base_position_in_assembly_mm": [
+    78,
+    0,
+    34
+  ],
+  "tube_count": 7,
+  "moving_sections": 6,
+  "nominal_length_range_mm": [
+    233,
+    1140
+  ],
+  "published_dimension": "1140 mm nominal maximum",
+  "collapsed_length_status": "233 mm provisional; old product-family spec not verified for new6989",
+  "reference_notes": "../camera-models/stick/stick-reference-specs.json",
+  "tube_outside_diameters_mm": [
+    22,
+    19.6,
+    17.2,
+    14.8,
+    12.4,
+    10,
+    7.6
+  ],
+  "fixed_base_tube_length_mm": 205.2,
+  "inner_tube_length_mm": 198,
+  "grip_height_mm": 112,
+  "head_height_mm": 18,
+  "stud_height_mm": 5,
+  "camera_seat_height_rule": "nominal total length minus5 mm; published datum and actual exposed stud not measured",
+  "dimension_status": "all detailed dimensions are estimates except nominal maximum",
+  "kinematics": "six equally distributed sliding joints; physical tube lengths stay constant; independent actual stage positions may differ",
+  "verification": {
+    "checked_lengths_mm": [
+      233,
+      550,
+      1140
+    ],
+    "minimum_internal_overlap_mm": 46.0333333333,
+    "camera_contact_continuity": true,
+    "clamped_range": true
+  },
+  "source_sha256": "36cb07d510c7c4708959fd58ba87848e10e1aa213237833cbbe8d6ef47e40bad"
+}

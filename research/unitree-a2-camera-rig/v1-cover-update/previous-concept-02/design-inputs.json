@@ -1,0 +1,54 @@
+{
+  "stage": "asset collection and 2D concept; no adapter CAD",
+  "checked_on": "2026-11-23",
+  "user_confirmed": {
+    "robot": "Unitree A2, bare factory back rails; no expansion dock",
+    "printer": "Bambu Lab H2S",
+    "main_camera": "Sony ZV-E1",
+    "lens_focal_range_mm": [18, 50],
+    "lens_exact_model": null,
+    "camera_360": "Insta360 X6 Essentials Bundle Black"
+  },
+  "verified_reference_dimensions": {
+    "printer_build_volume_mm_XYZ": [340, 320, 340],
+    "rail_center_spacing_mm": 213.0,
+    "rail_slot_mouth_mm": 6.2,
+    "rail_channel_width_mm": 10.1,
+    "rail_outer_width_mm": 18.1,
+    "rail_lip_depth_mm": 2.8,
+    "rail_depth_to_floor_mm": 6.5,
+    "rail_attachment": "OEM supplied M6 hex nuts; nut thickness and custom bolt length unverified",
+    "sony_body_mm_WHD": [121, 71.9, 54.3],
+    "sony_mass_with_battery_card_g_excluding_lens": 483,
+    "sony_tripod_thread": "1/4-20 UNC",
+    "sony_screw_protrusion_mm": {"operator": "less than", "limit": 5.5},
+    "x6_mm_WHD_including_lenses": [50, 100, 40],
+    "x6_mass_g": 196,
+    "x6_bundle_stick_nominal_max_length_mm": 1140
+  },
+  "concept_proposals_not_manufacturing_dimensions": {
+    "max_print_module_footprint_mm_XY": [280, 280],
+    "camera_placement": "low near centerline; Sony forward of pole",
+    "pole_support": "two separated clamps on same rigid lower tube and brace",
+    "power": "independent camera batteries",
+    "side_battery_extraction": "preserve clearance; no side wrap"
+  },
+  "unresolved_physical_inputs": [
+    "Actual rail revision, usable length, nut-entry access, nut thickness and slot fit",
+    "Custom fastener stack, engagement, rail floor clearance, torque and rail allowable moment",
+    "Exact lens model, mass, zoom envelope, hood/filter and cage/quick-release",
+    "Actual stick style, grip diameter at both clamp locations, rigid length, mass and base interface",
+    "Intended pole working extension, angle, robot motion and recording stability expectations",
+    "Complete rig mass/center of gravity, sensor and limb clearances",
+    "Print material, wall/rib geometry, layer orientation and retention validation"
+  ],
+  "geometry_sources": {
+    "a2_package_commit": "cdf67e6eb4c98d73202f29a25e3d098e2aa3b247",
+    "a2_package_commit_date": "2026-06-09",
+    "a2_mesh_commit": "29cc27f7578e010165042e1fe45cc18f3a4dd2ca",
+    "a2_mesh_commit_date": "2026-01-04",
+    "stl_scale_to_mm": 1000,
+    "mount_source": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2",
+    "attachment_source": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation"
+  }
+}

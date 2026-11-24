@@ -1,0 +1,37 @@
+automatically connect once powered on. After successfully connecting with the A2, the right DL indicator
+light will illuminate, which means the remote control is connected to the A2's data transmission module. At
+this point, you can choose to use the control commands on the remote control overlay to make the robot dog
+
+perform corresponding actions.
+
+DL indicator light is on
+
+Short press and long press for more than 2 seconds
+
+“2 @ Please control according to the remote control commands indicated on the remote control overlay.
+
+Switching off A2
+
+Before shutting down, ensure the robot is standing on flat ground and is in a static standing state (the
+robot's body position is at the initial state after powering on and standing up, with the body level, no joystick
+input, and in a static standing posture).
+
+1) Press the L2+A buttons twice. The robot will complete joint locking and lying down actions in
+sequence.
+
+2) After the robot enters the lying-down state, shut down one of the batteries by pressing the power button
+briefly once, then pressing and holding the power button for more than 3 seconds.
+
+After shutdown, arrange the robot’s upper legs, lower legs, and hip joint positions according to the body
+placement requirements to prepare for the next startup. If the A2 will not be used for an extended period,
+
+promptly remove the battery pack.
+
+Ay @ Please make sure that the robot turned off in a damping state, otherwise the robot will fall heavily on the
+ground after it is turn down and powered off, which may cause damage to the robot body and certain potential
+hidden dangers!
+
+@ Be careful to avoid pinching your hands at the moving joints. Please proceed with caution!
+
+© 2025. All rights reserved, Unitree Robotics 18
+

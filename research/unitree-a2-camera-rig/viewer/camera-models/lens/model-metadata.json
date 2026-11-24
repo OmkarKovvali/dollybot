@@ -1,0 +1,192 @@
+{
+  "title": "Sony FE PZ 16-35mm F4 G",
+  "model": "SELP1635G",
+  "created": "2026-11-23",
+  "provenance": "Original procedural visual reconstruction from official Sony specification and reference photos. Not manufacturer CAD or a measured scan.",
+  "verified_specs": {
+    "maximum_diameter_mm": 80.5,
+    "length_mm": 88.1,
+    "mass_g": 353,
+    "filter_diameter_mm": 72,
+    "mount": "Sony E",
+    "focal_length_mm": [
+      16,
+      35
+    ],
+    "maximum_aperture_f": 4,
+    "length_constant_while_focusing_and_zooming": true
+  },
+  "coordinates": {
+    "units": "millimeters",
+    "up_axis": "Z",
+    "optical_axis_direction": [
+      -1,
+      0,
+      0
+    ],
+    "origin": "rear flange mounting plane and optical axis; X0,Y0,Z0",
+    "gltf_note": "Intentional viewer-native mm/Z-up, no meter scaling or axis conversion."
+  },
+  "bounds_mm": {
+    "min": [
+      -88.0999984741211,
+      -40.25,
+      -40.25
+    ],
+    "max": [
+      1.9627307779046532e-08,
+      40.25,
+      40.25
+    ]
+  },
+  "max_radial_mm": 40.250001899146945,
+  "axial_profile_visual_estimate_mm": [
+    [
+      0,
+      29.7
+    ],
+    [
+      -1.2,
+      30.3
+    ],
+    [
+      -2,
+      30.5
+    ],
+    [
+      -12,
+      30.5
+    ],
+    [
+      -13,
+      31.0
+    ],
+    [
+      -21.8,
+      36.5
+    ],
+    [
+      -22.8,
+      36.8
+    ],
+    [
+      -31.4,
+      36.8
+    ],
+    [
+      -32,
+      36.65
+    ],
+    [
+      -51.4,
+      36.65
+    ],
+    [
+      -53,
+      37.6
+    ],
+    [
+      -67.6,
+      37.6
+    ],
+    [
+      -69,
+      39.7
+    ],
+    [
+      -78.8,
+      39.7
+    ],
+    [
+      -80,
+      39.2
+    ],
+    [
+      -87.6,
+      39.2
+    ],
+    [
+      -88.1,
+      38.7
+    ]
+  ],
+  "lens_state": {
+    "hood_installed": false,
+    "front_cap_installed": false,
+    "rear_cap_installed": false,
+    "internal_bayonet_protrusions_modeled": false
+  },
+  "fit_metric": {
+    "method": "Exact triangle clipping against local horizontal plane, retaining vertices and edge-plane intersections. Conservative sufficient nonintersection condition with entire cover minimum X.",
+    "plane_local_z_mm": -35.86041180505664,
+    "max_local_x_at_or_below_plane_mm": -20.776657104492188,
+    "proposed_camera_hole_x_mm": -112,
+    "body_flange_local_x_mm": -24.724525213241577,
+    "cover_min_x_mm": -150.3394,
+    "max_world_x_below_cover_top_mm": -157.50118231773376,
+    "conservative_front_clearance_mm": 7.161782317733753,
+    "validity": "Only for this photo-estimated geometry and proposed pose; not a physical fit guarantee."
+  },
+  "assembly_attachment": {
+    "body_flange_local_mm": [
+      -24.724525213241577,
+      0,
+      35.86041180505664
+    ],
+    "rotation_radians": [
+      0,
+      0,
+      0
+    ],
+    "scale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "limitations": [
+    "Verified overall diameter and nominal length; detailed axial stations and control locations estimated from official photos.",
+    "Mounting flange is a placement datum, not validated bayonet geometry.",
+    "No optical prescription, mechanical tolerances, printability or physical clearance validation.",
+    "Sony body tripod XY remains unverified.",
+    "Hood and caps intentionally omitted."
+  ],
+  "sources": [
+    {
+      "url": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/selp1635g/specifications",
+      "use": "verified dimensions, mass, filter and model specs"
+    },
+    {
+      "url": "https://www.sony-asia.com/lenses/products/selp1635g/feature1",
+      "use": "constant length, three control rings and power-zoom controls"
+    },
+    {
+      "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/Dimensions-image-2?fmt=png-alpha&wid=1600",
+      "local": "references/official-dimensions.png",
+      "use": "profile and side controls"
+    },
+    {
+      "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/m-feature-5-21?fmt=png-alpha&wid=1600",
+      "local": "references/official-three-rings.png",
+      "use": "detailed ring and control appearance"
+    }
+  ],
+  "mesh": {
+    "objects": 110,
+    "triangles": 120372
+  },
+  "exports": [
+    "sony-selp1635g.glb",
+    "sony-selp1635g.stl"
+  ],
+  "files": {
+    "sony-selp1635g.glb": {
+      "bytes": 2269408,
+      "sha256": "71455e41de697a77b3197b1d0d89343e9893a8356e8c32bf696c5c9535153daf"
+    },
+    "sony-selp1635g.stl": {
+      "bytes": 6018684,
+      "sha256": "98b63864795f1d745905d9423772b02722b789ed6584c181ffa8ec9820d38b7a"
+    }
+  }
+}

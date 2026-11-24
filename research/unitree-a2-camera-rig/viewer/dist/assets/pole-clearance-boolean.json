@@ -1,0 +1,15 @@
+{
+  "method": "OpenCASCADE intersection of actual candidate robot solids with vertical radius23mm cylinder; conservative/tessellated bounds of resulting clipped solids",
+  "pole_center_normalized_xy_mm": [
+    78,
+    0
+  ],
+  "footprint_radius_mm": 23,
+  "intersected_source_volume_tags": [
+    10
+  ],
+  "highest_clipped_body_z_upper_estimate_mm": 4.712865757956479,
+  "clearance_from_cover_bottom_z0_mm": -4.712865757956479,
+  "clearance_from_boss_bottom_z20_mm": 15.287134242043521,
+  "limitation": "Approximate bounds of simplified CAD; no proof of assembly access or physical tolerance."
+}

@@ -1,0 +1,40 @@
+{
+  "removed_old_minus_new": {
+    "solid_count": 1,
+    "volume_mm3": 1343938.401989262,
+    "bbox": [
+      [
+        -150.53067177568983,
+        -116.3105579603626,
+        -0.5390497815009588,
+        150.5998878935022,
+        116.31046671093942,
+        34.58506200520106
+      ]
+    ]
+  },
+  "added_new_minus_old": {
+    "solid_count": 2,
+    "volume_mm3": 1344380.8330252902,
+    "bbox": [
+      [
+        -150.53067177568983,
+        -116.3105579603626,
+        -0.5390497815009588,
+        150.5998878935022,
+        116.31046671093942,
+        34.58506200520106
+      ],
+      [
+        -142.6473308941181,
+        -71.88257796029085,
+        30.99704283762479,
+        142.64753331877347,
+        71.8825684147677,
+        34.002947054334314
+      ]
+    ]
+  },
+  "validation_status": "inconclusive; not used for export acceptance",
+  "reason": "Near-coincident trimmed-surface difference returned whole-body results despite overlapping geometric probes; these Boolean difference outputs are not a reliable material delta. Export validation uses source-coordinate bounds, groove sections, valid BREP, closed nondegenerate mesh and separately checked registered-robot intersections."
+}

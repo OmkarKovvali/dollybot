@@ -1,5 +1,9 @@
-# Working on dollybot
+# Working on Dollybot
 
-Read README.md and fetch origin/main before editing. Your assignment is the active entry in coordination/board.json on origin/main matching your branch and the owner named by your human. If it is absent, ambiguous, already implemented, or needs another owner's files, report that to the coordinator and wait for an updated assignment. Use a separate branch and working directory per active agent.
+Read README.md and fetch origin/main before editing. Start new work from current main on a short personal branch (Omkar uses `o/`). Use a separate worktree for concurrent agents and coordinate changes to shared interfaces directly.
 
-Keep edits within your listed paths. Run the card's acceptance check and the local scope check in the README. Hand off the branch, exact commit and results in one PR. The human coordinator owns board updates and merges. Report any check requiring physical hardware as pending until someone runs it.
+Keep commits focused, with short lowercase messages. Run `make check` before pushing code changes. Only merge or push to main when the user asks. No assignment board is required.
+
+Keep downloaded references under docs/kino, docs/i2rt, and research intact. Put runtime Python code under src/dollybot and simulator code under flowbase-sim. Never commit runtime credentials or captured clips.
+
+Distinguish simulation, automated tests, and physical hardware verification. Simulator commands are not hardware motion commands. Do not report a physical action as successful based solely on an API acknowledgement.

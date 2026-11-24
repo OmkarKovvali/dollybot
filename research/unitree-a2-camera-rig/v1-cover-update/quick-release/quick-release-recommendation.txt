@@ -1,0 +1,40 @@
+V1 COVER: COMMERCIAL CAMERA QUICK-RELEASE RESEARCH
+Checked 2026-11-23. No purchase or 3D model made.
+
+RECOMMENDED: FALCAM F38 MULTI-HOLE BASE & PLATE KIT F38B3404
+Manufacturer-listed assembled product envelope 53.4 x 38 x 20.8 mm; mass 51.7 g; 6061 aluminum. Select the Base & Plate Kit, not the plate-only option. The 3364 base alone is 53.4 x 38 x 13.5 mm / 36 g; matching non-slip camera plate is 3301. Push in to engage; press to release after disabling the secondary lock. Sliding/pushing the secondary control to the locked position blocks release-button depression. Manufacturer says align camera lens with the F38 button. Keep that control accessible and preserve its full sideways lock travel and push stroke. The base accepts F38-spec plates only: its Arca statement does not establish acceptance of arbitrary Arca camera plates. Price observed on Ulanzi kit page: USD36.99, informational only.
+Official kit source: https://www.ulanzi.com/collections/falcam-f38-quick-release-series/products/falcam-f38-multi-hole-quick-release-kit-f38b3404
+Official base-only source: https://www.ulanzi.com/collections/falcam-f38-quick-release-series/products/falcam-f38-multi-hole-quick-release-base-3364
+Official pack contents source: https://falcamstore.com/en-jp/products/f38-quick-release-multi-hole-kit
+Pack contains one non-slip camera plate, one multi-hole base, two 1/4-20 x 3/16 flat-head jackscrews, steel and nylon lock washers, and wrench. These included short jackscrews are not automatically suitable as the printed-cover through-bolts.
+
+F38 GEOMETRY / PRECISION LIMIT
+Manufacturer underside photo shows several 1/4-inch holes and a central convertible 1/4-to-3/8 interface. It supports a two-fastener or central-fastener-plus-locator design. No authoritative numeric hole-center coordinates, thread depths, bottom-flat datum, release stroke, or plate-to-camera screw projection were found. Those entries stay TBD, even though the overall product envelope is published. Do not scale the perspective photograph into a drill template. Do not freeze a printed recessed pocket around the 53.4 x 38 envelope without checking base corners, control sweep and camera removal path on the actual unit. Mount with two separated verified holes if practical, or one structural fastener plus a positive anti-rotation register; use a bearing washer/backer under the print. Captured camera screw must meet Sony's less-than-5.5-mm projection requirement. Verify the plate's full bearing footprint and battery-door clearance against the bare ZV-E1. The rubber pad resists slip but does not establish a positive anti-rotation pin engaging the Sony body. No dynamic robot-mounted load rating is claimed.
+Useful assets:
+assets/f38b3404-underside-mounting.webp
+assets/f38b3404-thread-interfaces-and-lens-orientation.webp
+assets/f38b3404-secondary-safety-lock.webp
+assets/f38b3404-manufacturer-specs-11.webp
+
+ALTERNATIVE: SMALLRIG 2144B ARCA-TYPE CLAMP + PLATE KIT
+Official published product dimensions 72 x 70 x 14 mm; net mass 177 g; aluminum alloy. Both clamp and camera plate are included. The lever's small adjustment screw tunes clamping tension for different Arca-type plates. The base has multiple 1/4-20 and 3/8-16 threads plus through mounting holes. Official manual page3 labels 12,15,23 and18 mm spacings in a perspective underside illustration; page6 repeats overall specifications. These callouts improve the reference quality but are not a complete tolerance/XY datum drawing. Don't assume which hole pair constitutes the cover mounting pattern without mapping the actual part. The page2 hardware-count table differs from the product-page listing; treat supplied screws as accessory inventory requiring inspection, not a final BOM. Official material reviewed does not demonstrate a separate safety interlock equivalent to the F38 sliding release lock. Keep the whole lever arc and adjustment screw reachable. The wider footprint and heavier mass are acceptable tradeoffs if broad Arca interoperability is preferred.
+Official product source: https://www.smallrig.com/smallrig-quick-release-clamp-and-plate-arca-type-compatible-2144.html?external_browser_redirect=true
+Official manual: https://static.smallrig.com/mall/img/public/8e9p9w36pjt-1751252498602_.pdf
+Useful assets: assets/smallrig-2144b-official-manual.pdf; previews/smallrig-manual-3.png; previews/smallrig-specifications.png.
+
+DO NOT SUBSTITUTE THESE F38 PART NUMBERS
+2268 is the original camera plate-and-base kit (50 x 38 x 15.9 mm,54 g); it is not multi-hole base3364. The separate original base2270/top plate2269 listings also must not be confused with3364/3301.
+F38B3404 is the multi-hole kit; 3364 is its base-only product; 3301 is the non-slip plate.
+Current DJI-oriented F38 V2 kit F38B5401 is a different long assembly: 129.8 x 49.8 x 26.6 mm,110 g, with POM rack/scale. Base-only variant F38B5416 is different again. The long gimbal assembly is unnecessary for this flat cover.
+Official old-kit source: https://www.ulanzi.com/collections/falcam-f38-quick-release-series/products/falcam-f38-camera-quick-release-plate-kit-2268
+Official V2 source: https://www.ulanzi.com/collections/new-arrivals/products/falcam-f38-quick-release-kit-v2-compatible-with-dji-f38b5401
+
+INSTA360 BOTTOM-UP THROUGH-BOLT INTERFACE
+User requested a metal 1/4-20 bolt passed upward through the printed cover into the stick bottom. Preserve that architecture. Official current stick storefront was downloaded; the Classic Black variant2141 product photo clearly shows a female threaded opening in the grip base. The current pure-black variant6989 has different imagery. Manufacturer primary text inspected did not establish the bottom hole pitch or allowable insertion depth for both supplied bundle styles. Do not turn the common camera-thread convention into an assumed engagement length. The saved legacy photo confirms the physical female-hole arrangement only. A secondary B&H answer explicitly describes CINSAAVF bottom as female1/4-20, but the project should still verify the user's supplied revision. Do not reuse Sony's5.5-mm limit for the pole.
+Primary: https://store.insta360.com/product/selfie_stick
+Primary Classic Black bottom photo: assets/insta360-stick-2141-view-9.png
+Secondary lead (not manufacturing authority): https://www.bhphotovideo.com/c/product/1823353-REG/insta360_cinsaavf_invisible_selfie_stick_44_9.html/ask-question
+For bolt selection, measure cover and washer/spacer stack, then choose screw length so exposed thread seats fully without bottoming in the actual pole. Keep a broad washer/load-spreading bearing surface and an accessible underside tool/head pocket. If a shallow grip register is used, size it from the physical stick and leave the telescoping tube unobstructed. Extension height and pole bending are separate from axial bolt fit; this research does not certify running or fully extended moving operation. The current manufacturer page describes this114cm stick for daily-life shooting, recommending its Action stick for high-intensity use.
+
+DOWNLOAD AND REVIEW STATUS
+SmallRig manual PDF and product HTML saved. Falcam/Ulanzi HTML downloads returned429; their page text was inspected through the web tool, and the associated official CDN product/reference images downloaded successfully. Do not label missing HTML as locally archived. Saved downloaded images were visually inspected and successful downloads have SHA-256 hashes in download-manifest.json. Manufacturer assets retain original copyright; no redistribution license inferred. Numeric fit-critical gaps remain explicitly unresolved for the CAD step.

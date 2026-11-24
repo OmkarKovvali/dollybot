@@ -1,0 +1,26 @@
+Source: https://kino.ai/docs/headless
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Hermes and headless agents
+
+Hermes Agent and other agents that live on a Linux server can run Kino there, with no display or GPU. Ask for an edit in Slack or Telegram, then open the project on your Mac.
+
+Install Kino
+
+Send your agent this message:
+
+Install the Kino desktop app from https://kino.ai/api/desktop-download/linux?source=agent and run sudo apt-get install xvfb xauth. Start Kino in the background so it keeps running after this session, with --remote-debugging-port=9222 so you can use its sign-in screen, and --password-store=basic if there's no keyring. Sign in to my Kino account with "Use an email code" and ask me for the code. Then connect to Kino's MCP server at http://127.0.0.1:45680/mcp and list my recent projects.
+
+Copy
+
+Ask for an edit
+
+Open @Launch Teaser in Kino, cut a 20-second teaser from the demo takes and send me the project link and an MP4.
+
+Copy
+
+If it doesn't work
+
+- Behind a proxy that needs a password: run a local relay proxy and start Kino with --proxy-server=127.0.0.1:<port>.
+
+- Running as root in a container: add --no-sandbox.

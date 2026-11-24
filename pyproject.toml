@@ -1,0 +1,13 @@
+[project]
+name = "dollybot"
+version = "0.1.0"
+description = "Local camera and motion control for Dollybot"
+requires-python = ">=3.12"
+dependencies = ["websockets==15.0.1"]
+
+[project.scripts]
+dollybot = "dollybot.cli:main"
+
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"

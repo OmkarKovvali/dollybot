@@ -1,0 +1,50 @@
+[
+  {
+    "name": "a2.xml",
+    "path": "robots/a2_description/a2.xml",
+    "sha": "fa3fd9e8286cac3716b9dfed3f8bfbd49abca3bb",
+    "size": 18213,
+    "url": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/a2.xml?ref=master",
+    "html_url": "https://github.com/unitreerobotics/unitree_ros/blob/master/robots/a2_description/a2.xml",
+    "git_url": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/blobs/fa3fd9e8286cac3716b9dfed3f8bfbd49abca3bb",
+    "download_url": "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/master/robots/a2_description/a2.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/a2.xml?ref=master",
+      "git": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/blobs/fa3fd9e8286cac3716b9dfed3f8bfbd49abca3bb",
+      "html": "https://github.com/unitreerobotics/unitree_ros/blob/master/robots/a2_description/a2.xml"
+    }
+  },
+  {
+    "name": "meshes",
+    "path": "robots/a2_description/meshes",
+    "sha": "a7421e5bacedbc1f39319e85020bbb70921d38c5",
+    "size": 0,
+    "url": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/meshes?ref=master",
+    "html_url": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/a2_description/meshes",
+    "git_url": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/trees/a7421e5bacedbc1f39319e85020bbb70921d38c5",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/meshes?ref=master",
+      "git": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/trees/a7421e5bacedbc1f39319e85020bbb70921d38c5",
+      "html": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/a2_description/meshes"
+    }
+  },
+  {
+    "name": "urdf",
+    "path": "robots/a2_description/urdf",
+    "sha": "7cd7bb4aa319f0b1e809622625f34180edacb2fd",
+    "size": 0,
+    "url": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/urdf?ref=master",
+    "html_url": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/a2_description/urdf",
+    "git_url": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/trees/7cd7bb4aa319f0b1e809622625f34180edacb2fd",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/unitreerobotics/unitree_ros/contents/robots/a2_description/urdf?ref=master",
+      "git": "https://api.github.com/repos/unitreerobotics/unitree_ros/git/trees/7cd7bb4aa319f0b1e809622625f34180edacb2fd",
+      "html": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/a2_description/urdf"
+    }
+  }
+]

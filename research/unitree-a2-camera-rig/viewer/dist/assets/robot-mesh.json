@@ -1,0 +1,89 @@
+{
+  "source": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/v1-cover-update/cover-research/unitree-a2-with-v1-docking-station.stp",
+  "source_sha256": "8d9c18644b78aff1f15c9c7639c02a253a2e952e29d464386808d3f2920b91be",
+  "mesh": "a2-robot.stl",
+  "mesh_sha256": "50fd95ff7329a99d6c774475c36fabf2d9a8c7fd9d3b30c43d8ddeb1177b1f91",
+  "units": "mm",
+  "triangle_count": 465674,
+  "vertex_count": 232831,
+  "bytes": 23283784,
+  "normalized_mesh_bounds_mm": {
+    "min": [
+      -392.4378572502574,
+      -229.00856553805366,
+      -558.3609259850354
+    ],
+    "max": [
+      442.4206133272722,
+      229.00844789069134,
+      39.6844257982101
+    ]
+  },
+  "registration": {
+    "assembly_dock_volume_tag": 9,
+    "assembly_volume_count": 48,
+    "robot_volume_count": 47,
+    "assembly_to_standalone_translation_mm": [
+      -78.7561082,
+      525.9531522999999,
+      -215.8551754
+    ],
+    "assembly_to_viewer_translation_mm": [
+      -5.183483525088818,
+      -0.05611781616164535,
+      -428.1513637544999
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "four_ear_center_registration_max_residual_mm": 1.4210854715202004e-14,
+    "asymmetric_housing_xy_bbox_residual_mm": 0.0002809446893934364,
+    "top_plane_z_residual_mm": 2.6643026984629614e-05,
+    "top_face_vertex_counts": [
+      2,
+      23
+    ],
+    "assembly_top_z_mm": 462.151372052527,
+    "standalone_top_z_mm": 246.2961700095,
+    "assembly_dock_volume_mm3": 1245339.1622654255,
+    "standalone_dock_volume_mm3": 1300719.82905397,
+    "note": "Registration uses four actual ear-hole circles, checked against asymmetric XY housing extents and top-plane height. Dock revisions have different volume and edge segmentation; internal geometry is not claimed identical."
+  },
+  "pole_footprint_clearance": {
+    "method": "Vertical ray intersection against the converted OEM robot mesh; 1-mm disk grid plus360 perimeter rays",
+    "pole_center_xy_mm": [
+      78,
+      0
+    ],
+    "footprint_radius_mm": 23,
+    "robot_top_at_center_z_mm": -0.3017816366452908,
+    "highest_sampled_robot_surface_xyz_mm": [
+      101,
+      0,
+      4.746234853889061
+    ],
+    "sample_count": 2013,
+    "clearance_from_cover_bottom_z0_mm": -4.746234853889061,
+    "clearance_from_concept_boss_bottom_z20_mm": 15.25376514611094,
+    "clearance_from_cover_top_z34_mm": 29.25376514611094,
+    "limitations": [
+      "Sampled tessellation estimate; local small omitted geometry or unsampled peaks can differ.",
+      "Does not certify a collision-free insertion path, tool access, fastener head clearance, tolerance, flex or dynamic motion.",
+      "OEM simplified geometry and assembly revision must be physically checked; no robot disassembly performed."
+    ]
+  },
+  "notes": [
+    "Actual official A2 assembly with its dock volume excluded, not an invented robot shape.",
+    "Geometry preserved except rigid translation; no robot parts resized, rotated, or reshaped.",
+    "47 placed volume instances retained. Source contains45 BREP definitions; reused instances increase imported count.",
+    "Snapshot pose only; limb-motion clearance is not tested.",
+    "Coarse mesh pole-center roof differs from exact CAD by approximately0.079mm; exact CAD line/solid result supersedes sampled mesh value. No positive cover/robot overlap in the full static assembly."
+  ],
+  "exact_cad_collision_check": "cover-body-intersection.json",
+  "exact_robot_roof_at_pole_axis_z_mm": -0.3810785260860712,
+  "provisional_head_axis_clearance_mm": 20.88107852608607,
+  "front_direction_status": "unverified"
+}

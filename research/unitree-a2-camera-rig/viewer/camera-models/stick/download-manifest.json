@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://wassets.insta360.com/store/7a4da88baeee43e899521365135aaf57/%E9%A6%96%E5%9B%BE.png",
+    "filename": "stick-6989-view-1.png",
+    "bytes": 399527,
+    "sha256": "4ecb176fd727abcea7c82588ecbac4daa6dfb995351d40ba199027b71e84d75d"
+  },
+  {
+    "url": "https://wassets.insta360.com/store/d8325a4507d84a778c926a131fa6e343/03.png",
+    "filename": "stick-6989-view-2.png",
+    "bytes": 1587140,
+    "sha256": "f741009ab4009f28c5330e345149827a7179fc35f6a57ebfd1f43bc7b6109228"
+  },
+  {
+    "url": "https://wassets.insta360.com/store/c6acf9f0889940c8a121206eec806928/04.png",
+    "filename": "stick-6989-view-3.png",
+    "bytes": 186633,
+    "sha256": "ef85b41ba4fa6dc46f8eed699726de37e0e483b1b6d802daf0a0771d8bf2a022"
+  },
+  {
+    "url": "https://res.insta360.com/dynamic/store/9a25e53677c7b3ad02be0a6a42bfdacd/2141_1.png",
+    "filename": "stick-2141-view-1.png",
+    "bytes": 431002,
+    "sha256": "401023d2197ac7b0733876b3dede84d9ae8ba2aeb5a96ded2f3f006dd79dcd55"
+  },
+  {
+    "url": "https://res.insta360.com/static/ce3c35161de86e2c395596066db4fb6b/02.jpg",
+    "filename": "stick-2141-view-2.jpg",
+    "bytes": 1552374,
+    "sha256": "913c7905a5f8af92927468d355ee84f09eab241ba5cdc49168d8a0bea10a7d47"
+  },
+  {
+    "url": "https://res.insta360.com/static/256b9eefdcda81bd3083dae0f4d7417e/03.jpg",
+    "filename": "stick-2141-view-3.jpg",
+    "bytes": 2015783,
+    "sha256": "cb8be983f1f5584a33277daee29032fd4aed3590a0c1d316fa6b0020fe8f33ea"
+  },
+  {
+    "url": "https://res.insta360.com/static/37d92005a0e61823cebafbe16f689b30/04.jpg",
+    "filename": "stick-2141-view-4.jpg",
+    "bytes": 444334,
+    "sha256": "bd1b5b706f6526c2a6b12b31c06cb9f4964349f3e9c3708a6490a0340a6cb3cd"
+  },
+  {
+    "url": "https://res.insta360.com/static/78c8ab49cc99908f8470a5018025fef3/05.jpg",
+    "filename": "stick-2141-view-5.jpg",
+    "bytes": 2161461,
+    "sha256": "f6d9a29877f99e3fbd0f3cd4292f6ccb4d840d0e2f84913320aa81ffe17bf680"
+  },
+  {
+    "url": "https://res.insta360.com/static/fd151359a0bcc4bc49ab953eae261203/06.jpg",
+    "filename": "stick-2141-view-6.jpg",
+    "bytes": 747511,
+    "sha256": "a1f478f1e1be2422ca68eaf913c68ad3e8a228cb9bb58b7935dd21d8040b9e4a"
+  },
+  {
+    "url": "https://res.insta360.com/dynamic/store/ab52d61931651657d53d4cede509cb58/2141_4.png",
+    "filename": "stick-2141-view-7.png",
+    "bytes": 732273,
+    "sha256": "78b36bc07aa929de74d97a87807f8509b2b57adf78abb3b17f8991e35abdd02a"
+  },
+  {
+    "url": "https://res.insta360.com/dynamic/store/bcbc22411b6811df9ab7d6ab0158e909/2141_2.png",
+    "filename": "stick-2141-view-8.png",
+    "bytes": 178204,
+    "sha256": "231a056cfd7598d10b11e80747e9de5e65e1738c3cc2c448a790385d20f7e7c1"
+  },
+  {
+    "url": "https://res.insta360.com/dynamic/store/99e5238354610e5a6040e8015b9adb42/2141_3.png",
+    "filename": "stick-2141-view-9.png",
+    "bytes": 1472035,
+    "sha256": "632be5ad453839987d1c1398fe337702528df6ca9745fdeeac965bea0f709836"
+  }
+]

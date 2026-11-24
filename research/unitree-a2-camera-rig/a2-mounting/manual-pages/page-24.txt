@@ -1,0 +1,57 @@
+1) Whether the remote control rocker is in the middle position and whether the rocker enters
+Remote Control sand and other foreign matters.
+2) Check whether each key of the remote control is lagged.
+
+Uncharged checklist
+Type Main points
+
+1) Confirm whether the basic operation function of the rocker is normal.
+Remote control .
+2) Confirm whether the current power is sufficient
+
+Battery Confirm whether the current power is sufficient.
+
+Listen carefully with ears to confirm that the cooling fan works normally and there is no
+
+Cooling fan sound such as scratching.
+
+Battery pack maintenance
+
+1) Never charge the battery pack in an environment where the temperature is too high or too low
+
+2) Never store the battery pack at room temperatures above 40°C.
+
+3) Do not overcharge the battery pack as this will cause damage to the cells.
+
+4) If you do not use the battery for a longer period of time, please check the remaining battery power
+regularly, if the power is less than 30%, please charge the battery to 70% before continuing to store. So as not
+
+to over-discharge the battery and damage the battery.
+
+Q: @ It is recommended to do the above inspection before each use!
+
+@ If any parts are damaged and need to be replaced, please contact Unitree Robotics after-sales service in time!
+
+Interface_Sensors Description
+
+Network Interfaces & Services:
+
+Network Interface Network Service Description
+
+Save as signal server for webrtc
+WLAN Interface HTTP web service on port 9991. y . s v “
+connection
+
+BLE one to one link between a
+
+; Enable mobile app connection for
+BLE Interface mobile
+
+wlan network configuration
+and our robot.
+
+LoRaWAN One to one LoRaWan between our Enable remote controller connection
+
+Interface remote controller and our robot for controlling the robot.
+
+©2025 All rights reserved, Unitree Robotics 23

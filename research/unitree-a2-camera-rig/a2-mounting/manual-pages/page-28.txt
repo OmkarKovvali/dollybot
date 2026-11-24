@@ -1,0 +1,66 @@
+ANATEL Res. 680 RF warning sentence
+
+The equipment complies with radiation exposure limits set for an uncontrolled environment. To avoid the
+
+possibility of exceeding radio frequency exposure limits, human proximity to the antenna shall not be less than
+
+20 cm during normal operation. This transmitter must not be co-located or operated in conjunction with any
+
+other antenna or transmitter.
+
+Este equipamento nfo tem direito a protecéo contra interferéncia prejudicial e nao pode causar
+
+interferéncia em sistemas devidamente autorizados.
+
+ANATEL website:
+
+Para maiores informac6es, consulte o site da ANATEL http://www.gov.br/anatel/pt-br.
+
+Revision History
+
+Edition
+1.7
+1.6
+1.5
+1.4
+1.3
+1.2
+1.1
+
+1.0
+
+Date
+
+September 16, 2026
+June 16, 2026
+
+June 15, 2026
+
+May 26, 2026
+
+May 14, 2026
+April 27, 2026
+April 20, 2026
+
+December 24, 2025
+
+Modify Content
+
+Feature Highlights Chapter Update
+
+Add accompanying remote control usage content
+Add product warning language
+
+Parts name content update
+
+Added: "Laser Safety Class"
+
+Add content to "Specifications"
+
+Interface description content update
+
+Initial Version
+
+CCE FES
+
+©2025 All rights reserved, Unitree Robotics 27

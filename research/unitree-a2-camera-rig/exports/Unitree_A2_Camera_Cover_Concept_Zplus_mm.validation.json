@@ -1,0 +1,144 @@
+{
+  "file": "Unitree_A2_Camera_Cover_Concept_Zplus_mm.stl",
+  "source_mesh": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/viewer/dist/assets/flat-cover-concept.stl",
+  "source_brep_sha256": "3648ec10e923d711bbbfb451c8233478818345aaffeba4ab30ac98d1fe1e6008",
+  "sha256": "e5ebc771e724676f204454912064bfcb9c2b082016d35388635769b44f2fc37b",
+  "units_convention": "millimeters; STL has no embedded units",
+  "contents": "Printed cover only; no robot, cameras, stick, ballhead, screws or plates",
+  "orientation": {
+    "name": "Z+ upright",
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "translation_mm": [
+      0,
+      0,
+      0
+    ],
+    "bottom_z_mm": 0.0,
+    "note": "User-requested upright orientation; retain native underside and use slicer supports beneath raised underside/ears. STL contains geometry, not support or slicing settings."
+  },
+  "h2s_build_volume_mm": [
+    340,
+    320,
+    340
+  ],
+  "fits_h2s_build_volume": true,
+  "geometry": {
+    "triangles": 42360,
+    "vertices": 21170,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_winding_edges": 0,
+    "zero_area_triangles": 0,
+    "connected_surface_components": 1,
+    "signed_volume_mm3": 1341722.3468260276,
+    "bounds_mm": {
+      "min": [
+        -150.3394012451172,
+        -115.52059936523438,
+        0.0
+      ],
+      "max": [
+        150.33929443359375,
+        115.52059936523438,
+        34.000301361083984
+      ]
+    },
+    "dimensions_mm": [
+      300.67869567871094,
+      231.04119873046875,
+      34.000301361083984
+    ],
+    "mesh_sha256": "e5ebc771e724676f204454912064bfcb9c2b082016d35388635769b44f2fc37b"
+  },
+  "camera_hole_xy_mm": [
+    -48,
+    0
+  ],
+  "stick_hole_xy_mm": [
+    78,
+    0
+  ],
+  "through_hole_diameter_mm": 7,
+  "counterbore_diameter_mm": 12,
+  "counterbore_seat_z_mm": 27,
+  "top_seam_removed": true,
+  "robot_interference_check": {
+    "evidence_file": "flat-cover-body-intersection.json",
+    "evidence_sha256": "d42323497eba2e043c1dac7b3f5e8c9c3945c39d435f1239afae09ec2694c830",
+    "checked_brep_sha256": "3648ec10e923d711bbbfb451c8233478818345aaffeba4ab30ac98d1fe1e6008",
+    "robot_parts_screened": 47,
+    "positive_overlap_volume_mm3": 0,
+    "status": "no_positive_static_model_overlap",
+    "mount_axis_checks": [
+      {
+        "mount": "camera",
+        "xy_mm": [
+          -48,
+          0
+        ],
+        "method": "OpenCASCADE vertical line / robot solid intersection",
+        "robot_volume_candidates": [
+          10
+        ],
+        "occupied_line_segments_mm": [
+          [
+            [
+              -48.0,
+              0.0,
+              -155.43907139196278
+            ],
+            [
+              -48.0,
+              0.0,
+              -0.8752235390770693
+            ]
+          ]
+        ],
+        "robot_roof_z_mm": -0.8752235390770693,
+        "provisional_screw_head_bottom_z_mm": 20.5,
+        "provisional_head_axis_gap_mm": 21.37522353907707,
+        "head_note": "The 20.5-mm bottom assumes the previously illustrated 6.5-mm-high head below a z27 seat; actual screw dimensions still require confirmation."
+      },
+      {
+        "mount": "stick",
+        "xy_mm": [
+          78,
+          0
+        ],
+        "method": "OpenCASCADE vertical line / robot solid intersection",
+        "robot_volume_candidates": [
+          10
+        ],
+        "occupied_line_segments_mm": [
+          [
+            [
+              78.0,
+              0.0,
+              -158.09779972051217
+            ],
+            [
+              78.0,
+              0.0,
+              -0.3810785260860712
+            ]
+          ]
+        ],
+        "robot_roof_z_mm": -0.3810785260860712,
+        "provisional_screw_head_bottom_z_mm": 20.5,
+        "provisional_head_axis_gap_mm": 20.88107852608607,
+        "head_note": "The 20.5-mm bottom assumes the previously illustrated 6.5-mm-high head below a z27 seat; actual screw dimensions still require confirmation."
+      }
+    ],
+    "limitations": [
+      "Checks exact Boolean common volume of the supplied simplified CAD in its saved static pose, not the physical robot or movement envelope.",
+      "Zero positive volume does not certify a tolerance margin, structural capacity, fastener head envelope, or assembly/tool access.",
+      "Robot geometry below each mount axis can obstruct a straight driver from beneath while installed; mount the screw before fitting the carrier unless access is physically verified.",
+      "Robot front direction remains unverified; source orientation is preserved."
+    ]
+  },
+  "limits": "Geometry-only concept export; actual fastener fit, print settings, material strength and dynamic camera loads are not validated."
+}

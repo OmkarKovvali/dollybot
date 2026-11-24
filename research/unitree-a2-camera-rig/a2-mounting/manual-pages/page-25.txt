@@ -1,0 +1,76 @@
+UWBcapability for robot-side
+
+UWB
+
+positioning of users equipped with
+
+UWB receivers.
+
+The UWB system is configured with
+the base station on the robot and the
+handheld
+
+tag on the device,
+
+facilitating mutual data exchange.
+
+Environment Sensors:
+
+Sensor .
+Quantity
+Name
+
+Function description
+
+Sensing capabilities
+
+Microphone 1
+
+The function of
+microphone is to record the
+voice command of users to
+realize the functionality of
+
+voice control
+
+1.5 meters in circle.
+
+Two LiDAR sensors are
+
+Channels:128 Horizontal FOV: 360° x
+189°Ranging Capability:40m (at 10%
+
+; 1 (A2) ; reflectivity, all channels) Effective
+LiDAR installed at the front and
+2 (A2-PRO) Point Rate:single return is 1,152,000
+rear ends
+pts/s and dual return is 2,304,000
+pts/s.
+The speaker outputs
+Speaker 1 5 meters in circle
+
+sound externally.
+
+Company Information:
+
+YuShuTechnologyCo.,Ltd.
+
+306 Room, Building 1, 88 Dongliu Rd, Xixing Street, Binjiang District, Hangzhou, 310000 Zhejiang P.R.
+
+China.
+
+Industry Canada
+
+This device complies with Industry Canada licence-exempt RSS standard(s):
+
+Operation is subject to the following Two conditions:(1) this device may not cause interference, and (2)
+
+this device must accept any interference, including interference that may cause undesired operation of the
+
+device.
+
+Le présent appareil est conforme aux CNR d’Industrie Canada applicables aux
+
+© 2025
+
+All rights reserved, Unitree Robotics 24

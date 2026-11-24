@@ -1,0 +1,55 @@
+Operate your A2
+
+1) Use remote control to control
+
+Power on the A2 robotic dog. Once powered on successfully, the robotic dog will automatically stand up.
+You can then use the companion remote controller to operate it. The specific steps
+are as follows:
+
+Step 1: Start the Companion Remote Controller (Default: Joystick Mode)
+
+a) Briefly press the power button on the companion remote controller. When XA
+the indicator light stays steady, startup is complete. The robotic dog will issue a ih a
+corresponding voice prompt. At this point, the companion remote controller has - b
+been successfully connected to the robotic dog, defaulting to joystick mode. . ‘
+
+b) Use the joystick to control the movement of the robotic dog. w 4
+
+Step 2: Wear and Activate Companion Mode (Important step!) Figure |
+
+a) Attach the companion remote controller to the right side of your waist belt.
+Stand directly to the left of the robotic dog, ensuring that your body's orientation aligns with the robotic dog's
+facing direction. Refer to Figure 1 for the relative position diagram.
+
+b) When wearing it, ensure the side with the joystick faces to the
+right, pointing toward the robotic dog. Keep the antenna vertically al
+upright while wearing it on the right side of your waist. Alternatively,
+you can hold it in your right hand, also ensuring the joystick side faces
+right and the antenna remains vertical. Do not grip the antenna directly. iy ------
+
+c) Confirm that the robotic dog is positioned to the right of the
+
+companion remote controller and that the distance between the remote ;
+controller and the top of the robotic dog's head is less than 2.4 meters. Migure 2
+Briefly press the M function button; the robotic dog will enter Companion Mode and emit a voice prompt.
+
+d) If the robotic dog emits a voice prompt indicating the distance is too far, it means the distance between
+the remote controller and the robotic dog exceeds 2.4 meters, exceeding the companion range. Move closer
+and repeat Step 3.
+
+Step 3: Exit Companion Mode
+
+a) Press the P button on the companion remote controller or move the joystick. The robotic dog will exit
+Companion Mode, enter Joystick Mode, and emit a voice prompt.
+
+b) Place the companion remote controller horizontally, or tilt it at an angle greater than 40° compared to
+its activated state. The robotic dog will exit Companion Mode, enter Joystick Mode, and emit a voice prompt.
+
+c) Press any button on a two-handed remote controller or move the joystick. The robotic dog will exit
+Companion Mode, enter Joystick Mode, and emit a voice prompt.
+
+d) Press and hold the power button on the companion remote controller for 2 seconds to turn it off, exiting
+
+Companion Mode. Restarting the remote controller will automatically re-enter Companion Mode.
+
+© 2025. All rights reserved, Unitree Robotics 16

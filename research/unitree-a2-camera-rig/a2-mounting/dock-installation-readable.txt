@@ -1,0 +1,80 @@
+## Docking Station Installation Instructions
+
+!!! note About Parameters
+For parameters regarding the docking station, GNSS, 4G, and other modules, please refer to [About A2](https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2).
+!!!
+
+### Assembling the Docking Station
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/0bec0d899ecf4bdeac1d9cc76c483043_1389x554.png)
+
+Place the antenna box in the center at the rear of the docking station, insert screws through the antenna box, and tighten them onto the docking station. Affix the GNSS module to the right side of the antenna box.
+
+!!! warning GNSS and Antenna Box Vertical Signal Interference
+The GNSS module and the antenna box will cause vertical signal interference. Therefore, the GNSS module must be placed next to the antenna box and cannot be affixed on top of it.
+!!!
+
+### Installing the Docking Station to the A2
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/72f34a93906140ae9ad2afbc1538a351_1489x1217.png)
+
+ Step 1: Insert the M6 hex nut provided with the shipment into the rear slide rail, and tighten the docking station using the M6x14 screws. 
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/127ca3bbebf34731b6efe89d76e9fc33_1484x1197.png)
+
+ Step 2: Open both side covers and the top cable cover. 
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/33e2bd9478d147119ef6ac6990d44f71_1433x1184.png)
+
+ Step 3: Locate the aviation plug interface (PC1 Ethernet) on the left side of the A2 body and connect it to the first aviation port on the left side of the docking station as shown in the diagram. 
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/5b16795cadf0454580baaa408825daed_1520x1181.png)
+
+ Step 4: Locate the aviation plug interface (58V Output) on the right side of the A2 body and connect it to the first aviation port on the right side of the docking station as shown in the diagram. 
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/b004de512fce4f7fb1e26de942ee01df_1364x1194.png)
+
+ Step 5: Replace both side covers and tighten them. 
+
+!!! note Using the Docking Station
+
+You can refer to the [Docking Station User Manual](https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2_nx) for instructions on how to use and develop with the docking station.
+
+!!!
+
+## Emergency Stop Button Installation Instructions
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/b553722c229d47c6b6ad0e014d5b8502_888x775.png)
+
+ Step 1: Open the left side cover and the top cable cover. 
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/ec6faf84c4f947d7bba5a7345478eafe_1000x938.png)
+
+ Step 2: Locate the aviation plug interface on the side, connect the aviation plugs, and tighten them. 
+
+!!! note Can't find the aviation interface? Refer to the second installation method below.
+!!!
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/37ce5a54342d4cb88c4ffac1acb6838c_977x776.png)
+
+ Step 3: Reinstall the side cover and the docking station. 
+
+Installation Method 2:
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/60e4e469d5a54ac68348eed70dbaa945_1165x809.png)
+
+Step 1: Open all top covers.
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/df89db5c596a4bbc980f321ad0c493c3_980x918.png)
+
+Step 2: Locate the aviation interface as shown in the diagram, connect the aviation plugs, tighten them, and arrange the wiring as shown.
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/37ce5a54342d4cb88c4ffac1acb6838c_977x776.png)
+
+ Step 3: Reinstall the side cover and the docking station. 
+
+## Companion Station Installation Instructions
+
+![](https://doc-cdn.unitree.com/static/2026/6/22/40b54d1c9bf54b9c8578c9abe64d9b8e_680x1145.png)
+
+As shown in the diagram, snap the Companion Station onto the interface on the head of the A2.

@@ -1,0 +1,349 @@
+{
+  "sha": "b6a8942b0803b6c137e58cef12beb4b03e4a2fa7",
+  "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/b6a8942b0803b6c137e58cef12beb4b03e4a2fa7",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a90fef9b45d9f14c3f76826abfac97f9a4935523",
+      "size": 42,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/a90fef9b45d9f14c3f76826abfac97f9a4935523"
+    },
+    {
+      "path": "B2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa1f7da76bcd7a955ce1f044b94de8eb66b809af",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/fa1f7da76bcd7a955ce1f044b94de8eb66b809af"
+    },
+    {
+      "path": "B2/usd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0182ad57a5c790511cc7e7f64b1df04fb423131c",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/0182ad57a5c790511cc7e7f64b1df04fb423131c"
+    },
+    {
+      "path": "B2/usd/B2.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82149f48e086f7615668647e28930796938f832c",
+      "size": 132,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/82149f48e086f7615668647e28930796938f832c"
+    },
+    {
+      "path": "G1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7edae62c905d7406f22820b04530bfadb36019e",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/a7edae62c905d7406f22820b04530bfadb36019e"
+    },
+    {
+      "path": "G1/29dof",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7fac02c9f9cf47830965ef5e705cd071ae50012",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/a7fac02c9f9cf47830965ef5e705cd071ae50012"
+    },
+    {
+      "path": "G1/29dof/usd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f0132b6225f2d35ec94bf996da8f8bb4dba8e41",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/5f0132b6225f2d35ec94bf996da8f8bb4dba8e41"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33634896c756be9b4f44c3f505c24fc903e8c49d",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/33634896c756be9b4f44c3f505c24fc903e8c49d"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a0eed3b74bea81832354ea5c07079ebcfd1d231",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/5a0eed3b74bea81832354ea5c07079ebcfd1d231"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0/configuration/g1_29dof_rev_1_0_base.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b8968f35c13d61a9916c26cfc984f8fbb2c5996",
+      "size": 133,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/2b8968f35c13d61a9916c26cfc984f8fbb2c5996"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0/configuration/g1_29dof_rev_1_0_physics.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e85f40ba314dab4dd28fc3f40c1429ce26d8e59f",
+      "size": 130,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/e85f40ba314dab4dd28fc3f40c1429ce26d8e59f"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0/configuration/g1_29dof_rev_1_0_sensor.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eb3f8b0b3a8d1b3184ec9dbce4ef5c703484e79",
+      "size": 128,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/3eb3f8b0b3a8d1b3184ec9dbce4ef5c703484e79"
+    },
+    {
+      "path": "G1/29dof/usd/g1_29dof_rev_1_0/g1_29dof_rev_1_0.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0bc5dcd5759e292a082063c58bf3fc18416e652",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/c0bc5dcd5759e292a082063c58bf3fc18416e652"
+    },
+    {
+      "path": "Go2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de89765e11cc969c1a78ad3ee304257bb627ee67",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/de89765e11cc969c1a78ad3ee304257bb627ee67"
+    },
+    {
+      "path": "Go2/usd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4812d69bc4716000fee139906299af91db636037",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/4812d69bc4716000fee139906299af91db636037"
+    },
+    {
+      "path": "Go2/usd/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba0160fe5e41639409e4bb9b1bcfbb0f8723e05c",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/ba0160fe5e41639409e4bb9b1bcfbb0f8723e05c"
+    },
+    {
+      "path": "Go2/usd/configuration/go2_description_base.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e901e0df691bdcdac6e668d237f13cd43f3020d",
+      "size": 133,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/9e901e0df691bdcdac6e668d237f13cd43f3020d"
+    },
+    {
+      "path": "Go2/usd/configuration/go2_description_physics.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17665269abda7784ede3d62d96e00bcf02c192cc",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/17665269abda7784ede3d62d96e00bcf02c192cc"
+    },
+    {
+      "path": "Go2/usd/configuration/go2_description_sensor.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1233b1fa28aab000d6c55c47d4701c7e025ba0f",
+      "size": 128,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/e1233b1fa28aab000d6c55c47d4701c7e025ba0f"
+    },
+    {
+      "path": "Go2/usd/go2.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6afb2a84cf4ed0957a41a8db14f42ef3244dbc21",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/6afb2a84cf4ed0957a41a8db14f42ef3244dbc21"
+    },
+    {
+      "path": "H1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "13d56b631b67c68747d8b58e97435ac73b6d4c67",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/13d56b631b67c68747d8b58e97435ac73b6d4c67"
+    },
+    {
+      "path": "H1/h1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d878f6e68620ee510483abe1f8d217aed86074f2",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/d878f6e68620ee510483abe1f8d217aed86074f2"
+    },
+    {
+      "path": "H1/h1/usd",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "255cbda5efdd0303c6834f9aa0f08bbd28825ec5",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/255cbda5efdd0303c6834f9aa0f08bbd28825ec5"
+    },
+    {
+      "path": "H1/h1/usd/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a8b490232283a3298185b1e874f97f4d02b50cc",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/3a8b490232283a3298185b1e874f97f4d02b50cc"
+    },
+    {
+      "path": "H1/h1/usd/configuration/h1_base.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a33bacc08679850bc20ef5e37f5010fbe59de75",
+      "size": 133,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/8a33bacc08679850bc20ef5e37f5010fbe59de75"
+    },
+    {
+      "path": "H1/h1/usd/configuration/h1_physics.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31cd10af84a873c9109a6a2a7c5e2cfd49aef32f",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/31cd10af84a873c9109a6a2a7c5e2cfd49aef32f"
+    },
+    {
+      "path": "H1/h1/usd/configuration/h1_sensor.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa06ace5d4fb808b0bb0f0ccbf118be6672a96a0",
+      "size": 128,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/fa06ace5d4fb808b0bb0f0ccbf118be6672a96a0"
+    },
+    {
+      "path": "H1/h1/usd/h1.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90e4583d0695ba4f9da445acbe942464e3e47ee9",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/90e4583d0695ba4f9da445acbe942464e3e47ee9"
+    },
+    {
+      "path": "H2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1780981254bdf3c3fc4b31abcaaf87a429bd0b96",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/1780981254bdf3c3fc4b31abcaaf87a429bd0b96"
+    },
+    {
+      "path": "H2/H2_dae.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83db95217b2b320be486c0638f3e3ce39b9724e2",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/83db95217b2b320be486c0638f3e3ce39b9724e2"
+    },
+    {
+      "path": "H2/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52687a086fc4ac0f1c6f50d91c0c71796ca80ddd",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/52687a086fc4ac0f1c6f50d91c0c71796ca80ddd"
+    },
+    {
+      "path": "H2/configuration/H2_dae_base.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3808d31fabab6c9ca8c7f38a14b390afd551ead9",
+      "size": 133,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/3808d31fabab6c9ca8c7f38a14b390afd551ead9"
+    },
+    {
+      "path": "H2/configuration/H2_dae_physics.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2efa5efc4a0037b102d2124934b15755f9cc81c4",
+      "size": 130,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/2efa5efc4a0037b102d2124934b15755f9cc81c4"
+    },
+    {
+      "path": "H2/configuration/H2_dae_robot.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2ae412d2729e4ad8915c12fa6e867c4eeac40b1",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/d2ae412d2729e4ad8915c12fa6e867c4eeac40b1"
+    },
+    {
+      "path": "H2/configuration/H2_dae_sensor.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eebcbffd351c6ff689ad1b8c5fbeafe01b973d84",
+      "size": 128,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/eebcbffd351c6ff689ad1b8c5fbeafe01b973d84"
+    },
+    {
+      "path": "H2_Plus",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01280fea4983d23b5f680982e80ffb1ff3325102",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/01280fea4983d23b5f680982e80ffb1ff3325102"
+    },
+    {
+      "path": "H2_Plus/H2_with_sharpa.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ebdef14e34e07ad81b1d8c261c9f314d3702afd",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/9ebdef14e34e07ad81b1d8c261c9f314d3702afd"
+    },
+    {
+      "path": "H2_Plus/H2_with_sharpa.usdz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec47eb2b6e0d201b4e511b2d3268bd6e03524c10",
+      "size": 56174820,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/ec47eb2b6e0d201b4e511b2d3268bd6e03524c10"
+    },
+    {
+      "path": "H2_Plus/configuration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "da2272cda4ccac365ab39b50cebcc9ee074930c5",
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/trees/da2272cda4ccac365ab39b50cebcc9ee074930c5"
+    },
+    {
+      "path": "H2_Plus/configuration/H2_with_sharpa_base.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ef985e63a86b04eb6078fe56a6d116eda55f855",
+      "size": 133,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/0ef985e63a86b04eb6078fe56a6d116eda55f855"
+    },
+    {
+      "path": "H2_Plus/configuration/H2_with_sharpa_physics.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "220e65f061d058129816600c0bd7a235670f5c9a",
+      "size": 130,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/220e65f061d058129816600c0bd7a235670f5c9a"
+    },
+    {
+      "path": "H2_Plus/configuration/H2_with_sharpa_robot.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59032656afea80557da11be7547c80766b051fb",
+      "size": 129,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/d59032656afea80557da11be7547c80766b051fb"
+    },
+    {
+      "path": "H2_Plus/configuration/H2_with_sharpa_sensor.usd",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eebcbffd351c6ff689ad1b8c5fbeafe01b973d84",
+      "size": 128,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/eebcbffd351c6ff689ad1b8c5fbeafe01b973d84"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da90ea648d5e11d2fd93a78734fa6e35125126f",
+      "size": 1558,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/6da90ea648d5e11d2fd93a78734fa6e35125126f"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1da340fbd9b20e7777a91a902dba9e73b87c2c5",
+      "size": 819,
+      "url": "https://api.github.com/repos/unitreerobotics/unitree_model/git/blobs/f1da340fbd9b20e7777a91a902dba9e73b87c2c5"
+    }
+  ],
+  "truncated": false
+}

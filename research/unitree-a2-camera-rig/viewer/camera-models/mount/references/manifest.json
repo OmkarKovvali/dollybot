@@ -1,0 +1,32 @@
+[
+  {
+    "file": "official-product.html",
+    "url": "https://innoreltech.com/products/cnc-metal-low-profile-mini-ballhead-innorel-c19",
+    "bytes": 665861,
+    "sha256": "be331e9d921ca35724a5cc9fb207ddf95efe6cc3d0d99025f4367f67f317be95"
+  },
+  {
+    "file": "official-hero.jpg",
+    "url": "https://innoreltech.com/cdn/shop/files/INNOREL-ballhead-C19-aluminum.jpg?v=1773826543&width=3840",
+    "bytes": 114321,
+    "sha256": "72d67525be0347257033bc3204d97c011df6a8ee65027c275c066ac9a346f062"
+  },
+  {
+    "file": "official-dimensions.jpg",
+    "url": "https://innoreltech.com/cdn/shop/files/INNOREL-tripod-head-C19-specifications.jpg?v=1773826806&width=3840",
+    "bytes": 196899,
+    "sha256": "20419445fb20c9984e412888e0f14687c7a4ba6196a9d3bd5438b939753738c6"
+  },
+  {
+    "file": "official-low-profile.jpg",
+    "url": "https://innoreltech.com/cdn/shop/files/INNOREL-C19-low-profile-ballhead.jpg?v=1773827033&width=3840",
+    "bytes": 116999,
+    "sha256": "c22be093dd29fdb93ba374356eb9a200717966f36f7866a1688e584971eb16fc"
+  },
+  {
+    "file": "official-details.jpg",
+    "url": "https://innoreltech.com/cdn/shop/files/INNOREL_C19_product_details.jpg?v=1773827645&width=3840",
+    "bytes": 173602,
+    "sha256": "00715949a856f2b92c0e04a965647295baa14df8d9ed2365cc4776ba56f967a9"
+  }
+]
