@@ -1,0 +1,32 @@
+Source: https://kino.ai/docs/edit-with-agents
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Edit with your agents
+
+Ask an agent for a cut, then fine-tune it yourself on the timeline.
+
+Clips the agent changed get a blue outline.
+
+Ask for a cut
+
+Open the chat panel in your project and select Kino Agent to use your Kino credits.
+
+Cut a 60-second teaser from the lab interviews.
+
+Use your Claude or ChatGPT subscription
+
+In Kino desktop, sign in to use Codex with your ChatGPT subscription or Claude Code with your Claude subscription.
+
+Fine-tune it yourself
+
+Trim and move the agent’s clips like your own. Every agent edit saves a checkpoint you can go back to.
+
+More about agents
+
+MCP server
+
+Set up Claude Code, Codex, ChatGPT or another MCP agent.
+
+Prompting
+
+Point the agent at projects you like, and use skills.

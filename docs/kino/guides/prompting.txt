@@ -1,0 +1,26 @@
+Source: https://kino.ai/docs/prompting
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Prompting
+
+Use Kino’s chat, an agent connected over MCP, or a cloud agent.
+
+Mention projects you like
+
+Type @ in Kino to pick a project, or paste its link into your agent’s chat. Describe what to reuse, such as its branding or pacing.
+
+Add motion graphics and B-roll over this A-roll in @SemiAnalysis Brand to illustrate the point. Add enough padding for social media viewing on phones.
+
+To start a brand from a website, see Brand matching.
+
+Use skills
+
+Type / in Kino to pick a skill, such as /brand-clone-video. Settings → Skills lists them. Ask the agent to save useful instructions as a skill so you can reuse them.
+
+Example: a branded explainer
+
+Claude Code made this SemiAnalysis explainer from the prompt below.
+
+Original prompt, with the two project links omitted:
+
+Use the branding vibes in [two Kino project links] to find the most information-packed parts of what Dylan says across these videos, and make projects where each one is a 10–120 second clip of Dylan talking (use getEffectiveTranscript and other tools to cut out the crap if you want). We animate the things he's explaining, use web search to fact-check them, and pull in other SemiAnalysis data to really explain it! Let's use the guide already in Kino about showing B-roll to complement A-roll, but this time the B-roll is motion graphics on the SemiAnalysis brand.

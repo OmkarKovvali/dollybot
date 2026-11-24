@@ -1,0 +1,40 @@
+Source: https://kino.ai/docs
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Kino is where your team and agents make great videos
+
+Your footage, your edit and your review notes live in one place.
+
+Coming from Premiere, Resolve or Avid? See how a project runs in Kino.
+
+Using Claude Code, Codex or ChatGPT? Connect them to Kino’s MCP server.
+
+In KinoClaude CodeChatGPT
+
+Kino runs on your computer. Enter your email and we’ll send you a link to open there.
+
+Send link
+
+Start here
+
+Edit with your agents
+
+Ask for a cut, then adjust it yourself on the timeline.
+
+Store your footage
+
+Share any clip as a link, and search by what’s on screen.
+
+Work with your team
+
+Edit together, share review links and get notes back.
+
+Connect your agents over MCP
+
+The desktop app runs an MCP server, so ChatGPT, Claude Code, Codex and Cursor can search your footage and edit your projects from their own chat. Cloud agents like Dot, Muse, Grok Bot and Devin install Kino on their own computer and edit while you’re away.
+
+ChatGPT desktop app
+
+Claude Code in your terminal
+
+Grok Bot on its own computer

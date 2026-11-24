@@ -1,0 +1,73 @@
+Interface Description
+
+A2 provides SDK expansion ports on both sides of the body, allowing developers to extend more
+
+functional development, as shown in the figure below.
+
+(ou [2] [3] [41 15]
+
+FL Leg PC2 PC2 PCl PC2 PCl
+58V+485 | | USB2.0 | | USB3.0 || USB3.0 | | Ethernet +12V || Ethernet +12V
+
+@ mm 6 @
+
+RL Leg
+58V+485
+
+y,
+
+Number
+
+Interface Type
+
+Interface Name Interface Specifications
+
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+[7]
+[8]
+
+RS485 2+2 PIN Aviation Plug
+USB 2.0 Type-C
+
+USB 3.0 Type-C
+
+USB 3.0 Type-C
+
+USB 3.0 Type-C
+
+T568 8+2 PIN Aviation Plug
+T568 8+2 PIN Aviation Plug
+
+RS485 2+2 PIN Aviation Plug
+
+Left Front Leg Power Cable 58V
+
+PC2 USB 2.0 Supports PD, limited power 20W
+PC2 Standard USB Port Current limited to 1A
+
+PC1 USB Port Individual current limited to 2A
+PC1 USB Port Individual current limited to 2A
+
+PC2 Switch Ethernet Port 12V
+PC1 Switch Ethernet Port 12V
+
+Left Rear Leg Power Cable 58V
+
+(~ \__ (Siesta
+9] flo} dy [12] [13] [14] =
+a
+RR Leg 24V Output || 58V Output || 12V Output || 24V Output FR Leg 5
+58V+485 +CAN +CAN 485 485 58V+485
+Number Interface Type Interface Name Interface Specifications
+[9] RS485 2+2 PIN Aviation Plug Right Rear Leg Power Cable 58V
+[10] CAN 2+2 PIN Aviation Plug Regulated Power Supply Output 24V 5A
+{11] CAN 2+2 PIN Aviation Plug Battery Power Supply Output Battery voltage (58V)
+[12] RS485 2+2 PIN Aviation Plug Regulated Power Supply Output 12V 6A
+[14] RS485 2+2 PIN Aviation Plug Regulated Power Supply Output 24V 5A
+[15] RS485 2+2 PIN Aviation Plug Right Rear Leg Power Cable 58V
+©,2025 All rights reserved, Unitree Robotics 9

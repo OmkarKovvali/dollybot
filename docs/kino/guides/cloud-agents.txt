@@ -1,0 +1,40 @@
+Source: https://kino.ai/docs/cloud-agents
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Cloud agents
+
+Devin, Grok Bot, Muse and Dot each work on a computer of their own. Send one this message to connect it to your Kino workspace:
+
+Add https://mcp.kino.ai as an MCP server. Name it kino-cloud if you can. Then tell me how to load it: in Claude Code I run /reload-plugins, and in other apps such as ChatGPT desktop I start a new chat.
+
+The agent asks you to sign in to Kino and choose a workspace. It can then search your footage, read transcripts and organize bins.
+
+Ask for an edit
+
+Editing through this connection is in early access. If your workspace has it, there is nothing to install: the agent edits in a copy of Kino that runs in Kino’s cloud. Ask for what you want:
+
+Open @Shopify Buyer Profile in Kino and recreate the intro as a posterized 12fps animate-in: header, then cards, then chart. Send me the project link when it's done.
+
+Install Kino on the agent’s computer
+
+If the agent says it has no editing tools, or you want it to export a clip, it needs Kino on its own computer. Send it this message:
+
+Download the Kino desktop app for Linux from https://kino.ai/api/desktop-download/linux?source=agent and install it on your computer. Open it and sign in to my Kino account. Ask me how I sign in (Google, or email with a one-time code) and for anything you need along the way. Then connect to Kino's MCP server at http://127.0.0.1:45680/mcp and list my recent projects so I know it works.
+
+Keep Kino open on the agent’s computer while it works.
+
+Devin
+
+Start a Devin session. Devin asks to add Kino as an MCP server: approve the card, then sign in. If Devin installs Kino on its own computer, open the Desktop tab to watch it work or use Kino yourself.
+
+Grok Bot
+
+Grok Bot comes with SuperGrok and Cursor Pro.
+
+Muse
+
+Muse is free with a usage limit. Subscriptions raise the limit.
+
+Dot
+
+Dots are included with ChatGPT Pro and Business Premium, and with Enterprise once an admin turns them on.

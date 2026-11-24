@@ -1,0 +1,39 @@
+Start up A2
+
+After the robot completes the pre-startup check and is positioned according to the pre-startup preparation
+requirements, follow the steps below to power it on: First, briefly press the power switch once, then press and
+hold the power switch for more than 3 seconds to turn on the battery. After the battery starts, wait for 2 minutes.
+
+The robot will automatically stand up, with its body parallel to the ground, indicating a successful startup.
+
+Q: @ When two batteries are inserted in the A2 battery compartment, it is only necessary to power on one of the
+batteries via the button; there is no need to power on both batteries simultaneously using the buttons.
+@ When powered by a single battery, the startup indicator light is green.
+@ When both batteries are powered on, or when an additional battery is inserted into a robot operating on a
+single battery, the indicator light will turn blue. In this state, only one battery is discharging, while the other is
+in standby mode. When both batteries are discharging simultaneously, the indicator light will turn green. This
+allows the machine to output maximum power. The condition for simultaneous discharge is that the voltages
+and charge levels of the two batteries are essentially equal.
+@ When both batteries are operating normally inside the battery compartment (with a blue or green light on),
+removing one battery from the compartment will cause an immediate shutdown. Reinserting the battery will
+cause an immediate startup. If a battery is manually powered off via its button, that battery will not be awakened
+by the battery compartment for 15 seconds. It will require manual startup or must wait for more than 15 seconds
+
+to be awakened by the battery compartment.
+
+AN @ If the starting up fails, please check the placement of the body!
+@ The upper leg being extended outward or the lower leg being pressed inward may cause the A2 to fail to start
+up.
+® Be careful of pinching hands at the motion joints. Exercise caution!
+@ After the A2 starts up successfully, it will automatically stand up. Please maintain a safe distance!
+
+@ When replacing the battery, the robot dog should remain stationary and not be subjected to external
+disturbances (such as kicking the machine or adding loads to it, etc.). After the battery replacement is complete
+(i.e., 3 seconds after the battery is fully inserted into the battery compartment), the robot can be used normally.
+
+@ When the robot is operating in single-battery mode or in dual-battery blue-light standby mode, exercise
+caution when performing vigorous movements (such as flips, rapid climbing, rapid descending, etc.), as such
+
+operations can significantly shorten the battery's lifespan.
+
+©2025 All rights reserved, Unitree Robotics 15

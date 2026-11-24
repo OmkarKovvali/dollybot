@@ -1,0 +1,140 @@
+{
+  "title": "Sony ZV-E1 body visual reference",
+  "created": "2026-11-23",
+  "provenance": "Original procedural reconstruction from official Sony dimensions photograph and help-guide drawings. Not Sony CAD, scan, manufacturing or fit geometry.",
+  "published_envelope_mm": {
+    "width": 121.0,
+    "height": 71.9,
+    "depth": 54.3
+  },
+  "coordinates": {
+    "units": "millimeters",
+    "up_axis": "Z",
+    "lens_faces": "-X",
+    "width_axis": "Y",
+    "grip_side": "+Y",
+    "origin": "provisional tripod XY and nominal bottom seating plane Z=0",
+    "gltf_note": "Intentional viewer-native mm/Z-up GLB. Do not apply usual meter-to-mm or Y-up rotation. STL uses same coordinates."
+  },
+  "bounds_mm": {
+    "min": [
+      -34.61433410644531,
+      -47.946128845214844,
+      0.0
+    ],
+    "max": [
+      19.685665130615234,
+      73.05387115478516,
+      71.89999389648438
+    ]
+  },
+  "lens_axis": {
+    "face_origin_mm": [
+      -24.724525213241577,
+      0.0,
+      35.86041180505664
+    ],
+    "direction": [
+      -1,
+      0,
+      0
+    ],
+    "location_status": "estimated from references"
+  },
+  "tripod_socket": {
+    "nominal_center_mm": [
+      0,
+      0,
+      0
+    ],
+    "thread": "1/4-20 UNC",
+    "sony_max_entering_screw_length_mm": "strictly less than 5.5",
+    "position_status": "UNVERIFIED \u2014 not for drilling or fastener placement"
+  },
+  "screen": {
+    "state": "closed",
+    "articulation": "separate LCD mesh and visible hinge; not rigged or swept-clearance validated",
+    "source_range_degrees": {
+      "open": 176,
+      "rotate": 270
+    }
+  },
+  "lens": {
+    "included": false,
+    "reason": "Identified Sony FE PZ 16-35mm F4 G (SELP1635G) modeled as separate sony-selp1635g.glb asset",
+    "identified_model": "SELP1635G"
+  },
+  "features": [
+    "rounded chassis",
+    "protruding grip",
+    "hollow E-mount and recessed full-frame sensor",
+    "mount contacts and screws",
+    "closed articulated LCD",
+    "rear controls and wheel",
+    "top microphone perforations",
+    "multi-interface shoe",
+    "record button and zoom/shutter control",
+    "strap lugs",
+    "port doors",
+    "battery door"
+  ],
+  "limitations": [
+    "Only overall envelope constrained to published dimensions; feature coordinates are visual estimates.",
+    "Tripod XY, screen sweep, interface geometry and clearances require measurement.",
+    "No structural, print, tolerance or dynamic payload validation.",
+    "No lens, cage, windscreen or removable accessory included."
+  ],
+  "sources": [
+    {
+      "url": "https://sony.scene7.com/is/image/sonyglobalsolutions/01_Dimensions?fmt=png-alpha&wid=1400",
+      "local": "references/official-dimensions.png",
+      "use": "front and side photograph; dimensions"
+    },
+    {
+      "url": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+      "local": "../../../printer-cameras/assets/sony-zv-e1-help-guide.pdf",
+      "pages": [
+        36,
+        37,
+        39,
+        41,
+        43
+      ],
+      "use": "control placement, articulation, bottom and socket notes"
+    },
+    {
+      "url": "https://www.sony-asia.com/interchangeable-lens-cameras/products/zv-e1",
+      "use": "published W/H/D"
+    }
+  ],
+  "mesh": {
+    "objects": 302,
+    "triangles": 64848
+  },
+  "exports": [
+    "sony-zv-e1.glb",
+    "sony-zv-e1.stl"
+  ],
+  "viewer_loading": {
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "rotation_radians": [
+      0,
+      0,
+      0
+    ]
+  },
+  "files": {
+    "sony-zv-e1.glb": {
+      "bytes": 1661480,
+      "sha256": "491c60a2bb0ecb9597dc0f2247cb3623e21ea7bac1c312c48db843fc6c4cdcfd"
+    },
+    "sony-zv-e1.stl": {
+      "bytes": 3242484,
+      "sha256": "35dbd4227f45adff9a1bb880b8a6b8939eaec03ec039c1e60288f6eb54d0dea3"
+    }
+  }
+}

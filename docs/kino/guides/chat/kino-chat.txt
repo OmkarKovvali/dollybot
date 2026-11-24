@@ -1,0 +1,42 @@
+Source: https://kino.ai/docs/chat/kino-chat
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Kino Chat
+
+Chat pricing
+
+Kino Agent uses your included chat credits. Paid plans can allow overage. Media generation is billed separately.
+
+Kino prices in USD per million tokens as of November 17, 2026.
+
+ | Model | Input | Cached input | Output
+
+ | GPT-6 Astra | $13.00 | $1.30 | $65.00
+
+ | GPT-6.1 Sol | $2.86 | $0.143 | $14.30
+
+ | GPT-6 Luna | $0.143 | $0.0143 | $0.715
+
+ | Claude 5.2 Fable | $10.40 | $0.26 | $52.00
+
+ | Claude 5.5 Sonnet | $2.60 | $0.13 | $13.00
+
+ | Claude 5.5 Opus | $5.72 | $0.286 | $28.60
+
+ | Claude 4.5 Haiku | $1.43 | $0.143 | $7.15
+
+ | Gemini 3.5 Flash-Lite | $0.39 | $0.039 | $3.25
+
+ | Gemini 3.6 Flash | $0.975 | $0.0975 | $4.875
+
+ | Gemini 3.8 Flash | $0.975 | $0.0975 | $4.875
+
+ | Gemini 4 Argon | $2.60 | $0.13 | $13.00
+
+ | Gemini 3.1 Pro Preview | $2.60 | $0.26 | $15.60
+
+ | Grok 4.6 | $2.60 | $0.65 | $7.80
+
+Cache writes, long prompts and Claude Fast mode may cost more.
+
+Check usage in Settings → Billing → Chat. On paid workspaces, admins can set overage limits under Settings → Members → Usage.

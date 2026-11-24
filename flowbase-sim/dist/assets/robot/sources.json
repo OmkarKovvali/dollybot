@@ -1,0 +1,187 @@
+{
+  "retrieved_at_utc": "2026-11-23T02:54:18.503505+00:00",
+  "repository": "https://github.com/i2rt-robotics/i2rt",
+  "commit": "8c1b3ab6b6f31ae11e8b5f1e46c037d154199938",
+  "license": "MIT, copyright I2RT Robotics; retain LICENSE with distributed files",
+  "model": "Official Linear Bot (Flow Base + optional linear rail), derived from Onshape export URDF_LinearBot.zip dated 2026-10-30 per URDF header",
+  "model_directory_url": "https://github.com/i2rt-robotics/i2rt/tree/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot",
+  "files": [
+    {
+      "path": "i2rt/flow_base/flow_base_controller.py",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/flow_base/flow_base_controller.py",
+      "bytes": 69748,
+      "sha256": "8a10feee36f05ab8601e5e429decc483f905b7d32a84b2b66db30bc1722b89d3"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/base.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/base.stl",
+      "bytes": 3000084,
+      "sha256": "6237f48cf02869aec40e14719c6ef0458a9d302bc4c5455f95ba850b7d26c498"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/linear_lift.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/linear_lift.stl",
+      "bytes": 500084,
+      "sha256": "4ed0e7ba2e91cee8b475409e4f30928026fdcee06b262dec877fb401c3526d03"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/linear_lift_holder.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/linear_lift_holder.stl",
+      "bytes": 64284,
+      "sha256": "11e95cf0230599524cbbb4a1e1849ea4d0b2bdcd384ea383b3b5b9bcb247da53"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor1.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor1.stl",
+      "bytes": 500084,
+      "sha256": "d6dd29d8756fb1706c653c148a6e29334a90fb43a3f23c13a45134b87e0c212d"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor2.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor2.stl",
+      "bytes": 500084,
+      "sha256": "e1193bf8796ede593c0a1a7440a9250d3372c4fbc23e5e30919acbe74d4e6b4f"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor3.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor3.stl",
+      "bytes": 500084,
+      "sha256": "cdaf28fbb7dd84c0cdced5bd952bd7230c9cfeb30ab989235137cf2723a2533b"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor4.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor4.stl",
+      "bytes": 500084,
+      "sha256": "c9c89097206aaeeed829430b96ee75b6ebee1d7d34cb510da86d164c46faf293"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor5.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor5.stl",
+      "bytes": 500084,
+      "sha256": "855af68d030f94265064c5a78c6feedc20bde7a8e60a490a1f4b7de5079a0e10"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor6.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor6.stl",
+      "bytes": 500084,
+      "sha256": "0707802499aa9d9c62a67c48cf00bf034d88910dd1244592853a31cd5df478fd"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor7.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor7.stl",
+      "bytes": 500084,
+      "sha256": "58b7e270349e9bb5743bca695906790b808bc8d92e9d956771ae0cc3919bc700"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/assets/motor8.stl",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/assets/motor8.stl",
+      "bytes": 500084,
+      "sha256": "1dd3659c06528fb7fa770cef88edcb71f1420d6736a4fd1c1abf29cfd84fe52a"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/linearbot.urdf",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/linearbot.urdf",
+      "bytes": 12097,
+      "sha256": "02b7a1d1f96ee4d54bbee4e627398940dce6fc3125499dc74b6d10430e50adca"
+    },
+    {
+      "path": "i2rt/robot_models/linearbot/linearbot.xml",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot/linearbot.xml",
+      "bytes": 6371,
+      "sha256": "776b265aae76bd9b61b8ae1842485abcbbb8b6c58ef8d4db3c8f47810cf5ec60"
+    },
+    {
+      "path": "examples/drive_flow_base_viser/README.md",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/examples/drive_flow_base_viser/README.md",
+      "bytes": 6993,
+      "sha256": "cf84659da25d9b0e78c04ea51d2e5085b860840ab38debc5a3d54da6a6b353c9"
+    },
+    {
+      "path": "examples/drive_flow_base_viser/drive_flow_base_viser.py",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/examples/drive_flow_base_viser/drive_flow_base_viser.py",
+      "bytes": 26191,
+      "sha256": "b90c93d48b61668b808de134b04a6686ac44fca0e12489250d659908f5cbf99f"
+    },
+    {
+      "path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/i2rt-robotics/i2rt/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/LICENSE",
+      "bytes": 1073,
+      "sha256": "7cd0a0224a287ebd6c45703eb6623d264c7810f8958d65de8f99e87ccd9f4891"
+    }
+  ],
+  "browser_use": {
+    "include_links": [
+      "base",
+      "motor1",
+      "motor2",
+      "motor3",
+      "motor4",
+      "motor5",
+      "motor6",
+      "motor7",
+      "motor8"
+    ],
+    "optional_links": [
+      "linear_lift",
+      "linear_lift_holder"
+    ],
+    "transforms": "Keep URDF joint hierarchy and all visual origins. STL vertices have assembly offsets; do not independently center meshes. URDF root is floor-centered with +x forward, +y left, +z up. All lengths meters. See model-mapping.json.",
+    "geometry_derived_envelope_m": [
+      0.545,
+      0.515,
+      0.3144534
+    ],
+    "envelope_note": "Axis-aligned bounds computed from official base + motor meshes at CAD zero pose; not an authoritative dimension drawing and may vary with caster orientation.",
+    "controller_geometry": {
+      "caster_hips_xy_m": [
+        [
+          -0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          -0.2
+        ],
+        [
+          -0.2,
+          -0.2
+        ]
+      ],
+      "caster_offset_x_m": -0.02,
+      "wheel_radius_m": 0.05
+    },
+    "limitations": [
+      "MJCF root is fixed with no free joint.",
+      "MJCF mesh geoms have contype=0 and conaffinity=0: visual-only, no collision contacts.",
+      "Original editable STEP/Onshape assembly not found in public sources checked.",
+      "Mass/inertia and contact dynamics were not validated; browser use is ideal kinematic simulation."
+    ]
+  },
+  "official_simulation": {
+    "source": "https://github.com/i2rt-robotics/i2rt/tree/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/examples/drive_flow_base_viser",
+    "command": "uv run examples/drive_flow_base_viser/drive_flow_base_viser.py --linearbot --sim",
+    "note": "Requires full I2RT environment; downloaded excerpt is reference, not standalone. SimBase has no acceleration limit or command timeout."
+  },
+  "additional_sources": [
+    {
+      "url": "https://i2rt.com/products/flow-holonomic-base",
+      "finding": "Official FLOW Holonomic Base V3 product page links public Drive. Advertises 28.5 kg excluding battery, 80 kg payload, 0.63 m/s maximum walking speed."
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1et1BCPRL1p-zUde3mMlmilPYLowDVnn3",
+      "finding": "Official public files folder listed successfully via Drive connector; no Flow Base CAD/STEP file in direct children."
+    },
+    {
+      "url": "https://drive.google.com/file/d/1eg0pcTL93GDQddFKt_zwf4Q_IOenjH08/view",
+      "finding": "Official Flow Holonomic Base V3.pdf, accessible; specifications agree with product page. No chassis envelope dimensions in extracted text."
+    },
+    {
+      "url": "https://doc.i2rt.com/products/flow-base",
+      "finding": "Official Flow Base setup/API documentation."
+    }
+  ]
+}

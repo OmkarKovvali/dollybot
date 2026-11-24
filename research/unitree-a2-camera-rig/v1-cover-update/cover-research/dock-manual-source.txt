@@ -1,0 +1,210 @@
+!!! note Before using
+
+Make sure you have installed the Docking Station refer to the [Install guide for docking and modules](https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation)
+
+!!!
+
+# 1. Connection Methods
+## 1.1 Display Connection
+Plug the Type-C to HDMI adapter into the full-function Type-C port of the expansion dock, then connect the display via an HDMI cable.
+![](https://doc-cdn.unitree.com/static/2026/6/17/f32663b1c10742fea2cf9a64c33fd419.svg)
+
+## 1.2 Remote SSH Connection
+Network IP of the A2 Expansion Dock: `192.168.123.164`.
+System username of the expansion dock: `unitree`, password: `123`.
+![](https://doc-cdn.unitree.com/static/2026/6/17/4879f4b0761e455fbeaff04e5cc6686a_1959x1073.png)
+Run the following command to log in remotely:
+```bash
+# Enter the command below, then input password 123 to log in
+ssh unitree@192.168.123.164
+```
+Note: To control the quadruped robot via the expansion dock, the port on the left side of Waterproof Port 4 (8+2 ports) must also be connected to the robot with an adapter cable.
+
+## 1.3 NoMachine Remote Desktop Connection
+If no display is connected to the expansion dock but you still need to operate the system desktop, you can access it via NoMachine by following the steps below:
+- First connect to the expansion dock via SSH with the command:
+```bash
+# Enter the command below, then input password 123 to log in
+ssh unitree@192.168.123.164
+```
+- In the SSH remote terminal, run the following script to start NoMachine in headless mode:
+```bash
+cd ~/.unitree_files
+./restart_nomachine_no_display.sh
+```
+Wait for the script to finish execution, then you can establish a remote desktop connection through NoMachine.
+
+# 2. Instructions for CAN and RS485 Interfaces
+Run the command below to view CAN or RS485 interfaces connected through USB-CAN/485 pass-through chips on the device:
+```bash
+sudo ls /dev/ttyACM*
+```
+Sample output as shown below:
+![](https://doc-cdn.unitree.com/static/2026/6/17/23f06314e0eb4eac80272bff8ffe7ebb_448x35.png)
+
+
+Correspondence between device names and interfaces:
+| Interface | Device Node |
+| ---- | ---- |
+| RS485 | ttyACM0 |
+| CAN | ttyACM1 |
+| RS485 | ttyACM2 |
+
+# 3. Instructions for 4G Modem
+Steps to enable and test the 4G network adapter:
+```bash
+# Run the following command if wwan0 is disabled
+sudo ip link set wwan0 up
+# Set 4G as the preferred network mode
+sudo mmcli -m 0 --set-allowed-modes="2g,3g,4g" --set-preferred-mode=4g
+
+# Create cellular connection profile
+sudo nmcli connection add type gsm ifname cdc-wdm0 con-name 4g-conn apn cmnet
+
+# Activate the cellular connection
+sudo nmcli connection up 4g-conn
+
+# Verify network connectivity
+ping -I wwan0 www.baidu.com
+```
+Normal output example:
+![](https://doc-cdn.unitree.com/static/2026/6/17/0ce1ee3d32af4538a5843e0389d54c81_888x273.png)
+
+# 4. Instructions for GNSS Positioning Module
+Note: Use the GNSS positioning module in an open outdoor environment.
+## 4.1 Serial Port Configuration
+Set serial port baud rate:
+```bash
+sudo stty -F /dev/ttyTHS3 9600 cs8 -cstopb -parenb raw -echo -echoe -echok -icrnl -ixon -opost
+```
+Verify configuration status:
+```bash
+sudo stty -F /dev/ttyTHS3
+```
+
+## 4.2 Directly Read GNSS Raw Data
+Run the following command to view raw data output from the L76K module:
+```bash
+sudo cat /dev/ttyTHS3
+```
+Sample valid GNSS data output:
+```bash
+unitree@tegra-ubuntu:~$ sudo cat /dev/ttyTHS3                                
+$GNGGA,090620.000,3011.24250,N,12012.72565,E,1,05,3.2,4.5,M,7.5,M,,*79       
+$GNGLL,3011.24250,N,12012.72565,E,090620.000,A,A*4B                          
+$GNGSA,A,3,11,20,24,195,,,,,,,,,5.5,3.2,4.4,1*09                             
+$GNGSA,A,3,07,,,,,,,,,,,,5.5,3.2,4.4,4*32                                    
+$GPGSV,3,1,10,05,51,043,,11,24,137,27,15,68,282,,18,29,319,,0*6D             
+$GPGSV,3,2,10,20,71,015,16,21,30,070,17,23,10,289,,24,26,180,18,0*62         
+$GPGSV,3,3,10,195,65,130,19,199,,,20,0*53                                    
+$BDGSV,1,1,01,07,26,167,22,0*46                                              
+$GNRMC,090620.000,A,3011.24250,N,12012.72565,E,0.00,234.21,130526,,,A,V*03   
+$GNVTG,234.21,T,,M,0.00,N,0.00,K,A*25                                        
+$GNZDA,090620.000,13,05,2026,00,00*44                                        
+$GPTXT,01,01,01,ANTENNA OPEN*25                                              
+$GNGGA,090621.000,3011.24272,N,12012.72553,E,1,06,2.5,3.8,M,7.5,M,,*72       
+$GNGLL,3011.24272,N,12012.72553,E,090621.000,A,A*4F                          
+$GNGSA,A,3,11,20,21,24,195,,,,,,,,4.0,2.5,3.1,1*0A                           
+$GNGSA,A,3,07,,,,,,,,,,,,4.0,2.5,3.1,4*32                                    
+$GPGSV,3,1,10,05,51,043,,11,24,137,23,15,68,282,,18,29,319,,0*69             
+$GPGSV,3,2,10,20,71,015,16,21,30,070,17,23,10,289,,24,26,180,18,0*62         
+$GPGSV,3,3,10,195,65,130,19,199,,,20,0*53                                    
+$BDGSV,1,1,01,07,26,167,22,0*46                                              
+```
+
+## 4.3 View GNSS Data via cgps
+Open a new terminal and manually start gpsd:
+```bash
+# -N: Run in foreground and print logs to terminal
+# -D 5: Maximum debug verbosity level
+# /dev/ttyTHS3: Serial port for L76K GNSS module
+sudo gpsd -N -D 5 /dev/ttyTHS3 -F /var/run/gpsd.sock
+```
+Keep the above terminal open, launch a second terminal window and run the client to parse positioning data:
+```bash
+cgps
+```
+Sample output screenshot:
+![](https://doc-cdn.unitree.com/static/2026/6/17/c521dd70b4cd4af18a37c8901e9863d0_1054x881.png)
+
+# 5. Timeshift System Backup and Restore Instructions
+## 5.1 Package Installation
+> Note: Timeshift is pre‑installed in the latest NX system; no additional installation is required.
+
+Install the package:
+```bash
+sudo apt update && sudo apt install timeshift -y
+```
+Timeshift backs up core operating‑system files and configurations for system recovery.
+
+## 5.2 First Launch and Wizard Configuration
+Search for and open Timeshift from the application menu (user password is required). A setup wizard will pop up on first launch:
+1. Select snapshot type:
+  - RSYNC (Preferred): Works for most standard ext4 file systems.
+  - BTRFS: Select this only if your entire system disk was formatted as BTRFS during Ubuntu installation.
+2. Choose snapshot location: Select a disk partition with sufficient free space. An external USB hard drive is recommended if available; otherwise, another partition on the system disk or the system disk itself can be used.
+3. Schedule backup tasks: You may check Weekly or Daily, and set the number of historical snapshots to retain (e.g. keep the latest 3 snapshots). Older snapshots exceeding this limit will be deleted automatically.
+4. User Home Directories:
+  - Default: Exclude All (software‑recommended setting). You may switch to Include All for backup purposes.
+  - Include hidden files: Check **Include All Files** if you wish to back up user‑application configurations (such as `.bashrc` and IDE settings).
+
+![](https://doc-cdn.unitree.com/static/2026/9/7/e210bd25ea454620aac680bab5f6165c_608x668.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/58abe8947faf47bbbbc18e34715cd3e6_601x671.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/8b679c83c6664bc6a80f86ac9b90fe66_607x673.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/d7ae893ee8774c8f94222c991b1ee2a6_605x670.png)
+
+
+
+
+
+## 5.3 Create a System Snapshot
+Before making high‑risk changes such as kernel updates or driver installation:
+1. Click the **Create** button in the upper‑left corner.
+2. The tool scans and generates a system snapshot. The duration depends on disk speed; the first RSYNC backup takes longer, while subsequent incremental backups run much faster.
+3. Add notes to snapshots in the list (e.g. "Before‑CUDA‑Install").
+
+![](https://doc-cdn.unitree.com/static/2026/9/7/6debc46840834d2a97cede3310fdeb55_804x642.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/6c01970634e94cb1a67254ea0ddec16b_1025x658.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/e6eb6680ac6348719a59068e45b30783_807x642.png)
+
+
+## 5.4 System Restore (System is Bootable)
+If minor faults occur but the system can still boot into the desktop environment:
+1. Launch Timeshift.
+![](https://doc-cdn.unitree.com/static/2026/9/7/202ace43831541d1911247a5cb9a463c_2069x478.png)
+
+
+2. Select the target snapshot from the list and click **Restore**.
+![](https://doc-cdn.unitree.com/static/2026/9/7/1d169d869a8546e28b559b2bda08f1af_809x644.png)
+
+
+
+3. Configure parameters on the Restore Snapshot pop‑up window (same configuration as below).
+![](https://doc-cdn.unitree.com/static/2026/9/7/a77aec420ba74f8eb26a8f5dd49c2619_802x638.png)
+
+
+
+4. Configure Bootloader Options, then click **Close**.
+
+![](https://doc-cdn.unitree.com/static/2026/9/7/193778d0073c4cb3850e3b92f0735c91_807x639.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/6bd02b7cf503470e8040f399f025afa9_342x262.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/4c0e18ea6f0040fb95ce112371e12ca4_354x266.png)
+5. Keep clicking **Next**. The system will reboot and perform file replacement during the black‑screen boot phase. After rebooting, your system will roll back to the selected snapshot state.
+
+
+![](https://doc-cdn.unitree.com/static/2026/9/7/1c4779da65eb4010ac4a455f886694c4_505x582.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/af124e1e352d4c7aae3ccfecb05b1b07_712x580.png)
+![](https://doc-cdn.unitree.com/static/2026/9/7/079ee6810f6b41148be9e83adb2e9de1_716x582.png)
+
+## 5.5 Factory‑Preloaded Restore Snapshot (Version 20260907 and later)
+For NX system version 20260907 and newer, a factory system snapshot is pre‑created via Timeshift. When abnormal system conditions occur, open Timeshift and select this factory snapshot to restore the system.
+
+![](https://doc-cdn.unitree.com/static/2026/9/7/f42518afe0c542559070ee5a4b142298_808x648.png)
+
+# 6. Notes on Upgrading Software Packages Such as JetPack
+
+**<u>Do NOT upgrade JetPack on your own!! Doing so will render the system unbootable.</u>**
+
+Before upgrading any other software packages, be sure to back up your data. Use caution with software updates that alter system dependencies.
+
+**<u>Any system boot failure caused by software issues is NOT covered under warranty!</u>**

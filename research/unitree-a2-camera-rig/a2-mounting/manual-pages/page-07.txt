@@ -1,0 +1,51 @@
+Function Highlights
+
+1) Strong Payload, Industry Expert
+
+A2 possesses outstanding load-bearing capacity, with a continuous walking payload of 25kg and a
+maximum static standing payload of 100kg. It can meet diverse load requirements in scenarios such as logistics
+
+transportation and equipment handling, making it a reliable "strongman" for complex tasks.
+2) Ultra-Long Endurance, Continuous Operation
+
+A2 adopts a dual-battery system with a hot-swappable parallel architecture. Each battery has a capacity
+of 9000mAh, providing a combined capacity of 18000mAh. The batteries utilize high-performance cells and
+an advanced Battery Management System (BMS) independently developed by Unitree. The robot can walk
+continuously for 5 hours/20km under no load and 3 hours/12km under full load. With seamless battery
+
+swapping, missions remain uninterrupted, ensuring robust power support for long-duration operations.
+
+3) Exceptional Power, Agile Mobility
+
+A2 achieves a running speed of 5m/s, with a maximum step-climbing height of 30cm and a maximum
+slope angle of 45°. It combines speed with obstacle-crossing capabilities, enabling rapid response to mission
+demands and effortless handling of complex terrain challenges.
+
+4) IP56-Level Protection, Reliable and Durable
+
+A2 achieves an IP56 protection rating. Its body structure and key components are specially treated to
+
+effectively resist dust ingress and high-pressure water jets. It can operate reliably in extreme temperatures
+
+ranging from -20°C to 55°C, ensuring all-weather performance.
+
+5) Open Platform, Flexible Expandability
+
+A2 comes standard with an 8-core high-performance CPU (for platform functions) and an Intel Core 17
+processor (for user development), with an optional high-computing module available. It provides multiple
+expansion interfaces, including RS485 x2, CAN x2, Gigabit Ethernet x2, USB 3.0 Type-C x2, supporting the
+integration of various peripherals. With its medium-sized form factor and powerful dynamic system, it
+supports rapid development for multiple industry scenarios (such as logistics, inspection, and rescue), making
+
+it a formidable choice for industrial-grade applications.
+
+Specification Comparison
+
+MODEL A2 A2-PRO
+Size (Standing) 820mmx440mmx570mm 820mm x 440mmx570mm
+Size (Lying Prone) 720mmx550mmx220mm 720mmx550mmx220mm
+. Aluminum Alloy + High-Strength Aluminum Alloy + High-Strength
+Material . ‘ . . : .
+Engineering Plastic Engineering Plastic
+
+© 2025 All rights reserved, Unitree Robotics 6

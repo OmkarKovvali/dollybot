@@ -1,0 +1,135 @@
+{
+  "source": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/v1-cover-update/cover-research/unitree-a2-v1-docking-station-20260509.stp",
+  "source_url": "https://oss-global-cdn.unitree.com/static/c7a45b0ba8374780bdbc41b26e770bbe.zip",
+  "source_sha256": "d2a4f55186de162237d7c9882c311f1d5b44de74e6ba2d513be9b7ea9978405a",
+  "mesh": "v1-cover.stl",
+  "mesh_sha256": "73d1371c99beb5df53f59447bc2b300b09ed8f17dc82766483c3fa79dae90182",
+  "units": "mm",
+  "triangle_count": 143994,
+  "vertex_count": 71991,
+  "bytes": 7199784,
+  "original_mesh_bounds_mm": {
+    "min": [
+      -223.91202199841416,
+      410.488629343789,
+      212.29618835449995
+    ],
+    "max": [
+      76.7667726485918,
+      641.5299108885342,
+      246.296468983167
+    ]
+  },
+  "normalized_mesh_bounds_mm": {
+    "min": [
+      -150.33939732350296,
+      -115.52064077237259,
+      0.0
+    ],
+    "max": [
+      150.33939732350296,
+      115.52064077237264,
+      34.00028062866704
+    ]
+  },
+  "dimensions_mm": [
+    300.67879464700593,
+    231.04128154474523,
+    34.00028062866704
+  ],
+  "transform": {
+    "operation": "translation only",
+    "normalized_equals_original_plus_mm": [
+      73.57262467491118,
+      -526.0092701161616,
+      -212.29618835449995
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1
+  },
+  "top_surface": {
+    "tag": 813,
+    "area_mm2": 39630.66989277547,
+    "original_z_mm": 246.2961700095,
+    "normalized_z_mm": 33.999981655000056
+  },
+  "largest_horizontal_faces": [
+    {
+      "tag": 813,
+      "area_mm2": 39630.66989277547,
+      "original_z_mm": 246.2961700095,
+      "normalized_z_mm": 33.999981655000056
+    },
+    {
+      "tag": 1,
+      "area_mm2": 7005.3612844572235,
+      "original_z_mm": 214.2961883545,
+      "normalized_z_mm": 2.000000000000057
+    },
+    {
+      "tag": 634,
+      "area_mm2": 444.6349540849355,
+      "original_z_mm": 240.2961700095,
+      "normalized_z_mm": 27.999981655000056
+    },
+    {
+      "tag": 629,
+      "area_mm2": 369.6349540849367,
+      "original_z_mm": 243.296196592,
+      "normalized_z_mm": 31.000008237500055
+    },
+    {
+      "tag": 174,
+      "area_mm2": 227.92823037199827,
+      "original_z_mm": 218.2961931517,
+      "normalized_z_mm": 6.000004797200063
+    },
+    {
+      "tag": 175,
+      "area_mm2": 227.9254520285072,
+      "original_z_mm": 218.29619315169998,
+      "normalized_z_mm": 6.0000047972000345
+    },
+    {
+      "tag": 173,
+      "area_mm2": 227.9241384885265,
+      "original_z_mm": 218.2961931517,
+      "normalized_z_mm": 6.000004797200063
+    },
+    {
+      "tag": 172,
+      "area_mm2": 227.91624031279642,
+      "original_z_mm": 218.2961931517,
+      "normalized_z_mm": 6.000004797200063
+    },
+    {
+      "tag": 644,
+      "area_mm2": 171.0,
+      "original_z_mm": 229.2961883545,
+      "normalized_z_mm": 17.000000000000057
+    },
+    {
+      "tag": 649,
+      "area_mm2": 171.0,
+      "original_z_mm": 229.2961883545,
+      "normalized_z_mm": 17.000000000000057
+    }
+  ],
+  "tessellation": {
+    "tool": "Gmsh OpenCASCADE",
+    "curvature_elements_per_2pi": 32,
+    "mesh_size_min_mm": 0.6,
+    "mesh_size_max_mm": 5,
+    "algorithm": "Frontal-Delaunay"
+  },
+  "limitations": [
+    "Visualization conversion of the OEM simplified single solid; not a print-ready design.",
+    "No source features added, removed, or drilled.",
+    "Bounds are tessellated mesh extents, not manufacturing dimensions.",
+    "OEM drawing nominal envelope 301 x 231 mm and rail anchor pitch 204 x 213 mm remain the nominal references; STEP outer pitch is approximately 204.186 x 213.004 mm."
+  ]
+}

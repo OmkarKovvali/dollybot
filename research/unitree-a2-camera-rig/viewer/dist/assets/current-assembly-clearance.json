@@ -1,0 +1,47 @@
+{
+  "revision": "07 \u2014 seam-free upright cover, selected C19, telescoping stick",
+  "pose": "upright ball head; camera and lens horizontal; saved static robot pose",
+  "camera_mount_xy_mm": [
+    -48.0,
+    0.0
+  ],
+  "pole_mount_xy_mm": [
+    78,
+    0
+  ],
+  "cover_top_z_mm": 34.0,
+  "c19_seat_height_mm": 42.5,
+  "c19_seat_height_status": "Provisional image-derived estimate; no independent OEM dimension found. Includes rubber pad, excludes stud.",
+  "camera_bottom_z_mm": 76.5,
+  "lens_lowest_z_mm": 72.11041180505664,
+  "whole_robot_conservative_CAD_top_z_mm": 41.1455373215353,
+  "camera_to_robot_vertical_separation_lower_bound_mm": 35.3544626784647,
+  "lens_to_robot_vertical_separation_lower_bound_mm": 30.964874483521342,
+  "lens_to_cover_vertical_separation_lower_bound_mm": 38.11011180505664,
+  "c19_footprint_xy_bounds_mm": [
+    [
+      -63.0,
+      -30.969999313354492
+    ],
+    [
+      -33.0,
+      15.029999732971191
+    ]
+  ],
+  "robot_triangle_bbox_max_z_under_c19_xy_mm": 0.10935133695602417,
+  "c19_to_robot_vertical_separation_lower_bound_for_delivered_mesh_mm": 33.890648663043976,
+  "cover_exact_CAD_overlap_mm3": 0,
+  "files_sha256": {
+    "flat-cover-concept.brep": "3648ec10e923d711bbbfb451c8233478818345aaffeba4ab30ac98d1fe1e6008",
+    "a2-robot.stl": "50fd95ff7329a99d6c774475c36fabf2d9a8c7fd9d3b30c43d8ddeb1177b1f91",
+    "sony-zv-e1.glb": "491c60a2bb0ecb9597dc0f2247cb3623e21ea7bac1c312c48db843fc6c4cdcfd",
+    "sony-selp1635g.glb": "71455e41de697a77b3197b1d0d89343e9893a8356e8c32bf696c5c9535153daf",
+    "insta360-x6.glb": "cfba74a303eb5b1d5a5c384de8e5853fc78c8a8cea8a93bb870e2f1461175aa8",
+    "innorel-c19.glb": "3747b744d6962b20477f1953ba95635e78d59a16bebaf492a54737be178337a6"
+  },
+  "limits": [
+    "Computed for the authored reference models and upright pose; physical tripod placement, mounting interfaces, stud length and C19 seating height remain unmeasured.",
+    "No ball-head tilt sweep, robot motion, printed strength or fastener retention qualification.",
+    "Mount-to-cover and mount-stud-to-camera contacts are intended mating interfaces, not separate collision-free bodies."
+  ]
+}

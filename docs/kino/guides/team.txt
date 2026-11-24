@@ -1,0 +1,117 @@
+Source: https://kino.ai/docs/team
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Work with your team
+
+Edit one project together, and get notes back from anyone with a review link.
+
+Edits from people and agents sync as they’re made. Collaborators’ pointers and trims show on the timeline. Follow a collaborator to see what they’re working on.
+
+Review links
+
+Anyone with the link can watch and comment, no account needed. Notes land on your timeline at their frame, where you can reply, resolve them or send them to the agent. Press ⌘⇧L to make one; review links need a paid editor plan.
+
+Clients can download the video from the same link.
+
+Roles and seats
+
+Everyone in your organization can see the same media and projects.
+
+ASPJAnyone with a review link free, no accountProject viewers freeEditors paid seats
+
+AdminInvites people and changes rolesPaid
+
+MemberEdits every projectPaid
+
+ViewerWatches and commentsFree
+
+Roles apply to every project. Use a separate organization for each client.
+
+Invite people
+
+Press ⌘⇧U, or click Invite members in Settings → Members. On the Free plan you can only invite viewers.
+
+Members 4Invite members
+
+Ana RuizAdmin
+
+Sam OkaforMember
+
+Maya ChenMember
+
+Priya ShahViewer
+
+Plans
+
+Free
+
+$0
+
+- 100 MCP calls a week
+- $5 Kino agent credit a month
+- One editor
+- 5 hours of indexing a month
+- 5 GB of storage
+
+Editor
+
+$25 per editor a month, or $240 a year
+
+- Unlimited MCP calls
+- $10 Kino agent credit a month per editor
+- 75 hours of indexing a month per editor
+- 50 GB of storage per editor
+- Storage and indexing pooled across the teamGet Editor
+
+Editor Plus
+
+$200 per editor a month, or $2,400 a year
+
+- Everything in Editor
+- $100 dedicated agent credit a month per editor
+- $75 Seedance credit a month per Plus editor
+- 4 TB added to the team's pooled storage, 4.05 TB total per Plus editor
+- Credits reset monthly, without rollover
+- Agent spending controls, usage analytics, priority Slack support and onboardingGet Editor Plus
+
+You can mix Editor and Editor Plus seats in one workspace.
+
+AI usage
+
+Every plan can edit through chat. Kino Agent mode uses your agent credit. On paid plans, usage past that credit is billed if your spending controls allow it.
+
+If you connect your own Claude or ChatGPT account, that provider’s charges and limits apply.
+
+See chat pricing for model rates, how token charges work and spending controls.
+
+Generated media
+
+Paid plans can generate images, video, music and voice. Generation is billed separately from agent credit.
+
+Billing
+
+Admins can change the card or download invoices from Settings → Billing.
+
+If you cancel, paid access lasts until the end of the billing period. Move any Editor Plus seats back to Editor in Settings → Members first.
+
+Share skills with your team
+
+Switch to your team workspace and open Settings → Skills → Import team skill. Choose a folder containing SKILL.md and its supporting files, or choose a single SKILL.md. Add a name and describe when the agent should use it, then click Share with team. Packages can be up to 3 MB, with a 1 MB limit per file.
+
+Teammates can find the skill under Team on web and desktop. Open Contents to browse its files, then choose Use in chat to add it to a prompt. Desktop agents need a Kino build with team skills support. Viewers can browse skills; using chat requires an editor seat.
+
+To update a shared skill, open Manage team skill, choose the replacement package, and click Publish update. Teammates use the new version the next time they invoke it. If another teammate published an update while you were preparing yours, Kino keeps your pending package and asks you to review the newer version before replacing it.
+
+Unpublish removes the skill from the team's catalog and prevents further file reads and invocations. Your original local files stay on your computer.
+
+Skills load when selected or relevant to a task. Sharing a skill does not make it a standing instruction for every chat.
+
+More about teams
+
+Kino for editors
+
+A project in Kino, from footage to delivery.
+
+Footage and storage
+
+What uploads, where originals live and how much space each plan includes.

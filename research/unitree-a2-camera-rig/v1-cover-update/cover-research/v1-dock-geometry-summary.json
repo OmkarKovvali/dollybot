@@ -1,0 +1,108 @@
+{
+  "method": "Gmsh OpenCASCADE STEP importer; analytic XY circle centers reconstructed from 3 evaluated arc points, not arc center of mass. Default overall box is conservative.",
+  "overall_conservative_bbox_mm": [
+    -224.1030312030193,
+    409.69897740338075,
+    211.75740382058072,
+    77.0269979710093,
+    642.3194715795192,
+    246.88098511211928
+  ],
+  "outer_ear_hole_edges": [
+    {
+      "edge": 183,
+      "center_mm": [
+        -180.91128899890163,
+        632.5112435656953,
+        214.4961883545
+      ],
+      "radius_mm": 3.1000000000016428
+    },
+    {
+      "edge": 189,
+      "center_mm": [
+        23.274841487828432,
+        632.5112435657011,
+        214.4961883545
+      ],
+      "radius_mm": 3.1000000000015575
+    },
+    {
+      "edge": 195,
+      "center_mm": [
+        23.27484148783189,
+        419.50724356570095,
+        214.4961883545
+      ],
+      "radius_mm": 3.0999999999981007
+    },
+    {
+      "edge": 201,
+      "center_mm": [
+        -180.911288998902,
+        419.50724356569816,
+        214.4961883545
+      ],
+      "radius_mm": 3.1000000000019554
+    }
+  ],
+  "inner_d12_ring_edges": [
+    {
+      "edge": 162,
+      "center_mm": [
+        23.258469859104256,
+        437.75919599340205,
+        234.296196592
+      ],
+      "radius_mm": 5.999999999999336
+    },
+    {
+      "edge": 166,
+      "center_mm": [
+        -180.74153014086994,
+        437.759195993399,
+        234.296196592
+      ],
+      "radius_mm": 6.000000000000057
+    },
+    {
+      "edge": 170,
+      "center_mm": [
+        -180.7415301408986,
+        614.2592911380964,
+        234.296196592
+      ],
+      "radius_mm": 5.99999999999639
+    },
+    {
+      "edge": 174,
+      "center_mm": [
+        23.258469859105602,
+        614.2592911380972,
+        234.296196592
+      ],
+      "radius_mm": 6.000000000000654
+    }
+  ],
+  "outer_center_spans_mm": [
+    204.18613048673387,
+    213.00400000000292
+  ],
+  "inner_center_spans_mm": [
+    204.0000000000042,
+    176.5000951446982
+  ],
+  "stl_bounds_option_bbox_mm": [
+    -223.91313945693102,
+    410.4871856771929,
+    212.29618825449995,
+    76.7676036128679,
+    641.5314113420926,
+    246.2973076762798
+  ],
+  "notes": [
+    "Source simplified model has outer-hole center span approximately204.1861\u00d7213.0040mm versus nominal drawing204\u00d7213mm; confirm physical rails before fabrication.",
+    "Inner \u00d812-ring centers approximately204.000\u00d7176.500mm match drawing. No claim tapped thread geometry/depth validated.",
+    "Successful BREP import and positive volume are basic geometry checks, not a full manifold/fabrication/structural certification."
+  ]
+}

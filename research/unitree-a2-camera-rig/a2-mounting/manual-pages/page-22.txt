@@ -1,0 +1,38 @@
+on the robot's operating conditions, such as extended high-speed walking, prolonged and violent posture
+adjustments while standing, standing with bent legs, carrying loads, walking at a low body height, and
+navigating terrain with moderate unevenness or slopes. These conditions will reduce endurance. (When the
+body height is low and the knee joints are significantly bent, the motors bear a heavier load, which noticeably
+increases power consumption and generates motor heat.)
+
+5) Regarding Steps and Uneven Terrain: Due to varying skill levels among operators, for reliability
+and safety, it is currently not recommended for users to navigate steps exceeding 30cm in height, as improper
+operation may cause the robot to trip. When encountering uneven ground, operators should proceed with
+caution and reduce the robot's movement speed.
+
+6) Regarding Slope Climbing: The rated forward climbing angle is less than or equal to 45°. When
+climbing at larger angles (approximately equal to or greater than 45°), the robot's body may drift sideways.
+Turning directly on steep slopes may cause the robot to lose balance. When climbing slopes, reduce walking
+speed and ensure proper operator control.
+
+7) Regarding Speed: Under stable operation on flat ground, the speed ranges from approximately 0 to
+3.7 m/s, with a maximum of about 5 m/s.
+
+8) Regarding Foot Components: The robot's foot components are consumables. We provide spare foot
+components with the product. Wear can be significant, especially when operating on rough surfaces. If
+noticeable wear or damage to the foot pads is observed, or if the impact noise during walking increases
+significantly, replace the foot components promptly to prevent abnormal robot movement or damage due to
+worn foot components.
+
+9) Regarding IP56 Protection Level: Before use, ensure the battery interface, battery compartment
+interface, battery surface, and battery compartment surface are dry and free of moisture before inserting the
+battery into the robot.
+
+10) Do not touch the robot while it is in motion! Be cautious of pinching at the joints, such as the
+
+knee joints.
+
+A @ Maximum running speed of 5m/s, realized in special configurations, in practice there is a speed limit for
+
+security purposes
+
+©2025 Allrights reserved, Unitree Robotics 21

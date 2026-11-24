@@ -1,0 +1,8 @@
+Source: https://kino.ai/docs/chat/claude-code
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Claude Code
+
+Use your Claude plan’s included Claude Code usage in Kino. We recommend it if you already subscribe. See Claude plans and limits.
+
+In Kino desktop, open the chat’s agent picker and choose Use Claude plan → Sign in with Claude. If Claude gives you a code, paste it into Kino.

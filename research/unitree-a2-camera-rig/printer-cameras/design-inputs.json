@@ -1,0 +1,78 @@
+{
+  "checked_on": "2026-11-23",
+  "stage": "assets and concept inputs only",
+  "confirmed_printer": {
+    "model": "Bambu Lab H2S",
+    "nominal_build_volume_mm": {
+      "width": 340,
+      "depth": 320,
+      "height": 340
+    },
+    "official_source": "https://store.bblcdn.com/s7/default/3f91ec86de1a4ce28fe8fb660b95cd3e/h2s.pdf"
+  },
+  "sony": {
+    "model": "ZV-E1",
+    "body_mm_WHD": [
+      121,
+      71.9,
+      54.3
+    ],
+    "mass_with_battery_card_g": 483,
+    "tripod_thread": "1/4-20 UNC",
+    "screw_projection_limit_mm": {
+      "value": 5.5,
+      "operator": "strictly less than"
+    },
+    "lens_user_report": "Sony FE PZ 16-35mm F4 G, user-confirmed product SKU",
+    "lens_exact_model": "SELP1635G",
+    "cage": null,
+    "precise_socket_xy": null,
+    "lens_mass_g": 353,
+    "lens_max_diameter_mm": 80.5,
+    "lens_nominal_length_mm": 88.1,
+    "lens_filter_diameter_mm": 72,
+    "lens_length_constant_during_focus_zoom": true,
+    "body_and_lens_nominal_mass_g": 836,
+    "lens_source": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/selp1635g/specifications"
+  },
+  "insta360": {
+    "model": "X6",
+    "camera_mm_WHD_including_lenses": [
+      50,
+      100,
+      40
+    ],
+    "mass_g": 196,
+    "mounts": [
+      "1/4-inch thread",
+      "magnetic/quick-release"
+    ],
+    "thread_pitch_and_engagement_verified": false,
+    "bundle": "Essentials Bundle Black",
+    "bundle_stick_nominal_length_mm": 1140,
+    "bundle_stick_style": "one of two styles; actual style unconfirmed",
+    "stick_grip_diameter_mm": null,
+    "stick_confirmed_mass_g": null,
+    "stick_legacy_reference_mass_g": 118,
+    "legacy_reference_is_not_measurement": true
+  },
+  "missing": [
+    "cage/quick release",
+    "stick handle diameter and clamp zone",
+    "pole working height and angle",
+    "physical rail/nut verification",
+    "lens hood/filter installation if used"
+  ],
+  "cad_created": false,
+  "a2_rail_reference": {
+    "configuration": "bare back rails, user confirmed",
+    "crossrail_spacing_mm": 213.0,
+    "interface": "slotted rails with supplied M6 thin hex nuts",
+    "source_file": "../a2-mounting/guide-rail-drawing.png",
+    "requires": "physical rail/nut verification"
+  },
+  "concept_module_footprint_limit_mm": [
+    280,
+    280
+  ]
+}

@@ -1,0 +1,50 @@
+improper user operation, the robot will automatically switch to self-protection mode, and the robot's motors
+will automatically engage the brake state to protect the components.
+
+3) How to Shut Down the Robot When the Remote Control Module Fails
+
+When the remote control module fails (e.g., due to depleted battery), making it impossible to use the
+remote control to put the robot into a lying standby state, you can only force a shutdown by pressing the battery
+power button.
+
+Forced Shutdown: Maintain a safe distance of at least 2 meters between the robot and obstacles, complex
+terrain, crowds, water surfaces, etc. Lift the robot's head and tail, briefly press the power switch once, then
+press and hold the power switch for more than 3 seconds to turn off the power. After the robot powers off,
+slowly place it on the ground.
+
+4) Robot Prone to Falling, Unable to Stand After Startup
+
+Incorrect startup posture may cause errors in the robot's motor angles. Use the correct startup posture and
+restart the robot. If restarting the robot does not resolve the issue, please contact Unitree official technical
+support.
+
+5) How to Achieve Long-Term Standby
+
+If long-term standby is required, control the robot into a lying posture (press L2+B to enter damping
+mode) to prevent the robot from automatically shutting down due to low battery and falling, which could cause
+
+damage!
+
+A @ Attention! When lifting the robot, do not place your hands on the joints, such as the hip joint, to avoid
+pinching. If the robot is forced to shut down while standing without protection, it will fall flat on the ground
+
+after losing power.
+
+Precautions
+
+1) Ensure the robot is in a prone position before shutting it down. Otherwise, when the robot powers off,
+it will fall heavily to the ground, which may cause damage to the body and pose safety hazards!
+
+2) When standing, if the ground friction is insufficient or the robot's feet do not have reliable support, do
+not violently adjust the robot's posture (including pitch, roll, yaw, or body height adjustments), as this may
+cause the robot to lose balance and fall.
+
+3) Operate the robot to walk on flat, stable terrain. When walking on surfaces with low friction, avoid
+operating the robot violently, as this may cause the feet to slip, leading to instability and falls.
+
+4) Regarding Endurance: The robot's comprehensive operational endurance is approximately 3—5 hours.
+When carrying a 25kg load, the operating time is about 3 hours, with a range of approximately 12.5km. Under
+
+no load, the continuous walking time is about 5 hours, with a range of about 20km. Actual endurance depends
+
+©2025. All rights reserved, Unitree Robotics 20

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rehearse camera moves with the official I2RT Flow Base model. Drive manually, preview cinematic paths, and export a shot plan.">
+  <title>Kino · Flow Base Studio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23cdfa71'/%3E%3Cpath d='M18 14v36h8V36l15 14h11L31 30l19-16H39L26 26V14z' fill='%23131516'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./" aria-label="Kino Flow Base Studio"><span class="brand-icon">k</span><span>kino<span class="brand-dot">.</span></span></a>
+  <span class="divider"></span><div class="project-name">Flow Base Studio <span>Previsualization workspace</span></div>
+  <div class="top-actions"><span class="sim-badge"><i></i> SIMULATION</span><button id="sources-button" class="button secondary">Model & sources</button><button id="export" class="button secondary">Export shot <span aria-hidden="true">↥</span></button></div>
+</header>
+<main class="workspace">
+  <section class="stage-column" aria-label="Simulation workspace">
+    <div class="stage-title"><div><span class="eyebrow">VIRTUAL STAGE</span><h1>Find your next move.</h1></div><p>Plan the shot. See it before you shoot.</p></div>
+    <div class="bridge-bar" aria-label="Kino chat connection"><div><strong id="bridge-status" aria-live="polite">Direct from Kino chat</strong><span id="bridge-detail">Connect the local bridge to rehearse shots from your existing chat.</span></div><button id="connect-kino" class="button secondary">Connect Kino</button><a id="local-simulator" href="http://127.0.0.1:8766" class="button secondary">Open local simulator</a></div>
+    <div id="kino-shot" class="kino-shot" hidden><span>FROM KINO</span><strong id="kino-shot-reason"></strong><small id="kino-shot-status" aria-live="polite"></small></div>
+    <div class="stage-frame">
+      <div id="viewport" tabindex="0" aria-label="3D stage. Use W A S D to move, Q E to rotate, and Space to stop."></div>
+      <div class="viewport-top"><span class="viewport-label"><span class="live-square"></span> PERSPECTIVE</span><div class="view-toggle" aria-label="Stage view"><button id="view-3d" class="active" aria-pressed="true">3D</button><button id="view-top" aria-pressed="false">Top</button><button id="view-fit" aria-label="Fit stage in view">Fit</button></div></div>
+      <div id="loading" class="loading"><span class="spinner"></span> Loading official I2RT model…</div>
+      <div class="stage-note"><span class="axis-tag">Z ↑</span> 1 m grid <span>·</span> Drag to orbit · Scroll to zoom</div>
+      <div class="camera-card"><div class="camera-header"><span><span class="camera-icon"></span> CAMERA PREVIEW</span><span id="lens-label">35 mm</span></div><div id="camera-viewport"><div class="thirds"></div><div class="camera-frame-corners"></div></div><div class="camera-bottom"><span id="camera-direction">Subject lock</span><span>16:9</span></div></div>
+      <div class="stage-legend"><span><i class="legend-path"></i> Planned path</span><span><i class="legend-trail"></i> Travelled</span></div>
+    </div>
+    <div class="transport"><button id="play" class="button primary" disabled><span class="play-icon" aria-hidden="true">▶</span> Run shot</button><button id="stop" class="button stop" title="Stop (Space)"><span aria-hidden="true">■</span> Stop</button><button id="reset" class="icon-button" title="Reset to shot start" aria-label="Reset to shot start">↺</button><div class="timeline"><div class="time-label"><span id="status" aria-live="polite">Ready to rehearse</span><span><b id="elapsed">00.0</b> / <span id="total-time">16.0 s</span></span></div><input id="scrub" type="range" min="0" max="1000" value="0" step="1" aria-label="Shot timeline"></div></div>
+    <div class="telemetry" aria-label="Robot telemetry"><div><span>POSITION X</span><strong id="pos-x">−2.50 <small>m</small></strong></div><div><span>POSITION Y</span><strong id="pos-y">0.00 <small>m</small></strong></div><div><span>HEADING</span><strong id="heading">0.0<small>°</small></strong></div><div><span>SPEED</span><strong id="speed">0.00 <small>m/s</small></strong></div><div class="telemetry-mode"><span>CONTROL</span><strong id="mode">Standby</strong></div></div>
+    <div class="stage-footer"><span><i></i> Official I2RT geometry <span class="muted">/ 4 steerable casters</span></span><span>Kinematic preview · No hardware connected</span></div>
+  </section>
+  <aside class="inspector">
+    <div class="inspector-heading"><div><span class="eyebrow">DIRECT THE CAMERA</span><h2>Shot designer</h2></div><span class="pill">01</span></div>
+    <div class="shot-tabs" role="group" aria-label="Shot type"><button data-shot="orbit" class="selected" aria-pressed="true"><span aria-hidden="true">◌</span>Orbit</button><button data-shot="dolly" aria-pressed="false"><span aria-hidden="true">⊙</span>Push-in</button><button data-shot="slide" aria-pressed="false"><span aria-hidden="true">↔</span>Slide</button></div>
+    <p id="shot-description" class="description">Circle the subject while keeping them in frame.</p>
+    <div class="switch-row"><div><label for="free-motion">Free simulation</label><span>Stage, clearance &amp; motion limits off</span></div><label class="switch"><input id="free-motion" type="checkbox" checked><span></span></label></div>
+    <div id="preset-controls">
+    <div class="parameter"><label for="radius">Subject distance <output id="radius-value">2.5 m</output></label><input id="radius" type="range" min="1.2" max="4" step="0.1" value="2.5"><div class="range-ends"><span>1.2 m</span><span>4.0 m</span></div></div>
+    <div class="parameter" id="sweep-field"><label for="sweep">Orbit sweep <output id="sweep-value">90°</output></label><input id="sweep" type="range" min="-180" max="180" step="15" value="90"><div class="range-ends"><span>−180°</span><span>180°</span></div></div>
+    <div class="parameter" id="distance-field" hidden><label for="distance">Travel distance <output id="distance-value">1.2 m</output></label><input id="distance" type="range" min="0.2" max="3" step="0.1" value="1.2"><div class="range-ends"><span>0.2 m</span><span>3.0 m</span></div></div>
+    <div class="parameter"><label for="duration">Duration <output id="duration-value">16 s</output></label><input id="duration" type="range" min="4" max="40" step="1" value="16"><div class="range-ends"><span>4 s</span><span>40 s</span></div></div>
+    <div class="switch-row"><div><label for="subject-lock">Keep subject centered</label><span>Rotate the base to follow the subject</span></div><label class="switch"><input id="subject-lock" type="checkbox" checked><span></span></label></div>
+    </div>
+    <div class="camera-settings"><label for="height">Camera height<select id="height"><option value="1">1.0 m</option><option value="1.4" selected>1.4 m</option><option value="1.7">1.7 m</option></select></label><label for="lens">Lens<select id="lens"><option value="24">24 mm</option><option value="35" selected>35 mm</option><option value="50">50 mm</option></select></label></div>
+    <div class="plan-summary"><div><span>Path length</span><strong id="path-length">3.93 m</strong></div><div><span>Peak speed</span><strong id="peak-speed">0.53 m/s</strong></div><p id="validation" aria-live="polite"></p></div>
+    <div class="manual-section"><div class="section-row"><h3>Take the controls</h3><span class="muted">Manual override</span></div><p>Hold a key to drive. Manual input cancels the shot.</p><div class="keyboard"><div class="key-row"><button data-key="q" aria-label="Rotate left, Q"><small>↶</small>Q</button><button data-key="w" aria-label="Forward, W"><small>↑</small>W</button><button data-key="e" aria-label="Rotate right, E"><small>↷</small>E</button></div><div class="key-row"><button data-key="a" aria-label="Strafe left, A"><small>←</small>A</button><button data-key="s" aria-label="Backward, S"><small>↓</small>S</button><button data-key="d" aria-label="Strafe right, D"><small>→</small>D</button></div></div><div class="manual-hint"><kbd>SPACE</kbd><span>Stop movement</span><span class="manual-speed">0.35 m/s</span></div></div>
+  </aside>
+</main>
+<dialog id="sources-dialog"><div class="dialog-heading"><span class="eyebrow">MODEL PROVENANCE</span><button id="close-sources" class="icon-button" aria-label="Close model information">×</button></div><h2>Real geometry. A virtual rehearsal.</h2><p>The chassis and eight caster parts come from I2RT’s official Linear Bot model, exported from Onshape. The lift and arms are omitted. The camera mast is an illustrative rig.</p><div class="source-facts"><div><span>Source</span><strong>I2RT Robotics / linearbot</strong></div><div><span>Revision</span><code>8c1b3ab · MIT license</code></div><div><span>Coordinate frame</span><strong>X forward · Y left · Z up</strong></div><div><span>Wheel radius / caster trail</span><strong>50 mm / 20 mm</strong></div></div><p>This preview integrates body velocity and I2RT’s caster kinematics. Floor contact, wheel slip, motor dynamics, payload stability, and real stopping distance are not simulated. Stage clearance checks are approximate. Camera height and lenses are planning assumptions.</p><div class="source-links"><a class="button primary" href="./assets/flowbase-visual-model.zip" download>Download base model</a><a class="button secondary" href="https://github.com/i2rt-robotics/i2rt/tree/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/i2rt/robot_models/linearbot" target="_blank" rel="noreferrer">Official model files</a><a href="https://github.com/i2rt-robotics/i2rt/tree/8c1b3ab6b6f31ae11e8b5f1e46c037d154199938/examples/drive_flow_base_viser" target="_blank" rel="noreferrer">I2RT’s Python / Viser simulator</a></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

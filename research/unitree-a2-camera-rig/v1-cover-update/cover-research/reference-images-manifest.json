@@ -1,0 +1,37 @@
+[
+  {
+    "name": "dock-v1-render.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/46446a892dee47b1a1c7084b0891600a_4000x2001.png",
+    "sha256": "6bccba7cb2e25cc26263d36de6f11aa80d02e7c0b4029c373070f0e8ba6e1023",
+    "bytes": 1357238,
+    "unchanged_official_asset": true
+  },
+  {
+    "name": "dock-v1-dimensions.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/37f7483d7b9e446997fe5d8d77cf4e53_1250x864.png",
+    "sha256": "13ea2a1b3f01039e5e22f61e9021491cf3eb908cd998897a8be865fd4edf5185",
+    "bytes": 97092,
+    "unchanged_official_asset": true
+  },
+  {
+    "name": "a2-with-dock-v1.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/fd27f1d6dcae42779321d4c409ff38ce_4000x2001.png",
+    "sha256": "269390846cf7f0414abfafaee4e9d04ddb00a06c72cc3444fe5f57127af870d7",
+    "bytes": 2292255,
+    "unchanged_official_asset": true
+  },
+  {
+    "name": "dock-install-m6-nut-rail-interface.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/6/22/72f34a93906140ae9ad2afbc1538a351_1489x1217.png",
+    "sha256": "99c0c14ef478abcfcc0dfcf68749a528f5aa023d2ecc730cfc4ec4b00e713275",
+    "bytes": 551445,
+    "unchanged_official_asset": true
+  },
+  {
+    "name": "guide-rail-drawing.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/1/26/f655b605d5b94006af34a9b46256cbbf_2609x1209.png",
+    "sha256": "a4e4aed24f309b2bed4eea7cbd6699f878b33af3c461847ef2d61991b65467d5",
+    "bytes": 211445,
+    "unchanged_official_asset": true
+  }
+]

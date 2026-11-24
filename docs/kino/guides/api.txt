@@ -1,0 +1,43 @@
+Source: https://kino.ai/docs/api
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Media Import API
+
+Copy this prompt into Kino chat to set up your first API key.
+
+Open Generate API key in Kino Settings using settings::GenerateApiKey. I’ll choose the destination media bin and generate the key in Settings.
+
+Copy
+
+Copy originals into Kino for clipping while you keep editing in Premiere or another editor. The API is in preview for organizations with cloud transfer enabled.
+
+Create a key
+
+In Settings → API, name the key and choose the destination media bin. Kino lets you copy the secret once, immediately after creation. Save it in your integration’s secret store and send it as a bearer token in the Authorization header.
+
+Send your first file
+
+The examples use curl and jq. Set KINO_API_KEY, KINO_BIN_ID, and SOURCE_URL in your shell. Use a direct HTTPS download URL accessible over the public internet. A worker can start the transfer up to an hour after submission, so allow time for queuing and download when signing the URL.
+
+curl --fail-with-body -sS -i "https://kino.ai/api/v1/bins/${KINO_BIN_ID}/assets/import" \
+  -H "Authorization: Bearer ${KINO_API_KEY}" \
+  -H "Idempotency-Key: shoot-042-camera-a-001" \
+  -H 'Content-Type: application/json' \
+  --data "$(jq -n --arg url "$SOURCE_URL" '{name:"A001.mov",source_url:$url}')"
+
+Copy
+
+Wait for the original
+
+Set KINO_STATUS_URL to the relative status_url in the response. Wait the number of seconds in Retry-After before your first status check.
+
+curl --fail-with-body -sS "https://kino.ai${KINO_STATUS_URL}" \
+  -H "Authorization: Bearer ${KINO_API_KEY}"
+
+Copy
+
+Increase the interval on repeated checks. When transfer is copied, Kino has stored the original. If your integration also needs Kino’s processing to finish, follow the status values.
+
+Reference files
+
+Use the OpenAPI specification to generate a client or inspect the request and response schemas. For agents, use the docs index or full Markdown reference.

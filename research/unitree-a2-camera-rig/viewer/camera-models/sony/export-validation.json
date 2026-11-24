@@ -1,0 +1,29 @@
+{
+  "format": "binary glTF 2.0",
+  "bytes": 1661480,
+  "mesh_count": 302,
+  "material_count": 11,
+  "triangles": 64848,
+  "embedded_buffers": true,
+  "decoder_extensions_required": false,
+  "metadata_hashes_verified": true,
+  "envelope_mm": [
+    54.3,
+    121.0,
+    71.9
+  ],
+  "accessor_bounds_mm": {
+    "min": [
+      -34.61433410644531,
+      -47.946128845214844,
+      0
+    ],
+    "max": [
+      19.685665130615234,
+      73.05387115478516,
+      71.89999389648438
+    ]
+  },
+  "axis_check": "Z up, lens -X, grip +Y; mm values preserved",
+  "geometry_finite": true
+}

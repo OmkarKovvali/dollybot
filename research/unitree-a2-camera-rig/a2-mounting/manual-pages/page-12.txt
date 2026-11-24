@@ -1,0 +1,44 @@
+Companion Remote Control Charging
+
+When the battery indicator light of the companion remote control shows that the battery is low, you should
+
+connect the companion remote control to the charger as shown in the figure below:
+
+AC Power
+
+100-240V — USB Charger a
+O = |
+O° — 6 =
+
+1) We recommend you to use a 5V/1A USB charger which meets FCC/CE standard.
+
+2) The power indicator light will flash at 1Hz (1 second/time) in charging status and indicate the current
+power level.
+
+3) When the power indicator light is all off, it means the battery pack is full, please remove the charger
+to finish charging.
+
+Charging Indicator Light
+
+LED1 LED2 LED3 LED4 Current Battery
+O: O O O 0%-25%
+O O
+
+25%-50%
+
+50%-75%
+
+75%-100%
+
+OOO 0
+OO O00
+
+Full Charged
+
+Remote Control Charging
+
+When the battery indicator light of the companion remote control shows that the battery is low, you should
+
+connect the companion remote control to the charger as shown in the figure below:
+
+©2025 Allrights reserved, Unitree Robotics 11

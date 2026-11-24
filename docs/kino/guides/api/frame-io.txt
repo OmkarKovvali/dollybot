@@ -1,0 +1,16 @@
+Source: https://kino.ai/docs/api/frame-io
+Fetched at (UTC): 2026-11-23T02:14:45.282747+00:00
+
+Move footage from Frame.io
+
+Bring the footage you need for a cut into Kino and keep your review history in Frame.io.
+
+Download the originals
+
+In Frame.io, open a file or folder's menu and choose Download. Pick the original files when Frame.io offers a choice of formats. In Kino, open the destination media bin and drop in the downloaded files. Frame.io download guide
+
+If you have a Premiere project, bring over its linked footage and use Import from another editor to open the sequence in Kino.
+
+Import from a script
+
+For recurring transfers, get the original download URL from Frame.io V4 and submit it to the Kino import endpoint. Use a direct HTTPS download URL accessible over the public internet. Submit one request per original, then check import status. Frame.io V4 download URL fields

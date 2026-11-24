@@ -1,0 +1,36 @@
+How to charge
+
+Due to factors such as battery self-discharge during transportation and storage, it is normal for the battery
+
+to have low or no power when first used. You can charge it as follows.
+
+Charge the battery
+
+1) Remove the battery from the A2 body 2) Charger input AC power
+(Press the battery latch) (100-240V, 50/60Hz)
+DP
+
+3) Connect the AQ battery 4) Manually disconnect the power when fully charged
+
+1) Connect the charger to an AC power source (100-240V, 50/60Hz). It must be ensured that the external
+power supply voltage matches the rated input voltage of the charger before connecting. Otherwise, the charger
+will be damaged (the rated input voltage of the charger is marked on the nameplate of the charger).
+
+2) Plug in the input AC power first before charging the battery, then connect the charger to the battery.
+
+3) Before charging the battery, ensure that the battery pack is switched off. Otherwise, the battery and
+charger may be damaged.
+
+4) The users need to remove the battery pack from the robot itself when charging the battery pack.
+
+5) In the charging state, the battery indicator of battery pack will flash at a frequency of 1Hz (1
+second/time) and indicate the current battery.
+
+6) If the battery indicator is off, the battery pack is fully charged. Please remove the battery pack and
+charger to finish charging.
+
+7) After the robot has finished operating, the battery pack temperature may be high. The battery pack
+
+must be allowed to cool down to room temperature before charging.
+
+©2025. All rights reserved, Unitree Robotics 10

@@ -1,0 +1,107 @@
+{
+  "checked_on": "2026-11-23",
+  "selection": {
+    "current_working_variant": "new black / gold joint markers",
+    "official_store_commodity_id": 6989,
+    "reason": "User supplied image matches official6989 product image: diagonal grip and gold transition bands",
+    "physical_unit_identity_verified": false,
+    "store_product_name": "114cm Invisible Selfie Stick"
+  },
+  "bundle_evidence": {
+    "url": "https://store.insta360.com/product/x6?c=6922",
+    "confirmed": "X6 Essentials Bundle includes a114cm Invisible Selfie Stick; current listing explicitly allows one of two styles",
+    "can_identify_exact_revision_from_bundle_name_alone": false
+  },
+  "new_variant_6989": {
+    "full_nominal_length_mm": 1140,
+    "full_length_status": "manufacturer product name and bundle specification",
+    "collapsed_length_mm": null,
+    "collapsed_length_status": "No variant-specific numerical collapsed dimension found in reviewed current official storefront or official images",
+    "legacy_collapsed_reference_mm": 233,
+    "legacy_value_can_be_used_only_as_provisional": true,
+    "mass_g": null,
+    "material_verified_for_revision": null,
+    "tube_count_including_base": 7,
+    "moving_inner_tube_count": 6,
+    "tube_count_status": "Visual count in official straight expanded photo, not a dimensioned engineering drawing",
+    "distinguishing_visuals": [
+      "six gold/yellow transition bands",
+      "diagonal dark rubber grip",
+      "narrow diamond-knurled camera attachment head",
+      "base metal female threaded insert",
+      "male threaded stud at top"
+    ],
+    "top_interface": {
+      "appearance": "male threaded stud",
+      "nominal_thread_family": "1/4 inch camera accessory interface",
+      "exact_pitch_and_engagement_verified": false
+    },
+    "bottom_interface": {
+      "appearance": "female threaded metal insert",
+      "dimensioned_thread_spec_found": false,
+      "thread_depth_mm": null
+    },
+    "diameters_mm": null,
+    "diameter_status": "No authoritative revision-specific tube or handle diameters found",
+    "photo_interpretation_warning": "The expanded product render is not demonstrated to depict full extension. Its outer base occupies roughly37% of the shown length, so do not scale segment strokes from it assuming1140mm total."
+  },
+  "classic_variant_2141": {
+    "public_name": "114cm Invisible Selfie Stick (Classic Black)",
+    "full_nominal_length_mm": 1140,
+    "retracted_family_reference_mm": 233,
+    "reference_mass_g": 118,
+    "material": "Aluminum alloy",
+    "dimension_source": "https://intercom.help/insta360support/en/articles/10398152-which-selfie-stick-suits-my-style",
+    "source_article_date": "2025-01-20",
+    "scope_warning": "This article predates the newer gold-band6989 variant; its family specs must not be silently transferred to6989.",
+    "tube_count_including_base": 7,
+    "tube_count_status": "visual count from official image8",
+    "appearance": "dark plain tube shoulders; crosshatch/diagonal crisscross grip; female base socket"
+  },
+  "implementation_advice": {
+    "kinematics": "Use seven fixed-length concentric tubes with six sliding joints. Hide nested lengths inside outer tubes at collapse; change translation, not tube scale.",
+    "slider_max_mm": 1140,
+    "slider_min_mm_if_proceeding_without_measurement": 233,
+    "slider_min_status": "PROVISIONAL legacy-family reference, not verified for selected new variant",
+    "visual_diameter_example_mm": {
+      "base_tube": 22,
+      "moving_tubes_base_to_tip": [
+        20,
+        18,
+        16,
+        14,
+        12,
+        9
+      ],
+      "rubber_grip": 24,
+      "knurled_top_head": 16
+    },
+    "visual_diameter_example_status": "illustrative proportions inferred from official image; not fit measurements or manufacturer dimensions",
+    "actual_measurements_needed": [
+      "collapsed overall length and whether measured to camera seating face or screw tip",
+      "grip and tube outside diameters",
+      "each stage stroke/overlap if exact kinematics required",
+      "base thread pitch and usable insertion depth"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://store.insta360.com/product/x6?c=6922",
+      "use": "current bundle contents and two-styles disclaimer"
+    },
+    {
+      "url": "https://store.insta360.com/product/selfie_stick",
+      "use": "current variants and official product-image URLs",
+      "existing_html": "../../../v1-cover-update/quick-release/assets/insta360-114cm-stick-official.html"
+    },
+    {
+      "url": "https://store.insta360.com/product/selfie_stick?c=2141",
+      "use": "Classic Black public variant name"
+    },
+    {
+      "url": "https://intercom.help/insta360support/en/articles/10398152-which-selfie-stick-suits-my-style",
+      "use": "dated legacy-family233mm/118g/aluminum reference"
+    }
+  ],
+  "artifact_scope": "Research and image downloads only. No viewer or geometry changes."
+}

@@ -1,0 +1,108 @@
+{
+  "registration": {
+    "assembly_dock_volume_tag": 9,
+    "assembly_volume_count": 48,
+    "robot_volume_count": 47,
+    "assembly_to_standalone_translation_mm": [
+      -78.7561082,
+      525.9531522999999,
+      -215.8551754
+    ],
+    "assembly_to_viewer_translation_mm": [
+      -5.183483525088818,
+      -0.05611781616164535,
+      -428.1513637544999
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1,
+    "four_ear_center_registration_max_residual_mm": 1.4210854715202004e-14,
+    "asymmetric_housing_xy_bbox_residual_mm": 0.0002809446893934364,
+    "top_plane_z_residual_mm": 2.6643026984629614e-05,
+    "top_face_vertex_counts": [
+      2,
+      23
+    ],
+    "assembly_top_z_mm": 462.151372052527,
+    "standalone_top_z_mm": 246.2961700095,
+    "assembly_dock_volume_mm3": 1245339.1622654255,
+    "standalone_dock_volume_mm3": 1300719.82905397,
+    "note": "Registration uses four actual ear-hole circles, checked against asymmetric XY housing extents and top-plane height. Dock revisions have different volume and edge segmentation; internal geometry is not claimed identical."
+  },
+  "comparisons": [
+    {
+      "model": "assembled_july_dock",
+      "positive_intersection_volume_mm3": 0,
+      "intersection_solid_count": 0
+    },
+    {
+      "model": "standalone_may_cover",
+      "positive_intersection_volume_mm3": 0,
+      "intersection_solid_count": 0
+    },
+    {
+      "model": "derived_printed_cover_concept",
+      "positive_intersection_volume_mm3": 0,
+      "intersection_solid_count": 0
+    }
+  ],
+  "pole_axis_occupied_line_segments": [
+    {
+      "edge_tag": 49247,
+      "endpoints_mm": [
+        [
+          78.0,
+          0.0,
+          -158.09779972051217
+        ],
+        [
+          78.0,
+          0.0,
+          -0.3810785260860712
+        ]
+      ]
+    }
+  ],
+  "robot_top_at_exact_pole_axis_z_mm": -0.3810785260860712,
+  "scope": "Read-only exact CAD Boolean common volumes with source robot body10; approximate bounding boxes are contextual only. Source models are simplified and differ in revision. No physical part measured.",
+  "whole_assembly_broad_phase": {
+    "robot_volumes_checked": 47,
+    "excluded_dock_volume_tag": 9,
+    "padded_cover_envelope_mm": {
+      "min": [
+        -151,
+        -117,
+        -1
+      ],
+      "max": [
+        151,
+        117,
+        43
+      ]
+    },
+    "overlapping_volume_candidates": [
+      {
+        "volume_tag": 10,
+        "min_mm": [
+          -394.02562489793706,
+          -143.25995836170787,
+          -170.95903216776816
+        ],
+        "max_mm": [
+          324.2462872442764,
+          143.2482502696367,
+          41.1455373215353
+        ]
+      }
+    ],
+    "nonoverlapping_volume_count": 46,
+    "conclusion": "Body10 is the only non-dock robot solid whose conservative bbox overlaps the entire padded cover and boss envelope. Exact zero positive overlap with body10 therefore covers all47 static robot volume instances."
+  },
+  "derived_brep_sha256": "50bfa01915a8f355508454835c7110033113c138ea5d56e2fc57810e2fd87d41",
+  "front_direction_status": "unverified; source orientation preserved; no front-axis claim made",
+  "provisional_screw_head_axis_clearance_mm": 20.88107852608607,
+  "access_note": "Robot solid occupies the pole axis below the roof. Static no-overlap does not establish tool access from beneath while mounted. Assemble the bottom-driven screw with carrier removed unless actual access is verified."
+}

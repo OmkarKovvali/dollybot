@@ -1,0 +1,161 @@
+{
+  "stage": "interactive 3D concept and reference-based camera models; fabrication design pending",
+  "checked_on": "2026-11-23",
+  "user_confirmed": {
+    "robot": "Unitree A2, bare factory back rails; no expansion dock",
+    "printer": "Bambu Lab H2S",
+    "main_camera": "Sony ZV-E1",
+    "lens_focal_range_mm": [
+      16,
+      35
+    ],
+    "lens_exact_model": "Sony FE PZ 16\u201335mm F4 G (SELP1635G), identified from owner receipt",
+    "camera_360": "Insta360 X6 Essentials Bundle Black",
+    "cover_reference": "Official A2 V1 docking-station housing render, selected by user; user owns bare rails, not the dock",
+    "pole_attachment_request": "Metal 1/4-20 screw from underside through the cover into the stick base",
+    "structure_request": "Fully printed cover with closed side ports; no raised top interface pieces; two 1/4-20 clearance holes with underside head recesses",
+    "camera_mount": "INNOREL C19 mini ball head, Amazon ASIN B0CHB63882",
+    "camera_hole_position": "Restore original centered position after selecting ball head",
+    "stick_visual_variant": "New black stick with gold joint bands; user says likely this version",
+    "print_orientation": "Z+ upright; bottom supported"
+  },
+  "verified_reference_dimensions": {
+    "printer_build_volume_mm_XYZ": [
+      340,
+      320,
+      340
+    ],
+    "rail_center_spacing_mm": 213.0,
+    "rail_slot_mouth_mm": 6.2,
+    "rail_channel_width_mm": 10.1,
+    "rail_outer_width_mm": 18.1,
+    "rail_lip_depth_mm": 2.8,
+    "rail_depth_to_floor_mm": 6.5,
+    "rail_attachment": "OEM supplied M6 hex nuts; nut thickness and custom bolt length unverified",
+    "sony_body_mm_WHD": [
+      121,
+      71.9,
+      54.3
+    ],
+    "sony_mass_with_battery_card_g_excluding_lens": 483,
+    "sony_tripod_thread": "1/4-20 UNC",
+    "sony_screw_protrusion_mm": {
+      "operator": "less than",
+      "limit": 5.5
+    },
+    "x6_mm_WHD_including_lenses": [
+      50,
+      100,
+      40
+    ],
+    "x6_mass_g": 196,
+    "x6_bundle_stick_nominal_max_length_mm": 1140,
+    "v1_housing_plan_mm_LW": [
+      301,
+      231
+    ],
+    "v1_outer_mount_center_spans_mm_LW": [
+      204,
+      213
+    ],
+    "lens_max_diameter_mm": 80.5,
+    "lens_length_mm": 88.1,
+    "lens_mass_g": 353,
+    "lens_filter_diameter_mm": 72
+  },
+  "concept_proposals_not_manufacturing_dimensions": {
+    "cover": "V1-derived flat top with closed side ports and four retained rail mounting ears",
+    "plan_envelope_mm_LW": [
+      301,
+      231
+    ],
+    "camera_mount_recommendation": {
+      "manufacturer": "INNOREL",
+      "model": "C19",
+      "user_selected": true,
+      "bottom_interface": "3/8 inch female with supplied 1/4 inch adapter; verify actual engagement",
+      "top_interface": "1/4 inch camera stud",
+      "published_total_height_including_stud_mm": 47.5,
+      "modeled_seating_plane_height_mm": 42.5,
+      "not_3d_printed": "Separate purchased commercial ball head; only carrier is printed"
+    },
+    "camera_placement": {
+      "hole_xy_mm": [
+        -48,
+        0
+      ],
+      "cover_top_z_mm": 34,
+      "mount_camera_seating_height_mm": 42.5,
+      "mount_seating_height_status": "inferred from official product image; 47.5 mm published total includes stud",
+      "reason": "Original centered position restored per owner; separate C19 raises camera/lens",
+      "tripod_position_status": "Camera model tripod XY unverified"
+    },
+    "pole_support": "Flat top, bottom-up metal1/4-20 screw through smooth clearance bore and underside head well; no boss, collar, washer or plate",
+    "pole_clearance_hole_nominal_mm": 7.0,
+    "pole_clearance_hole_status": "proposed print-fit dimension, not OEM specification; not a threaded hole",
+    "pole_bolt_length": null,
+    "power": "independent camera batteries",
+    "side_battery_extraction": "preserve same-side withdrawal of both packs",
+    "underside_access": "Install underside screws before mounting carrier if robot body prevents driver access",
+    "pole_hole_xy_mm": [
+      78,
+      0
+    ],
+    "stick_model": {
+      "variant": 6989,
+      "tube_count": 7,
+      "sliding_sections": 6,
+      "nominal_length_range_mm": [
+        233,
+        1140
+      ],
+      "collapsed_length_status": "233 mm provisional from older product-family spec; selected variant unmeasured",
+      "diameters_mm": [
+        22,
+        19.6,
+        17.2,
+        14.8,
+        12.4,
+        10,
+        7.6
+      ],
+      "diameter_status": "photo-estimated",
+      "top_stud_mm": 5,
+      "stud_status": "provisional; nominal total modeled to tip",
+      "motion": "fixed-length nested tubes; equal-distribution slide for visualization, not a synchronized mechanism claim"
+    }
+  },
+  "unresolved_physical_inputs": [
+    "Actual rail revision, entry access, supplied nut thickness, custom M6 engagement/torque and rail moment limit",
+    "Actual stick bottom female thread pitch, safe engagement, base diameter and working extension",
+    "Complete rig mass, center of gravity, motion/vibration behavior, chassis bolt-head clearance and battery/perception/limb access",
+    "Print material, boss/rib/wall dimensions, layer orientation and retention validation",
+    "Physical Sony tripod socket location and real lens/body seating clearance; detailed models use photo-derived feature positions"
+  ],
+  "geometry_sources": {
+    "a2_package_commit": "cdf67e6eb4c98d73202f29a25e3d098e2aa3b247",
+    "a2_package_commit_date": "2026-06-09",
+    "a2_mesh_commit": "29cc27f7578e010165042e1fe45cc18f3a4dd2ca",
+    "a2_mesh_commit_date": "2026-01-04",
+    "stl_scale_to_mm": 1000,
+    "mount_source": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/about_a2",
+    "attachment_source": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/docking_installation",
+    "selected_image_sha256": "6bccba7cb2e25cc26263d36de6f11aa80d02e7c0b4029c373070f0e8ba6e1023",
+    "quick_release_source": "https://www.ulanzi.com/products/falcam-f38-multi-hole-quick-release-kit-f38b3404",
+    "primary_mechanical_cad": "Official Unitree simplified STEP (AP214) from Get SDK page; supersedes URDF mesh as mechanical reference",
+    "step_source": "https://support.unitree.com/home/en/A2_SDK_Development_Guide/get_sdk",
+    "v1_step_export_date": "2026-05-09",
+    "a2_with_v1_step_export_date": "2026-07-08",
+    "step_units": "millimeters",
+    "v1_step_solids": 1,
+    "v1_step_sha256": "d2a4f55186de162237d7c9882c311f1d5b44de74e6ba2d513be9b7ea9978405a",
+    "v1_model_outer_hole_center_spans_mm": [
+      204.18613,
+      213.004
+    ],
+    "outer_pattern_policy": "OEM drawing nominal 204\u00d7213 mm; imported simplified STEP differs slightly; retain physical fit check",
+    "lens_specifications": "https://www.sony.com/electronics/support/lenses-e-mount-lenses/selp1635g/specifications",
+    "camera_mount_source": "https://innoreltech.com/products/cnc-metal-low-profile-mini-ballhead-innorel-c19"
+  },
+  "design_revision": "07 \u2014 telescoping 114cm stick, seam-free printed cover, upright STL export"
+}

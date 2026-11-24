@@ -1,0 +1,66 @@
+{
+  "checked_on": "2026-11-23",
+  "recommended": {
+    "kit": "Falcam F38B3404",
+    "kit_dimensions_mm": [
+      53.4,
+      38,
+      20.8
+    ],
+    "kit_mass_g": 51.7,
+    "includes": [
+      "3364 multi-hole base",
+      "3301 non-slip plate"
+    ],
+    "base_only": {
+      "sku": "3364",
+      "dimensions_mm": [
+        53.4,
+        38,
+        13.5
+      ],
+      "mass_g": 36
+    },
+    "mounting_holes": "multiple 1/4-inch threads plus central convertible 1/4-to-3/8 interface",
+    "hole_center_coordinates_mm": null,
+    "thread_depth_mm": null,
+    "lock": "push-in engagement; slide/push secondary lock blocks release-button pressing",
+    "orientation": "camera lens toward F38 button per manufacturer",
+    "accepts_arbitrary_arca_camera_plates": false,
+    "camera_screw_protrusion_mm": null,
+    "source": "https://www.ulanzi.com/collections/falcam-f38-quick-release-series/products/falcam-f38-multi-hole-quick-release-kit-f38b3404"
+  },
+  "alternative": {
+    "kit": "SmallRig 2144B",
+    "published_dimensions_mm": [
+      72,
+      70,
+      14
+    ],
+    "published_mass_g": 177,
+    "includes_base_and_plate": true,
+    "lock": "adjustable lever clamp; independent safety interlock not verified",
+    "manual_dimension_callouts_mm": [
+      12,
+      15,
+      23,
+      18
+    ],
+    "complete_xy_hole_datum": false,
+    "source": "https://static.smallrig.com/mall/img/public/8e9p9w36pjt-1751252498602_.pdf"
+  },
+  "stick": {
+    "requested_interface": "metal1/4-20 bottom-up through-bolt",
+    "official_legacy_image_shows_bottom_female_hole": true,
+    "current_bundle_style_identified": false,
+    "primary_thread_pitch_spec_found": false,
+    "engagement_depth_mm": null,
+    "required": [
+      "verify actual thread fit without force",
+      "measure available threaded depth",
+      "select bolt from actual cover/washer/spacer stack"
+    ]
+  },
+  "no_purchase": true,
+  "no_3d_model": true
+}

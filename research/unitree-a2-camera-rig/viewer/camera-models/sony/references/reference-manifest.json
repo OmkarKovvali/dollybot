@@ -1,0 +1,65 @@
+[
+  {
+    "filename": "help-guide-036.png",
+    "bytes": 157314,
+    "sha256": "118fa9d4e9a439347d90987ff3dff89e4769b1f531246a39d5ed4b5a0306ba83",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-037.png",
+    "bytes": 198058,
+    "sha256": "17bff848bbbae247bc667fa1812e65621c4a69230142fbcc81e593d8b4f7fb92",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-038.png",
+    "bytes": 17768,
+    "sha256": "1a59109c3a009583fe8c084324a33e2d3f3c0213a841a035f95090c3f7238ae3",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-039.png",
+    "bytes": 223606,
+    "sha256": "80d9d55a6e4849ee0c28a4f87127acf89616a440b19058b7acd1932dbd0a5049",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-040.png",
+    "bytes": 96524,
+    "sha256": "2497bf77a6e59a6b913be41d445b66ab253bb7ee5a04302178b2bb2891425b8b",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-041.png",
+    "bytes": 193187,
+    "sha256": "6becf41bacec8d79eb77751a890066dbdb02ca2bb546e877d6b1d14bf74491fc",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-042.png",
+    "bytes": 13387,
+    "sha256": "0e543c0b252d1ff788d4f602eaa5d33d0b0362e0ebbdeecd4c7b6fb3849424d4",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "help-guide-043.png",
+    "bytes": 110952,
+    "sha256": "75a5690afebec274c431e7a20df87018342a39bf3dfaad19cc69bcacd64032a0",
+    "source": "https://helpguide.sony.net/ilc/2310/v1/en/print.pdf",
+    "derivation": "Rendered PDF page, see filename for one-based page number"
+  },
+  {
+    "filename": "official-dimensions.png",
+    "bytes": 606981,
+    "sha256": "6da87f7cf0cdcc5e51992dcac709977f63407b823d3b2e0c99630925d5ffd731",
+    "source": "https://sony.scene7.com/is/image/sonyglobalsolutions/01_Dimensions?fmt=png-alpha&wid=1400",
+    "derivation": "direct official image"
+  }
+]

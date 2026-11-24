@@ -1,0 +1,170 @@
+[
+  {
+    "file": "manual-pages/page-01.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/d0eeb0e207d5474f98413364736dc792_2482x3509.png",
+    "bytes": 624138,
+    "sha256": "501b5644483a9af5aaa294a6405d4fb073aad1b7fca2b9673ea6711b598afed9"
+  },
+  {
+    "file": "manual-pages/page-02.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/a80c8ee9a55a4d109b9cc9fe912159bc_2481x3509.png",
+    "bytes": 446286,
+    "sha256": "a01d88ebdc99326820f8d35fda178e50ce1ea48e57656eca7fba0a22171f66af"
+  },
+  {
+    "file": "manual-pages/page-03.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/724e41f6a7ae45dbae20bff4d8cad339_2481x3509.png",
+    "bytes": 791476,
+    "sha256": "c4712ae84a5f87b4c218664bf51bbe66d80da4f2d4ae77b1744d9b221390d3d4"
+  },
+  {
+    "file": "manual-pages/page-04.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/0b79e50301144bec8901c7d68500a8b3_2481x3509.png",
+    "bytes": 754126,
+    "sha256": "8508797cb076b2a3008290fc3a813941c384a0f583da3236279bf83bfb2c8469"
+  },
+  {
+    "file": "manual-pages/page-05.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/5957b392ec534e9dbeaa333d69a48988_2481x3509.png",
+    "bytes": 818562,
+    "sha256": "4beb944daf565e3a63f770ed837ca73b9dfb18a0aa8b1c62f3bf9424875e5865"
+  },
+  {
+    "file": "manual-pages/page-06.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/c609d01424c5473f8de2ce30d8a3eef5_2482x3509.png",
+    "bytes": 790107,
+    "sha256": "3d719e32da43d236002b1961ae1f8d15bb796b842798532081f13cc9c1ff0d55"
+  },
+  {
+    "file": "manual-pages/page-07.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/990ec765f020431ea96adf29cffe08bf_2482x3509.png",
+    "bytes": 706453,
+    "sha256": "98a4463ca0bf6aca0fed3ca51a46a299ed03c2c2f0c630d8803269e8f98eeaf2"
+  },
+  {
+    "file": "manual-pages/page-08.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/25d08e3c8c1c4004a24f16a793cb8748_2481x3509.png",
+    "bytes": 561202,
+    "sha256": "765a4c28031800f222bd614f39906866ea6fb43c3bed985d3fc3e6df6b92fe65"
+  },
+  {
+    "file": "manual-pages/page-09.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/5d7974e207764d538ad2aebc86d6bef9_2481x3509.png",
+    "bytes": 558036,
+    "sha256": "e5ab4dfdea3b94d6526826c1bf454f8c40a9b995477210bc738d040a5889e792"
+  },
+  {
+    "file": "manual-pages/page-10.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/a10ace30f9a942149c700edde568ed66_2481x3509.png",
+    "bytes": 779852,
+    "sha256": "4b3aa3d47ad09993aa62d81a1dbd212d896ae2261a98c4584eacc518e09f95c8"
+  },
+  {
+    "file": "manual-pages/page-11.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/86799d68fc994f46abe03a90dc61e5e1_2481x3509.png",
+    "bytes": 819974,
+    "sha256": "c8177aedf2c155a3882e1569cf26dc3f5d5b0c6f7dfcd224f21a744cf1c0c396"
+  },
+  {
+    "file": "manual-pages/page-12.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/fe6ee0a6b3eb4a7cb1d7c2c475edc86d_2482x3509.png",
+    "bytes": 529839,
+    "sha256": "0cd33e0e05dfe930387d94fe18a17c4778ac8488b497df576d128467f28d501b"
+  },
+  {
+    "file": "manual-pages/page-13.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/cf932879350f467480392cee150c8143_2482x3509.png",
+    "bytes": 668084,
+    "sha256": "51d180839f779c021c4a3d638250c7ab2aedc124044c977d6b6b0565dda6d822"
+  },
+  {
+    "file": "manual-pages/page-14.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/ec75270b0f384d83868f2eac97a64ed2_2481x3508.png",
+    "bytes": 729525,
+    "sha256": "9aacf925ff736bcede92c5c67b34dd8cf04dc43b4a7aa294b77ba3eeb80c0ea0"
+  },
+  {
+    "file": "manual-pages/page-15.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/36c09bc92aa6402191dfcec28387506a_2481x3508.png",
+    "bytes": 875713,
+    "sha256": "d479682f1fdec25528e90d9ba704025642dd76062f1a446afd782313fe7985c6"
+  },
+  {
+    "file": "manual-pages/page-16.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/aeca7eb4ff594daa924e50875a6cdec9_2481x3508.png",
+    "bytes": 837827,
+    "sha256": "318229328432990959fde100ddf99ac27e0d692e094d8c5aa96bd73c5e16f0a0"
+  },
+  {
+    "file": "manual-pages/page-17.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/6e7e069fe88846e6879878a0905ba274_2482x3508.png",
+    "bytes": 1132444,
+    "sha256": "620d6ed4689d1df5ce45b1fc7313d4926ef05a241feccdd83f786cca16ac05a1"
+  },
+  {
+    "file": "manual-pages/page-18.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/755923b0bd0f419db185af2e83f363f2_2482x3508.png",
+    "bytes": 743635,
+    "sha256": "fc7595d831f1262adc319d03a1afe95002ed693ece50030a1ef30fc0ecce75cb"
+  },
+  {
+    "file": "manual-pages/page-19.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/533745ae3a2a4e539e2b2ba12ab69c4f_2481x3508.png",
+    "bytes": 828698,
+    "sha256": "73a0c9a7a9c5aaf4e063a5c4dad1c6ff937dc8a400eb7ea8f081441306c0407f"
+  },
+  {
+    "file": "manual-pages/page-20.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/91329c0e49bf49e78970b71ec5bf9d10_2481x3508.png",
+    "bytes": 822026,
+    "sha256": "e423d2fccd9460c159cd8dfd87d1f543aa2e416e9aa0dc1dbfb14685d0b76da5"
+  },
+  {
+    "file": "manual-pages/page-21.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/ef70dabaafe248df9ef28233bdbe3834_2481x3508.png",
+    "bytes": 713225,
+    "sha256": "7fbe8c5b92de307229599f90836ca5196dad69d077de3c781eaa125efb835d03"
+  },
+  {
+    "file": "manual-pages/page-22.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/64de82601531410b8fc7a3ce7b4251c7_2481x3508.png",
+    "bytes": 653224,
+    "sha256": "de71e0a98fd99d113d2de1916eebde235df8ea6131ad809ed5eb4c3bbd730ebc"
+  },
+  {
+    "file": "manual-pages/page-23.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/dc44dcf4aa984f4d8d5f8a1cb3fe0695_2482x3508.png",
+    "bytes": 680085,
+    "sha256": "3d3ebd14668a45da7b5f27097c3c9437ee2f87783b0838fdb95fd2232df0a62c"
+  },
+  {
+    "file": "manual-pages/page-24.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/2ddcaebec53944448fd2563f8dadbde6_2482x3508.png",
+    "bytes": 587430,
+    "sha256": "470d7a272d6e3cf7e1e92a5725c95663dda9693febcd3479db7530f1fb4870d3"
+  },
+  {
+    "file": "manual-pages/page-25.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/8664f6415e3a4c63b511e810f0eb921c_2481x3508.png",
+    "bytes": 541152,
+    "sha256": "eb229210c7cd2a2570d668676166111419cc933e206e7711e4077928c2c76c80"
+  },
+  {
+    "file": "manual-pages/page-26.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/3926a59df1ad42e89191cafe121bbf75_2481x3508.png",
+    "bytes": 703654,
+    "sha256": "65c26999fc11f8f9ee0c9b8028a2d660008edfaaaf436246c19c9e4c064cf315"
+  },
+  {
+    "file": "manual-pages/page-27.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/7d6bcd4f80e34455915426c5ff061a4d_2481x3508.png",
+    "bytes": 787691,
+    "sha256": "264b1e9b973757ed1778cfa5817e8b0bf1b0c4e6d0a385229ff9c456d68bc6d3"
+  },
+  {
+    "file": "manual-pages/page-28.png",
+    "source_url": "https://doc-cdn.unitree.com/static/2026/9/16/9987dd6d63324fd899d314320c962aeb_2481x3508.png",
+    "bytes": 508708,
+    "sha256": "a8844d2ed1c3ba49081a43b30a0db941237e58b2e5f6b02042f2c1ea82ac7de4"
+  }
+]

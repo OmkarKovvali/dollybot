@@ -1,0 +1,49 @@
+5) Please do not run the robot in the WiFi signal interference environment. WiFi signal interference is
+usually caused by co-channel interference. In case of interference, be sure to turn off some or all WiFi signal
+sources of other wireless devices before using the remote control to operate the robot.
+
+6) Due to varying levels of proficiency among actual operators, for the sake of reliability and safety,
+please use the robot in an open, unobstructed, and flat ground environment. When operating the robot, be
+mindful to avoid steps higher than 30cm, slopes steeper than 45°, and obstacles that may cause the robot to
+fall. When the robot is walking on complex ground or terrain with some unevenness and slopes, the operator
+should reduce the robot's walking speed and operate with caution to prevent the robot from tripping over
+obstacles.
+
+7) Legged robots have certain requirements for the walking surface. Do not use the robot on surfaces with
+very low friction, such as ice. Do not use the robot on soft surfaces, such as thick foam flooring. If used on
+relatively smooth surfaces, such as glass, ceramic tiles, etc., carefully and gently maneuver the robot, avoid
+
+sudden movements, and reduce the robot's walking speed to prevent the robot's feet from slipping and causing
+a fall.
+
+Unpacking
+
+Place the box on a flat surface according to the placement requirements (with the front side up), then open
+the top of the box and lift the robot out in its entirety. Remove the quadruped robot, the remote
+control, the charger, etc. from the box separately, place the quadruped robot flat on the flat
+
+surface, and then prepare to power it on.
+
+Scan the QR code to download and install the Unitree Explore App.
+
+Check before Power on
+
+1) Only Use Unitree Robotics authentic parts and ensure that all parts are in good working condition.
+2) Ensure that the firmware has been updated to the latest version.
+
+3) The users ensures that he or she is not operating the robot while intoxicated, under the influence of
+
+drugs, and unable to concentrate.
+
+4) Be familiar with the characteristics of each gait mode. Be familiar with the emergency braking method
+
+of the robot in case of instability / loss of control.
+
+5) Ensure that there are no foreign matters (such as water, oil, sand, soil, etc.) inside the robot and its
+
+components.
+6) Ensure that the remote control module and battery pack are fully charged.
+
+7) If the expansion interface is used, check whether the cable connection is correct.
+
+©2025 All rights reserved, Unitree Robotics 13

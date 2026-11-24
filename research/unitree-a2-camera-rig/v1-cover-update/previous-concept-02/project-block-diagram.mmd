@@ -1,0 +1,23 @@
+flowchart TB
+    subgraph mechanical[Proposed mechanical load path — concept only]
+        Sony[Sony ZV-E1 and 18–50 mm lens] --> QR[Metal quick release and anti-rotation saddle]
+        X6[Insta360 X6] --> Stick[Factory extendable stick]
+        Stick --> Clamp[Two clamps on rigid lower tube and brace]
+        QR --> Bridge[Removable printed bridge modules]
+        Clamp --> Bridge
+        Bridge --> Nuts[Metal bolts and correct OEM M6 sliding nuts]
+        Nuts --> Rails[A2 factory rails — 213 mm center spacing]
+        Rails --> Body[A2 chassis]
+    end
+    subgraph recording[Initial recording arrangement — proposed]
+        SonyBattery[Sony internal battery] --> SonyRecording[Sony internal recording]
+        X6Battery[X6 internal battery] --> X6Recording[X6 internal recording]
+    end
+    subgraph robot[Functional robot reference — simplified from OEM sources]
+        Sensors[Native perception sensors — variant dependent] --> Compute[Motion-control and user-development computers]
+        Compute --> Motion[Motion-control system]
+        Motion --> Legs[Four legs — 3 actuated joints each]
+        RobotBatteries[Dual robot batteries] --> Distribution[Robot power distribution]
+        Distribution --> Compute
+        Distribution --> Motion
+    end

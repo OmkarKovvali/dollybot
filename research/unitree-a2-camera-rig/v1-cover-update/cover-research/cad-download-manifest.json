@@ -1,0 +1,186 @@
+[
+  {
+    "name": "unitree-a2-v1-dock.zip",
+    "url": "https://oss-global-cdn.unitree.com/static/c7a45b0ba8374780bdbc41b26e770bbe.zip",
+    "bytes": 1269634,
+    "sha256": "bcf230b76ffeb2bcecf5029ec6fb5e502666de8197bff8d721c9e65268ec5383",
+    "headers": {
+      "Server": "Tengine",
+      "Content-Type": "application/zip",
+      "Content-Length": "1269634",
+      "Connection": "close",
+      "Date": "Tue, 24 Nov 2026 00:28:13 GMT",
+      "x-oss-request-id": "6B04DA1DDD996334376D1DCB",
+      "x-oss-cdn-auth": "success",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"BA382B31C487007FF7F42AA0ABA35EA1\"",
+      "Last-Modified": "Wed, 01 Jul 2026 12:18:06 GMT",
+      "x-oss-object-type": "Normal",
+      "x-oss-hash-crc64ecma": "13624033118857433261",
+      "x-oss-storage-class": "Standard",
+      "Content-MD5": "ujgrMcSHAH/39Cqgq6NeoQ==",
+      "x-oss-server-time": "26",
+      "Via": "ens-cache8.l2us4[1921,1921,200-0,M], ens-cache11.l2us4[1923,0], ens-cache15.us22[2523,2522,200-0,M], ens-cache15.us22[2538,0]",
+      "Ali-Swift-Global-Savetime": "1795480094",
+      "X-Cache": "MISS TCP_MISS dirn:-2:-2",
+      "X-Swift-SaveTime": "Tue, 24 Nov 2026 00:28:14 GMT",
+      "X-Swift-CacheTime": "15552000",
+      "Cache-Control": "max-age=31536000",
+      "Timing-Allow-Origin": "*",
+      "EagleId": "2ff617a317954800914975624e"
+    },
+    "contents": [
+      {
+        "name": "A2µïôσ▒òσ¥₧τ«Çσîûµ¿íσ₧ï20260509.stp",
+        "bytes": 4849268,
+        "zip_timestamp": [
+          2026,
+          7,
+          1,
+          20,
+          15,
+          16
+        ]
+      },
+      {
+        "name": "__MACOSX/._A2µïôσ▒òσ¥₧τ«Çσîûµ¿íσ₧ï20260509.stp",
+        "bytes": 278,
+        "zip_timestamp": [
+          2026,
+          7,
+          1,
+          20,
+          15,
+          16
+        ]
+      }
+    ]
+  },
+  {
+    "name": "unitree-a2-with-v1-dock.zip",
+    "url": "https://oss-global-cdn.unitree.com/static/0d83412eb0784e86baf3285348ffe7e9.zip",
+    "bytes": 21519855,
+    "sha256": "c83ad82231f80e6ac264028ecbb6e1f7f990d4f8dd7abf632f9752e7d7949f6b",
+    "headers": {
+      "Server": "Tengine",
+      "Content-Type": "application/zip",
+      "Content-Length": "21519855",
+      "Connection": "close",
+      "Date": "Tue, 24 Nov 2026 00:28:15 GMT",
+      "x-oss-request-id": "6B04DA1FA2FF2635382D2697",
+      "x-oss-cdn-auth": "success",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"7448C55966415DAA9603549912F7006A\"",
+      "Last-Modified": "Wed, 08 Jul 2026 09:14:12 GMT",
+      "x-oss-object-type": "Normal",
+      "x-oss-hash-crc64ecma": "3060721154491797442",
+      "x-oss-storage-class": "Standard",
+      "Content-MD5": "dEjFWWZBXaqWA1SZEvcAag==",
+      "x-oss-server-time": "56",
+      "Via": "ens-cache50.l2us4[682,681,200-0,M], ens-cache49.l2us4[684,0], ens-cache8.us22[708,707,200-0,M], ens-cache5.us22[715,0]",
+      "Ali-Swift-Global-Savetime": "1795480095",
+      "X-Cache": "MISS TCP_MISS dirn:-2:-2",
+      "X-Swift-SaveTime": "Tue, 24 Nov 2026 00:28:15 GMT",
+      "X-Swift-CacheTime": "15552000",
+      "Cache-Control": "max-age=31536000",
+      "Timing-Allow-Origin": "*",
+      "EagleId": "2ff6179917954800948897064e"
+    },
+    "contents": [
+      {
+        "name": "A2σ╕ªµïôσ▒òσ¥₧τ«Çσîûµ¿íσ₧ï∩╝êΦ╢│τ½»∩╝ë.stp",
+        "bytes": 77433742,
+        "zip_timestamp": [
+          2026,
+          7,
+          8,
+          16,
+          3,
+          58
+        ]
+      },
+      {
+        "name": "__MACOSX/._A2σ╕ªµïôσ▒òσ¥₧τ«Çσîûµ¿íσ₧ï∩╝êΦ╢│τ½»∩╝ë.stp",
+        "bytes": 176,
+        "zip_timestamp": [
+          2026,
+          7,
+          8,
+          16,
+          3,
+          58
+        ]
+      }
+    ]
+  },
+  {
+    "name": "dock-manual-source.txt",
+    "url": "https://doc-cdn.unitree.com/26/1415/en/26_1415_en",
+    "bytes": 10242,
+    "sha256": "62a7a0c06be80e3b812ee38bd30c63301c8721bcf7cbfb7a924f8a5436b1dc37",
+    "headers": {
+      "Server": "Tengine",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "10242",
+      "Connection": "close",
+      "Date": "Mon, 26 Oct 2026 20:28:23 GMT",
+      "x-oss-request-id": "6ADFB7E7F21E4B35352D32AF",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Max-Age": "0",
+      "x-oss-cdn-auth": "success",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"67E16C51F1FCC6DE32E955DADF476230\"",
+      "Last-Modified": "Thu, 22 Oct 2026 09:29:51 GMT",
+      "x-oss-object-type": "Normal",
+      "x-oss-hash-crc64ecma": "7399415070346001908",
+      "x-oss-storage-class": "Standard",
+      "Content-MD5": "Z+FsUfH8xt4y6VXa30diMA==",
+      "x-oss-server-time": "21",
+      "Via": "ens-cache40.l2us4[0,0,200-0,H], ens-cache8.l2us4[1,0], ens-cache3.us22[0,0,200-0,H], ens-cache10.us22[13,0]",
+      "Age": "2433596",
+      "Ali-Swift-Global-Savetime": "1793046503",
+      "X-Cache": "HIT TCP_MEM_HIT dirn:-2:-2",
+      "X-Swift-SaveTime": "Tue, 17 Nov 2026 11:06:18 GMT",
+      "X-Swift-CacheTime": "724925",
+      "Cache-Control": "no-cache",
+      "Timing-Allow-Origin": "*",
+      "EagleId": "2ff6179e17954800991543144e"
+    }
+  },
+  {
+    "name": "get-sdk-source.txt",
+    "url": "https://doc-cdn.unitree.com/26/1098/en/26_1098_en",
+    "bytes": 2042,
+    "sha256": "d7c3737eccf3f1aa7dedde324ed25cabbbbabcf16692814ee4fe49a4fb35c4fe",
+    "headers": {
+      "Server": "Tengine",
+      "Content-Type": "application/octet-stream",
+      "Content-Length": "2042",
+      "Connection": "close",
+      "Date": "Tue, 24 Nov 2026 00:27:22 GMT",
+      "x-oss-request-id": "6B04D9EA63EA8B30320D6CFD",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "*",
+      "Access-Control-Max-Age": "0",
+      "x-oss-cdn-auth": "success",
+      "Accept-Ranges": "bytes",
+      "ETag": "\"44950FB569E123BC603CC37C5E9B2557\"",
+      "Last-Modified": "Thu, 05 Nov 2026 04:20:59 GMT",
+      "x-oss-object-type": "Normal",
+      "x-oss-hash-crc64ecma": "11576114697792448039",
+      "x-oss-storage-class": "Standard",
+      "Content-MD5": "RJUPtWnhI7xgPMN8XpslVw==",
+      "x-oss-server-time": "16",
+      "Via": "ens-cache22.l2us4[816,816,200-0,M], ens-cache1.l2us4[818,0], ens-cache15.us22[0,0,200-0,H], ens-cache7.us22[3,0]",
+      "Age": "56",
+      "Ali-Swift-Global-Savetime": "1795480043",
+      "X-Cache": "HIT TCP_MEM_HIT dirn:-2:-2",
+      "X-Swift-SaveTime": "Tue, 24 Nov 2026 00:27:23 GMT",
+      "X-Swift-CacheTime": "2592000",
+      "Cache-Control": "no-cache",
+      "Timing-Allow-Origin": "*",
+      "EagleId": "2ff6179b17954800992101755e"
+    }
+  }
+]

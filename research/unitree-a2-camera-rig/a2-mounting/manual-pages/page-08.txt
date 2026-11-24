@@ -1,0 +1,56 @@
+Weight (With Battery) About 42kg About 42kg
+Weight (Without Battery) About 35kg About 35kg
+Degrees Of Freedom
+12 12
+(Joint Motors)
+
+Joint Bearings
+
+Industrial-grade crossed roller bearings Industrial-grade crossed roller bearings
+
+(high precision, high load capacity) (high precision, high load capacity)
+
+Joint Motors
+
+Low-inertia, high-speed inner rotor PMSM_ Low-inertia, high-speed inner rotor PMSM
+
+(enhanced response & heat dissipation) (enhanced response & heat dissipation)
+
+Max Joint Torque
+
+About 180 N.m About 180 N.m
+
+body:-58~58° body:-58~58°
+Range Of Motion thigh:-134°~180°/-89°~225° thigh:-134°~180°/-89°~225°
+shank:-158°~-30° shank:-158°~-30°
+Supply Voltage 50.4V 50.4V
+
+Joint Encoder
+
+Dual encoders Dual encoders
+
+Cooling System Local air Cooling Local air Cooling
+Power Supply Dual slots, dual batteries Dual slots, dual batteries
+Single Battery 9000mAh(453.6Wh) Single Battery 9000mAh(453.6Wh)
+Battery Capacity ; .
+Dual Batteries 18000mAh(907.2Wh) Dual Batteries 18000mAh(907.2 Wh)
+Wi-Fi 6, Bluetooth 5.2 YES YES
+Speaker YES YES
+Microphone Microphone array Microphone array
+Front Light YES YES
+Wireless Vector Follow
+/ (Optional) YES(Expanded)
+Module
+Gps / (Optional)) YES(Expanded)
+4g / (Optional) YES(Expanded)
+Sensor LiDARx1+HD Camera 1 LiDARx2+HD Camerax 1
+
+Control & Compute
+
+Standard: 8-Core high-performance CPU _ Standard: 8-Core high-performance CPU
+
+(platform) + Intel Core i7 (user (platform) + Intel Core 17 (user
+
+development) development)
+
+All rights reserved, Unitree Robotics 7

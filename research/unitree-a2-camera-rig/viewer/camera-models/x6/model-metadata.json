@@ -1,0 +1,99 @@
+{
+  "title": "Insta360 X6 detailed visual reference",
+  "provenance": "Original procedural reconstruction from official Insta360 product photos and five exterior manual views; not manufacturer CAD, scan or fabrication geometry.",
+  "published_dimensions_mm": {
+    "width": 50,
+    "height": 100,
+    "depth_including_lenses": 40,
+    "body_depth_excluding_lenses": 26.4
+  },
+  "published_mass_g": 196,
+  "coordinates": {
+    "units": "millimeters",
+    "up_axis": "Z",
+    "lens_axes": [
+      "-X",
+      "+X"
+    ],
+    "screen_faces": "-X",
+    "width_axis": "Y",
+    "origin": "nominal bottom center Z=0; exact mounting socket position unverified",
+    "viewer_loading": {
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "rotation_radians": [
+        0,
+        0,
+        0
+      ]
+    },
+    "gltf_note": "Intentional viewer-native mm and Z-up, no meter conversion or Y-up rotation."
+  },
+  "bounds_mm": {
+    "min": [
+      -20.0,
+      -25.0,
+      0.0
+    ],
+    "max": [
+      20.0,
+      25.0,
+      100.0
+    ]
+  },
+  "mesh": {
+    "objects": 356,
+    "triangles": 87308
+  },
+  "features": [
+    "rounded graphite body",
+    "opposed convex fisheye optics with replaceable retaining rings",
+    "front OLED and illustrative virtual buttons",
+    "front/rear ambient light sensors",
+    "four microphone grilles",
+    "rear quick button and vertical wordmark",
+    "right power/shutter controls and USB door",
+    "left battery door and speaker",
+    "bottom quarter-inch socket, magnetic contacts and quick-release recesses"
+  ],
+  "limits": [
+    "Only the published overall envelope is dimensionally constrained; feature locations, lens diameter, body radii, seams and doors are inferred from photos.",
+    "Bottom interface is a visual cue; do not derive mounting holes or thread depth from this model.",
+    "Display graphics are an illustrative simple UI, not an exact screen capture.",
+    "No stick, lens guards, cage or removable accessory included.",
+    "Procedural fine body texture is visible in Blender QA; GLB retains portable base PBR materials and explicit grille geometry."
+  ],
+  "sources": [
+    {
+      "url": "https://www.insta360.com/specs/x6",
+      "use": "overall dimensions and mass"
+    },
+    {
+      "url": "https://onlinemanual.insta360.com/x6/en-us/specs/hardware",
+      "use": "26.4 mm body depth excluding lenses"
+    },
+    {
+      "url": "https://onlinemanual.insta360.com/x6/en-us/camera/product-introduction/insta360-x6",
+      "use": "five official exterior diagrams and part identification",
+      "local": "references/manual-*.jpeg"
+    },
+    {
+      "url": "https://www.insta360.com/product/insta360-x6",
+      "use": "front/rear surface appearance",
+      "local": "references/official-hero.jpg"
+    }
+  ],
+  "files": {
+    "insta360-x6.glb": {
+      "bytes": 1792232,
+      "sha256": "cfba74a303eb5b1d5a5c384de8e5853fc78c8a8cea8a93bb870e2f1461175aa8"
+    },
+    "insta360-x6.stl": {
+      "bytes": 4365484,
+      "sha256": "eee9eefb6ca357791d7a5fcd7cf7448098dea17c2dcd7c5c484ffd9c1c070165"
+    }
+  }
+}
