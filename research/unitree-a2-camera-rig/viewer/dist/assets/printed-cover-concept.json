@@ -1,0 +1,545 @@
+{
+  "status": "derived geometry for interactive visualization; not print-ready or structurally validated",
+  "units": "mm",
+  "source": "/Users/vinnie/Developer/KinoHackathon/research/unitree-a2-camera-rig/v1-cover-update/cover-research/unitree-a2-v1-docking-station-20260509.stp",
+  "source_sha256": "d2a4f55186de162237d7c9882c311f1d5b44de74e6ba2d513be9b7ea9978405a",
+  "source_files_modified": false,
+  "source_transform": {
+    "operation": "translation only",
+    "normalized_equals_original_plus_mm": [
+      73.57262467491118,
+      -526.0092701161616,
+      -212.29618835449995
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scale": 1
+  },
+  "source_top_surface_z_mm": 33.999981655000056,
+  "mesh": "printed-cover-concept.stl",
+  "mesh_sha256": "dccefd0bad25bf9b341c5f20c251b0bca11518f38fdd02019035d689d82b9717",
+  "derived_brep": "printed-cover-concept.brep",
+  "derived_brep_sha256": "50bfa01915a8f355508454835c7110033113c138ea5d56e2fc57810e2fd87d41",
+  "triangle_count": 149434,
+  "vertex_count": 74709,
+  "bytes": 7471784,
+  "bounds_mm": {
+    "min": [
+      -150.33939732350302,
+      -115.52064077237259,
+      8.324525959204937e-15
+    ],
+    "max": [
+      150.33939732350234,
+      115.52064077237281,
+      42.0
+    ]
+  },
+  "dimensions_mm": [
+    300.67879464700536,
+    231.0412815447454,
+    41.99999999999999
+  ],
+  "solid_count": 1,
+  "volume_mm3": {
+    "source_occ": 1300719.8290539586,
+    "after_boss_union_occ": 1314018.6392137296,
+    "final_occ": 1310788.443735409,
+    "added_by_union": 13298.810159771005,
+    "removed_by_bores": 3230.1954783205874,
+    "net_change": 10068.614681450417,
+    "mesh_signed": 1308427.549688889
+  },
+  "boss": {
+    "center_xy_mm": [
+      78.0,
+      0.0
+    ],
+    "outer_radius_mm": 23.0,
+    "bottom_z_mm": 20.0,
+    "top_z_mm": 42.0,
+    "operation": "OCC fused cylinder; intersects source material and rises to z42"
+  },
+  "through_bore": {
+    "diameter_mm": 7.0,
+    "center_xy_mm": [
+      78.0,
+      0.0
+    ],
+    "cut_tool_start_z_mm": -1,
+    "cut_tool_end_z_mm": 43,
+    "provisional": true
+  },
+  "counterbore": {
+    "diameter_mm": 12.0,
+    "center_xy_mm": [
+      78.0,
+      0.0
+    ],
+    "bottom_z_mm": 3.449870640823102,
+    "bottom_reference": "local source underside at hole axis; opening is sloped, not one constant Z plane",
+    "depth_mm": 23.5501293591769,
+    "seat_z_mm": 27.0,
+    "access_opening_z_mm": 3.449870640823102,
+    "access_opening_boundary_z_range_mm": [
+      2.0,
+      5.041004683374008
+    ],
+    "access_well_total_depth_mm": 23.5501293591769,
+    "access_well_boundary_depth_range_mm": [
+      21.95899531662599,
+      25.0
+    ],
+    "cut_tool_start_z_mm": -1,
+    "cut_tool_end_z_mm": 27.0,
+    "head_bottom_z_mm": 20.5,
+    "head_top_z_mm": 27.0,
+    "provisional_head_max_diameter_mm": 10.5,
+    "provisional_head_max_height_mm": 6.5,
+    "radial_head_clearance_mm": 0.75,
+    "provisional": true,
+    "access_statement": "Full diameter-12 access well opens through the original sloping underside. It is about 23.55 mm deep at the axis, not a 7 mm deep underside pocket. Head is entirely inside the housing, at z20.5..27."
+  },
+  "metal_parts_in_structure": false,
+  "separate_hardware_note": "Only the metal screw is represented separately by the viewer; no washer or metal plate is part of this derived mesh.",
+  "geometry_checks": {
+    "source_axis_section": {
+      "xy_mm": [
+        78.0,
+        0.0
+      ],
+      "surface_intersections_z_mm": [
+        3.449870640823102,
+        33.99998092651367
+      ]
+    },
+    "source_12mm_opening_boundary_sections": [
+      {
+        "xy_mm": [
+          84.0,
+          0.0
+        ],
+        "surface_intersections_z_mm": [
+          5.041004683374008,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          82.24264068711929,
+          4.242640687119285
+        ],
+        "surface_intersections_z_mm": [
+          4.574972178174673,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          6.0
+        ],
+        "surface_intersections_z_mm": [
+          3.44987017327324,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          73.75735931288071,
+          4.242640687119286
+        ],
+        "surface_intersections_z_mm": [
+          2.324768560000763,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          72.0,
+          7.347880794884119e-16
+        ],
+        "surface_intersections_z_mm": [
+          2.0,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          73.75735931288071,
+          -4.242640687119285
+        ],
+        "surface_intersections_z_mm": [
+          2.3247683058249113,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          -6.0
+        ],
+        "surface_intersections_z_mm": [
+          3.4498701702457724,
+          33.99998092651367
+        ]
+      },
+      {
+        "xy_mm": [
+          82.24264068711929,
+          -4.242640687119286
+        ],
+        "surface_intersections_z_mm": [
+          4.574973182633059,
+          33.99998092651367
+        ]
+      }
+    ],
+    "occ_point_membership": [
+      {
+        "name": "axis_lower_access_empty",
+        "point_mm": [
+          78.0,
+          0.0,
+          10
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      },
+      {
+        "name": "axis_head_space_empty",
+        "point_mm": [
+          78.0,
+          0.0,
+          23
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      },
+      {
+        "name": "axis_through_bore_empty",
+        "point_mm": [
+          78.0,
+          0.0,
+          38
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      },
+      {
+        "name": "head_outer_radius_empty",
+        "point_mm": [
+          83.2,
+          0.0,
+          24
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      },
+      {
+        "name": "counterbore_outer_region_empty",
+        "point_mm": [
+          83.8,
+          0.0,
+          26.8
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      },
+      {
+        "name": "annular_seat_material_above",
+        "point_mm": [
+          82.8,
+          0.0,
+          27.2
+        ],
+        "expected_material": true,
+        "actual_material": true,
+        "pass": true
+      },
+      {
+        "name": "boss_wall_connected_material",
+        "point_mm": [
+          90.0,
+          0.0,
+          38
+        ],
+        "expected_material": true,
+        "actual_material": true,
+        "pass": true
+      },
+      {
+        "name": "no_new_material_below_zero",
+        "point_mm": [
+          90.0,
+          0.0,
+          -0.01
+        ],
+        "expected_material": false,
+        "actual_material": false,
+        "pass": true
+      }
+    ],
+    "through_bore_axis_and_ring_sections": [
+      {
+        "xy_mm": [
+          78.0,
+          0.0
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          81.0,
+          0.0
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          80.12132034355965,
+          2.1213203435596424
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          78.0,
+          3.0
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          75.87867965644035,
+          2.121320343559643
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          75.0,
+          3.6739403974420594e-16
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          75.87867965644035,
+          -2.1213203435596424
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          78.0,
+          -3.0
+        ],
+        "surface_intersections_z_mm": []
+      },
+      {
+        "xy_mm": [
+          80.12132034355965,
+          -2.121320343559643
+        ],
+        "surface_intersections_z_mm": []
+      }
+    ],
+    "counterbore_near_wall_sections": [
+      {
+        "xy_mm": [
+          83.7,
+          0.0
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          41.99999999999999
+        ]
+      },
+      {
+        "xy_mm": [
+          82.03050865276332,
+          4.030508652763321
+        ],
+        "surface_intersections_z_mm": [
+          26.999999999999996,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          5.7
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          73.96949134723668,
+          4.030508652763321
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          72.3,
+          6.980486755139913e-16
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          73.96949134723668,
+          -4.030508652763321
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          -5.7
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          82.03050865276332,
+          -4.030508652763322
+        ],
+        "surface_intersections_z_mm": [
+          27.0,
+          42.0
+        ]
+      }
+    ],
+    "outside_counterbore_sections": [
+      {
+        "xy_mm": [
+          84.5,
+          0.0
+        ],
+        "surface_intersections_z_mm": [
+          5.173599524244789,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          82.59619407771255,
+          4.596194077712559
+        ],
+        "surface_intersections_z_mm": [
+          4.6687302023279145,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          6.5
+        ],
+        "surface_intersections_z_mm": [
+          3.449869571314081,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          73.40380592228745,
+          4.59619407771256
+        ],
+        "surface_intersections_z_mm": [
+          2.2310090188022498,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          71.5,
+          7.960204194457795e-16
+        ],
+        "surface_intersections_z_mm": [
+          2.0,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          73.40380592228745,
+          -4.596194077712559
+        ],
+        "surface_intersections_z_mm": [
+          2.2310090566333813,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          78.0,
+          -6.5
+        ],
+        "surface_intersections_z_mm": [
+          3.4498700735520234,
+          42.0
+        ]
+      },
+      {
+        "xy_mm": [
+          82.59619407771255,
+          -4.59619407771256
+        ],
+        "surface_intersections_z_mm": [
+          4.668731125820111,
+          42.0
+        ]
+      }
+    ],
+    "through_bore_rays_clear": true,
+    "counterbore_rays_open_to_seat": true,
+    "mesh_tag_boundary_edge_count": 0,
+    "mesh_tag_nonmanifold_edge_count": 0,
+    "no_added_material_below_z0": true,
+    "all_recorded_checks_passed": true
+  },
+  "limitations": [
+    "The OEM source is a simplified filled single solid at this location, not an engineered hollow printable shell; the retained source volume is not an infill recommendation.",
+    "The accessible pocket is approximately 23.55 mm deep at its axis. A proposed isolated z20..27 pocket would have been inaccessible and was not used.",
+    "Screw head and diameter-7/diameter-12 bores are provisional until actual screw and stick thread/engagement are measured.",
+    "Printed material, orientation, tolerances, local stress, creep, fatigue and dynamic pole loads remain unvalidated. See separate main-body snapshot intersection evidence; installed driver access and full robot motion are not verified.",
+    "The separately displayed locating collar is a viewer concept and not included in this fused STL.",
+    "The source mounting pitch discrepancy versus OEM nominal drawing remains; physical rail fit must be checked."
+  ],
+  "robot_snapshot_intersection": {
+    "evidence_file": "cover-body-intersection.json",
+    "evidence_sha256": "8244f6976879fd495e0a23021894bda49104ee0de3b3a203dc9ca072ee4e45ab",
+    "derived_cover_vs_main_body_common_volume_mm3": 0,
+    "scope": "Read-only exact CAD Boolean common volumes with source robot body10; approximate bounding boxes are contextual only. Source models are simplified and differ in revision. No physical part measured.",
+    "robot_top_at_exact_pole_axis_z_mm": -0.3810785260860712,
+    "opening_to_robot_axis_gap_mm": 3.830949166909173,
+    "head_to_robot_axis_gap_mm": 20.88107852608607
+  },
+  "assembly_sequence": "Install the stick and recessed screw while the cover is off the robot, then mount the cover. Installed downward driver access is not established."
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A2 · Camera rig concept</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <main id="app">
+    <header><div><span class="eyebrow">UNITREE A2 / ASSEMBLY 07</span><h1>A2 camera rig</h1></div><button id="controlsToggle" class="badge" aria-expanded="true" aria-controls="viewControls">View controls</button></header>
+    <div id="viewport" aria-label="Interactive 3D model. Drag to rotate, scroll to zoom, right drag to pan."></div>
+    <div id="loading">Loading A2 assembly…</div>
+    <nav class="modes" aria-label="Assembly mode"><button id="concept" class="active" aria-pressed="true">Flat cover</button><button id="original" aria-pressed="false">OEM reference</button></nav>
+    <aside class="controls" id="viewControls">
+      <span class="eyebrow">INSPECT</span>
+      <div class="views"><button data-view="iso" class="active">3D</button><button data-view="top">Top</button><button data-view="side">Side</button><button data-view="under">Underside</button></div>
+      <div class="robot-control"><label class="check-label"><input type="checkbox" id="robot" checked>Show robot</label><div class="range-label"><label for="opacity">Robot opacity</label><output id="opacityValue">65%</output></div><input id="opacity" type="range" min="0" max="100" step="1" value="65"><div class="range-ends"><span>Transparent</span><span>Solid</span></div></div>
+      <label><input type="checkbox" id="ghost">Transparent cover</label>
+      <label><input type="checkbox" id="cameras" checked>Show equipment</label>
+      <label><input type="checkbox" id="spin">Auto rotate</label>
+      <div class="focus-buttons"><button id="focus" class="reset">Focus mount</button><button id="reset" class="reset">Fit assembly</button></div>
+      <div class="focus-buttons"><button id="sonyDetail" class="reset">Inspect Sony</button><button id="x6Detail" class="reset">Inspect X6</button></div>
+      <button id="mountDetail" class="detail-button">Inspect INNOREL C19 ↗</button>
+      <button id="recess" class="detail-button">Inspect underside recess ↗</button>
+    </aside>
+    <section id="heightControl" class="stick-control" aria-label="Telescoping stick height">
+      <div class="range-label"><label for="height">Stick length / Z-height</label><output id="heightValue">550 mm</output></div>
+      <input id="height" type="range" min="233" max="1140" step="1" value="550">
+      <div class="stick-actions"><button data-stick-length="233">Retract</button><button data-stick-length="1140">Extend</button><button id="stickFit">Fit view</button></div>
+      <output id="cameraHeight" aria-live="polite">X6 base: 545 mm above cover</output>
+      <small>Gold-band 114 cm stick · 233 mm retracted is provisional</small>
+    </section>
+    <footer><div class="legend"><span><i class="oem"></i>OEM robot reference</span><span><i class="printed"></i>Closed-side printed cover</span><span>2 × Ø7 mm clearance holes</span></div><p id="note">Flat top, closed side ports, two Ø7 mm clearance holes for 1/4-20 screws. Underside head recesses retained. Dimensions remain provisional.</p><div class="hint">Drag to rotate <b>·</b> Scroll to zoom <b>·</b> Right drag to pan</div></footer>
+  </main>
+  <script type="module" src="./viewer.js"></script>
+</body>
+</html>

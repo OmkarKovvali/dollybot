@@ -1,0 +1,348 @@
+Source: https://kino.ai/changelog
+Fetched at (UTC): 2026-11-23T02:46:20.159965+00:00
+
+November 2026
+
+Still in progress. Kino is now available to the public! We are prioritizing performance, stability and user feedback.
+
+New
+
+Back to Resolve, Premiere and After Effects
+
+Export a project as an editable DaVinci Resolve, Premiere Pro or After Effects project. It’s in beta.
+
+Render
+
+Render + add review link
+
+Export project
+
+Enhance Audio
+
+Select a clip and choose Enhance Audio to clean up its sound. You can switch back to the original, and it’s free.
+
+BeforeAfter
+
+12K Blackmagic RAW
+
+URSA Cine 12K clips play in Kino.
+
+Your own fonts
+
+Upload a font once and your whole team can pick it in the text inspector, in any project.
+
+Improvements
+
+Set a clip’s speed from presets, and retime several adjacent clips at once.
+
+Review links have J, K and L controls and a playback speed menu.
+
+Long agent jobs show a live progress card in the chat.
+
+Paste media and moments into chat and comments as Kino references.
+
+Edit a sent message while the agent is running.
+
+Attach reference files to a chat.
+and 11 more
+Agents can upload and download original files.
+
+Claude models in Kino Agent run through Claude Code.
+
+Import MPEG-TS files, MPEG-1 and MPEG-2 video in AVI and MXF, and ALAC audio.
+
+Resolve imports keep their video and audio lanes and bring in Fusion titles.
+
+Source LUTs work on images and GIFs.
+
+Name your checkpoints.
+
+Export remembers your folder and previews numbered filenames.
+
+Shift-click bins to select several, and delete them together.
+
+Library filters show how many clips match.
+
+Copy local media files and their paths to the clipboard.
+
+Intel Macs have their own download.
+
+Fixes
+
+Some Windows exports no longer slow to about one frame per second.
+
+Exports no longer come out upside down when color correction is stacked with a LUT.
+
+Skimming feels about 3x faster on complex projects.
+
+New proxies seek faster, because Kino now marks every keyframe in them.
+
+Command+W closes the focused chat instead of the whole project.
+
+The Xerox template plays smoothly.
+and 12 more
+Outside agents can send prompts to Kino chats and read the replies.
+
+Queued comments stay in the chat you selected.
+
+Check again on generated media fetches the result directly.
+
+Upgrading a workspace refreshes the tools in its existing chats.
+
+Agent setup no longer fails on an out-of-date Homebrew release.
+
+Windows playback no longer stalls when the decoder holds too many frames.
+
+After a crash, Resume Editing brings your paused projects back.
+
+Very large projects can save checkpoints.
+
+Collaboration reconnects after a room fails to load.
+
+Return to Edit and Restore Version work when a project’s code is broken.
+
+GoPro metadata no longer breaks proxies.
+
+Long agent replies stream without slowing Kino down.
+
+October 2026
+
+New
+
+Tabs
+
+Open several projects in one window. Each tab keeps its view, panels and conversations as you left them, and agents keep working in tabs you are not looking at.
+
+Brand film · rough cutFounder interviewLaunch trailer v3
+
+Light mode
+
+Kino has a light theme. Choose Light, Dark or Match system in Settings.
+
+Templates
+
+Browse 104 templates, play each one, and adjust its knobs before you add it.
+
+Your own LUTs
+
+Import LUT files and preview each grade on the current frame before you apply one.
+
+In and out on media cards
+
+Drag the handles on a media card to mark a range, then drag that range onto the timeline.
+
+0:0400:00:12
+
+C6172.MP40:41
+
+Swap a clip’s source
+
+Replace or slip the footage under a clip, and the clip stays put.
+
+Big projects move faster
+
+Moving and trimming clips on large timelines takes about 40% less time, and projects you’ve opened before load much faster.
+
+Kino Transcode
+
+Convert BRAW, R3D, ProRes, DNxHR and MXF footage to MP4 or ProRes in your browser. Kino Transcode is free, runs on your device and needs no account.
+
+Custom keyboard shortcuts
+
+Change Kino’s keyboard shortcuts in Settings, or ask the agent to do it.
+
+Audio ducking curves
+
+Draw and edit ducking curves on the timeline, so music dips under dialogue.
+
+Video stabilization
+
+Ask the agent to stabilize a shaky clip.
+
+Avid OP-Atom
+
+OP-Atom clips import and play as one clip, with picture and sound together.
+
+Improvements
+
+Comments show when they were left and which agent left them.
+
+See every collaborator and the projects they have open.
+
+Ripple trim every selected clip by the same amount.
+
+Original Dolby AC-3 and E-AC-3 audio plays and exports.
+
+Agents can search the templates catalog and add a template for you.
+
+Copy a team view, with its panels, into another project.
+and 11 more
+Agents can add editable captions to a clip.
+
+J, K and L play sound at half and double speed, at normal pitch.
+
+Group your projects into folders.
+
+A filmstrip under the viewer shows the whole clip, with its comment marks and in and out handles.
+
+Anamorphic AVI and MXF files play at their display aspect instead of squeezed.
+
+Exports on Linux are faster. A 58-second video renders in about 35 seconds.
+
+The Layers list is back as a panel you can dock.
+
+The timeline works on machines without WebGPU.
+
+Claude Code and Codex chats are named for you.
+
+Agents in the desktop app run on GPT-6.1 Sol and Claude Sonnet 5.5.
+
+The note composer has an @-mention menu and keeps unsent drafts.
+
+September 2026
+
+An agent cutting the Stewart Brand archive.
+
+New
+
+Custom panels
+
+Ask an agent to build a panel, dock it beside the canvas, and share it with your team.
+
+Kino Agent
+
+The built-in agent runs in the desktop app on your Kino plan with Claude, GPT or Grok.
+
+Delivery links
+
+Deliver renders the cut to a public link where viewers can switch versions and comment.
+
+Notes in the ruler
+
+Press M to drop a note at the playhead for a teammate or an agent.
+
+Improvements
+
+While an agent works, everyone in the project sees which layer it’s editing.
+
+Find the silent stretches in the selected clips, check them on the waveform, then cut them all at once.
+
+Pick a caption style, then edit the caption text in the inspector.
+
+J, K and L shuttle and frame-step in both viewers.
+and 12 more
+Export with a transparent background from the Background field.
+
+Desktop exports render in their own window, so you can keep editing.
+
+Open a nested sequence as a tab above the timeline.
+
+The razor snaps to the playhead and nearby cuts. Shift cuts every track.
+
+Rotate layers in 3D on the canvas or from the inspector.
+
+The font picker previews each font on the canvas as you move through the list.
+
+The media library has a Finder-style column view.
+
+Clip volume goes up to 400%.
+
+Each word in a transcript is timed against the audio.
+
+Agents can generate images, video, music and voice, billed at cost.
+
+Get notified when an export or an agent finishes.
+
+Chats show who started them, and teammates can read each other’s chats.
+
+August 2026
+
+New
+
+Claude Code and Codex
+
+Run either agent in the desktop app on the Claude or ChatGPT plan you already have.
+
+Windows and Linux
+
+The desktop app installs on Windows and Ubuntu.
+
+Keyframes
+
+Set keyframes from the inspector and move them on the timeline, where they snap into place.
+
+Improvements
+
+See teammates’ cursors and jump to where they are.
+
+Publish a project as a template or a brand, and your team can start new work from it.
+
+Separate Audio moves a clip’s sound onto its own track.
+
+Fade any clip in or out from the inspector.
+and 11 more
+Bins can hold other bins.
+
+Download a YouTube video into your library from the desktop app.
+
+Agents can look at frames of your footage, and split a video at its scene cuts.
+
+Search inside the script panel.
+
+@-mention projects and templates in chat.
+
+Chat history opens in a sidebar where you can search, pin and archive chats.
+
+Recordings put the mic on its own clip and capture the camera at full resolution.
+
+Timeline zoom stays at full frame rate.
+
+XAVC-I files in MXF play instead of showing black.
+
+Korean and other non-English speech is no longer transcribed as English.
+
+Timeline snaps give haptic feedback in the Mac app.
+
+July 2026
+
+New
+
+Trim tools
+
+Ripple trim, slip and razor tools. Press B to split a clip.
+
+In and out range
+
+Mark a range on the timeline and point an agent at it in chat.
+
+Recording
+
+Record your screen, camera and mic together.
+
+Improvements
+
+Add text straight on the canvas and style it in the inspector.
+
+Connect Claude Desktop or ChatGPT to Kino in one click.
+
+The Files tab in Command+K finds media by filename.
+
+Put a phrase in quotes to search for it exactly.
+and 8 more
+Messages sent while an agent is replying wait in line.
+
+Download originals, several files at once, or a clip’s proxy.
+
+Trims and Option-drag duplicates show snap guides, and in and out points snap to clip edges.
+
+Drop a bin on the timeline to lay its clips end to end.
+
+Filmstrip and waveform get separate lanes on video clips.
+
+The project picker has grid and list views.
+
+Agents can manage bins and read your timeline’s script.
+
+Chat adds GPT-5.6, Claude Sonnet 5, Fable 5 and Grok 4.5.
+
+Ask how to do something

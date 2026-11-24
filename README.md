@@ -1,5 +1,13 @@
 # Dollybot
 
+## Kino Hackathon project
+
+The complete project snapshot is included here: [project notes](KINO_HACKATHON.md), [Flow Base simulator and Kino bridge](flowbase-sim/README.md), API reference snapshots in `docs/`, and Flow Base / Unitree camera-rig CAD research in `research/`.
+
+Start the simulator with `cd flowbase-sim && node bridge/server.mjs`, then open <http://127.0.0.1:8766>. The bridge runs on the same computer as Kino. The local Kino skill includes machine-specific paths; adjust those paths when setting up another machine. No physical robot is connected by this simulator.
+
+Runtime credentials, caches, logs, and simulator QA screenshots are excluded. Embedded tokens in three downloaded HTML reference pages were redacted; their original provenance hashes still describe the original downloads.
+
 ## Start a build session
 
 Pick a human coordinator for the session. Two people can split recorder and playback, with one also coordinating. A third can own the demo or integration tests. Agree on one demo action and commit a small shared interface or example before assigning dependent work. For example, both recorder and playback can build against the same sample camera-command log.

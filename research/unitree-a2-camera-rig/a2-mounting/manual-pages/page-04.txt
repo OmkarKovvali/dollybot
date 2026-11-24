@@ -1,0 +1,45 @@
+measures to ensure the security of such users information, but Unitree Robotics is not responsible for direct or
+indirect responsibility for the act of obtaining and processing such information in the process of providing
+
+Safety Instructions
+
+The A2 is a quadruped robot designed for industrial-grade applications, featuring a medium-sized stature,
+multidimensional precise perception, all-terrain adaptability, multi-scenario coverage, and open, flexible
+expandability. It provides you with more efficient and intelligent solutions.
+
+1) This product is not a toy and is not intended for use by persons under the age of 18. Keep out of reach
+of children and be careful when operating in the presence of children.
+
+2) You are obliged to be aware of the laws in your area and to comply with relevant laws and regulations.
+
+3) This chapter is an introductory chapter for new users to manipulate robots. New users can quickly
+master how to use the Remote Control to control the robot to show excellent movement performance by reading
+this section. This chapter is also a chapter that old users often need to refer to. Old users can read this chapter
+repeatedly to grasp the essentials of operating the robot, and then they can draw inferences from case, and
+know what kind of movements are not recommended.
+
+4) When the users run the program developed by themselves in the developer mode: The remote control
+commands are still valid when the high-level (application layer) is developed. At this time, if the high-level
+API commands and the remote control commands are sent to the robot, both commands will be executed by
+the robot. It may cause the robot to become unstable. Please be sure to judge whether the users need to use the
+remote control according to the running state of the robot. Remote control commands fail during low-level
+development.
+
+5) When using, please control the robot within sight, keep a certain safe distance from the robot, and do
+not touch the robot with your hands after the robot is powered on.
+
+6) The A2 automatically stands up after startup. Maintain a safe distance from the quadruped robot!
+
+7) When using complex remote control commands, ensure that there are no obstacles (especially no
+people) within a 2-meter-diameter semicircle in front of the robot dog. In the event of personal injury, death,
+or property damage resulting from non-compliant operations, Unitree Technology assumes no responsibility
+for any resulting losses or consequences.
+
+8) Instructions for mode switching: When using motion control switching functions, ensure that the robot
+dog is first in a prone or damping mode, and that there are no people within a 1-meter diameter range. After a
+successful mode switch, the robot dog will automatically stand up. In the event of personal injury, death, or
+property damage resulting from non-compliant operations, Unitree Technology assumes no responsibility for
+
+any resulting losses or consequences!
+
+©2025 All rights reserved, Unitree Robotics 3

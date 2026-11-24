@@ -1,0 +1,24 @@
+INSTA360114 CM STICK REFERENCE — CHECKED2026-11-23
+
+CURRENT SELECTION
+User image matches the newer official storefront commodity6989: six gold transition bands, seven total tubes, diagonal grip. The X6 Essentials Bundle itself does not uniquely specify a revision: its current official listing still says one of two styles may be supplied. The user photo resolves which appearance to model, though no physical measurements have been supplied.
+
+CONFIRMED / OBSERVED
+Nominal extended length1140 mm is official. Seven nested tubes (one base, six sliders) are visible in the official expanded image. Official close-up image2 shows a diamond-knurled top with male stud and a metal female threaded base insert. Six gold transition bands and the diagonal rubber grip distinguish this from Classic Black2141.
+
+NOT CONFIRMED FOR6989
+No current manufacturer numerical collapsed length, tube diameters, grip diameter, mass, exact bottom thread pitch or socket insertion depth was found. Do not label233 mm collapsed or118 g mass as verified for this revision. Those figures come from Insta360's January20,2025 help article describing the older114 cm family. If the viewer needs a minimum before measuring the user's stick,233 mm can be a clearly marked provisional family reference. Nominal1140 mm is the available confirmed maximum.
+
+PHOTO LIMITATION
+The expanded render is apparently partially extended: the outer base occupies roughly37 percent of the pictured total length. Do not scale all stroke lengths from that photograph as though it depicts1140 mm. Model fixed-length tubes translating into one another; one base plus six moving tubes. Illustrative visual diameters are22,20,18,16,14,12,9 mm with24 mm grip and16 mm knurled head, all estimates requiring physical verification. The current user's newer image should be the appearance reference; the old option need not appear in the UI.
+
+ASSETS
+12 official full-resolution images downloaded and hashed. Newer6989: references/stick-6989-view-1.png (collapsed); view-2.png (top/base ends); view-3.png (expanded). Classic2141: view-1.png (collapsed), view-8.png (expanded), view-9.png (ends); views2–6 are marketing details. Exact source URLs: official-variant-image-index.json and download-manifest.json. Specs/provenance: stick-reference-specs.json.
+
+SOURCES
+https://store.insta360.com/product/x6?c=6922
+https://store.insta360.com/product/selfie_stick
+https://store.insta360.com/product/selfie_stick?c=2141
+https://intercom.help/insta360support/en/articles/10398152-which-selfie-stick-suits-my-style
+
+No viewer files or models were modified.

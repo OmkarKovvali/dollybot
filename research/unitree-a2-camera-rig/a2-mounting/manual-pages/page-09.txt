@@ -1,0 +1,78 @@
+Optional: high computing power
+
+expansion dock
+
+External Interfaces
+
+RS485 x 2 RS485 x 2
+CAN x 2 CAN x 2
+Gigabit Ethernet x 2 Gigabit Ethernet x 2
+
+USB3.0-TypeC(8-Core CPU) x 2
+USB3.0-TypeC (Intel Core 17)x2
+Power Output:12V /24V / BAT
+
+USB3.0-TypeC(8-Core CPU) x 2
+USB3.0-TypeC (Intel Core 17)x2
+Power Output:12V /24V / BAT
+
+Operating Temperature
+
+-20°C~55°C
+
+-20°C~55°C
+
+Battery Life
+
+No Load:>Shours continuous walking,
+approx. 20km
+With 25kg Load:>3 hours continuous
+walking, approx. 12.5km
+
+No Load:>Shours continuous walking,
+approx. 20km
+With 25kg Load:>3 hours continuous
+walking, approx. 12.5km
+
+Max Standing Load
+
+About 100kg
+
+About 100kg
+
+Continuous Walking Load
+
+About 25kg (Ideally, it can reach
+approximately 35 kg.)
+
+About 25kg (Ideally, it can reach
+approximately 35 kg.)
+
+Slope Walking Capability
+
+About 45°
+
+About 45°
+
+Stair Climbing Capability
+
+Max Step Height: 30cm
+
+Max Step Height: 30cm
+
+Max Climb Height About 0.5~1m About 0.5~1m
+Speed 0-3.7 m/s (Up to ~5 m/s) 0-3.7 m/s (Up to ~5 m/s)
+Replace Wheel-Leg Optional Optional
+Ingress Protection Rating IP56 IP56
+Smart Ota Upgrade Continuous Upgrades Continuous Upgrades
+Secondary Development Supported Supported
+Warranty 12 Months 12 Months
+
+vw
+2:
+
+@ Please visit the Unitree documentation center to obtain the A2 secondary development guide.
+
+na
+
+© 2025 All rights reserved, Unitree Robotics 8

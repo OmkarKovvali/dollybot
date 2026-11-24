@@ -1,0 +1,37 @@
+Packing
+
+Preparation for packing: Rotate the legs of the quadruped robot to the position shown in the picture (rear
+leg retracted step: rotate the rear leg hip motors so that the rear thighs are placed in the position as the picture
+
+shows, and at the same time retract the rear lower legs to the position shown in the picture.
+
+OO
+
+After completing the pre-packing preparations, first place the quadruped robot into the lower part of the
+transportation case. After the quadruped robot is placed in the lower part of the case, put the accompanying
+remote control, charger, etc. into their respective positions inside the transportation case to ensure that none
+
+of the above items will fall out when the upper part of the case is closed.
+
+Abnormal Condition Description
+
+When using the A2 quadruped robot, the robot may be abnormal. Most abnormal situations are
+controllable (there are solutions). The users should not panic when encountering these problems. Read the
+following contents in detail and solve the problems step by step.
+
+If you have any questions, please contact Unitree Robotics official technical support:
+https://global-serviceconsole.unitree.com/#/work-order
+
+1) Startup Self-Check Unsuccessful
+
+If the robot lies on the ground during startup and does not stand up after waiting for 2 minutes, it indicates
+that the startup self-check has failed, and the robot cannot stand up. In this case, it is necessary to recheck the
+robot according to the "Pre-startup Check" and "Pre-startup Preparation" steps and try again.
+
+2) Robot Fall Self-Protection
+
+When using the official Unitree motion control program (controlling the robot with the remote control),
+
+if the robot loses balance and falls due to external environmental reasons (e.g., insufficient ground friction) or
+
+©2025 All rights reserved, Unitree Robotics 19

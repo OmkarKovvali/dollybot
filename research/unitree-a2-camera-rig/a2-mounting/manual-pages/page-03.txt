@@ -1,0 +1,47 @@
+Disclaimer
+
+To avoid illegal behavior, potential harm, and loss, it is essential to adhere to the following regulations:
+
+1) Please be sure to read this article carefully before using the product, understand how to use the product
+correctly and your legitimate rights, responsibilities, and safety instructions. Otherwise, it may bring property
+damage, safety accidents and personal safety hazards. Once used this product, you are deemed to have carefully
+read, understood, recognized, and accepted all the terms and contents of this article. Users untaken to be
+responsible for their actions and all consequences therefrom. Users undertake to use this product only for
+legitimate purposes and agree with these terms and any relevant policies or guidelines that Unitree may
+establish.
+
+2) The laws of some countries may prohibit the exemption of guarantee clauses, so your relevant rights
+may vary in different countries.
+
+3) Subject to legal compliance, Unitree reserves the right of final interpretation of the above terms. Unitree
+has the right to update, amend or terminate this term without prior notice.
+
+4) Unitree Robotics does not provide any explicit or implied commercial and technical guarantees not
+involved in this article.
+
+5) Unitree Robotics does not guarantee that the products / services provided are completely free from
+defects and fully meet the customer's requirements. It also does not guarantee that Unitree Robotics can
+completely repair these defects.
+
+6) In any case, Unitree Robotics shall not bear legal liability for direct or indirect economic losses to the
+customers due to this service specification, and the maximum compensation amount of Unitree Robotics for
+losses to the customers caused by its own product liability shall not be higher than the amount paid by the
+customers for the products/services.
+
+7) The purchased parts are not within the scope of services included in this service specification.
+
+8) No on-site services are provided for terminal products and accessories. The maintenance service
+provided by Unitree Robotics for more than one year is an optional service. The customers can choose whether
+to purchase related services and choose when to terminate them. If the customers choose to purchase related
+services, it means that the customer allows Unitree Robotics to access, collect and process information related
+to faults, detection, positioning and debugging when providing services. Unitree Robotics will access and
+process relevant information in accordance with the customers’ request under the premise of the customers’
+consent, and the information will only be used to provide maintenance services. Since the users are the
+controller of such information, Unitree Robotics cannot confirm whether such information contains customers’
+confidential information or personal data, and the customers shall guarantee that it will obtain or retain all
+necessary consents, licenses, authorizations ("Agree") is used to allow Unitree Robotics to provide this service,
+so that Unitree Robotics will not violate applicable legal requirements, the customers’ privacy policy, or the
+
+agreement between the customer and the user when providing related services. Unitree will take reasonable
+
+© 2025 All rights reserved, Unitree Robotics 2

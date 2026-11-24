@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1570" viewBox="0 0 1800 1570">
+<rect x="0" y="0" width="1800" height="1570" rx="0" fill="#F2F5F7" stroke="none" stroke-width="1"/>
+<text x="44" y="61" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="bold" text-anchor="start" fill="#233348">A2 / V1 COVER CAMERA PLATFORM</text>
+<text x="44" y="104" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="normal" text-anchor="start" fill="#5C6D7F">OEM V1 silhouette · commercial Sony quick release · underside pole bolt</text>
+<text x="44" y="144" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#5C6D7F">Concept revision 03   /   23 November 2026</text>
+<rect x="1430" y="28" width="326" height="62" rx="13" fill="#FFF3DB" stroke="#E1C38E" stroke-width="1"/>
+<text x="1593" y="68" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="bold" text-anchor="middle" fill="#A96F16">CONCEPT ONLY</text>
+<text x="1756" y="137" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="end" fill="#5C6D7F">2D DESIGN STUDY · NOT TO SCALE</text>
+<rect x="44" y="175" width="1058" height="875" rx="20" fill="white" stroke="#DCE4EA" stroke-width="1.5"/>
+<text x="76" y="220" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="#233348">01   V1 OUTLINE + PROPOSED MOUNT LOCATIONS</text>
+<text x="76" y="255" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="normal" text-anchor="start" fill="#5C6D7F">Outline reference from OEM drawing; new features shown in color.</text>
+<g transform="translate(-18 210) scale(.9)">
+<path d="M257 327 Q257 292 294 277 Q319 266 328 238 L343 177 Q346 158 364 158 L397 158 Q414 158 419 180 L434 242 Q440 261 460 261 L875 261 Q898 261 903 242 L920 179 Q925 158 943 158 L975 158 Q992 158 997 179 L1012 241 Q1020 266 1042 277 L1081 297 Q1109 307 1109 341 L1109 647 Q1109 678 1082 691 L1042 711 Q1018 723 1010 749 L995 796 Q991 814 972 814 L942 814 Q924 814 919 797 L903 739 Q897 712 875 712 L461 712 Q440 712 434 737 L418 796 Q413 814 395 814 L363 814 Q346 814 342 796 L328 750 Q320 721 297 710 L280 701 Q257 692 257 665 Z" fill="#F0F3F5" stroke="#617487" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M280 336 Q280 314 300 304 L331 288 L1006 288 L1079 319 Q1091 325 1091 345 L1091 642 Q1091 661 1074 672 L1008 695 L325 695 L292 682 Q278 676 278 657 Z" fill="white" stroke="#B2BEC9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="379" cy="184" r="10" fill="white" stroke="#617487" stroke-width="2.5"/>
+<circle cx="379" cy="184" r="29" fill="none" stroke="#A96F16" stroke-width="1.6" stroke-dasharray="6 5"/>
+<circle cx="379" cy="788" r="10" fill="white" stroke="#617487" stroke-width="2.5"/>
+<circle cx="379" cy="788" r="29" fill="none" stroke="#A96F16" stroke-width="1.6" stroke-dasharray="6 5"/>
+<circle cx="958" cy="184" r="10" fill="white" stroke="#617487" stroke-width="2.5"/>
+<circle cx="958" cy="184" r="29" fill="none" stroke="#A96F16" stroke-width="1.6" stroke-dasharray="6 5"/>
+<circle cx="958" cy="788" r="10" fill="white" stroke="#617487" stroke-width="2.5"/>
+<circle cx="958" cy="788" r="29" fill="none" stroke="#A96F16" stroke-width="1.6" stroke-dasharray="6 5"/>
+</g>
+<line x1="213.3" y1="283" x2="213.3" y2="350" stroke="#617487" stroke-width="1"/>
+<line x1="980.1" y1="283" x2="980.1" y2="350" stroke="#617487" stroke-width="1"/>
+<line x1="213.3" y1="298" x2="980.1" y2="298" stroke="#617487" stroke-width="1.7"/>
+<polygon points="213.3,298 226.3,293.0 226.3,303.0" fill="#617487"/>
+<polygon points="980.1,298 967.1,303.0 967.1,293.0" fill="#617487"/>
+<text x="596.7" y="287" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#617487">301 mm overall / OEM</text>
+<line x1="323.1" y1="326" x2="323.1" y2="370" stroke="#617487" stroke-width="1"/>
+<line x1="844.2" y1="326" x2="844.2" y2="370" stroke="#617487" stroke-width="1"/>
+<line x1="323.1" y1="338" x2="844.2" y2="338" stroke="#617487" stroke-width="1.7"/>
+<polygon points="323.1,338 336.1,333.0 336.1,343.0" fill="#617487"/>
+<polygon points="844.2,338 831.2,343.0 831.2,333.0" fill="#617487"/>
+<text x="583.6500000000001" y="327" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#617487">204 mm attachment pitch</text>
+<line x1="166" y1="352.2" x2="211" y2="352.2" stroke="#617487" stroke-width="1"/>
+<line x1="166" y1="942.6" x2="211" y2="942.6" stroke="#617487" stroke-width="1"/>
+<line x1="174" y1="352.2" x2="174" y2="942.6" stroke="#617487" stroke-width="1.7"/>
+<polygon points="174,352.2 179.0,365.2 169.0,365.2" fill="#617487"/>
+<polygon points="174,942.6 169.0,929.6 179.0,929.6" fill="#617487"/>
+<text x="162" y="647.4" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#617487" transform="rotate(-90 162 647.4)">231 mm overall / OEM</text>
+<line x1="981" y1="375.6" x2="1025" y2="375.6" stroke="#617487" stroke-width="1"/>
+<line x1="981" y1="919.2" x2="1025" y2="919.2" stroke="#617487" stroke-width="1"/>
+<line x1="1018" y1="375.6" x2="1018" y2="919.2" stroke="#617487" stroke-width="1.7"/>
+<polygon points="1018,375.6 1023.0,388.6 1013.0,388.6" fill="#617487"/>
+<polygon points="1018,919.2 1013.0,906.2 1023.0,906.2" fill="#617487"/>
+<text x="1006" y="647.4000000000001" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#617487" transform="rotate(-90 1006 647.4000000000001)">213 mm attachment pitch</text>
+<line x1="234" y1="650" x2="962" y2="650" stroke="#B8C5CF" stroke-width="1.8" stroke-dasharray="9 7"/>
+<line x1="336" y1="396" x2="239" y2="396" stroke="#5C6D7F" stroke-width="2.5"/>
+<polygon points="239,396 252.0,391.0 252.0,401.0" fill="#5C6D7F"/>
+<text x="242" y="425" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#5C6D7F">FRONT / LENS</text>
+<rect x="401" y="548" width="170" height="249" rx="15" fill="none" stroke="#B7A7CC" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="276" y="591" width="125" height="118" rx="10" fill="none" stroke="#B7A7CC" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="402" y="591" width="155" height="118" rx="8" fill="#DDEFF2" stroke="#087F8C" stroke-width="2"/>
+<rect x="412" y="601" width="136" height="97" rx="8" fill="#EDE7F5" stroke="#7554A4" stroke-width="3"/>
+<rect x="425" y="614" width="110" height="72" rx="5" fill="#DAD0EA" stroke="#7554A4" stroke-width="2"/>
+<rect x="398" y="627" width="15" height="37" rx="3" fill="#7554A4" stroke="#7554A4" stroke-width="1"/>
+<line x1="487" y1="650" x2="441" y2="650" stroke="#7554A4" stroke-width="3"/>
+<polygon points="441,650 454.0,645.0 454.0,655.0" fill="#7554A4"/>
+<text x="480" y="638" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#7554A4">F38</text>
+<path d="M393 615 L366 615 L366 679 L393 679" fill="none" stroke="#7554A4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<circle cx="295" cy="502" r="20" fill="#7554A4" stroke="none" stroke-width="1"/>
+<text x="295" y="510" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">A</text>
+<text x="325" y="494" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#7554A4">Sony ZV-E1 + lens</text>
+<text x="325" y="522" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#7554A4">Ghost envelope; exact lens TBD</text>
+<path d="M477 532 L477 548" fill="none" stroke="#7554A4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="278" y="824" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#7554A4">Proposed Falcam F38B3404</text>
+<path d="M479 799 L479 709" fill="none" stroke="#7554A4" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="795" cy="650" r="58" fill="#DDEFF2" stroke="#087F8C" stroke-width="3"/>
+<circle cx="795" cy="650" r="36" fill="none" stroke="#087F8C" stroke-width="1.6" stroke-dasharray="5 5"/>
+<circle cx="795" cy="650" r="9" fill="white" stroke="#087F8C" stroke-width="2"/>
+<line x1="780" y1="650" x2="810" y2="650" stroke="#087F8C" stroke-width="1"/>
+<line x1="795" y1="635" x2="795" y2="665" stroke="#087F8C" stroke-width="1"/>
+<circle cx="692" cy="514" r="20" fill="#087F8C" stroke="none" stroke-width="1"/>
+<text x="692" y="522" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">B</text>
+<text x="723" y="507" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#087F8C">Stick behind Sony</text>
+<text x="723" y="535" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#087F8C">Near centerline</text>
+<text x="723" y="563" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#087F8C">Position provisional</text>
+<path d="M795 575 L795 589" fill="none" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="674" y="766" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#087F8C">Ø7 smooth clearance</text>
+<text x="674" y="794" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#087F8C">Provisional design dimension</text>
+<path d="M794 737 L794 712" fill="none" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="76" y="987" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#A96F16">4 attachment ears: keep bolt-head and tool access clear.</text>
+<text x="76" y="1021" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Use OEM nominal dimensions; check simplified STEP and physical rail fit.</text>
+<rect x="1126" y="175" width="630" height="875" rx="20" fill="white" stroke="#DCE4EA" stroke-width="1.5"/>
+<text x="1158" y="220" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="bold" text-anchor="start" fill="#233348">02   POLE FASTENER SECTION</text>
+<text x="1158" y="255" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#5C6D7F">Metal bolt inserts upward from UNDER the cover.</text>
+<text x="1158" y="312" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#A96F16">1/4-20 female thread + usable depth: VERIFY</text>
+<text x="1158" y="340" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#A96F16">Choose bolt length only after the stack is measured.</text>
+<rect x="1408" y="394" width="102" height="236" rx="6" fill="#EBEFF3" stroke="#52667A" stroke-width="3"/>
+<path d="M1407 393 L1432 383 L1458 403 L1484 383 L1511 394" fill="none" stroke="#52667A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1422" y="408" width="74" height="169" rx="0" fill="white" stroke="#52667A" stroke-width="1"/>
+<rect x="1432" y="577" width="55" height="53" rx="1" fill="#B7C5D0" stroke="#52667A" stroke-width="2"/>
+<rect x="1451" y="586" width="17" height="44" rx="0" fill="white" stroke="#52667A" stroke-width="1"/>
+<line x1="1444" y1="591" x2="1451" y2="595" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1468" y1="595" x2="1475" y2="591" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1444" y1="598" x2="1451" y2="602" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1468" y1="602" x2="1475" y2="598" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1444" y1="605" x2="1451" y2="609" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1468" y1="609" x2="1475" y2="605" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1444" y1="612" x2="1451" y2="616" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1468" y1="616" x2="1475" y2="612" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1444" y1="619" x2="1451" y2="623" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1468" y1="623" x2="1475" y2="619" stroke="#52667A" stroke-width="1.5"/>
+<path d="M1198 654 L1372 654 L1372 634 L1449 634 L1449 723 L1372 723 L1372 703 L1198 703 Z" fill="#DDEFF2" stroke="#087F8C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1470 634 L1546 634 L1546 654 L1700 654 L1700 703 L1546 703 L1546 723 L1470 723 Z" fill="#DDEFF2" stroke="#087F8C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="1213" y1="696" x2="1233" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1236" y1="696" x2="1256" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1259" y1="696" x2="1279" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1282" y1="696" x2="1302" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1305" y1="696" x2="1325" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1328" y1="696" x2="1348" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1351" y1="696" x2="1371" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1560" y1="696" x2="1580" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1583" y1="696" x2="1603" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1606" y1="696" x2="1626" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1629" y1="696" x2="1649" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<line x1="1652" y1="696" x2="1672" y2="661" stroke="#8FC5CF" stroke-width="1.7"/>
+<path d="M1285 703 L1372 751 L1372 703 Z" fill="#DDEFF2" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1546 703 L1633 751 L1546 751 Z" fill="#DDEFF2" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1398" y="623" width="10" height="12" rx="1" fill="#DDEFF2" stroke="#087F8C" stroke-width="2"/>
+<rect x="1510" y="623" width="10" height="12" rx="1" fill="#DDEFF2" stroke="#087F8C" stroke-width="2"/>
+<rect x="1371" y="724" width="178" height="13" rx="1" fill="#9AAEBE" stroke="#52667A" stroke-width="2"/>
+<rect x="1453" y="598" width="13" height="157" rx="0" fill="#8DA0B0" stroke="#52667A" stroke-width="2"/>
+<line x1="1453" y1="603" x2="1466" y2="599" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1453" y1="609" x2="1466" y2="605" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1453" y1="615" x2="1466" y2="611" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1453" y1="621" x2="1466" y2="617" stroke="#52667A" stroke-width="1.5"/>
+<line x1="1453" y1="627" x2="1466" y2="623" stroke="#52667A" stroke-width="1.5"/>
+<rect x="1431" y="738" width="57" height="27" rx="4" fill="#7E94A7" stroke="#52667A" stroke-width="2"/>
+<rect x="1448" y="749" width="23" height="8" rx="1" fill="#304456" stroke="#304456" stroke-width="1"/>
+<line x1="1460" y1="827" x2="1460" y2="777" stroke="#087F8C" stroke-width="3"/>
+<polygon points="1460,777 1465.0,790.0 1455.0,790.0" fill="#087F8C"/>
+<text x="1460" y="859" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#087F8C">INSERT FROM UNDERNEATH</text>
+<text x="1158" y="423" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#52667A">Fixed lower</text>
+<text x="1158" y="450" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="bold" text-anchor="start" fill="#52667A">stick end</text>
+<path d="M1290 431 L1360 431 L1407 458" fill="none" stroke="#52667A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1158" y="522" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#087F8C">Optional shallow</text>
+<text x="1158" y="548" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#087F8C">locating seat</text>
+<text x="1158" y="574" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#087F8C">Outside diameter TBD</text>
+<path d="M1348 550 L1379 550 L1402 622" fill="none" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1552" y="421" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#087F8C">Smooth hole</text>
+<text x="1552" y="447" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#087F8C">through print</text>
+<path d="M1576 458 L1555 483 L1484 645 L1472 645" fill="none" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1158" y="781" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#087F8C">Reinforced boss</text>
+<text x="1158" y="808" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#087F8C">+ printed ribs</text>
+<path d="M1334 777 L1352 746" fill="none" stroke="#087F8C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1552" y="792" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#52667A">Broad metal washer</text>
+<text x="1552" y="819" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#52667A">or load spreader</text>
+<path d="M1553 765 L1532 737" fill="none" stroke="#52667A" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1158" y="911" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">1/4-20 metal bolt → washer → printed boss → stick</text>
+<text x="1158" y="940" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Exact grip, engagement and underside clearance TBD.</text>
+<text x="1158" y="1006" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Section is schematic; material thickness is not specified.</text>
+<rect x="44" y="1074" width="1712" height="434" rx="20" fill="#E8F0F3" stroke="#D4E0E6" stroke-width="1.5"/>
+<text x="76" y="1121" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="bold" text-anchor="start" fill="#233348">REFERENCE GEOMETRY + NEXT DESIGN DECISIONS</text>
+<line x1="590" y1="1150" x2="590" y2="1464" stroke="#C8D7E0" stroke-width="2"/>
+<line x1="1164" y1="1150" x2="1164" y2="1464" stroke="#C8D7E0" stroke-width="2"/>
+<text x="77" y="1178" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#617487">OEM V1 REFERENCE</text>
+<text x="77" y="1220" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">OEM enclosure supplies the shape reference.</text>
+<text x="77" y="1254" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">301 × 231 mm overall outline</text>
+<text x="77" y="1288" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">204 × 213 mm outer attachment pitch</text>
+<text x="77" y="1322" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Simplified STEP differs slightly: verify rail fit.</text>
+<text x="77" y="1385" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="bold" text-anchor="start" fill="#087F8C">H2S: 340 × 320 × 340 mm</text>
+<text x="77" y="1420" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">The 301 × 231 mm envelope fits the XY bed.</text>
+<text x="77" y="1449" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Allow for a brim and the final printing orientation.</text>
+<text x="618" y="1178" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#7554A4">SONY QUICK RELEASE</text>
+<text x="618" y="1220" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Proposed F38B3404: 53.4 × 38 × 20.8 mm</text>
+<text x="618" y="1254" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Base stays on cover; plate stays on Sony.</text>
+<text x="618" y="1288" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Kit: 51.7 g; lens arrow/button faces the lens.</text>
+<text x="618" y="1322" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Keep finger access; measure the bolt centers.</text>
+<text x="618" y="1385" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#5C6D7F">Optional small adapter pad with a perimeter</text>
+<text x="618" y="1416" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#5C6D7F">anti-rotation register; do not infer bolt holes</text>
+<text x="618" y="1447" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#5C6D7F">from a product photograph.</text>
+<text x="1192" y="1178" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#087F8C">FIT &amp; ACCESS CHECKS</text>
+<text x="1192" y="1220" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Verify the stick’s female thread and depth.</text>
+<text x="1192" y="1254" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Confirm chassis clearance below the bolt head.</text>
+<text x="1192" y="1288" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Preserve both batteries’ side extraction.</text>
+<text x="1192" y="1322" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="normal" text-anchor="start" fill="#233348">Keep legs, perception and ventilation clear.</text>
+<text x="1192" y="1385" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Pole working height and lever loads remain TBD.</text>
+<text x="1192" y="1416" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">Validate the printed boss, fasteners and retention</text>
+<text x="1192" y="1447" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="normal" text-anchor="start" fill="#5C6D7F">before moving with the cameras installed.</text>
+<text x="44" y="1546" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="bold" text-anchor="start" fill="#5C6D7F">GRAY = OEM REFERENCE    /    TEAL = PROPOSED PRINTED FEATURES    /    PURPLE = COMMERCIAL QUICK RELEASE</text>
+<text x="1756" y="1546" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="bold" text-anchor="end" fill="#5C6D7F">ADAPTER NOT MODELED</text>
+</svg>

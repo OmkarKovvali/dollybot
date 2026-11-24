@@ -1,0 +1,16 @@
+# Media Import API
+
+> Import media from an HTTPS URL into a Kino media bin. Requires a scoped organization API key and preview access.
+
+## Guides and operations
+
+- [Media Import API](https://kino.ai/docs/api): Import media into Kino from an HTTPS URL and check its status.
+- [Start an import](https://kino.ai/docs/api/create-import): Start an asynchronous import into an approved media bin.
+- [Check an import](https://kino.ai/docs/api/get-import): Check whether Kino copied the original and finished processing.
+- [Move footage from Frame.io](https://kino.ai/docs/api/frame-io): Bring original files from a Frame.io project into a Kino media bin.
+- [Mirror a Shade folder](https://kino.ai/docs/api/shade): Copy uploads from one approved Shade folder to a Kino media bin.
+
+## Reference files
+
+- [OpenAPI 3.1](https://kino.ai/docs/api/openapi.json): Machine-readable operations, authentication, and schemas.
+- [Full Markdown reference](https://kino.ai/docs/api/llms-full.txt): All API guides in one plain-text file.

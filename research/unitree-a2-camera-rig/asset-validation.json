@@ -1,0 +1,27 @@
+{
+  "source_records_checked": 130,
+  "local_dossier_links_checked": 50,
+  "unavailable_download_urls_logged": [
+    {
+      "url": "https://www.insta360.com/blog/tips/insta360-which-invisible-selfie-stick.html",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.insta360.com/specs/x6",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://falcamstore.com/en-jp/products/f38-quick-release-multi-hole-kit",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "url": "https://www.ulanzi.com/products/ulanzi-falcam-f38-quick-release-system",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "url": "https://www.ulanzi.com/collections/falcam-f38-quick-release-series/products/falcam-f38-multi-hole-quick-release-kit-f38b3404",
+      "error": "HTTP Error 429: Too Many Requests"
+    }
+  ],
+  "issues": []
+}

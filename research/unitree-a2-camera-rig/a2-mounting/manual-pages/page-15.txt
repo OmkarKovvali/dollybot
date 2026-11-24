@@ -1,0 +1,20 @@
+Preparation before Power on
+
+1) Installing Battery Packs
+
+Place the A2 ona flat surface. Insert the battery pack into the battery slot from the side of the robot, paying
+attention to the installation direction as shown in the figure. If the battery pack cannot be fully inserted, adjust
+its orientation. Do not force it, to avoid damaging the battery interface and latch. When a "click" sound is
+
+heard, the battery pack installation is complete. Ensure the latch is securely engaged!
+
+2) Body Placement (Important Steps !!!)
+
+Horizontal type startup: please make sure that the robot dog is placed on a flat ground before startup and
+operation. The belly support pad of the robot dog should be flat against the ground. The machine body should
+lie on the ground horizontally without tilting. The legs of the robot dog should be fully retracted (as shown in
+the figure below). The four knee joints and foot ends should be flat on the ground to ensure that neither the
+
+thighs nor the legs of the robot dog are pressed by the machine body.
+
+© 2025 All rights reserved, Unitree Robotics 14

@@ -1,0 +1,61 @@
+Daily Maintenance
+
+Whole Machine Clean
+
+1) Clean
+
+When the A2 is used in harsh environments (rainy, dusty, wet), please clean the surface of the robot body
+in time.
+
+Before cleaning the robot body, please turn off the power, use a clean, soft cloth to wipe the body,
+especially pay attention to whether the camera is wiped clean. It is strictly forbidden to use metal brushes,
+sandpaper, etc. to clean to avoid scratching the surface of the parts. After cleaning, dry the body with a soft
+cloth. After drying, use a fan or air gun to dry the accumulated water on the surface of the robot and the joint
+
+gap to avoid leaving water marks.
+
+A @ Be careful! The whole A2 robot (including battery pack) has IP56 waterproof. Do not remove the battery
+
+pack when cleaning!
+
+2) Storage
+The A2 should be stored in a dry and cool room and away from the sun and rain to avoid the corrosion of
+
+parts and shorten the service life span. Take out the battery pack when storing for a long time.
+
+Inspection and Maintenance
+
+Carrying out routine inspection before and after operation can greatly improve the reliable performance
+
+of products, reduce potential safety hazards and extend the service life span.
+Uncharged checklist
+
+Type Main points
+
+1) Check whether the body's appearance is clean, and free of damage or deformation marks.
+Appearance of the
+
+2) Whether the lens on the camera surface has foreign matters.
+whole robot
+
+3) Check if there are any obstructions around the head-mounted LiDAR.
+
+1) Visually and touch to check whether the body, joints, connections, and foot end parts are
+in good condition. If there are cracks or damages, replace them in time and contact Unitree
+Robotics after-sales service.
+
+Structure 2) Ensure that the screws of all connecting parts are locked, especially the screws of joint
+connectors and battery locking knobs.
+3) Check for any obstructions in the intake and exhaust of the cooling fan.
+Foot end parts Check whether there is obvious foot pad damage. If there is damage, please replace it in time.
+
+1) Check the battery pack interface of the body for foreign matters and deformation.
+
+2) Whether the battery pack is installed reliably to ensure that it will not loosen during
+Battery packs operation.
+
+3) Check whether the battery pack shell is obviously damaged. The battery pack with obvious
+
+damage is forbidden to be used.
+
+© 2025. All rights reserved, Unitree Robotics 22

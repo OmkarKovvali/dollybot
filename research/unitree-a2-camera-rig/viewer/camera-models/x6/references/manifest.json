@@ -1,0 +1,62 @@
+[
+  {
+    "file": "power-button.png",
+    "url": "https://wassets.insta360.com/common/8d4e4fda493946bf9920be37bd22c618/image15.png",
+    "bytes": 4785,
+    "sha256": "3d68ca9120cca22b7be4ba3500fe531ee37e96aa2fa24ebc0e0a2e1fcc77cbae"
+  },
+  {
+    "file": "quick-button.png",
+    "url": "https://wassets.insta360.com/common/d83042cd287949b48a1f6e1d68c5a1a2/image16.png",
+    "bytes": 3789,
+    "sha256": "a8fec8b1633cbf0c5e436426d7549589cc7ece5f73542ae506aabfa310f57bfa"
+  },
+  {
+    "file": "shutter-button.png",
+    "url": "https://wassets.insta360.com/common/c1b8dfb9d56242fe9da1d4008919d363/image17.png",
+    "bytes": 8217,
+    "sha256": "28b1c10bde8d541de339a6397533355cf4f2a796ae44bc240389795fd2bd1cf7"
+  },
+  {
+    "file": "official-hero.jpg",
+    "url": "https://wassets.insta360.com/common/b12b6e9b3f46462aacb3e0d88d6a8797/1680.jpg",
+    "bytes": 803634,
+    "sha256": "34ae70e9d203f04baa27ab534427d81588a5d3391971ae72749cc712aa552a92"
+  },
+  {
+    "file": "official-store.jpg",
+    "url": "https://wassets.insta360.com/store/7ae468b24c794ecc88dd75464c696a7a/X6.jpg",
+    "bytes": 451906,
+    "sha256": "a6bf08d3e25a5bb0fb534dca4f3048f3ec2190f8e3d8428eb8544dc721c095b0"
+  },
+  {
+    "file": "manual-front.jpeg",
+    "url": "https://wassets.insta360.com/common/2ecc72ef0ad04a149538b065f4179a32/image3.jpeg",
+    "bytes": 12964,
+    "sha256": "4572763af25744de5255e1e7a1f0d379b93cd9cf04adb75ca8bd0cc4b0e31614"
+  },
+  {
+    "file": "manual-controls-side.jpeg",
+    "url": "https://wassets.insta360.com/common/7dc2f83e99ee4014805c6be3879155ec/image4.jpeg",
+    "bytes": 13628,
+    "sha256": "a8425736d31af88337a8f52b8c30084b9916e3e7caf7d72f63742d4f57e441ea"
+  },
+  {
+    "file": "manual-rear.jpeg",
+    "url": "https://wassets.insta360.com/common/be2fe552ccf14dc0b6ac6443d3ba9100/image5.jpeg",
+    "bytes": 12359,
+    "sha256": "69fc0c2524923115218d458761eed05cb5aa5719e253cfc77fdc55294bd33878"
+  },
+  {
+    "file": "manual-battery-side.jpeg",
+    "url": "https://wassets.insta360.com/common/b818bb1901a94d69b9ef63c96f979455/image6.jpeg",
+    "bytes": 14474,
+    "sha256": "0e46cc64ce2ebf86f9d8e67ef0f687570d1290d385ef7eb740f7ef27cc960d07"
+  },
+  {
+    "file": "manual-bottom.jpeg",
+    "url": "https://wassets.insta360.com/common/db945097e86a4e3d8e8e23ba8829976f/image7.jpeg",
+    "bytes": 17704,
+    "sha256": "309be5bb3b23331af4e6094a2a3c0dd5ab37ef7b5282ead5000ba73ad81f1ea0"
+  }
+]

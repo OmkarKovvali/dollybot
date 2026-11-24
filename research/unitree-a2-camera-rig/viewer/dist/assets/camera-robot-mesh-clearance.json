@@ -1,0 +1,43 @@
+{
+  "robot_mesh_sha256": "50fd95ff7329a99d6c774475c36fabf2d9a8c7fd9d3b30c43d8ddeb1177b1f91",
+  "regions": [
+    {
+      "region": "lens",
+      "bounds_mm": [
+        [
+          -225,
+          -40.25,
+          29.6
+        ],
+        [
+          -136.72,
+          40.25,
+          110.12
+        ]
+      ],
+      "conservative_max_robot_triangle_z_over_xy_mm": 38.4161376953125,
+      "candidate_robot_triangles": 86,
+      "scope": "Triangle AABB exclusion; no candidates is conservative disjointness for this delivered reference mesh, not physical tolerance proof."
+    },
+    {
+      "region": "sony_body",
+      "bounds_mm": [
+        [
+          -146.62,
+          -47.95,
+          34
+        ],
+        [
+          -92.31,
+          73.06,
+          105.91
+        ]
+      ],
+      "conservative_max_robot_triangle_z_over_xy_mm": 27.733482360839844,
+      "candidate_robot_triangles": 0,
+      "scope": "Triangle AABB exclusion; no candidates is conservative disjointness for this delivered reference mesh, not physical tolerance proof."
+    }
+  ],
+  "status": "historical_direct_mount_layout_superseded_by_C19",
+  "current_pose_note": "Current Sony is elevated by the C19 and camera hole restored to(-48,0); this file is not current assembly clearance evidence."
+}

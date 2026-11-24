@@ -1,0 +1,81 @@
+A2 CAMERA RIG — INTERACTIVE PRINTED CONCEPT, REVISION 04
+
+Run from the workspace root:
+python3 -m http.server 8770 --bind 127.0.0.1 --directory research/unitree-a2-camera-rig/viewer/dist
+Open http://127.0.0.1:8770 in the browser or Codex panel.
+
+Drag to rotate; scroll/pinch to zoom; right drag to pan.
+Show robot toggles the actual A2 reference geometry. Robot opacity ranges
+from fully transparent (0%) to solid (100%), defaulting to 65%.
+Focus mount frames the camera assembly. Fit assembly includes the dog.
+Inspect underside recess moves the view beneath the proposed pole screw.
+Transparent cover helps inspect the recessed head. OEM reference switches
+back to the unchanged original housing. The default Printed concept uses
+the derived housing with actual cut geometry, not a painted-on hole.
+
+OWNER'S CHANGE
+All adapter structure is proposed as 3D printed: housing, reinforced stick
+seat, camera platform, sliding quick-release and its locking pin. There
+are no metal mounting plates, backing plates or washers in this revision.
+Ordinary metal threaded fasteners are retained for the stick, camera and
+factory rail nuts; the screws are not printed. The camera quick-release
+is a new printed concept, not a Falcam product or certified Arca interface.
+Its tolerances, capture, locking and strength have not been engineered yet.
+
+ACTUAL REFERENCE GEOMETRY
+- dist/assets/v1-cover.stl: unchanged official V1 STEP tessellation.
+- dist/assets/a2-robot.stl: actual A2 from Unitree's assembled STEP,
+  with the OEM dock removed and the remaining geometry registered to the
+  standalone cover using four mounting-hole circles. No hand placement.
+- dist/assets/robot-registration.json: source-to-viewer transform and
+  residuals, independently checked against deck height and asymmetric
+  housing extents. Revision differences exist between source dock solids.
+- dist/assets/robot-mesh.json: mesh provenance, bounds and clearance notes.
+
+DERIVED CONCEPT
+- dist/assets/printed-cover-concept.stl: OEM-reference shape modified
+  with a local printed reinforcement and real underside access well.
+- dist/assets/printed-cover-concept.json: actual dimensions and checks.
+- A provisional 7 mm smooth clearance bore takes a bottom-up metal 1/4-20
+  screw. The 12 mm underside counterbore/access well opens to the outside
+  and seats the screw head at Z=27 mm. The modeled head (10.5 mm diameter,
+  6.5 mm high) lies from Z=20.5 to 27 mm, fully inside the housing envelope.
+  These dimensions are provisional until an actual screw is selected.
+  The well extends through the solid simplified housing to reach the
+  underside; it is deeper than the head's height. No threaded geometry is
+  printed in the bore, and no metal washer or reinforcement plate is used.
+- The whole housing bottom is Z=0. Added structure does not extend below
+  that plane. Fasten the pole from the underside before mounting the
+  housing if the robot blocks tool access once assembled.
+
+LIMITS
+This is a review render with derived concept solids, not print-ready CAD.
+The OEM model is simplified. Registration precision is not a manufacturing
+fit tolerance. Static sampled clearance does not validate dynamic flex,
+walking impacts, vibration, full leg motion, sensor coverage or tool access.
+The robot still requires a physical rail/nut fit check and battery removal
+check. Exact screw head, engagement, actual stick diameter and working
+height remain to be measured. The Sony lens is an unidentified 18–50 mm;
+its render is a shape placeholder. Camera bodies use published envelopes.
+The stick-height slider is illustrative and is not a safe extension rating.
+
+Three.js, OrbitControls and STLLoader are vendored under THREE-LICENSE.txt.
+All viewer assets are local; no external network is needed.
+
+OBSERVED STATIC FIT CHECK
+Exact OpenCASCADE solid intersections found 0 mm^3 overlap with the main
+robot body for the July assembled dock, the May standalone cover, and the
+derived printed cover. See dist/assets/cover-body-intersection.json.
+At the pole axis (78,0), the exact robot roof is Z=-0.38108 mm; the original
+cover underside is Z=3.44987 mm, giving 3.83095 mm axial gap. The proposed
+head's bottom Z=20.5 mm sits 20.88108 mm above that robot roof along the
+axis. These are local measurements in simplified CAD, not minimum global
+clearances or fabrication tolerances. The body's higher points elsewhere
+in the pole footprint do not intersect the actual cover surface.
+Install the stick screw with the cover removed, then attach the cover to
+the rails; access for a driver from below after installation is not proven.
+The whole-assembly exclusion check subsequently confirmed that body10 is
+the only one of 47 robot volumes with a bounding box overlapping the
+entire padded cover-and-boss envelope. All other 46 volumes are disjoint.
+Thus the zero exact common volume covers this printed housing against all
+47 static robot solids, not only a sampled point under the pole.

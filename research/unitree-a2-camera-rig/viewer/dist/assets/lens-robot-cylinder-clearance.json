@@ -1,0 +1,31 @@
+{
+  "constant_outer_cylinder_radius_mm": 40.25,
+  "lens_axis_world_z_mm": 69.86041180506,
+  "lens_x_interval_mm": [
+    -224.82452521323998,
+    -136.72452521323999
+  ],
+  "closest_robot_triangle_radial_distance_mm": 32.25855060717753,
+  "conservative_radial_clearance_mm": -7.991449392822467,
+  "nearest_polygon_mm": [
+    [
+      -219.78729248046875,
+      -5.879428135813214e-05,
+      37.13775634765625
+    ],
+    [
+      -224.82452521323998,
+      7.514590052747953,
+      37.4530013498792
+    ],
+    [
+      -224.82452521323998,
+      -5.8797522443013045e-05,
+      37.601861197936046
+    ]
+  ],
+  "triangles_considered": 86,
+  "method": "Clip robot triangles to full lens X interval, compute minimum YZ distance to lens axis. Constant maximum radius encloses all modeled lens details.",
+  "status": "historical_direct_mount_layout_superseded_by_C19",
+  "current_pose_note": "Current Sony is elevated by the C19 and camera hole restored to(-48,0); this file is not current assembly clearance evidence."
+}
