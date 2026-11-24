@@ -8,7 +8,7 @@ An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records 
 - **Motion rehearsal:** a browser-based Flow Base simulator with a local bridge that Kino can control. It supports driving, turns, orbits, push-ins, and slides.
 - **References and CAD:** Kino and I2RT documentation, robot geometry, and camera-rig research.
 
-The camera adapter and simulator run independently. The simulator does not move real hardware. Physical base control, the separately tested OM8 controller, and the complete capture → Kino review → retake loop are not integrated into this repo yet.
+The [OM8 controller and shot executor](docs/gimbal.md) coordinate bounded gimbal movement with Moblin recording and expose CLI and MCP tools. The refactored hardware path still needs physical acceptance. The simulator does not move real hardware. Physical base control and the automatic Kino import/review/retake loop remain separate work.
 
 ## Record from your iPhone
 
@@ -50,7 +50,7 @@ python3 flowbase-sim/bridge/kino_sim.py status
 
 | Path | Contents |
 | --- | --- |
-| `src/dollybot/` | Python camera adapter, capture workflow, CLI, and media validation |
+| `src/dollybot/` | Camera adapter, gimbal controller/driver, shot executor, CLI, MCP tools, and media validation |
 | `tests/` | Camera adapter tests with local HTTP/WebSocket fixtures |
 | `flowbase-sim/` | Browser simulator, local Kino bridge, skill, and simulator tests |
 | `scripts/` | Local setup helpers |
@@ -71,4 +71,4 @@ Run both suites from the repository root:
 make check
 ```
 
-This runs the Python camera tests and Node simulator tests. It needs uv, Python 3.12+, ffmpeg/ffprobe, Node.js 22+, and make. Tests use local fixtures and simulated motion; physical hardware checks remain separate.
+This installs optional test dependencies and runs the Python camera/gimbal/MCP tests and Node simulator tests. It needs uv, Python 3.12+, ffmpeg/ffprobe, Node.js 22+, and make. Tests use local fixtures and simulated motion; physical hardware checks remain separate.

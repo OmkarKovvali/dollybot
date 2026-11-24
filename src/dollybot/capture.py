@@ -1,6 +1,8 @@
 import json
 import math
 import time
+import sys
+from typing import Callable
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
@@ -9,7 +11,9 @@ from dollybot.adapters.moblin import Moblin, MoblinError
 from dollybot.media import inspect_video
 
 
-def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = False, tail_seconds: float = 0):
+def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = False, tail_seconds: float = 0,
+            record_action: Callable[[], object] | None = None,
+            wait: Callable[[float], None] = time.sleep):
     if not math.isfinite(seconds) or not 0.1 <= seconds <= 60:
         raise ValueError("Recording duration must be between 0.1 and 60 seconds")
     if not math.isfinite(tail_seconds) or not 0 <= tail_seconds <= 10:
@@ -38,16 +42,20 @@ def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = Fa
         previous = {r["name"] for r in camera.recordings()}
         report["outcome"] = "starting"
         save()
+        wait(0)
         record_started = time.perf_counter()
         try:
             report["start"] = camera.set_recording(True)
             report["outcome"] = "recording"
             save()
-            print(f"Recording {seconds:g}s: {take_id}", flush=True)
-            time.sleep(seconds)
+            print(f"Recording {seconds:g}s: {take_id}", flush=True, file=sys.stderr)
+            if record_action is None:
+                wait(seconds)
+            else:
+                report["motion"] = record_action()
             if tail_seconds:
-                print(f"Recording tail: {tail_seconds:g}s", flush=True)
-                time.sleep(tail_seconds)
+                print(f"Recording tail: {tail_seconds:g}s", flush=True, file=sys.stderr)
+                wait(tail_seconds)
         finally:
             stop_started = time.perf_counter()
             report["start_command_to_stop_command_ms"] = round((stop_started - record_started) * 1000, 3)
@@ -72,7 +80,7 @@ def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = Fa
             "matches_main_plus_tail_within_tolerance": actual >= seconds + tail_seconds - 0.5,
         }
         if not report["duration_check"]["matches_main_plus_tail_within_tolerance"]:
-            print(f"DURATION WARNING: requested {seconds + tail_seconds:g}s; video contains {actual:.3f}s", flush=True)
+            print(f"DURATION WARNING: requested {seconds + tail_seconds:g}s; video contains {actual:.3f}s", flush=True, file=sys.stderr)
         partial.replace(destination)
         report["local_path"] = str(destination)
         report["stop_to_validated_clip_ms"] = round((time.perf_counter() - stop_started) * 1000, 3)
@@ -91,4 +99,4 @@ def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = Fa
     finally:
         report["elapsed_ms"] = round((time.perf_counter() - started) * 1000, 3)
         save()
-        print(f"Report: {report_path}", flush=True)
+        print(f"Report: {report_path}", flush=True, file=sys.stderr)

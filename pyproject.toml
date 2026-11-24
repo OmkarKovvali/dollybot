@@ -7,6 +7,17 @@ dependencies = ["websockets==15.0.1"]
 
 [project.scripts]
 dollybot = "dollybot.cli:main"
+dollybot-rig = "dollybot.rig_cli:main"
+dollybot-agent = "dollybot.agent:main"
+
+[project.optional-dependencies]
+gimbal = [
+    "bleak==2.1.1",
+    "pydantic>=2.11,<3",
+]
+agent = [
+    "mcp>=1.20,<2",
+]
 
 [build-system]
 requires = ["hatchling>=1.26,<2"]
