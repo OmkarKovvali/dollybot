@@ -1,70 +1,74 @@
 # Dollybot
 
-## Kino Hackathon project
+An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records them, and a motorized base and gimbal move the camera.
 
-The complete project snapshot is included here: [project notes](KINO_HACKATHON.md), [Flow Base simulator and Kino bridge](flowbase-sim/README.md), API reference snapshots in `docs/`, and Flow Base / Unitree camera-rig CAD research in `research/`.
+## What works today
 
-Start the simulator with `cd flowbase-sim && node bridge/server.mjs`, then open <http://127.0.0.1:8766>. The bridge runs on the same computer as Kino. The local Kino skill includes machine-specific paths; adjust those paths when setting up another machine. No physical robot is connected by this simulator.
+- **iPhone capture:** start and stop Moblin from the Mac, download the original clip, and measure timing, resolution, and FPS. Tested on an iPhone 14 Plus.
+- **Motion rehearsal:** a browser-based Flow Base simulator with a local bridge that Kino can control. It supports driving, turns, orbits, push-ins, and slides.
+- **References and CAD:** Kino and I2RT documentation, robot geometry, and camera-rig research.
 
-Runtime credentials, caches, logs, and simulator QA screenshots are excluded. Embedded tokens in three downloaded HTML reference pages were redacted; their original provenance hashes still describe the original downloads.
+The camera adapter and simulator run independently. The simulator does not move real hardware. Physical base control, the separately tested OM8 controller, and the complete capture → Kino review → retake loop are not integrated into this repo yet.
 
-## Start a build session
+## Record from your iPhone
 
-Pick a human coordinator for the session. Two people can split recorder and playback, with one also coordinating. A third can own the demo or integration tests. Agree on one demo action and commit a small shared interface or example before assigning dependent work. For example, both recorder and playback can build against the same sample camera-command log.
-
-1. **Coordinator:** Fetch main and check the [board](coordination/board.json), merged work, and open PRs for the proposed behavior. Reuse an existing card for the same outcome. Put each new assignment in a board-only PR and merge it before agents begin. Only the coordinator merges. Board changes go through the same queue, one at a time.
-2. **Each teammate:** Clone the repo, fetch main, and start the exact assigned branch. For another agent on the same laptop, give it a separate worktree. Run the agent from its assigned directory.
-3. **Each agent:** Implement one card, run its acceptance check, and open one PR. If a shared file or interface needs changing, ask its owner. The coordinator can split off a prerequisite or revise the board before work resumes.
-4. **Coordinator:** Review the handoff, update the branch against current main, verify the reviewed commit and run the combined demo. Merge one PR at a time. Mark its card done in a board-only PR before assigning follow-up work. Keep finished cards searchable.
-
-### Assign work
-
-Add entries to the board's `tasks` array. This example is illustrative; the initial board is empty.
-
-```json
-{
-  "id": "record-command",
-  "state": "active",
-  "owner": "alex",
-  "branch": "alex/record-command",
-  "outcome": "Append one timestamped camera command to the session log",
-  "paths": ["src/recorder", "tests/test_recorder.py"],
-  "check": "python3 -m unittest discover -s tests -p test_recorder.py"
-}
-```
-
-Give playback its own behavior, source directory, and tests. Paths are literal files or directory trees. Include any new tests and fixtures in the assignment. Keep shared schemas, dependency manifests and lockfiles under one owner when they need edits. To hand over a stalled task, have the previous owner push their last commit and stop. Update the owner on the existing card and have the successor resume the same branch at that commit. Mark abandoned work `cancelled`.
-
-### Start an assigned agent
+Requires Python 3.12+, [uv](https://docs.astral.sh/uv/), and ffmpeg/ffprobe on your PATH.
 
 ```sh
-git clone https://github.com/OmkarKovvali/dollybot.git
-cd dollybot
-git fetch origin
-git switch -c alex/record-command origin/main
+uv sync --frozen
+uv run dollybot --url http://PHONE_IP status
+uv run dollybot --url http://PHONE_IP record --seconds 10 --verify-copy
 ```
 
-Replace the example branch with yours. For a second agent in an existing clone, use `git worktree add -b NAME ../dollybot-second origin/main`. For a handover, fetch and check out the existing remote branch.
+On the phone, open **Moblin → Settings → Remote control → Web**, enable it, and use the Wi-Fi address under **URLs** in place of `PHONE_IP`. Keep Moblin on its camera screen. Use a trusted network; its web remote has no authentication or encryption.
 
-Paste this into each agent session:
+Clips and timing reports go to `~/Movies/Dollybot/moblin-tests/`. Downloads preserve the original encoded file. In the five-take hardware benchmark, the median stop-to-downloaded-clip time was about **410 ms**, at **1080p/30 FPS**. Some recordings were about two seconds shorter than requested, so timing acknowledgements do not prove that all intended frames were captured.
 
-> Read AGENTS.md. My owner name is ___ and my assigned branch is ___. Read the card from origin/main. Tell me the outcome, owned paths and acceptance check. Check for an existing implementation, then implement the card and prepare a PR. Ask the coordinator if the scope needs to change.
+See the [camera guide](docs/moblin.md) for options, timing definitions, and limitations, and the [benchmark](docs/benchmarks/2026-11-23.json) for measurements.
 
-### Hand off and merge
+## Rehearse moves with Kino
 
-After committing, run the card's check and the scope check from your feature branch:
+Requires Node.js 22+; the simulator needs no npm dependencies or build step.
 
 ```sh
-git fetch origin
-git show origin/main:coordination/check.py > "$(git rev-parse --git-path dollybot-scope.py)"
-python3 "$(git rev-parse --git-path dollybot-scope.py)" origin/main HEAD "$(git branch --show-current)"
-git rev-parse HEAD
+node flowbase-sim/bridge/server.mjs
 ```
 
-Put the card ID, user-visible outcome, commit SHA, exact check command and result in the PR. List any hardware checks still pending. The coordinator compares the outcome with current main and other PRs, reruns the acceptance check on the reviewed SHA, then tests it together with current main. Repeat verification after any new commit.
+Open <http://127.0.0.1:8766> and keep the simulator visible. In another terminal, install the Kino skill for this checkout:
 
-### What the scope check enforces
+```sh
+python3 scripts/install_kino_skill.py
+```
 
-The GitHub Actions job **Task scope** rejects reused card IDs or branch names, overlapping active paths (including parent/child directories), unassigned feature branches, edits outside owned paths, and PRs that mix board edits with implementation. Renames count as touching both paths. Humans review behavioral overlap because two implementations in different directories can both pass this check. For GitHub-enforced merges, configure main to require pull requests, the up-to-date **Task scope** check, and restricted bypass permissions.
+Refresh Kino's local skills and select **flowbase-simulator** in its chat. The [simulator guide](flowbase-sim/README.md) explains commands and behavior. To inspect the bridge directly:
 
-Workflow adapted from section 6 of [Sin Liang Lee’s HackMIT write-up](https://www.sinlianglee.com/writing/hackathon-workflow).
+```sh
+python3 flowbase-sim/bridge/kino_sim.py status
+```
+
+## Repository
+
+| Path | Contents |
+| --- | --- |
+| `src/dollybot/` | Python camera adapter, capture workflow, CLI, and media validation |
+| `tests/` | Camera adapter tests with local HTTP/WebSocket fixtures |
+| `flowbase-sim/` | Browser simulator, local Kino bridge, skill, and simulator tests |
+| `scripts/` | Local setup helpers |
+| `docs/moblin.md` | Phone setup, commands, and recording limitations |
+| `docs/benchmarks/` | Recorded hardware measurements |
+| `docs/kino/`, `docs/i2rt/` | Downloaded vendor references |
+| `research/` | CAD, models, and research artifacts |
+
+[Project notes](KINO_HACKATHON.md) preserve the original architecture research and open questions; they are not a list of completed integrations.
+
+## Development
+
+Start from current `main`, use a short personal branch such as `o/capture`, and keep changes focused. Coordinate directly when changing a shared interface. No assignment board or special branch-import workflow is required.
+
+Run both suites from the repository root:
+
+```sh
+make check
+```
+
+This runs the Python camera tests and Node simulator tests. It needs uv, Python 3.12+, ffmpeg/ffprobe, Node.js 22+, and make. Tests use local fixtures and simulated motion; physical hardware checks remain separate.

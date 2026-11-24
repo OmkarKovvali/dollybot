@@ -12,14 +12,14 @@ The base has three planar degrees of freedom: X, Y, and yaw. It can translate in
 ## Start with current state
 
 ```sh
-python3 /Users/vinnie/Developer/KinoHackathon/flowbase-sim/bridge/kino_sim.py capabilities
-python3 /Users/vinnie/Developer/KinoHackathon/flowbase-sim/bridge/kino_sim.py status
+python3 __DOLLYBOT_SIM_HELPER__ capabilities
+python3 __DOLLYBOT_SIM_HELPER__ status
 ```
 
-If unavailable, direct the user to `/Users/vinnie/Developer/KinoHackathon/flowbase-sim/start-bridge.command`. If no viewer is ready, open `http://127.0.0.1:8766` and wait for “Kino bridge connected.” Keep the simulator visible during execution. Kino can have keyboard focus.
+If unavailable, direct the user to `__DOLLYBOT_SIM_LAUNCHER__`. If no viewer is ready, open `http://127.0.0.1:8766` and wait for “Kino bridge connected.” Keep the simulator visible during execution. Kino can have keyboard focus.
 
 For the examples below, append the listed arguments to:
-`python3 /Users/vinnie/Developer/KinoHackathon/flowbase-sim/bridge/kino_sim.py`
+`python3 __DOLLYBOT_SIM_HELPER__`
 
 ## General movement (starts at the current pose)
 
