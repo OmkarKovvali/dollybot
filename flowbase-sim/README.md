@@ -10,13 +10,13 @@ Double-click `start-bridge.command`, or run from this directory:
 node bridge/server.mjs
 ```
 
-Open <http://127.0.0.1:8766> and leave it visible. Wait for **Kino bridge connected**. The launcher finds Node on PATH, with this Mac's bundled Node as a fallback. No dependency installation or build is needed. WebGL is required.
+Open <http://127.0.0.1:8766> and leave it visible. Wait for **Kino bridge connected**. The launcher finds Node on PATH, with the current user's bundled Codex Node as a fallback. No dependency installation or build is needed. WebGL is required.
 
 The hosted Site also has a **Connect Kino** button that attempts to reach the same local bridge. Browser local-network restrictions may prevent this; **Open local simulator** provides the same UI over a same-origin local connection. The hosted Site remains private and has no cloud command broker.
 
 ## Direct from Kino
 
-The skill is installed on this Mac at `/Users/vinnie/Library/Application Support/Kino/skills/flowbase-simulator/SKILL.md`. In any Kino desktop chat, type `/flow` and select **/flowbase-simulator**. Settings → Skills → Local lists it as **Flowbase simulator** (`/kino:flowbase-simulator`). The editable source is `skills/flowbase-simulator/SKILL.md`; copy updates to the installed file and refresh Kino's skills catalog.
+From the repository root, run `python3 scripts/install_kino_skill.py`. This installs the skill under `~/Library/Application Support/Kino/skills/flowbase-simulator/SKILL.md` with paths pointing to your checkout. Refresh Kino's local skills, then type `/flow` and select **flowbase-simulator**. The editable template is `skills/flowbase-simulator/SKILL.md`; after moving the checkout or updating the template, reinstall with `--force`.
 
 Kino can control every planar base degree of freedom (X, Y, yaw) through:
 
