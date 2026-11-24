@@ -1,0 +1,126 @@
+{
+  "local_date": "2026-11-23",
+  "timezone": "America/Los_Angeles",
+  "device": "iPhone 14 Plus / Moblin / back ultra wide",
+  "test_count": 5,
+  "metrics": {
+    "start_ack_ms": {
+      "min": 14.92,
+      "median": 19.097,
+      "max": 22.327
+    },
+    "start_state_confirmed_ms": {
+      "min": 36.646,
+      "median": 39.769,
+      "max": 44.431
+    },
+    "stop_ack_ms": {
+      "min": 20.86,
+      "median": 28.008,
+      "max": 147.016
+    },
+    "stop_state_confirmed_ms": {
+      "min": 43.554,
+      "median": 45.623,
+      "max": 170.251
+    },
+    "stop_to_file_listed_ms": {
+      "min": 72.436,
+      "median": 79.508,
+      "max": 202.893
+    },
+    "download_ms": {
+      "min": 244.414,
+      "median": 326.912,
+      "max": 385.328
+    },
+    "stop_to_download_complete_ms": {
+      "min": 335.431,
+      "median": 409.679,
+      "max": 542.073
+    },
+    "stop_to_validated_clip_ms": {
+      "min": 1803.926,
+      "median": 2061.117,
+      "max": 2180.443
+    },
+    "transfer_mbps": {
+      "min": 174.872,
+      "median": 264.147,
+      "max": 294.208
+    }
+  },
+  "trials": [
+    {
+      "take_id": "20261124T041215Z-05ce8ccc",
+      "requested_seconds": 10.0,
+      "tail_seconds": 0,
+      "video_seconds": 7.976667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "decoded_frames": 238,
+      "timestamp_gaps": 0,
+      "bytes": 7198205,
+      "hash_verified": true
+    },
+    {
+      "take_id": "20261124T041302Z-a8487ba7",
+      "requested_seconds": 10.0,
+      "tail_seconds": 0,
+      "video_seconds": 9.943333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "decoded_frames": 297,
+      "timestamp_gaps": 0,
+      "bytes": 8988546,
+      "hash_verified": true
+    },
+    {
+      "take_id": "20261124T041315Z-4aa625a9",
+      "requested_seconds": 10.0,
+      "tail_seconds": 0,
+      "video_seconds": 9.943333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "decoded_frames": 297,
+      "timestamp_gaps": 0,
+      "bytes": 8997694,
+      "hash_verified": true
+    },
+    {
+      "take_id": "20261124T041327Z-0d77155c",
+      "requested_seconds": 10.0,
+      "tail_seconds": 0,
+      "video_seconds": 9.976667,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "decoded_frames": 298,
+      "timestamp_gaps": 0,
+      "bytes": 8936819,
+      "hash_verified": true
+    },
+    {
+      "take_id": "20261124T041458Z-a0f478ad",
+      "requested_seconds": 10.0,
+      "tail_seconds": 3.0,
+      "video_seconds": 11.943333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "decoded_frames": 357,
+      "timestamp_gaps": 0,
+      "bytes": 10794107,
+      "hash_verified": true
+    }
+  ],
+  "limitations": [
+    "Application acknowledgements and state are not exposure timestamps.",
+    "No manual-start control group, optical timing, sensor-drop or repeated-image detection.",
+    "Only current 1080p30 settings tested; transfers occurred after capture.",
+    "Two files were shorter than the requested total; possible recorder segmentation, not established cause."
+  ]
+}
