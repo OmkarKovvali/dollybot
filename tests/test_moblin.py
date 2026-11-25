@@ -36,9 +36,17 @@ class AdapterTest(unittest.TestCase):
         state = self.state
         video = self.video
 
+        self.pong_seen = threading.Event()
+        pong_seen = self.pong_seen
+
         def websocket(connection):
+            if state.get('ping_on_connect'):
+                connection.send(json.dumps({'ping': {}}))
             for raw in connection:
-                request = json.loads(raw).get("request")
+                message = json.loads(raw)
+                if 'pong' in message:
+                    pong_seen.set()
+                request = message.get('request')
                 if request is None:
                     continue
                 data = request["data"]
@@ -177,6 +185,23 @@ class AdapterTest(unittest.TestCase):
                 camera.download("../outside.mp4", self.root / "clip.mp4")
             with self.assertRaises(ValueError):
                 capture(camera, float("nan"), self.root)
+
+    def test_idle_connection_answers_keepalive_without_request(self):
+        self.state['ping_on_connect'] = True
+        with Moblin(self.url) as camera:
+            self.assertTrue(self.pong_seen.wait(2))
+            self.assertEqual(self.state['commands'], [])
+            self.assertFalse(camera.status()['recording'])
+
+    def test_stop_state_is_published_before_file_transfer(self):
+        states = []
+        with Moblin(self.url) as camera:
+            download = camera.download
+            def checked_download(*args, **kwargs):
+                self.assertEqual(states, [True, False])
+                return download(*args, **kwargs)
+            with patch.object(camera, 'download', checked_download):
+                capture(camera, .1, self.root, on_state=states.append)
 
 
 if __name__ == "__main__":
