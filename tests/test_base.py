@@ -59,6 +59,16 @@ class BaseTest(unittest.IsolatedAsyncioTestCase):
         with self.assertRaises(ValueError):
             await self.driver.move(BaseHold(BaseVelocity(.08)))
 
+    def test_manual_rotation_limit(self):
+        BaseHold(BaseVelocity(yaw_rad_s=.3))
+        BaseHold(BaseVelocity(yaw_rad_s=-.3))
+        with self.assertRaises(ValueError):
+            BaseHold(BaseVelocity(yaw_rad_s=.31))
+        with self.assertRaises(ValueError):
+            BaseHold(BaseVelocity(forward_m_s=.11))
+        with self.assertRaises(ValueError):
+            BaseMove(BaseVelocity(yaw_rad_s=.3), 1)
+
     def test_slide_profile_distance_direction_and_limits(self):
         for direction, axis, sign in [('right', 1, -1), ('left', 1, 1), ('forward', 0, 1), ('backward', 0, -1)]:
             for distance in (1.8288, .1):

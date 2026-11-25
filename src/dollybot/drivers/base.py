@@ -29,7 +29,10 @@ class BaseHold:
     velocity: BaseVelocity
 
     def __post_init__(self) -> None:
-        BaseMove(self.velocity, 1)
+        if not isinstance(self.velocity, BaseVelocity):
+            raise TypeError('Expected BaseVelocity')
+        if math.hypot(self.velocity.forward_m_s, self.velocity.left_m_s) > .1 or abs(self.velocity.yaw_rad_s) > .3:
+            raise ValueError('Manual limits: translation magnitude 0.1 m/s, yaw 0.3 rad/s')
 
     @property
     def duration_s(self) -> float:
