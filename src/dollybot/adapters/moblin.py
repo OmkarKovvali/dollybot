@@ -2,6 +2,7 @@ import hashlib
 import json
 import re
 import time
+import threading
 from pathlib import Path
 from urllib.parse import quote, urlsplit
 from urllib.request import ProxyHandler, build_opener
@@ -27,6 +28,16 @@ class Moblin:
         self.sequence = 0
         self.recording = None
         self.recording_observed_at = 0.0
+        self._condition = threading.Condition()
+        self._request_lock = threading.Lock()
+        self._responses = {}
+        self._failure = None
+        self._reader = None
+
+    @property
+    def connected(self) -> bool:
+        from websockets.protocol import State
+        return self.ws is not None and self.ws.state is State.OPEN and self._failure is None
 
     def get(self, path: str):
         return self.http.open(self.url + path, timeout=self.timeout)
@@ -46,12 +57,19 @@ class Moblin:
         scheme = "wss" if parsed.scheme == "https" else "ws"
         self.ws = connect(f"{scheme}://{host}:{match[1]}", open_timeout=self.timeout,
                           close_timeout=1, ping_interval=None, proxy=None, max_size=4 * 1024 * 1024)
+        self._responses.clear()
+        self._failure = None
+        self._reader = threading.Thread(target=self._receive, args=(self.ws,), daemon=True)
+        self._reader.start()
         return round((time.perf_counter() - started) * 1000, 3)
 
     def close(self):
         if self.ws is not None:
             self.ws.close()
             self.ws = None
+        if self._reader is not None:
+            self._reader.join(timeout=2)
+            self._reader = None
 
     def __enter__(self):
         self.connect()
@@ -60,30 +78,56 @@ class Moblin:
     def __exit__(self, *_):
         self.close()
 
+    def _receive(self, ws):
+        try:
+            for raw in ws:
+                message = json.loads(raw)
+                if 'ping' in message:
+                    ws.send(json.dumps({'pong': {}}))
+                with self._condition:
+                    event = message.get('event', {}).get('data', {}).get('state', {}).get('data', {})
+                    if isinstance(event.get('recording'), bool):
+                        self.recording = event['recording']
+                        self.recording_observed_at = time.perf_counter()
+                    response = message.get('response', {})
+                    if response.get('id') == self.sequence:
+                        self._responses[self.sequence] = response
+                    self._condition.notify_all()
+        except Exception as error:
+            with self._condition:
+                self._failure = error
+                self._condition.notify_all()
+        finally:
+            with self._condition:
+                if self._failure is None:
+                    self._failure = ConnectionError('Moblin connection closed')
+                self._condition.notify_all()
+
     def request(self, data: dict):
-        if self.ws is None:
-            raise MoblinError("Connect before sending a command")
-        self.sequence += 1
-        request_id = self.sequence
-        started = time.perf_counter()
-        self.ws.send(json.dumps({"request": {"id": request_id, "data": data}}))
-        deadline = started + self.timeout
-        while time.perf_counter() < deadline:
-            message = json.loads(self.ws.recv(timeout=max(0.001, deadline - time.perf_counter())))
-            if "ping" in message:
-                self.ws.send(json.dumps({"pong": {}}))
-            event = message.get("event", {}).get("data", {}).get("state", {}).get("data", {})
-            if isinstance(event.get("recording"), bool):
-                self.recording = event["recording"]
-                self.recording_observed_at = time.perf_counter()
-            response = message.get("response", {})
-            if response.get("id") != request_id:
-                continue
-            result = response.get("result", {})
-            if not isinstance(result, dict) or "ok" not in result or result["ok"] is False:
-                raise MoblinError(f"Moblin rejected request {request_id}: {result}")
-            return response.get("data") or {}, round((time.perf_counter() - started) * 1000, 3)
-        raise TimeoutError(f"Moblin did not acknowledge request {request_id}")
+        with self._request_lock:
+            if self.ws is None:
+                raise MoblinError('Connect before sending a command')
+            started = time.perf_counter()
+            with self._condition:
+                if self._failure is not None:
+                    raise ConnectionError(f'Moblin connection failed: {self._failure}')
+                self.sequence += 1
+                request_id = self.sequence
+                self._responses.clear()
+                self.ws.send(json.dumps({'request': {'id': request_id, 'data': data}}))
+                deadline = started + self.timeout
+                while request_id not in self._responses:
+                    if self._failure is not None:
+                        raise ConnectionError(f'Moblin connection failed: {self._failure}')
+                    remaining = deadline - time.perf_counter()
+                    if remaining <= 0:
+                        raise TimeoutError(f'Moblin did not acknowledge request {request_id}')
+                    self._condition.wait(remaining)
+                response = self._responses.pop(request_id)
+            result = response.get('result', {})
+            if not isinstance(result, dict) or 'ok' not in result or result['ok'] is False:
+                raise MoblinError(f'Moblin rejected request {request_id}: {result}')
+            return response.get('data') or {}, round((time.perf_counter() - started) * 1000, 3)
 
     def status(self):
         data, elapsed = self.request({"getStatus": {}})

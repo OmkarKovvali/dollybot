@@ -11,6 +11,10 @@ An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records 
 
 The base and OM8 controllers support bounded physical motion. Moblin records and downloads original clips. The simulator does not move hardware; the automatic Kino review/retake loop remains separate work.
 
+## Kino integration
+
+The [Kino integration guide](docs/kino-integration.md) connects the installed Kino agent through a skill/CLI or thin MCP client to the same persistent service that owns the localhost controls. Takes have explicit goals, bounded optional base/gimbal motion, persistent request IDs, original-clip download, and optional Kino import. The service owns hardware; clients never open their own sessions.
+
 ## Local control screen
 
 ```sh
