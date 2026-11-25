@@ -38,9 +38,9 @@ uv run --frozen dollybot-client stop
 
 Generate a new 32-character lowercase hexadecimal request ID for each intentional take. Keep the same ID and parameters when checking/retrying a lost submission response. Reusing it returns the existing job; different parameters are rejected. Interrupted persisted jobs become unknown, never replayed.
 
-A take has a required goal, main recording duration (0.1–30 seconds), lead/tail (0–10 seconds each), optional base velocities and pan OR tilt, and motion duration (at most two seconds, within the main interval). Base translation magnitude is at most 0.1 m/s, yaw 0.2 rad/s; gimbal speed is at most 20 degrees/second. Motion remains open-loop timed velocity; no angle/distance guarantee or collision avoidance is implied. Only supervised movement within clear space is qualified.
+A custom `capture_take` has a required goal, main recording duration (0.1–30 seconds), lead/tail (0–10 seconds each), optional base velocities and pan OR tilt, and motion duration (at most two seconds, within the main interval). Base translation magnitude is at most 0.1 m/s, yaw 0.2 rad/s; gimbal speed is at most 20 degrees/second. Motion remains open-loop timed velocity; no angle/distance guarantee or collision avoidance is implied. Only supervised movement within clear space is qualified.
 
-The service checks admission, disables Moblin tracking, starts recording, executes the lead/motion/main/tail sequence, stops recording, downloads and validates the original file, and optionally imports it into the Dollybot takes bin. Base and gimbal motion run concurrently through their respective drivers. If either motion fails, both receive stop attempts and camera cleanup runs.
+For `capture_take`, the service checks admission, disables Moblin tracking, starts recording, executes the lead/motion/main/tail sequence, stops recording, downloads and validates the original file, and optionally imports it into the Dollybot takes bin. Base and gimbal motion run concurrently through their respective drivers. If either motion fails, both receive stop attempts and camera cleanup runs.
 
 ## Ownership, stopping, and recovery
 
@@ -63,3 +63,18 @@ Kino's installed Codex agent loaded the local Dollybot skill, called the service
 The original HEVC file was 1920×1080, 30 FPS, 177 decoded frames, 5.943 seconds of video, with no detected frame-timing gaps. Requested lead/main/tail was 1/3/3 seconds; actual duration fell 1.057 seconds short of the full seven seconds. Download took 6.714 seconds; stop-to-validated clip was 8.131 seconds. The returned duration warning is preserved.
 
 Initial testing exposed an expired idle Moblin WebSocket before recording. The adapter now has one receiver thread that answers keepalive pings and dispatches responses while idle or downloading; commands remain serialized. A live idle test and regression test verify this behavior. UI recording state is published immediately on confirmed stop, before file transfer.
+
+## Directional slide preset
+
+`slide` requires `direction`: `left`, `right`, `forward`, or `backward`, relative to the base. Kino asks when direction is missing. Distance defaults to six feet and speed to 0.5 m/s. The driver ramps at 0.25 m/s², cruises if distance permits, and ramps down. The default move takes 5.6576 seconds; recording adds two seconds before and three after. Short slides use a triangular profile. Distance is the integral of planned velocity, not measured travel: floor slip, latency, heading drift, and the base's internal dynamics affect the actual path.
+
+```sh
+uv run --frozen dollybot-client plan_preset '{"preset":"slide","direction":"left"}'
+uv run --frozen dollybot-client capture_preset '{"request_id":"REPLACE_WITH_32_LOWERCASE_HEX","shot":{"preset":"slide","direction":"left","goal":"Reveal the subject with a lateral slide"}}'
+```
+
+`plan_preset` is read-only. `capture_preset` uses the same persistent jobs, request deduplication, recording cleanup, original-file download, and Kino import as `capture_take`. Poll `get_job`. Optional fields: `distance_ft` (0–20, exclusive zero), `speed_m_s` (0–0.5, exclusive zero), `lead_s`, `tail_s`, `import_to_kino`, and `goal`. Motion must fit within 30 seconds. MCP exposes these methods with a typed `shot` argument; direction is mandatory.
+
+The dedicated `BaseSlide` driver request allows this bounded profile without raising the commissioning limits for general `BaseMove` or manual UI commands. It retains identity/readiness checks, 20 Hz command refresh, stall abort, no replay on disconnection, and repeated stop frames. Stop cancels the active job. A slide preserves Moblin's current tracking setting and does not issue gimbal commands during normal execution. Tracking is not verified by a toggle or by successful recording. No closed-loop distance control, obstacle avoidance, heading correction, or return move is implied.
+
+Use `/dollybot Take a sliding shot to the right, six feet, then review the framing.` in Kino. A current clear path, secured phone, human supervision, and accessible stop are required before physical motion. Fixture tests verify trajectory math, direction, cancellation, job execution, and API validation; they do not verify physical displacement.

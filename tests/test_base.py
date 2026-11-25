@@ -10,7 +10,7 @@ from unittest.mock import patch
 from websockets.asyncio.server import serve
 
 from dollybot.controllers.flow_base import BaseVelocity, FlowBaseController
-from dollybot.drivers.base import BaseDriver, BaseMove
+from dollybot.drivers.base import BaseDriver, BaseMove, BaseSlide
 
 
 class BaseTest(unittest.IsolatedAsyncioTestCase):
@@ -43,6 +43,45 @@ class BaseTest(unittest.IsolatedAsyncioTestCase):
         await self.driver.close()
         self.server.close()
         await self.server.wait_closed()
+
+    def test_slide_profile_distance_direction_and_limits(self):
+        for direction, axis, sign in [('right', 1, -1), ('left', 1, 1), ('forward', 0, 1), ('backward', 0, -1)]:
+            for distance in (1.8288, .1):
+                slide = BaseSlide(direction, distance)
+                dt = slide.duration_s / 10000
+                integral = 0
+                last_speed = 0
+                for i in range(10000):
+                    v = slide.velocity_at((i + .5) * dt)
+                    values = (v.forward_m_s, v.left_m_s)
+                    speed = values[axis] * sign
+                    self.assertGreaterEqual(speed, 0)
+                    self.assertLessEqual(speed, .5)
+                    self.assertEqual(values[1-axis], 0)
+                    self.assertEqual(v.yaw_rad_s, 0)
+                    self.assertLessEqual(abs(speed - last_speed), .25 * dt + 1e-9)
+                    last_speed = speed
+                    integral += speed * dt
+                self.assertAlmostEqual(integral, distance, places=6)
+                self.assertEqual(slide.velocity_at(0), BaseVelocity())
+                self.assertEqual(slide.velocity_at(slide.duration_s), BaseVelocity())
+        self.assertAlmostEqual(BaseSlide('right').duration_s, 5.6576)
+        for args in [('up',), ('right', True), ('right', float('nan')), ('right', 7), ('right', 1, .6), ('right', 1, .001)]:
+            with self.assertRaises(ValueError):
+                BaseSlide(*args)
+
+    async def test_slide_stop_prevents_later_motion(self):
+        await self.controller.connect()
+        task = asyncio.create_task(self.driver.move(BaseSlide('right')))
+        await asyncio.sleep(.18)
+        await self.driver.stop()
+        result = await task
+        self.assertEqual(result.outcome, 'stopped')
+        values = [struct.unpack('<4f', p) for _, p in self.frames]
+        self.assertTrue(any(v[1] < 0 for v in values))
+        last_nonzero = max(i for i, v in enumerate(values) if v != (0, 0, 0, 0))
+        self.assertTrue(all(v == (0, 0, 0, 0) for v in values[last_nonzero+1:]))
+        self.assertGreaterEqual(len(values) - last_nonzero - 1, 6)
 
     async def test_read_only_identity_does_not_open_motion_feed(self):
         identity = await self.controller.read_identity()
