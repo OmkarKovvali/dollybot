@@ -19,7 +19,7 @@ from dollybot.controllers.om8 import BleTransport, OM8, VelocityCommand
 from dollybot.drivers.base import BaseDriver, BaseMove
 from dollybot.drivers.gimbal import GimbalDriver
 from dollybot.media import inspect_video
-from dollybot.service import Jobs, Shot
+from dollybot.service import Jobs, Shot, SlideShot
 
 
 class Console:
@@ -237,6 +237,11 @@ class Console:
                     result = self.status()
                 elif method == 'get_job':
                     result = self.jobs.get(params['job_id'])
+                elif method == 'plan_preset':
+                    result = SlideShot(**params).plan()
+                elif method == 'capture_preset':
+                    result = self.jobs.submit(params['request_id'], SlideShot(**params['shot']))
+                    await self.state()
                 elif method == 'capture_take':
                     result = self.jobs.submit(params['request_id'], Shot(**params['shot']))
                     await self.state()

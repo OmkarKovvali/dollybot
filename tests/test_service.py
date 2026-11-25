@@ -14,7 +14,7 @@ from dollybot.agent import make_server
 from dollybot.console import Console
 from dollybot.controllers.flow_base import BaseState
 from dollybot.controllers.om8 import GimbalState
-from dollybot.service import Jobs, Shot
+from dollybot.service import Jobs, Shot, SlideShot
 
 
 @dataclass
@@ -140,7 +140,77 @@ class ServiceTest(unittest.IsolatedAsyncioTestCase):
             result = await client.call_tool('capture_take', {'request_id': '2'*32, 'shot': {'goal':'proxy test'}})
             self.assertFalse(result.isError)
         self.assertEqual(calls, ['capture_take'])
-        self.assertEqual({t.name for t in await server.list_tools()}, {'get_status','connect','capture_take','get_job','stop'})
+        self.assertEqual({t.name for t in await server.list_tools()}, {'get_status','connect','capture_take','plan_preset','capture_preset','get_job','stop'})
+
+    async def test_slide_preserves_tracking_and_does_not_command_gimbal(self):
+        shot = SlideShot(direction='right', lead_s=0, tail_s=0)
+        self.console.jobs.submit('3'*32, shot)
+        self.console.jobs.submit('3'*32, shot)
+        await self.finish()
+        self.console.camera.request.assert_not_called()
+        self.console.gimbal_driver.move.assert_not_awaited()
+        self.console.gimbal_driver.stop.assert_not_awaited()
+        move = self.console.base_driver.move.call_args.args[0]
+        self.assertEqual(move.direction, 'right')
+        self.assertAlmostEqual(move.distance_m, 1.8288)
+        self.assertEqual(move.speed_m_s, .5)
+        self.console.base_driver.stop.assert_awaited()
+        job = self.console.jobs.get('3'*32)
+        self.assertEqual(job['status'], 'completed')
+        self.assertEqual(job['plan']['distance_control'], 'timed_velocity_estimate')
+        self.assertEqual((self.captures, self.imports), (1, 1))
+        with self.assertRaises(ValueError):
+            self.console.jobs.submit('3'*32, SlideShot(direction='left'))
+
+    async def test_manual_control_resumes_after_kino_take(self):
+        self.console.jobs.submit('7'*32, SlideShot(direction='left', lead_s=0, tail_s=0))
+        await self.finish()
+        self.console.base_driver.move.reset_mock()
+        self.console.last_input = time.monotonic()
+        await self.console.command({'action': 'base_move', 'time': time.time()*1000, 'left': .08})
+        self.console.base_driver.move.assert_awaited_once()
+        self.assertEqual(self.console.base_driver.move.call_args.args[0].duration_s, 2)
+        self.assertFalse(self.console.jobs.busy)
+        await asyncio.sleep(0)
+        states = [call.args[0]['state'] for call in self.console.send.call_args_list if 'state' in call.args[0]]
+        self.assertIsNone(states[-1]['active_job'])
+
+    async def test_preset_api_requires_direction_and_preview_has_no_side_effects(self):
+        async with serve(self.console.route, '127.0.0.1', 0) as server:
+            port = server.sockets[0].getsockname()[1]
+            async with connect(f'ws://127.0.0.1:{port}/api', proxy=None) as api:
+                await api.send(json.dumps({'method': 'capture_preset', 'params': {'request_id': '4'*32, 'shot': {'preset': 'slide'}}}))
+                self.assertIn('direction', json.loads(await api.recv())['error'])
+                await api.send(json.dumps({'method': 'plan_preset', 'params': {'direction': 'backward'}}))
+                plan = json.loads(await api.recv())['result']
+                self.assertEqual(plan['direction'], 'backward')
+                self.assertAlmostEqual(plan['motion_seconds'], 5.6576)
+        self.assertEqual(self.captures, 0)
+        self.console.base_driver.move.assert_not_awaited()
+
+    async def test_slide_cancel_during_lead_never_moves(self):
+        self.console.jobs.submit('5'*32, SlideShot(direction='left'))
+        await asyncio.sleep(.03)
+        await self.console.stop()
+        await self.finish()
+        self.console.base_driver.move.assert_not_awaited()
+        self.assertEqual(self.console.jobs.get('5'*32)['status'], 'cancelled')
+
+    async def test_mcp_preset_direction_required(self):
+        from mcp.shared.memory import create_connected_server_and_client_session
+        calls = []
+        def request(method, params, url):
+            calls.append((method, params))
+            return {'status': 'running'}
+        server = make_server(request_fn=request)
+        async with create_connected_server_and_client_session(server) as client:
+            result = await client.call_tool('capture_preset', {'request_id': '6'*32, 'shot': {'preset': 'slide'}})
+            self.assertTrue(result.isError)
+            self.assertEqual(calls, [])
+            result = await client.call_tool('capture_preset', {'request_id': '6'*32, 'shot': {'direction': 'forward'}})
+            self.assertFalse(result.isError)
+        self.assertEqual(calls[0][0], 'capture_preset')
+        self.assertEqual(calls[0][1]['shot']['direction'], 'forward')
 
     def test_invalid_shots_rejected(self):
         for args in ({'forward_m_s': .2}, {'pan_deg_s': 5, 'tilt_deg_s': 5}, {'seconds': float('nan')}, {'seconds': True}, {'motion_seconds': 3}):

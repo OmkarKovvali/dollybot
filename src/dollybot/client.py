@@ -19,7 +19,7 @@ def request(method: str, params: dict | None = None, url: str = 'ws://127.0.0.1:
 def main():
     parser = argparse.ArgumentParser(description='Client of the running Dollybot service; never opens hardware connections')
     parser.add_argument('--server', default='ws://127.0.0.1:8767/api')
-    parser.add_argument('method', choices=['get_status', 'connect', 'capture_take', 'get_job', 'stop'])
+    parser.add_argument('method', choices=['get_status', 'connect', 'capture_take', 'plan_preset', 'capture_preset', 'get_job', 'stop'])
     parser.add_argument('params', nargs='?', default='{}', help='JSON parameters; retain request_id for retries')
     args = parser.parse_args()
     try:
