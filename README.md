@@ -9,7 +9,7 @@ An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records 
 - **Base access:** a [typed Flow Base controller and bounded-move driver](docs/base.md) for the existing Pi service, with a standalone CLI.
 - **References and CAD:** Kino and I2RT documentation, robot geometry, and camera-rig research.
 
-The camera adapter and simulator run independently. The simulator does not move real hardware. The base controller/driver can be used independently. The OM8 and coordinated capture work remains on its separate branch; the complete capture → Kino review → retake loop is not integrated into main yet.
+The base and OM8 controllers support bounded physical motion. Moblin records and downloads original clips. The simulator does not move hardware; the automatic Kino review/retake loop remains separate work.
 
 ## Record from your iPhone
 
@@ -51,7 +51,7 @@ python3 flowbase-sim/bridge/kino_sim.py status
 
 | Path | Contents |
 | --- | --- |
-| `src/dollybot/` | Python camera adapter, capture workflow, CLI, and media validation |
+| `src/dollybot/` | Camera adapter, gimbal controller/driver, shot executor, CLI, MCP tools, and media validation |
 | `tests/` | Camera adapter tests with local HTTP/WebSocket fixtures |
 | `flowbase-sim/` | Browser simulator, local Kino bridge, skill, and simulator tests |
 | `scripts/` | Local setup helpers |
@@ -72,4 +72,4 @@ Run both suites from the repository root:
 make check
 ```
 
-This runs the Python camera tests and Node simulator tests. It needs uv, Python 3.12+, ffmpeg/ffprobe, Node.js 22+, and make. Tests use local fixtures and simulated motion; physical hardware checks remain separate.
+This installs optional test dependencies and runs the Python camera/gimbal/MCP tests and Node simulator tests. It needs uv, Python 3.12+, ffmpeg/ffprobe, Node.js 22+, and make. Tests use local fixtures and simulated motion; physical hardware checks remain separate.
