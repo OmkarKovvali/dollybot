@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from dollybot.agent import MotionInput, make_server
+from dollybot.agent import ShotInput
 from dollybot.controllers.om8 import OM8, VelocityCommand, speed_packet
 from dollybot.controllers.vendor.duml import DUMLParser
 from dollybot.rig import Rig, TakeRequest
@@ -191,7 +191,7 @@ class GimbalTest(unittest.IsolatedAsyncioTestCase):
         with self.assertRaises(ValueError):
             TakeRequest(VelocityCommand(1, 0, 1), -1)
         with self.assertRaises(ValueError):
-            MotionInput(duration_s=1, vendor_bytes='hello')
+            ShotInput(goal='test', vendor_bytes='hello')
 
     async def test_same_request_never_replays(self):
         request_id = 'b' * 32
@@ -205,34 +205,6 @@ class GimbalTest(unittest.IsolatedAsyncioTestCase):
         with self.assertRaises(ValueError):
             self.rig.move_gimbal(VelocityCommand(5, 0, .1), request_id)
 
-    async def test_mcp_session_calls_and_shutdown(self):
-        from mcp.shared.memory import create_connected_server_and_client_session
-        server = make_server('unused', 'unused', Path(self.directory.name), lambda: self.rig)
-        async with create_connected_server_and_client_session(server) as client:
-            result = await client.call_tool('move_gimbal', {
-                'motion': {'pan_deg_s': 10.0, 'duration_s': 2.0}, 'request_id': 'c' * 32})
-            self.assertFalse(result.isError)
-            await asyncio.sleep(.03)
-            result = await client.call_tool('get_status', {})
-            self.assertFalse(result.isError)
-            result = await client.call_tool('stop', {})
-            self.assertFalse(result.isError)
-            await self.wait_job('c' * 32)
-            result = await client.call_tool('get_job', {'job_id': 'c' * 32})
-            self.assertIn('cancelled', str(result))
-        self.assertFalse(self.transport.connected)
-
-    async def test_shutdown_during_active_mcp_job_stops(self):
-        from mcp.shared.memory import create_connected_server_and_client_session
-        server = make_server('unused', 'unused', Path(self.directory.name), lambda: self.rig)
-        async with create_connected_server_and_client_session(server) as client:
-            await client.call_tool('move_gimbal', {
-                'motion': {'pan_deg_s': 10.0, 'duration_s': 2.0}, 'request_id': 'd' * 32})
-            await asyncio.sleep(.03)
-        self.assertFalse(self.transport.connected)
-        self.assertEqual(self.rig.get_job('d' * 32)['status'], 'cancelled')
-        self.assertEqual(self.transport.packets[-3:], [speed_packet()] * 3)
-
     async def test_new_move_rejected_while_stop_in_flight(self):
         task = asyncio.create_task(self.rig.stop())
         await asyncio.sleep(.01)
@@ -242,12 +214,6 @@ class GimbalTest(unittest.IsolatedAsyncioTestCase):
             await self.controller.drive(VelocityCommand(10, 0, 1))
         await task
         self.assertEqual(self.moving_packets(), [])
-
-    async def test_mcp_tool_discovery(self):
-        server = make_server('unused', 'unused', Path(self.directory.name))
-        tools = {tool.name: tool for tool in await server.list_tools()}
-        self.assertEqual(set(tools), {'capture_take', 'move_gimbal', 'get_job', 'get_status', 'stop'})
-        self.assertNotIn('ctx', tools['move_gimbal'].inputSchema['properties'])
 
     async def test_malformed_short_packet_resynchronizes(self):
         parser = DUMLParser()

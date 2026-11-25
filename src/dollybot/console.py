@@ -3,6 +3,7 @@ import asyncio
 import json
 import math
 import time
+import signal
 from dataclasses import asdict
 from http import HTTPStatus
 from pathlib import Path
@@ -18,6 +19,7 @@ from dollybot.controllers.om8 import BleTransport, OM8, VelocityCommand
 from dollybot.drivers.base import BaseDriver, BaseMove
 from dollybot.drivers.gimbal import GimbalDriver
 from dollybot.media import inspect_video
+from dollybot.service import Jobs, Shot
 
 
 class Console:
@@ -37,6 +39,8 @@ class Console:
         self.owner = None
         self.stopping = False
         self.camera_status = {}
+        self.jobs = Jobs(self)
+        self.connect_lock = asyncio.Lock()
 
     async def send(self, data):
         if self.owner:
@@ -45,26 +49,40 @@ class Console:
             except Exception:
                 pass
 
+    def status(self):
+        return {'base': asdict(self.base.state()), 'gimbal': asdict(self.gimbal.state()),
+                'camera': self.camera_status, 'camera_connected': self.camera is not None and bool(self.camera.connected),
+                'active_job': self.jobs.current if self.jobs.busy else None,
+                'connecting': self.connect_lock.locked()}
+
     async def state(self):
-        await self.send({'state': {'base': asdict(self.base.state()), 'gimbal': asdict(self.gimbal.state()),
-                                  'camera': self.camera_status, 'camera_connected': self.camera is not None}})
+        await self.send({'state': self.status()})
 
     async def stop(self):
+        self.jobs.cancel.set()
+        return await self.stop_motion()
+
+    async def stop_motion(self):
         self.stopping = True
         try:
-            calls = []
+            calls = {}
             if self.base.connected:
-                calls.append(self.base_driver.stop())
+                calls['base'] = self.base_driver.stop()
             if self.gimbal.state().connected:
-                calls.append(self.gimbal_driver.stop())
-            results = await asyncio.gather(*calls, return_exceptions=True)
-            for result in results:
+                calls['gimbal'] = self.gimbal_driver.stop()
+            results = await asyncio.gather(*calls.values(), return_exceptions=True)
+            report = {name: {'command_completed': False, 'error': 'not connected'} for name in ('base', 'gimbal')}
+            for name, result in zip(calls, results):
+                report[name] = {'command_completed': not isinstance(result, BaseException), 'physically_verified': False}
                 if isinstance(result, BaseException):
+                    report[name]['error'] = f'{type(result).__name__}: {result}'
                     await self.send({'error': f'Stop could not be confirmed: {result}'})
+            return report
         finally:
             self.stopping = False
 
     async def camera_action(self, action, url=None):
+        loop = asyncio.get_running_loop()
         async with self.camera_lock:
             def execute():
                 if action == 'camera_connect':
@@ -92,11 +110,13 @@ class Console:
                     self.previous = {r['name'] for r in self.camera.recordings()}
                     result = self.camera.set_recording(True)
                     self.camera_status = self.camera.status()
+                    asyncio.run_coroutine_threadsafe(self.state(), loop).result()
                     return {'message': 'Recording on phone', 'timing': result}
                 if action == 'record_stop':
                     start = time.monotonic()
                     result = self.camera.stop_recording()
                     self.camera_status = self.camera.status()
+                    asyncio.run_coroutine_threadsafe(self.state(), loop).result()
                     if self.previous is None:
                         return {'message': 'Recording stopped; no console-owned clip to collect', 'timing': result}
                     recording = self.camera.wait_for_recording(self.previous)
@@ -113,17 +133,23 @@ class Console:
                     self.previous = None
                     return {'message': 'Original clip saved on Mac', 'clip': report}
                 raise ValueError('Unknown camera command')
-            await self.send(await asyncio.to_thread(execute))
+            result = await asyncio.to_thread(execute)
+            await self.send(result)
+            return result
 
     async def command(self, data):
         action = data.get('action')
         try:
+            if self.jobs.busy or self.connect_lock.locked():
+                raise RuntimeError('Agent take active; press Stop all motion to interrupt it')
             if action == 'base_connect':
-                await self.base.connect()
+                async with self.connect_lock:
+                    await self.base.connect()
             elif action == 'gimbal_connect':
                 if self.gimbal.state().connected:
                     raise RuntimeError('Gimbal is already connected')
-                await self.gimbal.connect()
+                async with self.connect_lock:
+                    await self.gimbal.connect()
             elif action in ('camera_connect', 'record_start', 'record_stop'):
                 await self.camera_action(action, data.get('url'))
             elif action in ('base_move', 'gimbal_move'):
@@ -147,7 +173,7 @@ class Console:
             else:
                 raise ValueError('Unknown command')
         except Exception as error:
-            await self.send({'error': str(error)})
+            await self.send({'error': f'{type(error).__name__}: {error}'})
         finally:
             await self.state()
 
@@ -155,7 +181,7 @@ class Console:
         while True:
             await asyncio.sleep(.05)
             if self.motion and time.monotonic() - self.last_input > .25 and not self.stopping:
-                await self.stop()
+                await self.stop_motion()
                 await self.send({'error': 'Browser input timed out; motion stopped. Release controls.'})
 
     async def session(self, ws):
@@ -173,6 +199,9 @@ class Console:
                     raise ValueError('Expected command object')
                 if data.get('action') == 'heartbeat':
                     self.last_input = time.monotonic()
+                elif data.get('action') == 'manual_stop':
+                    if self.motion:
+                        await self.stop_motion()
                 elif data.get('action') == 'stop':
                     await self.stop()
                     await self.state()
@@ -185,7 +214,8 @@ class Console:
                     task.add_done_callback(self.tasks.discard)
         finally:
             watchdog.cancel()
-            await self.stop()
+            if self.motion:
+                await self.stop_motion()
             if self.tasks:
                 await asyncio.gather(*self.tasks, return_exceptions=True)
             if self.previous is not None:
@@ -195,12 +225,61 @@ class Console:
                     pass
             self.owner = None
 
+    async def api(self, ws):
+        async for raw in ws:
+            try:
+                data = json.loads(raw)
+                if not isinstance(data, dict):
+                    raise ValueError('Expected request object')
+                method = data['method']
+                params = data.get('params', {})
+                if method == 'get_status':
+                    result = self.status()
+                elif method == 'get_job':
+                    result = self.jobs.get(params['job_id'])
+                elif method == 'capture_take':
+                    result = self.jobs.submit(params['request_id'], Shot(**params['shot']))
+                    await self.state()
+                elif method == 'stop':
+                    stops = await self.stop()
+                    result = {'status': 'stop_requested', 'devices': stops, 'active_job': self.status()['active_job']}
+                elif method == 'connect':
+                    async with self.connect_lock:
+                        if self.jobs.busy or self.motion or self.camera_lock.locked():
+                            raise RuntimeError('Rig busy')
+                        devices = params.get('devices', ['camera'])
+                        if not isinstance(devices, list) or not set(devices) <= {'base', 'gimbal', 'camera'}:
+                            raise ValueError('devices must contain base, gimbal, or camera')
+                        if 'base' in devices and not self.base.connected:
+                            await self.base.connect()
+                        if 'gimbal' in devices and not self.gimbal.state().connected:
+                            await self.gimbal.connect()
+                        if 'camera' in devices:
+                            await self.camera_action('camera_connect')
+                    result = self.status()
+                    await self.state()
+                else:
+                    raise ValueError('Unknown service method')
+                await ws.send(json.dumps({'result': result}))
+            except Exception as error:
+                await ws.send(json.dumps({'error': f'{type(error).__name__}: {error}'}))
+
+    async def route(self, ws):
+        if ws.request.path == '/api':
+            await self.api(ws)
+        else:
+            await self.session(ws)
+
 
 def handler(port):
     origin = f'http://127.0.0.1:{port}'
     async def process(connection, request):
         if request.headers.get('Host') != f'127.0.0.1:{port}':
             return connection.respond(HTTPStatus.FORBIDDEN, 'Local access only')
+        if request.path == '/api':
+            if request.headers.get('Origin') is not None:
+                return connection.respond(HTTPStatus.FORBIDDEN, 'Agent endpoint does not accept browser origins')
+            return None
         if request.path == '/control':
             if request.headers.get('Origin') != origin:
                 return connection.respond(HTTPStatus.FORBIDDEN, 'Invalid origin')
@@ -218,11 +297,17 @@ def handler(port):
 async def run(args):
     console = Console(FlowBaseController(args.base_url, args.device_id), OM8(BleTransport(args.gimbal_address)),
                       args.camera_url, args.output.expanduser())
+    shutdown = asyncio.Event()
+    loop = asyncio.get_running_loop()
+    for sig in (signal.SIGINT, signal.SIGTERM):
+        loop.add_signal_handler(sig, shutdown.set)
     try:
-        async with serve(console.session, '127.0.0.1', args.port, process_request=handler(args.port), max_size=4096):
+        async with serve(console.route, '127.0.0.1', args.port, process_request=handler(args.port), max_size=4096):
             print(f'Dollybot console: http://127.0.0.1:{args.port}', flush=True)
-            await asyncio.Future()
+            await shutdown.wait()
+            await console.jobs.close()
     finally:
+        await console.jobs.close()
         await console.stop()
         await console.base_driver.close()
         await console.gimbal.close()

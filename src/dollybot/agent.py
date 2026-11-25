@@ -1,69 +1,60 @@
 import argparse
-import anyio
-from contextlib import asynccontextmanager
-from pathlib import Path
+import asyncio
+from dataclasses import asdict
 
-from mcp.server.fastmcp import Context, FastMCP
+from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, ConfigDict, Field
 
-from dollybot.controllers.om8 import BleTransport, OM8, VelocityCommand
-from dollybot.rig import Rig, TakeRequest
+from dollybot.client import request
+from dollybot.service import Shot
 
 
-class MotionInput(BaseModel):
+class ShotInput(BaseModel):
     model_config = ConfigDict(extra='forbid', strict=True, allow_inf_nan=False)
-    pan_deg_s: float = Field(default=0, ge=-20, le=20)
-    tilt_deg_s: float = Field(default=0, ge=-20, le=20)
-    duration_s: float = Field(gt=0, le=2)
+    goal: str = Field(min_length=1, max_length=2000)
+    seconds: float = Field(default=3, ge=.1, le=30)
+    lead_s: float = Field(default=1, ge=0, le=10)
+    tail_s: float = Field(default=3, ge=0, le=10)
+    forward_m_s: float = 0
+    left_m_s: float = 0
+    yaw_rad_s: float = 0
+    pan_deg_s: float = 0
+    tilt_deg_s: float = 0
+    motion_seconds: float = Field(default=1, gt=0, le=2)
+    import_to_kino: bool = True
 
-    def command(self):
-        return VelocityCommand(**self.model_dump())
 
+def make_server(url='ws://127.0.0.1:8767/api', request_fn=request):
+    server = FastMCP('Dollybot')
 
-def make_server(address: str, camera_url: str, output: Path, rig_factory=None):
-    @asynccontextmanager
-    async def lifespan(_):
-        rig = rig_factory() if rig_factory else Rig(OM8(BleTransport(address)), camera_url, output)
-        try:
-            await rig.controller.connect()
-            yield rig
-        finally:
-            with anyio.CancelScope(shield=True):
-                await rig.close()
+    async def call(method, params=None):
+        return await asyncio.to_thread(request_fn, method, params, url)
 
-    server = FastMCP('Dollybot', lifespan=lifespan)
+    @server.tool(description='Read connectivity and active job from the persistent Dollybot service. No hardware connection is created by this MCP client.')
+    async def get_status() -> dict:
+        return await call('get_status')
 
-    def rig(ctx):
-        return ctx.request_context.lifespan_context
+    @server.tool(description='Connect selected devices through the persistent service; does not move or record.')
+    async def connect(devices: list[str]) -> dict:
+        return await call('connect', {'devices': devices})
 
-    @server.tool(description='Read gimbal connectivity and the active job; telemetry is not a verified pose.')
-    async def get_status(ctx: Context) -> dict:
-        return rig(ctx).get_status()
+    @server.tool(description='Record one goal-directed take, optionally with bounded base/gimbal motion, download the original, and optionally import into Kino. Requires supervision for motion. Use a fresh 32-character lowercase hex request_id and retain it on retries. Poll get_job; never automatically replay failed or unknown takes.')
+    async def capture_take(shot: ShotInput, request_id: str) -> dict:
+        validated = Shot(**shot.model_dump())
+        return await call('capture_take', {'request_id': request_id, 'shot': asdict(validated)})
 
-    @server.tool(description='Run one bounded timed pan or tilt. Use a fresh 32-character lowercase hex request_id, retaining it for retries. Returns a job ID; does not record video. No exact angle positioning.')
-    async def move_gimbal(motion: MotionInput, request_id: str, ctx: Context) -> dict:
-        return {'job_id': rig(ctx).move_gimbal(motion.command(), request_id)}
+    @server.tool(description='Read persistent take progress/result, local clip metadata, Kino media IDs, or error. A completed transport request is not physical verification.')
+    async def get_job(job_id: str) -> dict:
+        return await call('get_job', {'job_id': job_id})
 
-    @server.tool(description='Start Moblin recording, lead in, move, stop movement, record tail, and download the original clip. Use a fresh 32-character lowercase hex request_id, retaining it for retries. Poll the job; no automatic retakes.')
-    async def capture_take(motion: MotionInput, request_id: str, ctx: Context, lead_s: float = 1, tail_s: float = 3, verify_copy: bool = False) -> dict:
-        request = TakeRequest(motion.command(), lead_s, tail_s, verify_copy)
-        return {'job_id': rig(ctx).capture_take(request, request_id)}
-
-    @server.tool(description='Read a job result, including clip path and capture validation. Never resubmit an uncertain physical command automatically.')
-    async def get_job(job_id: str, ctx: Context) -> dict:
-        return rig(ctx).get_job(job_id)
-
-    @server.tool(description='Interrupt the active job and send gimbal stop commands. Recording cleanup is asynchronous; poll the job. A sent stop is not proof of physical stop.')
-    async def stop(ctx: Context) -> dict:
-        return await rig(ctx).stop()
+    @server.tool(description='Interrupt the active take and stop both motion drivers. Recording cleanup runs in the service; poll the job until terminal.')
+    async def stop() -> dict:
+        return await call('stop')
 
     return server
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Dollybot stdio MCP server; one process owns the rig')
-    parser.add_argument('--gimbal-address', required=True)
-    parser.add_argument('--url', required=True)
-    parser.add_argument('--output', type=Path, default=Path.home() / 'Movies/Dollybot/takes')
-    args = parser.parse_args()
-    make_server(args.gimbal_address, args.url, args.output).run(transport='stdio')
+    parser = argparse.ArgumentParser(description='Thin stdio MCP client of the running Dollybot service')
+    parser.add_argument('--server', default='ws://127.0.0.1:8767/api')
+    make_server(parser.parse_args().server).run(transport='stdio')
