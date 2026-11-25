@@ -20,10 +20,43 @@ class BaseMove:
         if math.hypot(self.velocity.forward_m_s, self.velocity.left_m_s) > .1 or abs(self.velocity.yaw_rad_s) > .2:
             raise ValueError('Commissioning limits: translation magnitude 0.1 m/s, yaw 0.2 rad/s')
 
+    def velocity_at(self, elapsed_s: float) -> BaseVelocity:
+        return self.velocity
+
+
+@dataclass(frozen=True)
+class BaseSlide:
+    direction: Literal['left', 'right', 'forward', 'backward']
+    distance_m: float = 1.8288
+    speed_m_s: float = .5
+
+    def __post_init__(self) -> None:
+        if self.direction not in ('left', 'right', 'forward', 'backward'):
+            raise ValueError('Slide direction is required: left, right, forward, or backward')
+        for name, upper in [('distance_m', 6.096), ('speed_m_s', .5)]:
+            value = getattr(self, name)
+            if isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value) or not 0 < value <= upper:
+                raise ValueError(f'{name} must be finite and in (0, {upper}]')
+        if self.duration_s > 30:
+            raise ValueError('Slide must finish within 30 seconds; reduce distance or increase speed')
+
+    @property
+    def peak_speed_m_s(self) -> float:
+        return min(self.speed_m_s, math.sqrt(self.distance_m * .25))
+
+    @property
+    def duration_s(self) -> float:
+        return self.distance_m / self.peak_speed_m_s + self.peak_speed_m_s / .25
+
+    def velocity_at(self, elapsed_s: float) -> BaseVelocity:
+        speed = max(0, min(self.peak_speed_m_s, .25 * elapsed_s, .25 * (self.duration_s - elapsed_s)))
+        forward, left = {'left': (0, 1), 'right': (0, -1), 'forward': (1, 0), 'backward': (-1, 0)}[self.direction]
+        return BaseVelocity(forward * speed, left * speed)
+
 
 @dataclass(frozen=True)
 class BaseMoveResult:
-    requested: BaseMove
+    requested: BaseMove | BaseSlide
     outcome: Literal['command_completed', 'stopped']
     elapsed_s: float
     velocity_frames_sent: int
@@ -57,9 +90,9 @@ class BaseDriver:
         finally:
             self._stopping -= 1
 
-    async def move(self, request: BaseMove) -> BaseMoveResult:
-        if not isinstance(request, BaseMove):
-            raise TypeError('Expected BaseMove')
+    async def move(self, request: BaseMove | BaseSlide) -> BaseMoveResult:
+        if not isinstance(request, (BaseMove, BaseSlide)):
+            raise TypeError('Expected BaseMove or BaseSlide')
         if self._active or self._stopping or self._closing:
             raise RuntimeError('Base is busy, stopping, or closing')
         self._active = True
@@ -83,7 +116,7 @@ class BaseDriver:
                     now = time.monotonic()
                     if now - previous_send > .15:
                         raise TimeoutError('Command refresh stalled; refusing to resume movement')
-                    await self.controller.send_velocity(request.velocity)
+                    await self.controller.send_velocity(request.velocity_at(now - started))
                     sent += 1
                     previous_send = now
                 remaining = request.duration_s - (time.monotonic() - started)

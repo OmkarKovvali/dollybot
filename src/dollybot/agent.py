@@ -1,12 +1,13 @@
 import argparse
 import asyncio
 from dataclasses import asdict
+from typing import Literal
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, ConfigDict, Field
 
 from dollybot.client import request
-from dollybot.service import Shot
+from dollybot.service import Shot, SlideShot
 
 
 class ShotInput(BaseModel):
@@ -21,6 +22,18 @@ class ShotInput(BaseModel):
     pan_deg_s: float = 0
     tilt_deg_s: float = 0
     motion_seconds: float = Field(default=1, gt=0, le=2)
+    import_to_kino: bool = True
+
+
+class SlideInput(BaseModel):
+    model_config = ConfigDict(extra='forbid', strict=True, allow_inf_nan=False)
+    direction: Literal['left', 'right', 'forward', 'backward']
+    goal: str = Field(default='Capture a linear sliding shot and review the framing', min_length=1, max_length=2000)
+    preset: Literal['slide'] = 'slide'
+    distance_ft: float = Field(default=6, gt=0, le=20)
+    speed_m_s: float = Field(default=.5, gt=0, le=.5)
+    lead_s: float = Field(default=2, ge=0, le=10)
+    tail_s: float = Field(default=3, ge=0, le=10)
     import_to_kino: bool = True
 
 
@@ -42,6 +55,16 @@ def make_server(url='ws://127.0.0.1:8767/api', request_fn=request):
     async def capture_take(shot: ShotInput, request_id: str) -> dict:
         validated = Shot(**shot.model_dump())
         return await call('capture_take', {'request_id': request_id, 'shot': asdict(validated)})
+
+    @server.tool(description='Preview a linear slide without recording or moving. Direction is required and relative to the base. Defaults: six feet, 0.5 m/s top speed, acceleration/deceleration ramps. Distance is estimated, not measured. Moblin tracking is preserved.')
+    async def plan_preset(shot: SlideInput) -> dict:
+        validated = SlideShot(**shot.model_dump())
+        return await call('plan_preset', asdict(validated))
+
+    @server.tool(description='Record a linear sliding shot through the shared service, stop, download, and import into Kino. Direction is required. Verify a supervised clear path before calling. Preserves Moblin tracking and sends no gimbal commands. Keep request_id on retries; poll get_job.')
+    async def capture_preset(shot: SlideInput, request_id: str) -> dict:
+        validated = SlideShot(**shot.model_dump())
+        return await call('capture_preset', {'request_id': request_id, 'shot': asdict(validated)})
 
     @server.tool(description='Read persistent take progress/result, local clip metadata, Kino media IDs, or error. A completed transport request is not physical verification.')
     async def get_job(job_id: str) -> dict:
