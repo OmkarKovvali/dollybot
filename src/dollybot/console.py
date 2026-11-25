@@ -16,7 +16,7 @@ from websockets.datastructures import Headers
 from dollybot.adapters.moblin import Moblin
 from dollybot.controllers.flow_base import BaseVelocity, FlowBaseController
 from dollybot.controllers.om8 import BleTransport, OM8, VelocityCommand
-from dollybot.drivers.base import BaseDriver, BaseMove
+from dollybot.drivers.base import BaseDriver, BaseHold
 from dollybot.drivers.gimbal import GimbalDriver
 from dollybot.media import inspect_video
 from dollybot.service import Jobs, Shot, SlideShot
@@ -36,6 +36,7 @@ class Console:
         self.motion = {}
         self.tasks = set()
         self.last_input = time.monotonic()
+        self.held_action = None
         self.owner = None
         self.stopping = False
         self.camera_status = {}
@@ -63,6 +64,7 @@ class Console:
         return await self.stop_motion()
 
     async def stop_motion(self):
+        self.held_action = None
         self.stopping = True
         try:
             calls = {}
@@ -164,7 +166,9 @@ class Console:
                 try:
                     if action == 'base_move':
                         velocity = BaseVelocity(data.get('forward', 0), data.get('left', 0), data.get('yaw', 0))
-                        result = await self.base_driver.move(BaseMove(velocity, 2))
+                        self.held_action = action
+                        result = await self.base_driver.move(BaseHold(velocity),
+                            keep_running=lambda: self.held_action == 'base_move' and time.monotonic() - self.last_input <= .25)
                     else:
                         result = await self.gimbal_driver.move(VelocityCommand(data.get('pan', 0), data.get('tilt', 0), 2))
                     await self.send({'motion_done': action, 'result': asdict(result)})
@@ -198,7 +202,10 @@ class Console:
                 if not isinstance(data, dict):
                     raise ValueError('Expected command object')
                 if data.get('action') == 'heartbeat':
-                    self.last_input = time.monotonic()
+                    stamp = data.get('time', 0)
+                    if isinstance(stamp, (int, float)) and math.isfinite(stamp) and abs(time.time() * 1000 - stamp) <= 250:
+                        self.last_input = time.monotonic()
+                        self.held_action = data.get('holding')
                 elif data.get('action') == 'manual_stop':
                     if self.motion:
                         await self.stop_motion()
