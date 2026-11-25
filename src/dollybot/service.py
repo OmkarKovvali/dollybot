@@ -8,7 +8,7 @@ from pathlib import Path
 from dollybot.capture import capture
 from dollybot.controllers.flow_base import BaseVelocity
 from dollybot.controllers.om8 import VelocityCommand
-from dollybot.drivers.base import BaseMove
+from dollybot.drivers.base import BaseMove, BaseSlide
 from dollybot.kino import import_clip
 
 
@@ -57,6 +57,56 @@ class Shot:
 
     def gimbal_move(self):
         return VelocityCommand(self.pan_deg_s, self.tilt_deg_s, self.motion_seconds)
+
+
+@dataclass(frozen=True)
+class SlideShot:
+    direction: str
+    goal: str = 'Capture a linear sliding shot and review the framing'
+    preset: str = 'slide'
+    distance_ft: float = 6
+    speed_m_s: float = .5
+    lead_s: float = 2
+    tail_s: float = 3
+    import_to_kino: bool = True
+
+    def __post_init__(self):
+        if self.preset != 'slide':
+            raise ValueError('Unknown preset; expected slide')
+        Shot(goal=self.goal, lead_s=self.lead_s, tail_s=self.tail_s, import_to_kino=self.import_to_kino)
+        if isinstance(self.distance_ft, bool) or not isinstance(self.distance_ft, (int, float)):
+            raise ValueError('distance_ft must be a number')
+        self.base_move()
+
+    @property
+    def motion_seconds(self):
+        return self.base_move().duration_s
+
+    @property
+    def seconds(self):
+        return self.motion_seconds
+
+    @property
+    def has_base(self):
+        return True
+
+    @property
+    def has_gimbal(self):
+        return False
+
+    @property
+    def has_motion(self):
+        return True
+
+    def base_move(self):
+        return BaseSlide(self.direction, self.distance_ft * .3048, self.speed_m_s)
+
+    def plan(self):
+        return {**asdict(self), 'motion_seconds': self.motion_seconds,
+                'planned_recording_seconds': self.lead_s + self.seconds + self.tail_s,
+                'distance_m': self.base_move().distance_m, 'coordinate_frame': 'base_relative',
+                'acceleration_m_s2': .25, 'tracking': 'preserve',
+                'distance_control': 'timed_velocity_estimate', 'physically_verified': False}
 
 
 class Jobs:
@@ -111,8 +161,11 @@ class Jobs:
             raise RuntimeError('Connect the gimbal first')
         self.cancel.clear()
         self.current = {'job_id': request_id, 'request': asdict(shot), 'status': 'running', 'phase': 'admitted'}
+        if isinstance(shot, SlideShot):
+            self.current['plan'] = shot.plan()
         self.save()
         self.task = asyncio.create_task(self.execute(shot))
+        self.task.add_done_callback(lambda _: asyncio.create_task(c.state()))
         return {'job_id': request_id, 'status': 'running'}
 
     def wait(self, seconds):
@@ -123,15 +176,27 @@ class Jobs:
         if self.cancel.is_set():
             raise InterruptedError('Stopped before motion')
         results = []
+        if shot.has_motion:
+            self.current['phase'] = 'motion'
+            self.save()
+            await self.console.state()
         try:
+            if self.cancel.is_set():
+                raise InterruptedError('Stopped before motion')
             async with asyncio.TaskGroup() as group:
                 if shot.has_base:
                     results.append(group.create_task(self.console.base_driver.move(shot.base_move())))
                 if shot.has_gimbal:
                     results.append(group.create_task(self.console.gimbal_driver.move(shot.gimbal_move())))
         finally:
-            if shot.has_motion:
+            if isinstance(shot, SlideShot):
+                await self.console.base_driver.stop()
+            elif shot.has_motion:
                 await self.console.stop_motion()
+        if shot.has_motion:
+            self.current['phase'] = 'finishing_capture'
+            self.save()
+            await self.console.state()
         return [asdict(task.result()) for task in results]
 
     async def execute(self, shot):
@@ -157,9 +222,11 @@ class Jobs:
 
                 self.current['phase'] = 'preparing_camera'
                 self.save()
-                await asyncio.to_thread(c.camera.request, {'setGimbalTracking': {'on': False}})
+                if not isinstance(shot, SlideShot):
+                    await asyncio.to_thread(c.camera.request, {'setGimbalTracking': {'on': False}})
                 self.current['phase'] = 'capture'
                 self.save()
+                await c.state()
                 try:
                     result = await asyncio.to_thread(record)
                 finally:
@@ -174,6 +241,7 @@ class Jobs:
             if shot.import_to_kino:
                 self.current['phase'] = 'kino_import'
                 self.save()
+                await c.state()
                 self.current['kino'] = await asyncio.to_thread(self.import_fn, result['local_path'])
             self.current.update(status='cancelled' if self.cancel.is_set() else 'completed', phase='done')
         except asyncio.CancelledError:

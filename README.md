@@ -13,7 +13,7 @@ The base and OM8 controllers support bounded physical motion. Moblin records and
 
 ## Kino integration
 
-The [Kino integration guide](docs/kino-integration.md) connects the installed Kino agent through a skill/CLI or thin MCP client to the same persistent service that owns the localhost controls. Takes have explicit goals, bounded optional base/gimbal motion, persistent request IDs, original-clip download, and optional Kino import. The service owns hardware; clients never open their own sessions.
+The [Kino integration guide](docs/kino-integration.md) connects the installed Kino agent through a skill/CLI or thin MCP client to the same persistent service that owns the localhost controls. The `slide` preset records a linear move in a required direction (left/right/forward/backward), defaults to six feet at up to 0.5 m/s with ramps, and preserves Moblin tracking. Distance is estimated from timed velocity. Takes have explicit goals, bounded optional base/gimbal motion, persistent request IDs, original-clip download, and optional Kino import. The service owns hardware; clients never open their own sessions.
 
 ## Local control screen
 
