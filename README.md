@@ -6,9 +6,10 @@ An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records 
 
 - **iPhone capture:** start and stop Moblin from the Mac, download the original clip, and measure timing, resolution, and FPS. Tested on an iPhone 14 Plus.
 - **Motion rehearsal:** a browser-based Flow Base simulator with a local bridge that Kino can control. It supports driving, turns, orbits, push-ins, and slides.
+- **Base access:** a [typed Flow Base controller and bounded-move driver](docs/base.md) for the existing Pi service, with a standalone CLI.
 - **References and CAD:** Kino and I2RT documentation, robot geometry, and camera-rig research.
 
-The camera adapter and simulator run independently. The simulator does not move real hardware. Physical base control, the separately tested OM8 controller, and the complete capture → Kino review → retake loop are not integrated into this repo yet.
+The camera adapter and simulator run independently. The simulator does not move real hardware. The base controller/driver can be used independently. The OM8 and coordinated capture work remains on its separate branch; the complete capture → Kino review → retake loop is not integrated into main yet.
 
 ## Record from your iPhone
 
