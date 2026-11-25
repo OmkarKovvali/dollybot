@@ -13,7 +13,8 @@ from dollybot.media import inspect_video
 
 def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = False, tail_seconds: float = 0,
             record_action: Callable[[], object] | None = None,
-            wait: Callable[[float], None] = time.sleep):
+            wait: Callable[[float], None] = time.sleep,
+            on_state: Callable[[bool], None] | None = None):
     if not math.isfinite(seconds) or not 0.1 <= seconds <= 60:
         raise ValueError("Recording duration must be between 0.1 and 60 seconds")
     if not math.isfinite(tail_seconds) or not 0 <= tail_seconds <= 10:
@@ -46,6 +47,8 @@ def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = Fa
         record_started = time.perf_counter()
         try:
             report["start"] = camera.set_recording(True)
+            if on_state:
+                on_state(True)
             report["outcome"] = "recording"
             save()
             print(f"Recording {seconds:g}s: {take_id}", flush=True, file=sys.stderr)
@@ -60,6 +63,8 @@ def capture(camera: Moblin, seconds: float, output: Path, verify_copy: bool = Fa
             stop_started = time.perf_counter()
             report["start_command_to_stop_command_ms"] = round((stop_started - record_started) * 1000, 3)
             report["stop"] = camera.stop_recording()
+            if on_state:
+                on_state(False)
             report["outcome"] = "stopped"
             save()
         recording = camera.wait_for_recording(previous)
