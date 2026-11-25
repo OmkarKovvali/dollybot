@@ -10,6 +10,7 @@ dollybot = "dollybot.cli:main"
 dollybot-console = "dollybot.console:main"
 dollybot-base = "dollybot.base_cli:main"
 dollybot-rig = "dollybot.rig_cli:main"
+dollybot-client = "dollybot.client:main"
 dollybot-agent = "dollybot.agent:main"
 
 [project.optional-dependencies]
