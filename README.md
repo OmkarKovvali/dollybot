@@ -11,6 +11,20 @@ An agent-directed camera dolly: Kino plans and reviews shots, an iPhone records 
 
 The base and OM8 controllers support bounded physical motion. Moblin records and downloads original clips. The simulator does not move hardware; the automatic Kino review/retake loop remains separate work.
 
+## Local control screen
+
+```sh
+uv run --frozen --extra gimbal dollybot-console
+```
+
+Open <http://127.0.0.1:8767>. Connect the base, Bluetooth gimbal, and Moblin from the same screen. The phone URL is editable. Base address, hardware ID, gimbal address, output folder, and port are CLI options (`--help`). Current defaults are the commissioned local rig; Wi-Fi addresses can change.
+
+Hold Shift + WASD to drive, Shift + Q/E to rotate, or hold the on-screen direction controls. Gimbal buttons pan/tilt at 10 degrees/second. Each hold is limited to two seconds; release and press again to continue. Space, key/pointer release, lost focus, or a stale browser heartbeat stops motion. Close other hardware clients first. Only one browser connection owns this console; the base's local lock does not exclude unrelated clients.
+
+Start recording, then Stop & save downloads the original clip to `~/Movies/Dollybot/console/` and reports resolution, frame rate, and transfer timing. A recording already active when connecting is left running; stopping it does not guess which file to download. Console-started recordings are stopped and collected on browser disconnect when the server and phone remain available. A server crash cannot guarantee camera cleanup. The UI timer is elapsed time observed by this screen, not a sensor timestamp. Status badges reflect the latest command response, not continuous device health monitoring.
+
+The server binds only to loopback and checks browser origin/host. It reuses the typed base and gimbal drivers and the Moblin adapter. Automated tests exercise stale input, motion limits, stop failure isolation, and watchdog behavior alongside the existing driver tests. Connection success does not constitute physical motion acceptance.
+
 ## Record from your iPhone
 
 Requires Python 3.12+, [uv](https://docs.astral.sh/uv/), and ffmpeg/ffprobe on your PATH.
