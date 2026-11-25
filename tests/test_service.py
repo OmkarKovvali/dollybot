@@ -169,7 +169,7 @@ class ServiceTest(unittest.IsolatedAsyncioTestCase):
         self.console.last_input = time.monotonic()
         await self.console.command({'action': 'base_move', 'time': time.time()*1000, 'left': .08})
         self.console.base_driver.move.assert_awaited_once()
-        self.assertEqual(self.console.base_driver.move.call_args.args[0].duration_s, 2)
+        self.assertTrue(self.console.base_driver.move.call_args.kwargs['keep_running']())
         self.assertFalse(self.console.jobs.busy)
         await asyncio.sleep(0)
         states = [call.args[0]['state'] for call in self.console.send.call_args_list if 'state' in call.args[0]]

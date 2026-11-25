@@ -2,7 +2,7 @@ import asyncio
 import math
 import time
 from dataclasses import dataclass
-from typing import Literal
+from typing import Callable, Literal
 
 from dollybot.controllers.flow_base import BaseVelocity, FlowBaseController
 
@@ -19,6 +19,21 @@ class BaseMove:
             raise ValueError('Commissioning move duration must be in (0, 2] seconds')
         if math.hypot(self.velocity.forward_m_s, self.velocity.left_m_s) > .1 or abs(self.velocity.yaw_rad_s) > .2:
             raise ValueError('Commissioning limits: translation magnitude 0.1 m/s, yaw 0.2 rad/s')
+
+    def velocity_at(self, elapsed_s: float) -> BaseVelocity:
+        return self.velocity
+
+
+@dataclass(frozen=True)
+class BaseHold:
+    velocity: BaseVelocity
+
+    def __post_init__(self) -> None:
+        BaseMove(self.velocity, 1)
+
+    @property
+    def duration_s(self) -> float:
+        return math.inf
 
     def velocity_at(self, elapsed_s: float) -> BaseVelocity:
         return self.velocity
@@ -56,7 +71,7 @@ class BaseSlide:
 
 @dataclass(frozen=True)
 class BaseMoveResult:
-    requested: BaseMove | BaseSlide
+    requested: BaseMove | BaseSlide | BaseHold
     outcome: Literal['command_completed', 'stopped']
     elapsed_s: float
     velocity_frames_sent: int
@@ -90,9 +105,11 @@ class BaseDriver:
         finally:
             self._stopping -= 1
 
-    async def move(self, request: BaseMove | BaseSlide) -> BaseMoveResult:
-        if not isinstance(request, (BaseMove, BaseSlide)):
-            raise TypeError('Expected BaseMove or BaseSlide')
+    async def move(self, request: BaseMove | BaseSlide | BaseHold, keep_running: Callable[[], bool] | None = None) -> BaseMoveResult:
+        if not isinstance(request, (BaseMove, BaseSlide, BaseHold)):
+            raise TypeError('Expected BaseMove, BaseSlide, or BaseHold')
+        if isinstance(request, BaseHold) and keep_running is None:
+            raise ValueError('Manual hold requires a live input lease')
         if self._active or self._stopping or self._closing:
             raise RuntimeError('Base is busy, stopping, or closing')
         self._active = True
@@ -111,6 +128,8 @@ class BaseDriver:
             previous_send = started
             while time.monotonic() - started < request.duration_s:
                 async with self._commands:
+                    if isinstance(request, BaseHold) and not keep_running():
+                        self._stop.set()
                     if self._stop.is_set():
                         break
                     now = time.monotonic()

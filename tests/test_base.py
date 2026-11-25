@@ -10,7 +10,7 @@ from unittest.mock import patch
 from websockets.asyncio.server import serve
 
 from dollybot.controllers.flow_base import BaseVelocity, FlowBaseController
-from dollybot.drivers.base import BaseDriver, BaseMove, BaseSlide
+from dollybot.drivers.base import BaseDriver, BaseHold, BaseMove, BaseSlide
 
 
 class BaseTest(unittest.IsolatedAsyncioTestCase):
@@ -43,6 +43,21 @@ class BaseTest(unittest.IsolatedAsyncioTestCase):
         await self.driver.close()
         self.server.close()
         await self.server.wait_closed()
+
+    async def test_continuous_hold_passes_two_seconds_and_stops_on_lease_loss(self):
+        await self.controller.connect()
+        held = True
+        task = asyncio.create_task(self.driver.move(BaseHold(BaseVelocity(.08)), keep_running=lambda: held))
+        await asyncio.sleep(2.2)
+        self.assertFalse(task.done())
+        held = False
+        result = await asyncio.wait_for(task, 1)
+        self.assertEqual(result.outcome, 'stopped')
+        values = [struct.unpack('<4f', p) for _, p in self.frames]
+        self.assertTrue(all(v[0] > 0 for v in values[:-6]))
+        self.assertEqual(values[-6:], [(0, 0, 0, 0)] * 6)
+        with self.assertRaises(ValueError):
+            await self.driver.move(BaseHold(BaseVelocity(.08)))
 
     def test_slide_profile_distance_direction_and_limits(self):
         for direction, axis, sign in [('right', 1, -1), ('left', 1, 1), ('forward', 0, 1), ('backward', 0, -1)]:
